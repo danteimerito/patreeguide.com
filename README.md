@@ -1,4 +1,4 @@
-# vue_crashcourse_traversy_project2
+# TreeApp
 
 ## Project setup
 ```
