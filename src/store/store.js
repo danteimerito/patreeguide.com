@@ -40,7 +40,8 @@ const initialTreesState = [
       "red"
     ],
     slug: "alternate-leaveddogwood",
-    background: "bg_pexels7.jpg", 
+    background: "bg_pexels1.jpg", 
+    backgroundSmall: "bg_pexels1_small.jpg",
     photo1: "/img/alternate-leaved-dogwood-1.jpg",
     photo2: "/img/alternate-leaved-dogwood-2.jpg",
     photo3: "/img/alternate-leaved-dogwood-3.jpg",
@@ -64,7 +65,8 @@ const initialTreesState = [
       "orange"
     ],
     slug: "americanbasswood",
-    background: "bg_pexels1.jpg", 
+    background: "bg_pexels7.jpg", 
+    backgroundSmall: "bg_pexels7_small.jpg",
     description: "<p>The American Basswood (Tilia americana), a stately decidome that can soar to grand heights of 60-120 feet, is renowned for its expansive canopy, which provides a lush, deep shade. This native North American tree is often found in rich, moist woods and along streams throughout the eastern and central United States. It has a broadly columnar to rounded shape, with a straight trunk and symmetrically branching crown. Heart-shaped, serrated leaves flutter in the slightest breeze and turn a vibrant yellow come autumn. In early summer, small, fragrant cream-colored flowers dangle from slender peduncles, drawing in a symphony of pollinators; these blooms later develop into small, nut-like fruits. The Basswood's soft, lightweight wood is highly valued for carving and woodworking. A gentle giant in the landscape, the American Basswood is a favorite for wildlife and a classical choice for shade in urban and rural settings.</p>"
   },
   {
@@ -86,6 +88,7 @@ const initialTreesState = [
     ],
     slug: "americanbeech", 
     background:"bg_forest1.jpg",
+    backgroundSmall: "bg_forest1_small.jpg",
     description: "<p>The American Beech (Fagus grandifolia) is a noble and imposing hardwood, native to the eastern United States and southeastern Canada. Its grandeur is evident as it reaches up to 80 feet tall with a broad, rounded crown. The smooth, silvery-gray bark is unmistakably sleek, often carved with initials that persist for decades. Its elliptical leaves are a glossy green, with finely toothed margins, turning a rich bronze in the fall, often lingering on the branches into winter. Spring unfurls tiny, inconspicuous flowers, succeeded by small, prickly husks that contain edible nuts, coveted by wildlife. This tree prefers well-drained, acidic soils and doesn't tolerate urban pollution well, making it a staple in less disturbed forested areas. American Beech is slow-growing but long-lived, often reaching 300 years, with its stately presence and dense canopy offering a serene backdrop or an anchor in larger landscapes.</p>"
   },
   {
@@ -946,6 +949,8 @@ const initialTreesState = [
       5
     ],
     slug: "easternwhitepine",
+    background: "bg_conifer1.jpg", 
+    backgroundSmall: "bg_conifer1_small.jpg",
     description: "The Eastern White Pine (Pinus strobus), native to the northeastern United States and eastern Canada, stands as a majestic symbol of the North American forests. Recognizable by its tall, straight trunk and whorled branches, this tree can grow upwards of 80 feet, with some ancient specimens reaching double that height. Its soft, flexible needles, grouped in bundles of five, give the tree a delicate, feathery appearance. Beyond its beauty, the Eastern White Pine has played a pivotal role in American history. In colonial times, its straight and tall trunks were coveted for ship masts. The tree's wood, light yet durable, is widely used in construction and woodworking today. This species also provides habitat and sustenance for various wildlife, including birds and squirrels. With its rich historical significance and continued ecological importance, the Eastern White Pine remains a cherished icon of the northeastern landscape.",
     background: "bg_conifer1.jpg",
     photo1: ""

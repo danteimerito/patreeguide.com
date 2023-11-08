@@ -121,8 +121,6 @@
                         </div>
                     </div>
                     
-
-
                     <div>
                         <h2 v-if="tree.conservationStatus">Conservation Status</h2>
                     </div>
@@ -130,60 +128,73 @@
                 </div>
             </div>
    
-
- 
-       
         </div>
     </div>
 </template>
 
 <script>
-    export default {
-        props: ['slug'],
-        computed: {
-            tree() {
-                return this.$store.getters.getTreeBySlug(this.slug);
-            },
+export default {
+    props: ['slug'],
+    computed: {
+        tree() {
+            return this.$store.getters.getTreeBySlug(this.slug);
         },
-        watch: {
-            '$route': {
-            immediate: true, // This ensures the handler is called right after the component is mounted
+        blurredBackground() {
+            // Assuming you have a low-res version of the default background
+            const defaultBlurredImageUrl = '/img/bg_forest3_small.jpg';
+            
+            return this.tree && this.tree.backgroundSmall ? `/img/${this.tree.backgroundSmall}` : defaultBlurredImageUrl;
+        },
+        fullBackground() {
+            // Your existing logic to determine the URL of the full background
+            const defaultImageUrl = '/img/bg_forest3.jpg';
+            return this.tree && this.tree.background ? `/img/${this.tree.background}` : defaultImageUrl;
+        },
+    },
+    watch: {
+        '$route': {
+            immediate: true,
             handler() {
                 this.updateBodyBackground();
             }
-            }
-        },
-        methods: {
-            goBackOrHome() {
-                if (window.history.length > 1) {
-                    this.$router.go(-1);
-                } else {
-                    this.$router.push({ name: 'Home' });
-                }
-            },
-            updateBodyBackground() {
-                // Retrieve the tree data using a Vuex getter
-                const treeData = this.$store.getters.getTreeBySlug(this.$route.params.slug);
-
-                // Define a default background image path
-                const defaultImageUrl = '/img/bg_forest3.jpg';
-
-                // Construct the background image URL
-                // If treeData is defined and has a background, use that, otherwise use the default
-                const imageUrl = this.tree && this.tree.background ? `/img/${this.tree.background}` : defaultImageUrl;
-
-                // Set the background image style on the body tag
-                document.body.style.backgroundImage = `url(${imageUrl})`;
-            }
-        },
-        beforeDestroy() {
-            // When the component is destroyed, reset the body background if needed
-            document.body.style.backgroundImage = '';
         }
+    },
+    methods: {
+        goBackOrHome() {
+            if (window.history.length > 1) {
+                this.$router.go(-1);
+            } else {
+                this.$router.push({ name: 'Home' });
+            }
+        },
+        updateBodyBackground() {
+            // First set the blurred image
+            document.body.style.backgroundImage = `url(${this.blurredBackground})`;
+            // Then load the full image
+            this.loadFullImage();
+        },
+        loadFullImage() {
+            const img = new Image();
+            img.src = this.fullBackground;
+            img.onload = () => {
+                // On image load, set the full background image
+                document.body.style.backgroundImage = `url(${img.src})`;
+                document.body.classList.add('background-fade-in');
+            };
+        }
+    },
+    beforeDestroy() {
+        document.body.style.backgroundImage = '';
+        document.body.classList.remove('background-fade-in');
     }
-    
+}
 </script>
 
 <style>
+/* This should be in your global CSS */
+.background-fade-in {
+    transition: background-image 0.5s ease-in-out;
+}
 </style>
+
 
