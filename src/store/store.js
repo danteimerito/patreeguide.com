@@ -578,27 +578,27 @@ const initialTreesState = [
     ],
     slug: "blackjackoak"
   },
-  {
-    nameCommon: "Blue Beech",
-    aka: [
-      "American Hornbeam",
-      "Musclewood"
-    ],
-    order: "Fagales",
-    family: "Betulaceae",
-    familyCommon: "Birch",
-    genus: "Carpinus",
-    species: "Carpinus caroliniana",
-    type: "deciduous",
-    leafType: "simple",
-    leafAttachment: "alternate",
-    fallColor: [
-      "orange",
-      "red",
-      "dark red"
-    ],
-    slug: "bluebeech"
-  },
+  // {
+  //   nameCommon: "Blue Beech",
+  //   aka: [
+  //     "American Hornbeam",
+  //     "Musclewood"
+  //   ],
+  //   order: "Fagales",
+  //   family: "Betulaceae",
+  //   familyCommon: "Birch",
+  //   genus: "Carpinus",
+  //   species: "Carpinus caroliniana",
+  //   type: "deciduous",
+  //   leafType: "simple",
+  //   leafAttachment: "alternate",
+  //   fallColor: [
+  //     "orange",
+  //     "red",
+  //     "dark red"
+  //   ],
+  //   slug: "bluebeech"
+  // },
   {
     nameCommon: "Blue Spruce",
     aka: [
@@ -840,23 +840,23 @@ const initialTreesState = [
     ],
     slug: "crabapple"
   },
-  {
-    nameCommon: "Cucumber Tree",
-    order: "Magnoliales",
-    family: "Magnoliaceae",
-    familyCommon: "Magnolia",
-    genus: "Magnolia",
-    species: "Magnolia acuminata",
-    type: "deciduous",
-    leafType: "simple",
-    leafAttachment: "alternate",
-    fallColor: [
-      "yellow",
-      "dark yellow",
-      "brown"
-    ],
-    slug: "cucumbertree"
-  },
+  // {
+  //   nameCommon: "Cucumber Tree",
+  //   order: "Magnoliales",
+  //   family: "Magnoliaceae",
+  //   familyCommon: "Magnolia",
+  //   genus: "Magnolia",
+  //   species: "Magnolia acuminata",
+  //   type: "deciduous",
+  //   leafType: "simple",
+  //   leafAttachment: "alternate",
+  //   fallColor: [
+  //     "yellow",
+  //     "dark yellow",
+  //     "brown"
+  //   ],
+  //   slug: "cucumbertree"
+  // },
   {
     nameCommon: "Eastern Cottonwood",
     aka: [
@@ -916,26 +916,26 @@ const initialTreesState = [
     needleStructure: "scaly needles",
     slug: "easternredcedar"
   },
-  {
-    nameCommon: "Eastern Wahoo",
-    aka: [
-      "American Wahoo",
-      "Burningbush",
-      "Hearts Bursting With Love"
-    ],
-    order: "Celastrales",
-    family: "Celastraceae",
-    familyCommon: "Staff-tree",
-    genus: "Euonymus",
-    species: "Euonymus atropurpureus",
-    type: "deciduous",
-    leafType: "simple",
-    leafAttachment: "opposite",
-    fallColor: [
-      "red"
-    ],
-    slug: "easternwahoo"
-  },
+  // {
+  //   nameCommon: "Eastern Wahoo",
+  //   aka: [
+  //     "American Wahoo",
+  //     "Burningbush",
+  //     "Hearts Bursting With Love"
+  //   ],
+  //   order: "Celastrales",
+  //   family: "Celastraceae",
+  //   familyCommon: "Staff-tree",
+  //   genus: "Euonymus",
+  //   species: "Euonymus atropurpureus",
+  //   type: "deciduous",
+  //   leafType: "simple",
+  //   leafAttachment: "opposite",
+  //   fallColor: [
+  //     "red"
+  //   ],
+  //   slug: "easternwahoo"
+  // },
   {
     nameCommon: "Eastern White Pine",
     order: "Pinales",
@@ -1055,25 +1055,25 @@ const initialTreesState = [
     ],
     slug: "graybirch"
   },
-  {
-    nameCommon: "Green Ash",
-    aka: [
-      "Red Ash"
-    ],
-    order: "Lamiales",
-    family: "Oleaceae",
-    familyCommon: "Olive",
-    genus: "Fraxinus",
-    species: "Fraxinus pennsylvanica",
-    type: "deciduous",
-    leafType: "compound",
-    compoundStructure: "single",
-    leafAttachment: "opposite",
-    fallColor: [
-      "yellow"
-    ],
-    slug: "greenash"
-  },
+  // {
+  //   nameCommon: "Green Ash",
+  //   aka: [
+  //     "Red Ash"
+  //   ],
+  //   order: "Lamiales",
+  //   family: "Oleaceae",
+  //   familyCommon: "Olive",
+  //   genus: "Fraxinus",
+  //   species: "Fraxinus pennsylvanica",
+  //   type: "deciduous",
+  //   leafType: "compound",
+  //   compoundStructure: "single",
+  //   leafAttachment: "opposite",
+  //   fallColor: [
+  //     "yellow"
+  //   ],
+  //   slug: "greenash"
+  // },
   {
     nameCommon: "Hawthorn",
     aka: [
