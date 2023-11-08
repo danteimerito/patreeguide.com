@@ -458,21 +458,21 @@ const initialTreesState = [
     ],
     slug: "blacklocust"
   },
-  {
-    nameCommon: "Black Maple",
-    order: "Sapindales",
-    family: "Sapindaceae",
-    familyCommon: "Maple",
-    genus: "Acer",
-    species: "Acer nigrum",
-    type: "deciduous",
-    leafType: "lobed",
-    leafAttachment: "opposite",
-    fallColor: [
-      "yellow"
-    ],
-    slug: "blackmaple"
-  },
+  // {
+  //   nameCommon: "Black Maple",
+  //   order: "Sapindales",
+  //   family: "Sapindaceae",
+  //   familyCommon: "Maple",
+  //   genus: "Acer",
+  //   species: "Acer nigrum",
+  //   type: "deciduous",
+  //   leafType: "lobed",
+  //   leafAttachment: "opposite",
+  //   fallColor: [
+  //     "yellow"
+  //   ],
+  //   slug: "blackmaple"
+  // },
   {
     nameCommon: "Black Oak",
     aka: [
