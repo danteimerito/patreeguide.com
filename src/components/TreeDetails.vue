@@ -57,6 +57,12 @@
                                 <span>Needle Structure</span>
                                 <div class="result-icon">{{ tree.needleStructure }}</div>
                             </div>
+                            <div v-if="tree.needleCluster" class="sidebar-detail">
+                                <span>Needles Per Cluster</span>
+                                <div v-for="count in tree.needleCluster">
+                                    <div class="result-icon">{{ count }}</div>
+                                </div>
+                            </div>
                             <div v-if="tree.leafType" class="sidebar-detail">
                                 <span>Leaf Type</span>
                                 <div class="result-icon">{{ tree.leafType }}</div>
