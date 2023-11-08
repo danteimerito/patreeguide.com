@@ -1394,20 +1394,20 @@ const initialTreesState = [
   //   ],
   //   slug: "pinoak"
   // },
-  // {
-  //   nameCommon: "Pitch Pine",
-  //   order: "Pinales",
-  //   family: "Pinaceae",
-  //   familyCommon: "Pine",
-  //   genus: "Pinus",
-  //   species: "Pinus rigida",
-  //   type: "conifer",
-  //   needleStructure: "clustered needles",
-  //   needleCluster: [
-  //     3
-  //   ],
-  //   slug: "pitchpine"
-  // },
+  {
+    nameCommon: "Pitch Pine",
+    order: "Pinales",
+    family: "Pinaceae",
+    familyCommon: "Pine",
+    genus: "Pinus",
+    species: "Pinus rigida",
+    type: "conifer",
+    needleStructure: "clustered needles",
+    needleCluster: [
+      3
+    ],
+    slug: "pitchpine"
+  },
   // {
   //   nameCommon: "Poison Sumac",
   //   order: "Sapindales",
@@ -1540,20 +1540,20 @@ const initialTreesState = [
   //   ],
   //   slug: "redmulberry"
   // },
-  // {
-  //   nameCommon: "Red Pine",
-  //   order: "Pinales",
-  //   family: "Pinaceae",
-  //   familyCommon: "Pine",
-  //   genus: "Pinus",
-  //   species: "Pinus resinosa",
-  //   type: "conifer",
-  //   needleStructure: "clustered needles",
-  //   needleCluster: [
-  //     2
-  //   ],
-  //   slug: "redpine"
-  // },
+  {
+    nameCommon: "Red Pine",
+    order: "Pinales",
+    family: "Pinaceae",
+    familyCommon: "Pine",
+    genus: "Pinus",
+    species: "Pinus resinosa",
+    type: "conifer",
+    needleStructure: "clustered needles",
+    needleCluster: [
+      2
+    ],
+    slug: "redpine"
+  },
   // {
   //   nameCommon: "Red Spruce",
   //   order: "Pinales",
@@ -1585,22 +1585,22 @@ const initialTreesState = [
   //   ],
   //   slug: "russianolive"
   // },
-  // {
-  //   nameCommon: "Sassafras",
-  //   order: "Laurales",
-  //   family: "Lauraceae",
-  //   familyCommon: "Laurel",
-  //   genus: "Sassafras",
-  //   species: "Sassafras albidum",
-  //   type: "deciduous",
-  //   leafType: "lobed",
-  //   leafAttachment: "alternate",
-  //   fallColor: [
-  //     "yellow",
-  //     "red"
-  //   ],
-  //   slug: "sassafras"
-  // },
+  {
+    nameCommon: "Sassafras",
+    order: "Laurales",
+    family: "Lauraceae",
+    familyCommon: "Laurel",
+    genus: "Sassafras",
+    species: "Sassafras albidum",
+    type: "deciduous",
+    leafType: "lobed",
+    leafAttachment: "alternate",
+    fallColor: [
+      "yellow",
+      "red"
+    ],
+    slug: "sassafras"
+  },
   // {
   //   nameCommon: "Scarlet Oak",
   //   order: "Fagales",
@@ -1634,22 +1634,22 @@ const initialTreesState = [
   //   ],
   //   slug: "scotchpine"
   // },
-  // {
-  //   nameCommon: "Shagbark Hickory",
-  //   order: "Fagales",
-  //   family: "Juglandaceae",
-  //   familyCommon: "Walnut",
-  //   genus: "Carya",
-  //   species: "Carya ovata",
-  //   type: "deciduous",
-  //   leafType: "compound",
-  //   compoundStructure: "single",
-  //   leafAttachment: "alternate",
-  //   fallColor: [
-  //     "yellow"
-  //   ],
-  //   slug: "shagbarkhickory"
-  // },
+  {
+    nameCommon: "Shagbark Hickory",
+    order: "Fagales",
+    family: "Juglandaceae",
+    familyCommon: "Walnut",
+    genus: "Carya",
+    species: "Carya ovata",
+    type: "deciduous",
+    leafType: "compound",
+    compoundStructure: "single",
+    leafAttachment: "alternate",
+    fallColor: [
+      "yellow"
+    ],
+    slug: "shagbarkhickory"
+  },
   // {
   //   nameCommon: "Shellbark Hickory",
   //   aka: [
@@ -1737,22 +1737,22 @@ const initialTreesState = [
   //   ],
   //   slug: "siberianelm"
   // },
-  // {
-  //   nameCommon: "Silver Maple",
-  //   order: "Sapindales",
-  //   family: "Sapindaceae",
-  //   familyCommon: "Maple",
-  //   genus: "Acer",
-  //   species: "Acer saccharinum",
-  //   type: "deciduous",
-  //   leafType: "lobed",
-  //   leafAttachment: "opposite",
-  //   fallColor: [
-  //     "yellow",
-  //     "orange"
-  //   ],
-  //   slug: "silvermaple"
-  // },
+  {
+    nameCommon: "Silver Maple",
+    order: "Sapindales",
+    family: "Sapindaceae",
+    familyCommon: "Maple",
+    genus: "Acer",
+    species: "Acer saccharinum",
+    type: "deciduous",
+    leafType: "lobed",
+    leafAttachment: "opposite",
+    fallColor: [
+      "yellow",
+      "orange"
+    ],
+    slug: "silvermaple"
+  },
   // {
   //   nameCommon: "Slippery Elm",
   //   aka: [
@@ -1793,23 +1793,23 @@ const initialTreesState = [
   //   ],
   //   slug: "smoothsumac"
   // },
-  // {
-  //   nameCommon: "Staghorn Sumac",
-  //   order: "Sapindales",
-  //   family: "Anacardiaceae",
-  //   familyCommon: "Cashew",
-  //   genus: "Rhus",
-  //   species: "Rhus typhina",
-  //   type: "deciduous",
-  //   leafType: "compound",
-  //   compoundStructure: "single",
-  //   leafAttachment: "alternate",
-  //   fallColor: [
-  //     "red",
-  //     "maroon"
-  //   ],
-  //   slug: "staghornsumac"
-  // },
+  {
+    nameCommon: "Staghorn Sumac",
+    order: "Sapindales",
+    family: "Anacardiaceae",
+    familyCommon: "Cashew",
+    genus: "Rhus",
+    species: "Rhus typhina",
+    type: "deciduous",
+    leafType: "compound",
+    compoundStructure: "single",
+    leafAttachment: "alternate",
+    fallColor: [
+      "red",
+      "maroon"
+    ],
+    slug: "staghornsumac"
+  },
   // {
   //   nameCommon: "Striped Maple",
   //   aka: [
@@ -1830,22 +1830,22 @@ const initialTreesState = [
   //   ],
   //   slug: "stripedmaple"
   // },
-  // {
-  //   nameCommon: "Sugar Maple",
-  //   order: "Sapindales",
-  //   family: "Sapindaceae",
-  //   familyCommon: "Maple",
-  //   genus: "Acer",
-  //   species: "Acer saccharum",
-  //   type: "deciduous",
-  //   leafType: "lobed",
-  //   leafAttachment: "opposite",
-  //   fallColor: [
-  //     "orange",
-  //     "red"
-  //   ],
-  //   slug: "sugarmaple"
-  // },
+  {
+    nameCommon: "Sugar Maple",
+    order: "Sapindales",
+    family: "Sapindaceae",
+    familyCommon: "Maple",
+    genus: "Acer",
+    species: "Acer saccharum",
+    type: "deciduous",
+    leafType: "lobed",
+    leafAttachment: "opposite",
+    fallColor: [
+      "orange",
+      "red"
+    ],
+    slug: "sugarmaple"
+  },
   // {
   //   nameCommon: "Swamp White Oak",
   //   aka: [
@@ -1878,18 +1878,18 @@ const initialTreesState = [
   //   ],
   //   slug: "tablemountainpine"
   // },
-  // {
-  //   nameCommon: "Tamarack",
-  //   order: "Pinales",
-  //   family: "Pinaceae",
-  //   familyCommon: "Pine",
-  //   genus: "Larix",
-  //   species: "Larix laricina",
-  //   type: "conifer",
-  //   needleStructure: "clustered needles",
-  //   needleCluster: ["12-30"],
-  //   slug: "tamarack"
-  // },
+  {
+    nameCommon: "Tamarack",
+    order: "Pinales",
+    family: "Pinaceae",
+    familyCommon: "Pine",
+    genus: "Larix",
+    species: "Larix laricina",
+    type: "conifer",
+    needleStructure: "clustered needles",
+    needleCluster: ["12-30"],
+    slug: "tamarack"
+  },
   // {
   //   nameCommon: "Tree Of Heaven",
   //   order: "Sapindales",
@@ -2096,27 +2096,27 @@ const initialTreesState = [
   //   ],
   //   slug: "yellowbirch"
   // },
-  // {
-  //   nameCommon: "Yellow Buckeye",
-  //   aka: [
-  //     "Common Buckeye",
-  //     "Sweet Buckeye"
-  //   ],
-  //   order: "Sapindales",
-  //   family: "Sapindaceae",
-  //   familyCommon: "Horsechestnut",
-  //   genus: "Aesculus",
-  //   species: "Aesculus flava",
-  //   type: "deciduous",
-  //   leafType: "compound",
-  //   compoundStructure: "palmate",
-  //   leafAttachment: "opposite",
-  //   fallColor: [
-  //     "yellow",
-  //     "orange"
-  //   ],
-  //   slug: "yellowbuckeye"
-  // }
+  {
+    nameCommon: "Yellow Buckeye",
+    aka: [
+      "Common Buckeye",
+      "Sweet Buckeye"
+    ],
+    order: "Sapindales",
+    family: "Sapindaceae",
+    familyCommon: "Horsechestnut",
+    genus: "Aesculus",
+    species: "Aesculus flava",
+    type: "deciduous",
+    leafType: "compound",
+    compoundStructure: "palmate",
+    leafAttachment: "opposite",
+    fallColor: [
+      "yellow",
+      "orange"
+    ],
+    slug: "yellowbuckeye"
+  }
 ];
 
 export const store = createStore({
