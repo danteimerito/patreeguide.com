@@ -118,6 +118,15 @@ body.whitespruce {
   flex-direction: column;
   @media only screen and (max-width: 800px){
     flex-basis: 100%;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-between;
+  }
+  @media only screen and (max-width: 600px){
+    flex-basis: 100%;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content: space-between;
   }
 
 }
@@ -244,9 +253,9 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  @media only screen and (max-width: 800px){
-    display: none;
-  }
+  // @media only screen and (max-width: 800px){
+  //   display: none;
+  // }
 }
 
 /* Hamburger Line */
@@ -533,8 +542,8 @@ footer {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 3px; 
   // width: 120px;
-  padding: 10px;
-  margin: 5px;
+  padding: 0.4rem 1rem;
+  margin: 0 0.5rem 0.5rem 0;
   text-transform: capitalize;
 }
 
@@ -615,34 +624,34 @@ footer {
   margin-bottom: 1rem;
   border-bottom: 1px solid chartreuse;
 }
-.mobile-menu-toggle {
-  position: fixed;
-  right: 50px;
-  bottom: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
-  width: 60px;
-  height: 60px;
-  // background-color: chartreuse;
-  background-color: var(--green-1);
-  transition: 0.5s all ease;
-  font-weight: bold;
-  font-size: 2rem;
-  border-radius: 50%;
-  border: 1px solid chartreuse;
-  color: white;
-  // font-size: 1.5rem;
-  user-select: none;
-  cursor: pointer;
-  &:hover {
-    background-color: var(--green-3);
-  }
-  @media only screen and (min-width: 800px){
-    display: none;
-  }
-}
+// .mobile-menu-toggle {
+//   position: fixed;
+//   right: 50px;
+//   bottom: 50px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   z-index: 2;
+//   width: 60px;
+//   height: 60px;
+//   // background-color: chartreuse;
+//   background-color: var(--green-1);
+//   transition: 0.5s all ease;
+//   font-weight: bold;
+//   font-size: 2rem;
+//   border-radius: 50%;
+//   border: 1px solid chartreuse;
+//   color: white;
+//   // font-size: 1.5rem;
+//   user-select: none;
+//   cursor: pointer;
+//   &:hover {
+//     background-color: var(--green-3);
+//   }
+//   @media only screen and (min-width: 800px){
+//     display: none;
+//   }
+// }
 .feature {
   display: flex;
   // flex-direction: column;
@@ -667,9 +676,9 @@ footer {
   padding-right: 1rem;
   margin-left: 75px;
   min-width: 120px;
-  @media only screen and (max-width: 800px){
-    margin-left: 15px;
-  }
+  // @media only screen and (max-width: 800px){
+  //   margin-left: 15px;
+  // }
 }
 .button-view-results {
   @media only screen and (max-width: 800px){
@@ -700,10 +709,14 @@ footer {
 .sidebar-widget-contain {
   // background-color:blue;
   display:flex;
+  // flex-basis: 100%;
   flex-direction: column;
   margin-bottom:2rem;
+  @media only screen and (max-width: 800px){
+    flex-basis: 50%;
+  }
   div{
-    display:flex;
+    // display:flex;
     // flex-direction: column;
     // padding:;
     // flex-direction: 
@@ -724,34 +737,57 @@ footer {
     // padding: 10px;
     // margin: 5px;
     // text-transform: capitalize;
-    &:hover {
-      cursor: pointer;
-      background-color: var(--green-1);
-      border: 1px solid chartreuse;
-    }
+    // &:hover {
+    //   cursor: pointer;
+    //   background-color: var(--green-1);
+    //   border: 1px solid chartreuse;
+    // }
   }
 }
+
+.sidebar-one {
+  order: 2;
+  @media only screen and (max-width: 800px){
+    order: 10;
+  }
+}
+.sidebar-two {
+  order: 1;
+}
+.sidebar-three {
+  order: 3;
+}
+
 .sidebar-details {
   flex-direction: column;
 }
 .sidebar-detail {
-  // background-color: red;
+  display: flex;
+  align-items: center;
   margin-bottom: 1rem;
   span {
-    flex-basis: 25%;
+    // flex-basis: 40%;
+    margin-right: 1rem;
   }
+}
+
+.multi-wrap {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .tree-image {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: self-start;
+  margin: 2rem 0;
   img{
-    max-width: 200px;
+    max-width: 185px;
     box-shadow: 0px 0px 10px #000;
     margin: 2rem 0;
     text-align:center;
-    margin: 10px;
+    // margin: 10px;
     background-repeat: no-repeat;
     background-size: auto;
     height: auto;

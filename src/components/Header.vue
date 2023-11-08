@@ -1,13 +1,13 @@
 <template>
     <header>
-        <div @click="toggleMenu" class="mobile-menu-toggle">
+        <!-- <div @click="toggleMenu" class="mobile-menu-toggle">
             <div>~</div>
-        </div>
+        </div> -->
 
             <div class="topbars">
                 <div class="menu-wrap">
                     <div class="menu-topbar" ref="">
-                            <div class="logo"><router-link to="/"> TREES OF PA </router-link></div>
+                        <div class="logo"><router-link to="/">PA TREE GUIDE </router-link></div>
                     </div>
 
                     <input 

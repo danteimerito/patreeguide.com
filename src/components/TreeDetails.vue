@@ -1,6 +1,7 @@
 <template>
     <div class="single-tree-contain">
         <div class="bg-green-trans">
+
             <div class="single-header">
                 <button @click="goBackOrHome" class="single-header-back-btn">← Back</button>
                 <h1> {{ tree.nameCommon }}</h1>
@@ -9,80 +10,107 @@
             <div class="single-tree-details">
 
                 <div class="left-sixty">
-                    <div v-if="tree.description" v-html="tree.description"></div>
+                    <div v-if="tree.description" v-html="tree.description" class="description"></div>
                     <h2 v-else="!tree.description">Description</h2>
                     <div class="tree-image">
-                        <img :src="tree.photo1" alt=""/>
-                        <img :src="tree.photo2" alt=""/>
-                        <img :src="tree.photo3" alt=""/>
+
+                        <a  target="_blank"
+                            title="Cody Hough, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" 
+                            href="https://en.wikipedia.org/wiki/Cornus_alternifolia#/media/File:Cornus_alternifolia_005.jpg">
+                                <img 
+                                    width="256" 
+                                    alt="Cornus alternifolia 005" 
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Cornus_alternifolia_005.jpg/512px-Cornus_alternifolia_005.jpg"
+                                >
+                        </a>
+
+                        <a target="_blank" title="Elbert L. Little, Jr., of the U.S. Department of Agriculture, Forest Service, and others, Public domain, via Wikimedia Commons" href="https://en.wikipedia.org/wiki/Cornus_alternifolia#/media/File:Cornus_alternifolia_range_map_1.png"><img width="256" alt="Cornus alternifolia range map 1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Cornus_alternifolia_range_map_1.png/256px-Cornus_alternifolia_range_map_1.png"></a>
+                        
+                        <a target="_blank" title="Jaknouse, CC BY-SA 3.0 &lt;http://creativecommons.org/licenses/by-sa/3.0/&gt;, via Wikimedia Commons" href="https://en.wikipedia.org/wiki/Cornus_alternifolia#/media/File:Jk-cornus_alternifoliaflower.jpg"><img width="256" alt="Jk-cornus alternifoliaflower" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Jk-cornus_alternifoliaflower.jpg/256px-Jk-cornus_alternifoliaflower.jpg"></a>
+                        
                     </div>
                     
                 </div>
 
                 <div class="right-thirty">
 
-                    <div v-if="tree.aka && Array.isArray(tree.aka)" class="sidebar-widget-contain">
+                    <div v-if="tree.aka && Array.isArray(tree.aka)" class="sidebar-widget-contain sidebar-one">
                         <h2>Alternate names</h2>
-                        <div>{{ tree.aka.join(', ') }}</div>
+                        <!-- <div class="result-icon">{{ tree.aka.join(', ') }}</div> -->
+                        <div class="multi-wrap">
+                            <div v-for="name in tree.aka">
+                                <div class="result-icon">{{name}}</div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="sidebar-widget-contain">
+
+                    <div class="sidebar-widget-contain sidebar-two">
                         <h2>Features</h2>
                         <div class="sidebar-details">
 
                             <div v-if="tree.type" class="sidebar-detail">
                                 <span>Tree Type</span>
-                                <button>{{ tree.type }}</button>
+                                <div class="result-icon">{{ tree.type }}</div>
                             </div>
                             <div v-if="tree.needleStructure" class="sidebar-detail">
                                 <span>Needle Structure</span>
-                                <button>{{ tree.needleStructure }}</button>
+                                <div class="result-icon">{{ tree.needleStructure }}</div>
                             </div>
                             <div v-if="tree.leafType" class="sidebar-detail">
                                 <span>Leaf Type</span>
-                                <button>{{ tree.leafType }}</button>
+                                <div class="result-icon">{{ tree.leafType }}</div>
                             </div>
                             <div v-if="tree.compoundStructure" class="sidebar-detail">
                                 <span>Compound Structure</span>
-                                <button>{{ tree.compoundStructure }}</button>
+                                <div class="result-icon">{{ tree.compoundStructure }}</div>
                             </div>
                             <div v-if="tree.leafAttachment" class="sidebar-detail">
                                 <span>Leaf Attachment</span>
-                                <button>{{ tree.leafAttachment }}</button>
+                                <div class="result-icon">{{ tree.leafAttachment }}</div>
                             </div>
 
                             <div v-if="tree.fallColor && Array.isArray(tree.fallColor)" class="sidebar-detail">
                                 <span>Fall Color</span>
-                                <button>
+                                <!-- <div class="result-icon">
                                     <ul>
                                         <li v-for="(alias, index) in tree.fallColor" :key="index">
                                             {{ alias }}
                                         </li>
                                     </ul>
-                                </button>
+                                </div> -->
+
+
+                                <div class="multi-wrap">
+                                    <div v-for="color in tree.fallColor">
+                                        <div class="result-icon">{{color}}</div>
+                                    </div>
+                                </div>
+
+
                             </div>
                         </div>
                     </div>
 
-                    <div class="sidebar-widget-contain">
+                    <div class="sidebar-widget-contain sidebar-three">
                         <h2>Taxonomy</h2>
                         <div class="sidebar-details">
                             <div v-if="tree.order" class="sidebar-detail">
                                 <span>Order</span>
-                                <button>{{ tree.order }}</button>
+                                <div class="result-icon">{{ tree.order }}</div>
                             </div>
                             <div v-if="tree.family" class="sidebar-detail">
                                 <span>Family</span>
-                                <button>{{ tree.family }}</button>
+                                <div class="result-icon">{{ tree.family }}</div>
                             </div>
                             <div v-if="tree.genus" class="sidebar-detail">
                                 <span>Genus</span>
-                                <button>{{ tree.genus }}</button>
+                                <div class="result-icon">{{ tree.genus }}</div>
                             </div>
                             <div v-if="tree.species" class="sidebar-detail">
                                 <span>Species</span>
-                                <button>{{ tree.species }}</button>
-                                {{ tree.species }}
+                                <div class="result-icon">{{ tree.species }}</div>
+                                <!-- {{ tree.species }} -->
                             </div>
                         </div>
                     </div>

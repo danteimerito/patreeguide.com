@@ -40,8 +40,7 @@ const initialTreesState = [
       "red"
     ],
     slug: "alternate-leaveddogwood",
-    background: "alternate-leaved-dogwood-1.jpg",
-    background2: "bg_pexels7.jpg", 
+    background: "bg_pexels7.jpg", 
     photo1: "/img/alternate-leaved-dogwood-1.jpg",
     photo2: "/img/alternate-leaved-dogwood-2.jpg",
     photo3: "/img/alternate-leaved-dogwood-3.jpg",
