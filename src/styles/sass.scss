@@ -25,6 +25,12 @@ a {
 }
 h1 {
   margin: 1rem 0;
+  font-size: 2rem;
+  
+  @media only screen and (max-width: 800px){
+    font-size: 1.5rem;
+  }
+  
 }
 button {
   background: var(--green-2);
@@ -484,12 +490,13 @@ footer {
   border-radius: 4px;
   display: flex;
   flex-direction: column;
+  // align-items:center;
 
   align-items: flex-start;
   box-shadow: 0 0 3px #333;
   flex-wrap: wrap;
-  justify-content: space-between;
-  @media only screen and (max-width: 500px){
+  justify-content: center;
+    @media only screen and (max-width: 500px){
     transition: 0.5s all ease;
     flex-direction: column;
     align-items: flex-start;
@@ -497,8 +504,11 @@ footer {
     padding-right: 1rem;
   }
 }
-.results li a{
 
+.result-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .result-details {
@@ -525,9 +535,6 @@ footer {
   margin-right: 2rem;
   h1 {
     cursor: pointer;
-  }
-  @media only screen and (max-width: 500px){
-    // flex-basis: auto;
   }
 }
 .result-common-name h2{

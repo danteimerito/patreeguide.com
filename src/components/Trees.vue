@@ -4,7 +4,7 @@
           <li v-for="tree in filteredTrees" :key="tree.slug">
               <router-link :to="{ name: 'TreeDetails', params: { 
               slug: tree.slug,
-              }}">
+              }}" class="result-title">
                   <h1>{{ tree.nameCommon }}</h1>
               </router-link>
           </li>
