@@ -12,67 +12,57 @@
                 <div class="left-sixty">
                     <div v-if="tree.description" v-html="tree.description" class="description"></div>
                     <h2 v-else="!tree.description">Description</h2>
+
                     <div class="tree-image">
-
-                        <a  target="_blank"
-                            rel="noopener noreferrer"
-                            :title="tree.photo1Credit" 
-                            :href="tree.photo1Href"
-                        >
-                            <img 
-                                fetchPriority="low"
-                                width="256" 
-                                :alt="tree.photo1Alt" 
-                                :src="tree.photo1Src"
-                            >
-                        </a>
-
-                        <!-- <a  target="_blank"
-                            rel="noopener noreferrer"
-                            :title="tree.photo2Credit" 
-                            :href="tree.photo2Href"
-                        >
-                            <img 
-                                fetchPriority="low"
-                                width="256" 
-                                :alt="tree.photo2Alt" 
-                                :src="tree.photo2Src"
-                            >
-                        </a>
-
-                        <a  target="_blank"
-                            rel="noopener noreferrer"
-                            :title="tree.photo3Credit" 
-                            :href="tree.photo3Href"
-                        >
-                            <img 
-                                fetchPriority="low"
-                                width="256" 
-                                :alt="tree.photo3Alt" 
-                                :src="tree.photo3Src"
-                            >
-                        </a> -->
                         <div class="contain-thumb">
                             <a  target="_blank"
-                                title="Cody Hough, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" 
-                                href="https://en.wikipedia.org/wiki/Cornus_alternifolia#/media/File:Cornus_alternifolia_005.jpg">
-                                    <img 
-                                        fetchPriority="low"
-                                        width="256" 
-                                        alt="Cornus alternifolia 005" 
-                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Cornus_alternifolia_005.jpg/512px-Cornus_alternifolia_005.jpg"
-                                    >
+                                rel="noopener noreferrer"
+                                
+                                :href="tree.photo1Href"
+                            >
+                                <img 
+                                    fetchPriority="low"
+                                    width="256" 
+                                    :alt="tree.photo1Alt" 
+                                    :src="tree.photo1Src"
+                                >
                             </a>
-
-                            <a href="https://en.wikipedia.org/wiki/User:IvanTortuga">Cody Hough</a>
-                            <a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" rel="license">CC BY-SA 3.0</a>
+                            <div v-html="tree.photo1Credit" class="contain-thumb"></div>
                         </div>
 
-<!--
-                        <a target="_blank" title="Elbert L. Little, Jr., of the U.S. Department of Agriculture, Forest Service, and others, Public domain, via Wikimedia Commons" href="https://en.wikipedia.org/wiki/Cornus_alternifolia#/media/File:Cornus_alternifolia_range_map_1.png"><img fetchPriority="low" width="256" alt="Cornus alternifolia range map 1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Cornus_alternifolia_range_map_1.png/256px-Cornus_alternifolia_range_map_1.png"></a>
-                        
-                        <a target="_blank" title="Jaknouse, CC BY-SA 3.0 &lt;http://creativecommons.org/licenses/by-sa/3.0/&gt;, via Wikimedia Commons" href="https://en.wikipedia.org/wiki/Cornus_alternifolia#/media/File:Jk-cornus_alternifoliaflower.jpg"><img fetchPriority="low" width="256" alt="Jk-cornus alternifoliaflower" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Jk-cornus_alternifoliaflower.jpg/256px-Jk-cornus_alternifoliaflower.jpg"></a> -->
-                        
+
+                        <div class="contain-thumb">
+                            <a  target="_blank"
+                                rel="noopener noreferrer"
+                                
+                                :href="tree.photo2Href"
+                            >
+                                <img 
+                                    fetchPriority="low"
+                                    width="256" 
+                                    :alt="tree.photo2Alt" 
+                                    :src="tree.photo2Src"
+                                >
+                            </a>
+                            <div v-html="tree.photo2Credit" class="contain-thumb"></div>
+                        </div>
+
+                        <div class="contain-thumb">
+                            <a  target="_blank"
+                                rel="noopener noreferrer"
+                                
+                                :href="tree.photo3Href"
+                            >
+                                <img 
+                                    fetchPriority="low"
+                                    width="256" 
+                                    :alt="tree.photo3Alt" 
+                                    :src="tree.photo3Src"
+                                >
+                            </a>
+                            <div v-html="tree.photo3Credit" class="contain-thumb"></div>
+                        </div>
+
                     </div>
                     
                 </div>

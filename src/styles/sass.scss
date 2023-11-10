@@ -816,6 +816,13 @@ footer {
 }
 
 .contain-thumb {
-  display: flex;
+  // display: flex;
   flex-direction: column;
+  max-width: 185px;
+  font-size: 0.7rem;
+  margin-bottom: 1rem;
+  
+  a {
+    color: #fefefe;
+  }
 }
