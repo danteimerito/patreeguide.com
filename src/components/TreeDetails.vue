@@ -14,10 +14,6 @@
                     <h2 v-else="!tree.description">Description</h2>
                     <div class="tree-image">
 
-                       
-
-                        <p>break</p>
-
                         <a  target="_blank"
                             rel="noopener noreferrer"
                             :title="tree.photo1Credit" 
@@ -31,7 +27,7 @@
                             >
                         </a>
 
-                        <a  target="_blank"
+                        <!-- <a  target="_blank"
                             rel="noopener noreferrer"
                             :title="tree.photo2Credit" 
                             :href="tree.photo2Href"
@@ -55,7 +51,7 @@
                                 :alt="tree.photo3Alt" 
                                 :src="tree.photo3Src"
                             >
-                        </a>
+                        </a> -->
                         <div class="contain-thumb">
                             <a  target="_blank"
                                 title="Cody Hough, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" 
@@ -68,11 +64,10 @@
                                     >
                             </a>
 
-                            <a href="https://en.wikipedia.org/wiki/User:IvanTortuga">Cody Hough</a>, 
+                            <a href="https://en.wikipedia.org/wiki/User:IvanTortuga">Cody Hough</a>
                             <a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" rel="license">CC BY-SA 3.0</a>
                         </div>
 
-                        <a href="https://en.wikipedia.org/wiki/User:IvanTortuga">Cody Hough</a>, <a href="https://commons.wikimedia.org/wiki/File:Cornus_alternifolia_005.jpg">Cornus alternifolia 005</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" rel="license">CC BY-SA 3.0</a>
 <!--
                         <a target="_blank" title="Elbert L. Little, Jr., of the U.S. Department of Agriculture, Forest Service, and others, Public domain, via Wikimedia Commons" href="https://en.wikipedia.org/wiki/Cornus_alternifolia#/media/File:Cornus_alternifolia_range_map_1.png"><img fetchPriority="low" width="256" alt="Cornus alternifolia range map 1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Cornus_alternifolia_range_map_1.png/256px-Cornus_alternifolia_range_map_1.png"></a>
                         

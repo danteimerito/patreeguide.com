@@ -814,3 +814,8 @@ footer {
     height: auto;
   }
 }
+
+.contain-thumb {
+  display: flex;
+  flex-direction: column;
+}
