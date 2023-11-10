@@ -14,7 +14,8 @@
                     <h2 v-else="!tree.description">Description</h2>
 
                     <div class="tree-image">
-                        <div class="contain-thumb">
+                        
+                        <div v-if="tree.photo1Src" class="contain-thumb">
                             <a  target="_blank"
                                 rel="noopener noreferrer"
                                 
@@ -31,7 +32,7 @@
                         </div>
 
 
-                        <div class="contain-thumb">
+                        <div v-if="tree.photo2Src" class="contain-thumb">
                             <a  target="_blank"
                                 rel="noopener noreferrer"
                                 
@@ -47,7 +48,7 @@
                             <div v-html="tree.photo2Credit" class="contain-thumb"></div>
                         </div>
 
-                        <div class="contain-thumb">
+                        <div v-if="tree.photo3Src" class="contain-thumb">
                             <a  target="_blank"
                                 rel="noopener noreferrer"
                                 
