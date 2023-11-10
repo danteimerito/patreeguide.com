@@ -42,9 +42,20 @@ const initialTreesState = [
     slug: "alternate-leaveddogwood",
     background: "bg_pexels1.jpg", 
     backgroundSmall: "bg_pexels1_small.jpg",
-    photo1: "/img/alternate-leaved-dogwood-1.jpg",
-    photo2: "/img/alternate-leaved-dogwood-2.jpg",
-    photo3: "/img/alternate-leaved-dogwood-3.jpg",
+
+    photo1Credit: "Cody Hough, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons",
+    photo1Href: "https://commons.wikimedia.org/wiki/File:Cornus_alternifolia_005.jpg",
+    photo1Alt: "Cornus alternifolia 005",
+    photo1Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Cornus_alternifolia_005.jpg/256px-Cornus_alternifolia_005.jpg",
+
+    photo2Credit: "Elbert L. Little, Jr., of the U.S. Department of Agriculture, Forest Service, and others, Public domain, via Wikimedia Commons",
+    photo2Href: "https://commons.wikimedia.org/wiki/File:Cornus_alternifolia_range_map_1.png",
+    photo2Alt: "Cornus alternifolia range map 1",
+    photo2Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Cornus_alternifolia_range_map_1.png/256px-Cornus_alternifolia_range_map_1.png",
+    photo3Credit: "Jaknouse, CC BY-SA 3.0 &lt;http://creativecommons.org/licenses/by-sa/3.0/&gt;, via Wikimedia Commons",
+    photo3Href: "https://commons.wikimedia.org/wiki/File:Jk-cornus_alternifoliaflower.jpg",
+    photo3Alt: "Jk-cornus alternifoliaflower",
+    photo3Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Jk-cornus_alternifoliaflower.jpg/256px-Jk-cornus_alternifoliaflower.jpg",
     description:  "<p>The Alternate-leaved Dogwood (Cornus alternifolia), also known as Pagoda Dogwood for its tiered, horizontal branches, is a deciduous tree that boasts a unique architectural flair in woodland gardens. This North American native typically matures to a modest 15-25 feet tall, flourishing in the understory with a preference for partial shade and well-drained, acidic soils. Its leaves, arranged alternately as its name suggests—uncommon among dogwoods—emerge as a bright green, turning to purplish-red in the fall. In late spring to early summer, the tree is adorned with clusters of small, creamy-white flowers, which give way to dark blue berries on red stems, providing a feast for native birds. The tree's bark, mottled and gray, adds winter interest. With a low canopy and non-invasive root system, the Alternate-leaved Dogwood is a versatile addition to residential landscapes, offering year-round visual appeal and ecological benefits.</p>"
   },
   {
@@ -67,7 +78,19 @@ const initialTreesState = [
     slug: "americanbasswood",
     background: "bg_pexels7.jpg", 
     backgroundSmall: "bg_pexels7_small.jpg",
-    description: "<p>The American Basswood (Tilia americana), a stately decidome that can soar to grand heights of 60-120 feet, is renowned for its expansive canopy, which provides a lush, deep shade. This native North American tree is often found in rich, moist woods and along streams throughout the eastern and central United States. It has a broadly columnar to rounded shape, with a straight trunk and symmetrically branching crown. Heart-shaped, serrated leaves flutter in the slightest breeze and turn a vibrant yellow come autumn. In early summer, small, fragrant cream-colored flowers dangle from slender peduncles, drawing in a symphony of pollinators; these blooms later develop into small, nut-like fruits. The Basswood's soft, lightweight wood is highly valued for carving and woodworking. A gentle giant in the landscape, the American Basswood is a favorite for wildlife and a classical choice for shade in urban and rural settings.</p>"
+    description: "<p>The American Basswood (Tilia americana), a stately decidome that can soar to grand heights of 60-120 feet, is renowned for its expansive canopy, which provides a lush, deep shade. This native North American tree is often found in rich, moist woods and along streams throughout the eastern and central United States. It has a broadly columnar to rounded shape, with a straight trunk and symmetrically branching crown. Heart-shaped, serrated leaves flutter in the slightest breeze and turn a vibrant yellow come autumn. In early summer, small, fragrant cream-colored flowers dangle from slender peduncles, drawing in a symphony of pollinators; these blooms later develop into small, nut-like fruits. The Basswood's soft, lightweight wood is highly valued for carving and woodworking. A gentle giant in the landscape, the American Basswood is a favorite for wildlife and a classical choice for shade in urban and rural settings.</p>",
+    photo1Credit: "",
+    photo1Href: "",
+    photo1Alt: "",
+    photo1Src: "",
+    photo2Credit: "",
+    photo2Href: "",
+    photo2Alt: "",
+    photo2Src: "",
+    photo3Credit: "",
+    photo3Href: "",
+    photo3Alt: "",
+    photo3Src: "",
   },
   {
     nameCommon: "American Beech",
@@ -89,7 +112,19 @@ const initialTreesState = [
     slug: "americanbeech", 
     background:"bg_forest1.jpg",
     backgroundSmall: "bg_forest1_small.jpg",
-    description: "<p>The American Beech (Fagus grandifolia) is a noble and imposing hardwood, native to the eastern United States and southeastern Canada. Its grandeur is evident as it reaches up to 80 feet tall with a broad, rounded crown. The smooth, silvery-gray bark is unmistakably sleek, often carved with initials that persist for decades. Its elliptical leaves are a glossy green, with finely toothed margins, turning a rich bronze in the fall, often lingering on the branches into winter. Spring unfurls tiny, inconspicuous flowers, succeeded by small, prickly husks that contain edible nuts, coveted by wildlife. This tree prefers well-drained, acidic soils and doesn't tolerate urban pollution well, making it a staple in less disturbed forested areas. American Beech is slow-growing but long-lived, often reaching 300 years, with its stately presence and dense canopy offering a serene backdrop or an anchor in larger landscapes.</p>"
+    description: "<p>The American Beech (Fagus grandifolia) is a noble and imposing hardwood, native to the eastern United States and southeastern Canada. Its grandeur is evident as it reaches up to 80 feet tall with a broad, rounded crown. The smooth, silvery-gray bark is unmistakably sleek, often carved with initials that persist for decades. Its elliptical leaves are a glossy green, with finely toothed margins, turning a rich bronze in the fall, often lingering on the branches into winter. Spring unfurls tiny, inconspicuous flowers, succeeded by small, prickly husks that contain edible nuts, coveted by wildlife. This tree prefers well-drained, acidic soils and doesn't tolerate urban pollution well, making it a staple in less disturbed forested areas. American Beech is slow-growing but long-lived, often reaching 300 years, with its stately presence and dense canopy offering a serene backdrop or an anchor in larger landscapes.</p>",
+    photo1Credit: "",
+    photo1Href: "",
+    photo1Alt: "",
+    photo1Src: "",
+    photo2Credit: "",
+    photo2Href: "",
+    photo2Alt: "",
+    photo2Src: "",
+    photo3Credit: "",
+    photo3Href: "",
+    photo3Alt: "",
+    photo3Src: "",
   },
   {
     nameCommon: "American Bladdernut",
@@ -107,7 +142,19 @@ const initialTreesState = [
       "brown"
     ],
     slug: "americanbladdernut", 
-    description: "<p>The American Bladdernut (Staphylea trifolia) is a charming, underutilized deciduous shrub or small tree, typically growing to a modest height of 10-15 feet. Native to the understory of Eastern North America's forests, this plant thrives in moist, well-drained soils, often along stream banks and in rich woodlands. Its most distinctive feature is the inflated, bladder-like seed pods that hang in clusters, turning from green to a papery brown as they mature in the fall. These whimsical pods add a unique textural element to the landscape and a point of interest in winter after the leaves have fallen. The tree's foliage is comprised of trifoliate leaves, which are arranged oppositely on arching branches, presenting a soft green hue in spring and transforming to a clear yellow in autumn. In spring, drooping clusters of fragrant, bell-shaped white flowers grace the tree, providing a delicate floral display. The American Bladdernut is a versatile and low-maintenance choice for naturalized areas or woodland gardens.</p>"
+    description: "<p>The American Bladdernut (Staphylea trifolia) is a charming, underutilized deciduous shrub or small tree, typically growing to a modest height of 10-15 feet. Native to the understory of Eastern North America's forests, this plant thrives in moist, well-drained soils, often along stream banks and in rich woodlands. Its most distinctive feature is the inflated, bladder-like seed pods that hang in clusters, turning from green to a papery brown as they mature in the fall. These whimsical pods add a unique textural element to the landscape and a point of interest in winter after the leaves have fallen. The tree's foliage is comprised of trifoliate leaves, which are arranged oppositely on arching branches, presenting a soft green hue in spring and transforming to a clear yellow in autumn. In spring, drooping clusters of fragrant, bell-shaped white flowers grace the tree, providing a delicate floral display. The American Bladdernut is a versatile and low-maintenance choice for naturalized areas or woodland gardens.</p>",
+    photo1Credit: "",
+    photo1Href: "",
+    photo1Alt: "",
+    photo1Src: "",
+    photo2Credit: "",
+    photo2Href: "",
+    photo2Alt: "",
+    photo2Src: "",
+    photo3Credit: "",
+    photo3Href: "",
+    photo3Alt: "",
+    photo3Src: "",
   },
   {
     nameCommon: "American Chestnut",
@@ -123,7 +170,19 @@ const initialTreesState = [
       "yellow"
     ],
     slug: "americanchestnut",
-    description: "<p>The American Chestnut (Castanea dentata) was once a titan of the Eastern American forests, casting its shadow across the landscape with towering heights reaching up to 100 feet. Recognized by its broad, spreading canopy, the tree was both a timber staple and a critical wildlife food source, with its abundant, nutritious nuts. Its leaves are long and narrow with a toothed edge, and they turn to a golden hue in autumn. However, the early 20th century saw this species decimated by the chestnut blight, a fungal disease accidentally introduced from imported Asiatic chestnut trees. The blight's devastation transformed this once-dominant tree into a rarity, leaving behind only the sprouting stumps of former giants, as the blight does not affect the roots which can still resprout. Efforts are ongoing to restore this species through science and selective breeding with blight-resistant trees. The American Chestnut's tale is a poignant reminder of the fragility and interconnectedness of ecological systems.</p>"
+    description: "<p>The American Chestnut (Castanea dentata) was once a titan of the Eastern American forests, casting its shadow across the landscape with towering heights reaching up to 100 feet. Recognized by its broad, spreading canopy, the tree was both a timber staple and a critical wildlife food source, with its abundant, nutritious nuts. Its leaves are long and narrow with a toothed edge, and they turn to a golden hue in autumn. However, the early 20th century saw this species decimated by the chestnut blight, a fungal disease accidentally introduced from imported Asiatic chestnut trees. The blight's devastation transformed this once-dominant tree into a rarity, leaving behind only the sprouting stumps of former giants, as the blight does not affect the roots which can still resprout. Efforts are ongoing to restore this species through science and selective breeding with blight-resistant trees. The American Chestnut's tale is a poignant reminder of the fragility and interconnectedness of ecological systems.</p>",
+    photo1Credit: "",
+    photo1Href: "",
+    photo1Alt: "",
+    photo1Src: "",
+    photo2Credit: "",
+    photo2Href: "",
+    photo2Alt: "",
+    photo2Src: "",
+    photo3Credit: "",
+    photo3Href: "",
+    photo3Alt: "",
+    photo3Src: "",
   },
   {
     nameCommon: "American Elm",
@@ -143,7 +202,19 @@ const initialTreesState = [
       "yellow"
     ],
     slug: "americanelm",
-    description: "<p>The American Elm (Ulmus americana) once lined the streets of towns across North America with its distinctive vase-like silhouette reaching heights of 60-80 feet. This beloved deciduous tree was famed for its dense canopy of serrated, ovate leaves, which turned golden yellow in fall, and its ability to thrive in various soil types. In the spring, small, inconspicuous flowers appear before the leaves, developing into flat, papery samaras, or winged seeds. However, the mid-20th century saw this majestic tree besieged by Dutch elm disease, a fungal infection spread by bark beetles, leading to widespread decimation of the population. Despite this, the American Elm remains a symbol of strength and endurance, with ongoing efforts to cultivate disease-resistant varieties. Its wood, once used for shipbuilding and furniture, is now less commonly harvested due to its rarity. The American Elm's story is one of both ecological loss and the hope for restoration.</p>"
+    description: "<p>The American Elm (Ulmus americana) once lined the streets of towns across North America with its distinctive vase-like silhouette reaching heights of 60-80 feet. This beloved deciduous tree was famed for its dense canopy of serrated, ovate leaves, which turned golden yellow in fall, and its ability to thrive in various soil types. In the spring, small, inconspicuous flowers appear before the leaves, developing into flat, papery samaras, or winged seeds. However, the mid-20th century saw this majestic tree besieged by Dutch elm disease, a fungal infection spread by bark beetles, leading to widespread decimation of the population. Despite this, the American Elm remains a symbol of strength and endurance, with ongoing efforts to cultivate disease-resistant varieties. Its wood, once used for shipbuilding and furniture, is now less commonly harvested due to its rarity. The American Elm's story is one of both ecological loss and the hope for restoration.</p>",
+    photo1Credit: "",
+    photo1Href: "",
+    photo1Alt: "",
+    photo1Src: "",
+    photo2Credit: "",
+    photo2Href: "",
+    photo2Alt: "",
+    photo2Src: "",
+    photo3Credit: "",
+    photo3Href: "",
+    photo3Alt: "",
+    photo3Src: "",
   },
   {
     nameCommon: "American Hophornbeam",
@@ -165,7 +236,19 @@ const initialTreesState = [
       "yellow"
     ],
     slug: "americanhophornbeam",
-    description: "<p>The American Hophornbeam (Ostrya virginiana), also known as Ironwood for its dense, hard timber, is a small to medium-sized deciduous tree that often grows to 40 feet in height. It features a rounded crown with slender, spreading branches, and flaky bark that adds texture to landscapes. Native to North America, it thrives in well-drained soils, from deep forests to rocky slopes. Its leaves are ovate and sharply-toothed, resembling those of the elm but more finely textured, turning yellow to orange in the fall. Spring brings long, attractive catkins, followed by distinctive hop-like fruit clusters that persist through winter, providing interest and food for wildlife. The tree's wood is valued for tool handles and sporting equipment, owing to its toughness. Unassuming yet resilient, the American Hophornbeam is a low-maintenance choice for naturalized areas or as a landscape specimen where its subtle beauty and durable nature can be appreciated.</p>"
+    description: "<p>The American Hophornbeam (Ostrya virginiana), also known as Ironwood for its dense, hard timber, is a small to medium-sized deciduous tree that often grows to 40 feet in height. It features a rounded crown with slender, spreading branches, and flaky bark that adds texture to landscapes. Native to North America, it thrives in well-drained soils, from deep forests to rocky slopes. Its leaves are ovate and sharply-toothed, resembling those of the elm but more finely textured, turning yellow to orange in the fall. Spring brings long, attractive catkins, followed by distinctive hop-like fruit clusters that persist through winter, providing interest and food for wildlife. The tree's wood is valued for tool handles and sporting equipment, owing to its toughness. Unassuming yet resilient, the American Hophornbeam is a low-maintenance choice for naturalized areas or as a landscape specimen where its subtle beauty and durable nature can be appreciated.</p>",
+    photo1Credit: "",
+    photo1Href: "",
+    photo1Alt: "",
+    photo1Src: "",
+    photo2Credit: "",
+    photo2Href: "",
+    photo2Alt: "",
+    photo2Src: "",
+    photo3Credit: "",
+    photo3Href: "",
+    photo3Alt: "",
+    photo3Src: "",
   },
   {
     nameCommon: "American Mountain-ash",
@@ -182,7 +265,19 @@ const initialTreesState = [
       "yellow"
     ],
     slug: "americanmountain-ash", 
-    description: "The American Mountain-ash (Sorbus americana) is a small, decorative tree native to the northeastern United States and eastern Canada, flourishing in the cooler climates of higher altitudes and northern latitudes. Typically reaching 15 to 30 feet in height, it graces the landscape with a rounded crown and fine, textured foliage. Its compound leaves are composed of numerous leaflets, turning a striking array of oranges and reds in the autumn. In late spring to early summer, the tree is adorned with dense clusters of white flowers, which develop into vibrant, orange-red berries by late summer. These berry clusters persist into winter, offering a valuable food source for birds and wildlife. The Mountain-ash is not a true ash but is so named for its ash-like leaves. Its slender gray bark and modest stature make it an excellent choice for residential gardens where its ornamental berries and fall color can be a focal point."
+    description: "The American Mountain-ash (Sorbus americana) is a small, decorative tree native to the northeastern United States and eastern Canada, flourishing in the cooler climates of higher altitudes and northern latitudes. Typically reaching 15 to 30 feet in height, it graces the landscape with a rounded crown and fine, textured foliage. Its compound leaves are composed of numerous leaflets, turning a striking array of oranges and reds in the autumn. In late spring to early summer, the tree is adorned with dense clusters of white flowers, which develop into vibrant, orange-red berries by late summer. These berry clusters persist into winter, offering a valuable food source for birds and wildlife. The Mountain-ash is not a true ash but is so named for its ash-like leaves. Its slender gray bark and modest stature make it an excellent choice for residential gardens where its ornamental berries and fall color can be a focal point.",
+    photo1Credit: "",
+    photo1Href: "",
+    photo1Alt: "",
+    photo1Src: "",
+    photo2Credit: "",
+    photo2Href: "",
+    photo2Alt: "",
+    photo2Src: "",
+    photo3Credit: "",
+    photo3Href: "",
+    photo3Alt: "",
+    photo3Src: "",
   },
   {
     nameCommon: "American Papaw",
@@ -198,7 +293,19 @@ const initialTreesState = [
       "yellow"
     ],
     slug: "americanpapaw",
-    description: "The American Pawpaw (Asimina triloba) presents a lush, tropical appearance, yet it is indigenous to the temperate woodlands of North America. This small deciduous tree grows to about 20 feet tall and thrives in the understory, preferring rich, well-drained soils. Its broad, oblong leaves, which can reach up to 12 inches in length, turn a deep yellow in the fall. In the spring, the pawpaw tree is distinctive for its unusual, purplish-brown flowers, which give way to large, green, mango-like fruits by late summer. The fruits have a custard-like texture with a flavor reminiscent of bananas mixed with mango, and are beloved by both humans and wildlife. As the largest edible fruit native to the United States, the pawpaw is gaining popularity for its unique taste and nutritional value. With its natural resilience and low maintenance, the American Pawpaw is a rewarding addition for those looking to cultivate native edibles and support local biodiversity."
+    description: "The American Pawpaw (Asimina triloba) presents a lush, tropical appearance, yet it is indigenous to the temperate woodlands of North America. This small deciduous tree grows to about 20 feet tall and thrives in the understory, preferring rich, well-drained soils. Its broad, oblong leaves, which can reach up to 12 inches in length, turn a deep yellow in the fall. In the spring, the pawpaw tree is distinctive for its unusual, purplish-brown flowers, which give way to large, green, mango-like fruits by late summer. The fruits have a custard-like texture with a flavor reminiscent of bananas mixed with mango, and are beloved by both humans and wildlife. As the largest edible fruit native to the United States, the pawpaw is gaining popularity for its unique taste and nutritional value. With its natural resilience and low maintenance, the American Pawpaw is a rewarding addition for those looking to cultivate native edibles and support local biodiversity.",
+    photo1Credit: "",
+    photo1Href: "",
+    photo1Alt: "",
+    photo1Src: "",
+    photo2Credit: "",
+    photo2Href: "",
+    photo2Alt: "",
+    photo2Src: "",
+    photo3Credit: "",
+    photo3Href: "",
+    photo3Alt: "",
+    photo3Src: "",
   },
   {
     nameCommon: "American Persimmon",
@@ -220,7 +327,19 @@ const initialTreesState = [
       "yellow"
     ],
     slug: "americanpersimmon",
-    description: "<p>The American Persimmon (Diospyros virginiana) is a native deciduous tree that graces the Eastern United States with its presence. Growing to a height of 35-60 feet, this species is renowned for its hardiness and adaptability, thriving in a variety of soils and conditions. The persimmon's bark is distinctive—dark, thick, and deeply furrowed, providing textural interest throughout the year. Its leaves are broad and glossy, offering a rich, green canopy in summer before turning to vivid shades of yellow, orange, and red in the autumn.</p><p>Springtime blooms are inconspicuous, but they give way to the tree's true bounty: the persimmon fruit. These round, orange berries are astringent when unripe but become sweet and custard-like after the first frost, making them a treat for wildlife and humans alike. The fruits have a long history of use in traditional Native American cuisine and are still valued today for their flavor and nutritional content. The American Persimmon is not just a food source but also a striking ornamental tree, particularly attractive to those interested in native planting and wildlife gardening.</p>"
+    description: "<p>The American Persimmon (Diospyros virginiana) is a native deciduous tree that graces the Eastern United States with its presence. Growing to a height of 35-60 feet, this species is renowned for its hardiness and adaptability, thriving in a variety of soils and conditions. The persimmon's bark is distinctive—dark, thick, and deeply furrowed, providing textural interest throughout the year. Its leaves are broad and glossy, offering a rich, green canopy in summer before turning to vivid shades of yellow, orange, and red in the autumn.</p><p>Springtime blooms are inconspicuous, but they give way to the tree's true bounty: the persimmon fruit. These round, orange berries are astringent when unripe but become sweet and custard-like after the first frost, making them a treat for wildlife and humans alike. The fruits have a long history of use in traditional Native American cuisine and are still valued today for their flavor and nutritional content. The American Persimmon is not just a food source but also a striking ornamental tree, particularly attractive to those interested in native planting and wildlife gardening.</p>",
+    photo1Credit: "",
+    photo1Href: "",
+    photo1Alt: "",
+    photo1Src: "",
+    photo2Credit: "",
+    photo2Href: "",
+    photo2Alt: "",
+    photo2Src: "",
+    photo3Credit: "",
+    photo3Href: "",
+    photo3Alt: "",
+    photo3Src: "",
   },
   {
     nameCommon: "American Plum",
@@ -240,7 +359,19 @@ const initialTreesState = [
       "gold"
     ],
     slug: "americanplum",
-    description: "The American Plum (Prunus americana), also known as Wild Plum, is a versatile deciduous tree native to North America, adaptable to a range of environments from stream banks to prairies. Typically growing to 15-25 feet in height, it forms a rounded shape with a thicket of branches that can be trained as a single trunk or allowed to spread naturally. In early spring, before the foliage unfurls, the tree is covered with a profusion of fragrant white flowers, attracting pollinators and signaling the end of winter. The blossoms give way to small, red to yellow plums with a tart flavor, ripening by late summer. These fruits are enjoyed by wildlife and can be used in jams and jellies. The leaves are serrated and green, turning to yellow or red hues in the fall. The American Plum's rugged bark and branch structure provide winter interest, making it a resilient and attractive choice for naturalized areas or as a wildlife-friendly addition to the home garden."
+    description: "The American Plum (Prunus americana), also known as Wild Plum, is a versatile deciduous tree native to North America, adaptable to a range of environments from stream banks to prairies. Typically growing to 15-25 feet in height, it forms a rounded shape with a thicket of branches that can be trained as a single trunk or allowed to spread naturally. In early spring, before the foliage unfurls, the tree is covered with a profusion of fragrant white flowers, attracting pollinators and signaling the end of winter. The blossoms give way to small, red to yellow plums with a tart flavor, ripening by late summer. These fruits are enjoyed by wildlife and can be used in jams and jellies. The leaves are serrated and green, turning to yellow or red hues in the fall. The American Plum's rugged bark and branch structure provide winter interest, making it a resilient and attractive choice for naturalized areas or as a wildlife-friendly addition to the home garden.",
+    photo1Credit: "",
+    photo1Href: "",
+    photo1Alt: "",
+    photo1Src: "",
+    photo2Credit: "",
+    photo2Href: "",
+    photo2Alt: "",
+    photo2Src: "",
+    photo3Credit: "",
+    photo3Href: "",
+    photo3Alt: "",
+    photo3Src: "",
   },
   {
     nameCommon: "American Pussy Willow",
@@ -259,7 +390,19 @@ const initialTreesState = [
       "yellow"
     ],
     slug: "americanpussywillow",
-    description: "<p>The American Pussy Willow (Salix discolor) is a beloved harbinger of spring, with its distinctive soft, silver catkins that burst forth on bare branches, often while the chill of winter still lingers. This deciduous shrub or small tree is native to North America, typically reaching 6 to 15 feet in height, and is cherished for its early-season interest and ease of care. The pussy willow's branches spread informally, creating a loosely structured, rounded silhouette.</p><p>The catkins, which precede the leaves, are a favorite in floral arrangements and are one of the first sources of pollen for bees. As the season progresses, the catkins give way to lance-shaped, light green leaves. The pussy willow thrives in moist, well-drained soil, and full to partial sunlight, often naturally occurring near wetlands and stream banks. Its ability to tolerate wet conditions makes it an excellent choice for rain gardens or naturalized areas. With minimal pruning, the American Pussy Willow remains a charming and rustic addition to any landscape.</p>"
+    description: "<p>The American Pussy Willow (Salix discolor) is a beloved harbinger of spring, with its distinctive soft, silver catkins that burst forth on bare branches, often while the chill of winter still lingers. This deciduous shrub or small tree is native to North America, typically reaching 6 to 15 feet in height, and is cherished for its early-season interest and ease of care. The pussy willow's branches spread informally, creating a loosely structured, rounded silhouette.</p><p>The catkins, which precede the leaves, are a favorite in floral arrangements and are one of the first sources of pollen for bees. As the season progresses, the catkins give way to lance-shaped, light green leaves. The pussy willow thrives in moist, well-drained soil, and full to partial sunlight, often naturally occurring near wetlands and stream banks. Its ability to tolerate wet conditions makes it an excellent choice for rain gardens or naturalized areas. With minimal pruning, the American Pussy Willow remains a charming and rustic addition to any landscape.</p>",
+    photo1Credit: "",
+    photo1Href: "",
+    photo1Alt: "",
+    photo1Src: "",
+    photo2Credit: "",
+    photo2Href: "",
+    photo2Alt: "",
+    photo2Src: "",
+    photo3Credit: "",
+    photo3Href: "",
+    photo3Alt: "",
+    photo3Src: "",
   },
   {
     nameCommon: "American Sweetgum",
@@ -277,7 +420,19 @@ const initialTreesState = [
       "red"
     ],
     slug: "americansweetgum",
-    description: "<p>The American Sweetgum (Liquidambar styraciflua) is a striking deciduous tree cherished for its star-shaped leaves and brilliant autumnal colors. Towering at an impressive height of 60 to 75 feet, it casts a commanding presence with a pyramidal to oval form. The glossy green leaves transition through a splendid palette of reds, purples, and oranges as the seasons turn, offering a spectacular fall display.</p><p>Springtime ushers in inconspicuous flowers, which develop into the tree's distinctive spiky seed balls. These seed pods hang from the branches throughout the winter, adding texture to the bare limbs. The sweetgum's bark is deeply furrowed, featuring corky ridges that create an interesting pattern with age.</p><p>Preferring full sun and moist, rich soils, the sweetgum is a popular landscaping choice, often used in parks and large spaces. However, its seed pods can be a nuisance in residential settings. Despite this, the American Sweetgum remains valued for its ornamental beauty and as a source of hardwood.</p>"
+    description: "<p>The American Sweetgum (Liquidambar styraciflua) is a striking deciduous tree cherished for its star-shaped leaves and brilliant autumnal colors. Towering at an impressive height of 60 to 75 feet, it casts a commanding presence with a pyramidal to oval form. The glossy green leaves transition through a splendid palette of reds, purples, and oranges as the seasons turn, offering a spectacular fall display.</p><p>Springtime ushers in inconspicuous flowers, which develop into the tree's distinctive spiky seed balls. These seed pods hang from the branches throughout the winter, adding texture to the bare limbs. The sweetgum's bark is deeply furrowed, featuring corky ridges that create an interesting pattern with age.</p><p>Preferring full sun and moist, rich soils, the sweetgum is a popular landscaping choice, often used in parks and large spaces. However, its seed pods can be a nuisance in residential settings. Despite this, the American Sweetgum remains valued for its ornamental beauty and as a source of hardwood.</p>",
+    photo1Credit: "",
+    photo1Href: "",
+    photo1Alt: "",
+    photo1Src: "",
+    photo2Credit: "",
+    photo2Href: "",
+    photo2Alt: "",
+    photo2Src: "",
+    photo3Credit: "",
+    photo3Href: "",
+    photo3Alt: "",
+    photo3Src: "",
   },
   {
     nameCommon: "American Sycamore",
@@ -298,7 +453,19 @@ const initialTreesState = [
       "brown"
     ],
     slug: "americansycamore",
-    description: "<p>The American Sycamore (Platanus occidentalis), also known as the American Plane or Buttonwood, is a grand, fast-growing deciduous tree known for its size and longevity. Dominating the landscape with heights reaching 70 to 100 feet, it boasts a massive, sturdy trunk and a wide-spreading canopy that can provide ample shade. This tree is easily recognizable by its mottled exfoliating bark, which flakes off in patches to reveal a creamy white and green inner bark, giving the trunk and limbs a distinctive camouflage-like appearance.</p><p>Its large, palmate leaves are bright green and turn to a golden brown in the fall, before dropping to reveal round, ball-like seed clusters that dangle from the branches. These seeds persist through winter, decorating the bare tree. The American Sycamore is a hardy species, often planted in urban environments for its tolerance to pollution and its ability to thrive in a wide range of soil conditions. With its impressive stature and unique bark, it serves as a striking ornamental tree for large landscapes.</p>"
+    description: "<p>The American Sycamore (Platanus occidentalis), also known as the American Plane or Buttonwood, is a grand, fast-growing deciduous tree known for its size and longevity. Dominating the landscape with heights reaching 70 to 100 feet, it boasts a massive, sturdy trunk and a wide-spreading canopy that can provide ample shade. This tree is easily recognizable by its mottled exfoliating bark, which flakes off in patches to reveal a creamy white and green inner bark, giving the trunk and limbs a distinctive camouflage-like appearance.</p><p>Its large, palmate leaves are bright green and turn to a golden brown in the fall, before dropping to reveal round, ball-like seed clusters that dangle from the branches. These seeds persist through winter, decorating the bare tree. The American Sycamore is a hardy species, often planted in urban environments for its tolerance to pollution and its ability to thrive in a wide range of soil conditions. With its impressive stature and unique bark, it serves as a striking ornamental tree for large landscapes.</p>",
+    photo1Credit: "",
+    photo1Href: "",
+    photo1Alt: "",
+    photo1Src: "",
+    photo2Credit: "",
+    photo2Href: "",
+    photo2Alt: "",
+    photo2Src: "",
+    photo3Credit: "",
+    photo3Href: "",
+    photo3Alt: "",
+    photo3Src: "",
   },
   {
     nameCommon: "Amur Maple",
@@ -318,7 +485,19 @@ const initialTreesState = [
       "orange"
     ],
     slug: "amurmaple", 
-    description: '<p>The Amur Maple (Acer ginnala), a native to the northeastern regions of Asia, is a small, versatile deciduous tree or large shrub that is increasingly popular in temperate climates for its ornamental qualities and modest size, typically growing to 15-20 feet in height. With a rounded to open crown, the tree is well-suited for urban gardens and spaces where larger maples would be overwhelming.</p><p>The leaves of the Amur Maple are simple and palmate, resembling miniature versions of the classic maple leaf. They emerge in spring as fresh green, turning to vibrant shades of yellow, orange, and deep red in the fall, providing a spectacular autumn display. In spring, fragrant yellow-white flowers appear, giving way to winged samaras (maple "helicopters") that mature from green to red.</p><p>Hardy and adaptable, the Amur Maple can tolerate a range of soil conditions and is drought-resistant once established. It is often used in landscaping for hedges, screens, or as a stand-alone specimen. Its ability to withstand harsh conditions makes it an attractive and practical choice for gardeners seeking a touch of fall color and year-round interest.</p>'
+    description: '<p>The Amur Maple (Acer ginnala), a native to the northeastern regions of Asia, is a small, versatile deciduous tree or large shrub that is increasingly popular in temperate climates for its ornamental qualities and modest size, typically growing to 15-20 feet in height. With a rounded to open crown, the tree is well-suited for urban gardens and spaces where larger maples would be overwhelming.</p><p>The leaves of the Amur Maple are simple and palmate, resembling miniature versions of the classic maple leaf. They emerge in spring as fresh green, turning to vibrant shades of yellow, orange, and deep red in the fall, providing a spectacular autumn display. In spring, fragrant yellow-white flowers appear, giving way to winged samaras (maple "helicopters") that mature from green to red.</p><p>Hardy and adaptable, the Amur Maple can tolerate a range of soil conditions and is drought-resistant once established. It is often used in landscaping for hedges, screens, or as a stand-alone specimen. Its ability to withstand harsh conditions makes it an attractive and practical choice for gardeners seeking a touch of fall color and year-round interest.</p>',
+    photo1Credit: "",
+    photo1Href: "",
+    photo1Alt: "",
+    photo1Src: "",
+    photo2Credit: "",
+    photo2Href: "",
+    photo2Alt: "",
+    photo2Src: "",
+    photo3Credit: "",
+    photo3Href: "",
+    photo3Alt: "",
+    photo3Src: "",
   },
   {
     nameCommon: "Austrian Pine",
@@ -336,7 +515,19 @@ const initialTreesState = [
       2
     ],
     slug: "austrianpine",
-    description: "<p>The Austrian Pine (Pinus nigra), also known as the Black Pine, is a robust, evergreen conifer that brings a stately and enduring presence to landscapes. Native to Europe, this species has been widely planted across North America, reaching heights of 40 to 60 feet. It boasts a dense, pyramidal shape in its youth that matures into a rounded and sometimes irregular crown, providing a robust silhouette against the sky.</p><p>The tree's long, dark green needles, growing in pairs, are stiff and lush, offering year-round color and texture. They cluster densely on the branches, creating a thick canopy that provides ample shade. The Austrian Pine is easily recognizable by its thick, deeply fissured, dark gray to black bark, which adds a rugged character especially appreciated in winter months.</p><p>Highly adaptable to a variety of conditions, this pine is valued for its tolerance to urban pollution and soil compaction, making it a favored choice for city plantings and windbreaks. Its sturdy nature and classic coniferous form make the Austrian Pine a reliable and attractive addition to any setting seeking a touch of evergreen resilience.</p>"
+    description: "<p>The Austrian Pine (Pinus nigra), also known as the Black Pine, is a robust, evergreen conifer that brings a stately and enduring presence to landscapes. Native to Europe, this species has been widely planted across North America, reaching heights of 40 to 60 feet. It boasts a dense, pyramidal shape in its youth that matures into a rounded and sometimes irregular crown, providing a robust silhouette against the sky.</p><p>The tree's long, dark green needles, growing in pairs, are stiff and lush, offering year-round color and texture. They cluster densely on the branches, creating a thick canopy that provides ample shade. The Austrian Pine is easily recognizable by its thick, deeply fissured, dark gray to black bark, which adds a rugged character especially appreciated in winter months.</p><p>Highly adaptable to a variety of conditions, this pine is valued for its tolerance to urban pollution and soil compaction, making it a favored choice for city plantings and windbreaks. Its sturdy nature and classic coniferous form make the Austrian Pine a reliable and attractive addition to any setting seeking a touch of evergreen resilience.</p>",
+    photo1Credit: "",
+    photo1Href: "",
+    photo1Alt: "",
+    photo1Src: "",
+    photo2Credit: "",
+    photo2Href: "",
+    photo2Alt: "",
+    photo2Src: "",
+    photo3Credit: "",
+    photo3Href: "",
+    photo3Alt: "",
+    photo3Src: "",
   },
   {
     nameCommon: "Bald Cypress",
@@ -351,7 +542,19 @@ const initialTreesState = [
       "brown"
     ],
     slug: "baldcypress",
-    description: '<p>The Bald Cypress (Taxodium distichum) is a stately deciduous conifer, iconic in Southern swamps but adaptable to drier lands and cooler climates. Reaching heights of 50 to 70 feet, it is easily recognized by its unique, buttressed trunk and feathery, light green needles that turn a rusty orange before shedding in fall. The tree’s silhouette is strikingly elegant, with a straight, tapering trunk and a pyramidal canopy that becomes more open and spreading with age.</p><p>Native to the southeastern United States, the Bald Cypress is famed for its "knees," woody projections that rise from the roots around the tree, believed to help with gas exchange and stability in its often waterlogged habitat. This remarkable tree is not only a survivor of wet conditions but is also remarkably rot-resistant, making its wood valuable for construction.</p><p>The Bald Cypress is a tree of resilience and beauty, thriving where few others can, and providing vital ecosystem services, as well as aesthetic value to parks, gardens, and natural areas.</p>'
+    description: '<p>The Bald Cypress (Taxodium distichum) is a stately deciduous conifer, iconic in Southern swamps but adaptable to drier lands and cooler climates. Reaching heights of 50 to 70 feet, it is easily recognized by its unique, buttressed trunk and feathery, light green needles that turn a rusty orange before shedding in fall. The tree’s silhouette is strikingly elegant, with a straight, tapering trunk and a pyramidal canopy that becomes more open and spreading with age.</p><p>Native to the southeastern United States, the Bald Cypress is famed for its "knees," woody projections that rise from the roots around the tree, believed to help with gas exchange and stability in its often waterlogged habitat. This remarkable tree is not only a survivor of wet conditions but is also remarkably rot-resistant, making its wood valuable for construction.</p><p>The Bald Cypress is a tree of resilience and beauty, thriving where few others can, and providing vital ecosystem services, as well as aesthetic value to parks, gardens, and natural areas.</p>',
+    photo1Credit: "",
+    photo1Href: "",
+    photo1Alt: "",
+    photo1Src: "",
+    photo2Credit: "",
+    photo2Href: "",
+    photo2Alt: "",
+    photo2Src: "",
+    photo3Credit: "",
+    photo3Href: "",
+    photo3Alt: "",
+    photo3Src: "",
   },
   {
     nameCommon: "Balsam Fir",
@@ -363,7 +566,19 @@ const initialTreesState = [
     type: "conifer",
     needleStructure: "single needle",
     slug: "balsamfir",
-    description: "<p>The Balsam Fir (Abies balsamea) is a quintessential evergreen conifer native to the cold climates of the northeastern United States and Canada. It reaches a mature height of 45 to 75 feet, displaying a classic conical shape that embodies the spirit of the northern woods. Its dark-green, aromatic needles are arranged in a spiral fashion along the branches, which are dense and contribute to the tree's compact appearance.</p><p>Distinct for its smooth, gray bark and the resin-filled blisters that dot its surface, the Balsam Fir exudes a distinctive fragrance, especially when its needles or resin blisters are crushed. In late fall, it produces upright, cylindrical cones that disintegrate on the tree, releasing seeds to the wind.</p><p>The Balsam Fir is highly valued for its wood, essential oils, and as a traditional Christmas tree. Its dense foliage provides shelter for wildlife and contributes to the picturesque, snow-laden landscapes of the boreal forest. Hardy and shade-tolerant, it’s a symbol of the wilderness and a staple in both natural forests and cultivated landscapes.</p>"
+    description: "<p>The Balsam Fir (Abies balsamea) is a quintessential evergreen conifer native to the cold climates of the northeastern United States and Canada. It reaches a mature height of 45 to 75 feet, displaying a classic conical shape that embodies the spirit of the northern woods. Its dark-green, aromatic needles are arranged in a spiral fashion along the branches, which are dense and contribute to the tree's compact appearance.</p><p>Distinct for its smooth, gray bark and the resin-filled blisters that dot its surface, the Balsam Fir exudes a distinctive fragrance, especially when its needles or resin blisters are crushed. In late fall, it produces upright, cylindrical cones that disintegrate on the tree, releasing seeds to the wind.</p><p>The Balsam Fir is highly valued for its wood, essential oils, and as a traditional Christmas tree. Its dense foliage provides shelter for wildlife and contributes to the picturesque, snow-laden landscapes of the boreal forest. Hardy and shade-tolerant, it’s a symbol of the wilderness and a staple in both natural forests and cultivated landscapes.</p>",
+    photo1Credit: "",
+    photo1Href: "",
+    photo1Alt: "",
+    photo1Src: "",
+    photo2Credit: "",
+    photo2Href: "",
+    photo2Alt: "",
+    photo2Src: "",
+    photo3Credit: "",
+    photo3Href: "",
+    photo3Alt: "",
+    photo3Src: "",
   },
   {
     nameCommon: "Balsam Poplar",
@@ -384,7 +599,19 @@ const initialTreesState = [
       "yellow"
     ],
     slug: "balsampoplar",
-    description: "<p>The Balsam Poplar (Populus balsamifera), also known as the Balm of Gilead, is a hardy deciduous tree native to the northern regions of North America. With a typical height of 50 to 80 feet, it grows rapidly, forming a tall and narrow silhouette that is robust and hardy against the backdrop of cold climates. Its bark is dark gray and deeply furrowed, providing textural interest throughout the year.</p><p>In early spring, before the leaves unfurl, the Balsam Poplar is adorned with resinous buds that exude a distinctively fragrant, sticky balsam scent. These buds are often harvested for medicinal salves and ointments. The leaves are shiny green, broad, and ovate with finely toothed edges, fluttering and rustling in the breeze, turning yellow in the fall.</p><p>Known for its cotton-like seeds that float through the air in spring, the Balsam Poplar plays a crucial role in riparian ecosystems, providing erosion control and habitat. It's valued for its quick growth, making it an excellent choice for windbreaks and privacy screens in landscape design.</p>"
+    description: "<p>The Balsam Poplar (Populus balsamifera), also known as the Balm of Gilead, is a hardy deciduous tree native to the northern regions of North America. With a typical height of 50 to 80 feet, it grows rapidly, forming a tall and narrow silhouette that is robust and hardy against the backdrop of cold climates. Its bark is dark gray and deeply furrowed, providing textural interest throughout the year.</p><p>In early spring, before the leaves unfurl, the Balsam Poplar is adorned with resinous buds that exude a distinctively fragrant, sticky balsam scent. These buds are often harvested for medicinal salves and ointments. The leaves are shiny green, broad, and ovate with finely toothed edges, fluttering and rustling in the breeze, turning yellow in the fall.</p><p>Known for its cotton-like seeds that float through the air in spring, the Balsam Poplar plays a crucial role in riparian ecosystems, providing erosion control and habitat. It's valued for its quick growth, making it an excellent choice for windbreaks and privacy screens in landscape design.</p>",
+    photo1Credit: "",
+    photo1Href: "",
+    photo1Alt: "",
+    photo1Src: "",
+    photo2Credit: "",
+    photo2Href: "",
+    photo2Alt: "",
+    photo2Src: "",
+    photo3Credit: "",
+    photo3Href: "",
+    photo3Alt: "",
+    photo3Src: "",
   },
   {
     nameCommon: "Bitternut Hickory",
@@ -402,7 +629,19 @@ const initialTreesState = [
       "golden"
     ],
     slug: "bitternuthickory",
-    description: "<p>The Bitternut Hickory (Carya cordiformis) is a tall and stately deciduous tree that is native to the eastern United States. It typically soars to heights of 50 to 80 feet, characterized by a straight, slender trunk and a well-formed, rounded crown. Its bark is smooth and gray when young, becoming shaggy and more deeply furrowed with age, adding to the tree's dignified appearance.</p><p>Noted for its pinnately compound leaves, which usually feature 7 to 11 lance-shaped, serrated leaflets, the Bitternut Hickory's foliage is a vibrant green that transitions to a cheerful yellow in the autumn, creating a bright canopy. The tree produces small, greenish-yellow male and female flowers on the same tree, with the females developing into the bitter-tasting nuts that give the tree its name. These nuts are encased in thin, yellow-green husks that split open when mature.</p><p>Although not favored for human consumption due to their bitter flavor, the nuts are an important food source for wildlife. The Bitternut Hickory is a valuable hardwood species, often used in furniture making and for its high-quality firewood. With its tall stature and strong wood, the Bitternut Hickory is a noble feature in forests, parks, and large landscapes.</p>"
+    description: "<p>The Bitternut Hickory (Carya cordiformis) is a tall and stately deciduous tree that is native to the eastern United States. It typically soars to heights of 50 to 80 feet, characterized by a straight, slender trunk and a well-formed, rounded crown. Its bark is smooth and gray when young, becoming shaggy and more deeply furrowed with age, adding to the tree's dignified appearance.</p><p>Noted for its pinnately compound leaves, which usually feature 7 to 11 lance-shaped, serrated leaflets, the Bitternut Hickory's foliage is a vibrant green that transitions to a cheerful yellow in the autumn, creating a bright canopy. The tree produces small, greenish-yellow male and female flowers on the same tree, with the females developing into the bitter-tasting nuts that give the tree its name. These nuts are encased in thin, yellow-green husks that split open when mature.</p><p>Although not favored for human consumption due to their bitter flavor, the nuts are an important food source for wildlife. The Bitternut Hickory is a valuable hardwood species, often used in furniture making and for its high-quality firewood. With its tall stature and strong wood, the Bitternut Hickory is a noble feature in forests, parks, and large landscapes.</p>",
+    photo1Credit: "",
+    photo1Href: "",
+    photo1Alt: "",
+    photo1Src: "",
+    photo2Credit: "",
+    photo2Href: "",
+    photo2Alt: "",
+    photo2Src: "",
+    photo3Credit: "",
+    photo3Href: "",
+    photo3Alt: "",
+    photo3Src: "",
   },
   {
     nameCommon: "Black Ash",
@@ -420,7 +659,19 @@ const initialTreesState = [
       "brown"
     ],
     slug: "blackash",
-    description: '<p>The Black Ash (Fraxinus nigra) is a deciduous hardwood tree that is indigenous to wetland areas of the northeastern United States and Canada. This slender, medium-sized tree typically grows to heights of 40 to 60 feet. It has a straight trunk with a narrow, rounded crown, and its bark is dark gray to brown with deep furrows and intersecting ridges, creating a diamond-like pattern.</p><p>The tree’s leaves are compound, with 7 to 11 leaflets that are dark green and turn a muted yellow in the fall. Black Ash is dioecious, with separate male and female flowers that appear on different trees before the emergence of leaves. The female trees produce winged samaras that are dispersed by the wind.</p><p>Black Ash is notable for its ability to thrive in wet, swampy conditions, and its wood is highly valued for its flexibility and strength, particularly in the making of baskets, hence its nickname, "basket ash." However, the species is under threat from the invasive Emerald Ash Borer, which has devastated populations of ash trees across North America.</p>'
+    description: '<p>The Black Ash (Fraxinus nigra) is a deciduous hardwood tree that is indigenous to wetland areas of the northeastern United States and Canada. This slender, medium-sized tree typically grows to heights of 40 to 60 feet. It has a straight trunk with a narrow, rounded crown, and its bark is dark gray to brown with deep furrows and intersecting ridges, creating a diamond-like pattern.</p><p>The tree’s leaves are compound, with 7 to 11 leaflets that are dark green and turn a muted yellow in the fall. Black Ash is dioecious, with separate male and female flowers that appear on different trees before the emergence of leaves. The female trees produce winged samaras that are dispersed by the wind.</p><p>Black Ash is notable for its ability to thrive in wet, swampy conditions, and its wood is highly valued for its flexibility and strength, particularly in the making of baskets, hence its nickname, "basket ash." However, the species is under threat from the invasive Emerald Ash Borer, which has devastated populations of ash trees across North America.</p>',
+    photo1Credit: "",
+    photo1Href: "",
+    photo1Alt: "",
+    photo1Src: "",
+    photo2Credit: "",
+    photo2Href: "",
+    photo2Alt: "",
+    photo2Src: "",
+    photo3Credit: "",
+    photo3Href: "",
+    photo3Alt: "",
+    photo3Src: "",
   },
   {
     nameCommon: "Black Cherry",
@@ -440,7 +691,20 @@ const initialTreesState = [
     fallColor: [
       "yellow"
     ],
-    slug: "blackcherry"
+    slug: "blackcherry",
+    description: "<p>The Black Cherry (Prunus serotina), also known as Wild Cherry, is a deciduous hardwood species esteemed for both its ecological contributions and valuable lumber. Native to Eastern North America, it reaches heights of 50 to 80 feet in forest settings, displaying a straight trunk and a round-topped canopy when grown in the open.</p><p>The tree's bark is dark and scaly, becoming deeply furrowed with age, and is easily recognizable by its burnt cornflake appearance. In spring, it bears elongated clusters of fragrant white flowers, followed by small, shiny, red-black cherries in late summer. These fruits are a favorite among birds and wildlife, though their bitter taste is less favored by humans until cooked and sweetened.</p><p>Black Cherry leaves are lanceolate and finely toothed, turning yellow to red in the fall. The wood is prized for its rich color and fine grain, used in cabinetry and fine furniture. This cherry species is also known for its medicinal properties, with bark that has been traditionally used as a cough remedy. However, care must be taken as parts of the plant contain cyanide and are toxic if ingested in large quantities.</p>",
+    photo1Credit: "",
+    photo1Href: "",
+    photo1Alt: "",
+    photo1Src: "",
+    photo2Credit: "",
+    photo2Href: "",
+    photo2Alt: "",
+    photo2Src: "",
+    photo3Credit: "",
+    photo3Href: "",
+    photo3Alt: "",
+    photo3Src: "",
   },
   {
     nameCommon: "Black Locust",
@@ -456,23 +720,49 @@ const initialTreesState = [
     fallColor: [
       "yellow"
     ],
-    slug: "blacklocust"
+    slug: "blacklocust",
+    description: "<p>The Black Locust (Robinia pseudoacacia) is a fast-growing deciduous tree that is native to the southeastern United States but has been widely planted and naturalized elsewhere. It typically reaches heights of 40 to 100 feet, with a narrow crown and an open, irregular form that lends a rugged appearance to the landscape.</p><p>The tree's bark is deeply furrowed, featuring a dark brown or gray color that provides textural interest. In late spring, it is adorned with fragrant, drooping clusters of white, pea-like flowers that attract bees and butterflies. These blossoms give way to smooth, flat seed pods that persist into winter.</p><p>Black Locust leaves are pinnately compound with small, oval leaflets that flutter in the breeze, creating dappled sunlight beneath. The foliage turns a modest yellow in the fall. Known for its extremely hard and rot-resistant wood, Black Locust is valued for use in outdoor construction and furniture. Despite its beauty and utility, it is often considered invasive outside its native range due to its prolific seeding and rapid growth.</p>",
+    photo1Credit: "",
+    photo1Href: "",
+    photo1Alt: "",
+    photo1Src: "",
+    photo2Credit: "",
+    photo2Href: "",
+    photo2Alt: "",
+    photo2Src: "",
+    photo3Credit: "",
+    photo3Href: "",
+    photo3Alt: "",
+    photo3Src: "",
   },
-  // {
-  //   nameCommon: "Black Maple",
-  //   order: "Sapindales",
-  //   family: "Sapindaceae",
-  //   familyCommon: "Maple",
-  //   genus: "Acer",
-  //   species: "Acer nigrum",
-  //   type: "deciduous",
-  //   leafType: "lobed",
-  //   leafAttachment: "opposite",
-  //   fallColor: [
-  //     "yellow"
-  //   ],
-  //   slug: "blackmaple"
-  // },
+  {
+    nameCommon: "Black Maple",
+    order: "Sapindales",
+    family: "Sapindaceae",
+    familyCommon: "Maple",
+    genus: "Acer",
+    species: "Acer nigrum",
+    type: "deciduous",
+    leafType: "lobed",
+    leafAttachment: "opposite",
+    fallColor: [
+      "yellow"
+    ],
+    slug: "blackmaple",
+    description: "<p>The Black Maple (Acer nigrum), a close relative of the sugar maple, is a deciduous tree revered for its striking presence and valuable sap. Found in the central and eastern United States, it grows to heights of 60 to 80 feet, forming a rounded, dense canopy that provides generous shade. Its bark is dark, deeply furrowed, and becomes almost black with age, hence the name.</p><p>The tree’s leaves are telltale, with three main lobes that are less pronounced than those of its sugar maple cousin, featuring drooping edges and a deep green hue that shifts to vibrant yellow and burnt orange in autumn. Spring brings small, yellow-green flowers that are often hidden beneath the foliage, followed by the winged samaras typical of maples, twirling to the ground in a helicopter-like fashion.</p><p>Black Maple's sap is a source for maple syrup, and its hard, strong wood is sought after for furniture and flooring. Adaptable and hardy, the Black Maple is a testament to the enduring beauty and utility of the Acer family.</p>",
+    photo1Credit: "",
+    photo1Href: "",
+    photo1Alt: "",
+    photo1Src: "",
+    photo2Credit: "",
+    photo2Href: "",
+    photo2Alt: "",
+    photo2Src: "",
+    photo3Credit: "",
+    photo3Href: "",
+    photo3Alt: "",
+    photo3Src: "",
+  },
   {
     nameCommon: "Black Oak",
     aka: [
@@ -490,7 +780,20 @@ const initialTreesState = [
       "orange",
       "brown"
     ],
-    slug: "blackoak"
+    slug: "blackoak",
+    description: "<p>The Black Oak (Quercus velutina), a member of the broad oak genus, is a robust and enduring species indigenous to the eastern and central United States. This deciduous tree towers to heights of 50 to 60 feet, occasionally reaching up to 90 feet under optimal conditions. It boasts a broad, rounded crown supported by a sturdy trunk, its bark characteristically dark, deeply furrowed, and nearly black, giving rise to its common name.</p><p>The Black Oak's leaves are distinguished by their shiny, dark green upper surfaces and a paler, often bristly underside. Come autumn, these leaves transform into a brilliant display of reds, oranges, and yellows, decorating the landscape with a classic fall palette. The tree produces acorns that are a vital food source for local wildlife.</p><p>It is valued for its strong, heavy wood, commonly used in flooring, furniture, and interior finishes. Despite its tough exterior, the Black Oak is susceptible to oak wilt, a serious fungal disease. The tree's hardiness and the ecological richness it provides make it a staple of its native woodland habitats.</p>",
+    photo1Credit: "",
+    photo1Href: "",
+    photo1Alt: "",
+    photo1Src: "",
+    photo2Credit: "",
+    photo2Href: "",
+    photo2Alt: "",
+    photo2Src: "",
+    photo3Credit: "",
+    photo3Href: "",
+    photo3Alt: "",
+    photo3Src: "",
   },
   {
     nameCommon: "Black Poplar",
@@ -509,7 +812,8 @@ const initialTreesState = [
       "yellow",
       "brown"
     ],
-    slug: "blackpoplar"
+    slug: "blackpoplar", 
+    description: "<p>The Black Poplar (Populus nigra), a native of Europe and Western Asia, is a tall deciduous tree that has been widely cultivated elsewhere, including North America. It typically soars to heights of 80 to 100 feet, marked by a thick, deeply fissured bark that is dark grey-brown in color. The Black Poplar is particularly noted for its vigorous growth and lofty, spreading crown that provides expansive shade.</p><p>Its leaves are diamond-shaped to triangular, with serrated margins and a glossy, dark green appearance that turns yellow in the fall. The tree is dioecious, with male and female flowers developing on separate trees. The male catkins are red and showy, while the females are more subdued. After pollination, female trees produce fluffy, cotton-like seeds that are dispersed by the wind.</p><p>The Black Poplar is celebrated for its resilience in urban environments and its use in windbreaks and screening. Its timber is soft but tough, often used in manufacturing and for matches. With its imposing stature, the Black Poplar is a prominent feature in many European landscapes, symbolizing strength and endurance.</p>"
   },
   {
     nameCommon: "Black Spruce",
@@ -520,7 +824,8 @@ const initialTreesState = [
     species: "Picea mariana",
     type: "conifer",
     needleStructure: "single needle",
-    slug: "blackspruce"
+    slug: "blackspruce",
+    description: "<p>The Black Spruce (Picea mariana) is a hardy, evergreen conifer native to the boreal forests of North America. It stands with a straight, cylindrical trunk, reaching modest heights of 30 to 50 feet, a stature that is somewhat diminutive in comparison to other spruces. Its bark is thin, scaly, and gray-brown, flaking off in small circular plates.</p><p>This spruce's crown is narrowly conical, with short, stiff branches that are clothed in a dense cover of short, needle-like leaves. These needles exhibit a bluish-green hue, providing a year-round color display. In the spring, the Black Spruce shows off its reproductive prowess with purple (male) and red (female) cones, which later mature to a ruddy brown.</p><p>Adapted to cooler climates and wet, acidic soils, the Black Spruce often dominates in swampy areas. Its wood is utilized in the paper industry, and it is also a traditional source of spruce gum. The tree's compact size and tolerance of harsh conditions make it a symbol of the resilience and stark beauty of the northern wilderness.</p>"
   },
   {
     nameCommon: "Black Walnut",
@@ -541,7 +846,8 @@ const initialTreesState = [
       "yellow",
       "green"
     ],
-    slug: "blackwalnut"
+    slug: "blackwalnut",
+    description: "<p>The Black Walnut (Juglans nigra) is a majestic hardwood tree renowned for its valuable wood and distinctive nuts. Native to eastern North America, it reaches heights of 70 to 100 feet, often with a straight trunk and a rounded, spreading canopy. The tree's bark is dark brown to blackish, deeply furrowed, forming a rough, diamond pattern.</p><p>Its pinnate leaves are composed of 15-23 leaflets, exuding a unique fragrance when crushed. In spring, the Black Walnut produces inconspicuous, wind-pollinated flowers, followed by the development of its famous fruit: a large, green, globular nut encased in a solid, inedible husk. The nuts, though tough to crack, are sought after for their rich, distinctive flavor.</p><p>The wood of the Black Walnut is highly prized, dark in color, strong, and with a fine grain, making it a favorite for high-quality furniture, cabinetry, and gunstocks. This tree is also appreciated for its shade and ornamental qualities, though it should be planted with care due to the juglone toxin it produces, which can inhibit the growth of nearby plants.</p>"
   },
   {
     nameCommon: "Black Willow",
@@ -560,7 +866,8 @@ const initialTreesState = [
       "yellow",
       "light-yellow"
     ],
-    slug: "blackwillow"
+    slug: "blackwillow",
+    description: "<p>The Black Willow (Salix nigra) is a native North American species commonly found along streams and in wetlands, appreciated for its environmental and erosion control benefits. This deciduous tree grows rapidly to heights of 30 to 60 feet, with a leaning, often multi-trunked form that is well adapted to its riparian habitats.</p><p>Its bark is dark brown to black, deeply furrowed, and becomes rough with age. The Black Willow’s narrow, lance-shaped leaves are yellow-green, offering a fluttering display in the breeze due to their long, flexible petioles. These leaves turn a modest yellow in the fall.</p><p>In early spring, it produces catkins, which are followed by small, cottony seeds that disperse widely by wind and water. The tree's wood is soft and is often used in the production of crates and pulp. Known for its prolific root system, the Black Willow plays a crucial role in stabilizing stream banks and is often used in reclamation projects. Despite its preference for moist soil, it can also tolerate drought, making it a resilient species within its native range.</p>"
   },
   {
     nameCommon: "Blackjack Oak",
@@ -576,29 +883,31 @@ const initialTreesState = [
       "brown",
       "yellow"
     ],
-    slug: "blackjackoak"
+    slug: "blackjackoak",
+    description: "<p>The Blackjack Oak (Quercus marilandica) is a durable and hardy species native to the sandy soils and tough terrains of the central and southern United States. It is a small to medium-sized tree, typically reaching 20 to 40 feet in height, with a dense and irregular crown that provides ample shade. Its bark is dark, rough, and deeply furrowed, resembling blackjacks, which contributed to its common name.</p><p>The tree’s foliage is distinctive, with leaves that are leathery, glossy, and wedge-shaped, resembling a duck’s foot. The leaves display a rich green color that turns to vibrant reds and oranges in the fall, offering a burst of color to the landscape. Blackjack Oak produces small acorns that have a unique, striped cap, providing food for wildlife.</p><p>Adapted to survive in poor, dry soils where other oaks might struggle, the Blackjack Oak is often found in upland areas and savannas. Its wood is used for lumber and fuel, although it is not as commercially sought after as other oaks. The tree's resilience and the unique shape of its leaves make it an interesting and valuable component of the ecosystems it inhabits.</p>"
   },
-  // {
-  //   nameCommon: "Blue Beech",
-  //   aka: [
-  //     "American Hornbeam",
-  //     "Musclewood"
-  //   ],
-  //   order: "Fagales",
-  //   family: "Betulaceae",
-  //   familyCommon: "Birch",
-  //   genus: "Carpinus",
-  //   species: "Carpinus caroliniana",
-  //   type: "deciduous",
-  //   leafType: "simple",
-  //   leafAttachment: "alternate",
-  //   fallColor: [
-  //     "orange",
-  //     "red",
-  //     "dark red"
-  //   ],
-  //   slug: "bluebeech"
-  // },
+  {
+    nameCommon: "Blue Beech",
+    aka: [
+      "American Hornbeam",
+      "Musclewood"
+    ],
+    order: "Fagales",
+    family: "Betulaceae",
+    familyCommon: "Birch",
+    genus: "Carpinus",
+    species: "Carpinus caroliniana",
+    type: "deciduous",
+    leafType: "simple",
+    leafAttachment: "alternate",
+    fallColor: [
+      "orange",
+      "red",
+      "dark red"
+    ],
+    slug: "bluebeech",
+    description: "<p>The Blue Beech, also known as the American Hornbeam or Carpinus caroliniana, is a small, shade-tolerant deciduous tree native to the understory of eastern North American forests. It grows modestly to 20-30 feet high, featuring a short trunk and a rounded, spreading crown. The tree's bark is smooth, gray, and fluted, resembling the sinewy muscles of a human arm, which earns it another nickname, \"musclewood.\"</p><p>Its leaves are elliptical, with finely toothed edges and prominent veins, offering a vibrant green that transitions to a fiery mix of orange, red, and yellow in the fall. In spring, the Blue Beech displays modest yellow-green catkins, later developing small nutlets encased in papery bracts that provide food for wildlife.</p><p>Appreciated for its hard wood and ornamental appeal, the Blue Beech is often found along streams and rich bottomlands, thriving in moist, well-drained soils. Its tolerance for shade and unique bark texture make it a favorite for naturalistic landscaping and garden settings.</p>"
+  },
   {
     nameCommon: "Blue Spruce",
     aka: [
@@ -612,7 +921,8 @@ const initialTreesState = [
     species: "Picea pungens",
     type: "conifer",
     needleStructure: "single needle",
-    slug: "bluespruce"
+    slug: "bluespruce",
+    description:"<p>The Blue Spruce, scientifically known as Picea pungens, is a majestic evergreen native to the Rocky Mountains of the United States. Characterized by its impressive stature, it can reach skyward to heights of 50 to 75 feet, presenting a broad, pyramidal shape with sturdy, horizontal branches. The tree's most striking feature is its needle foliage, which ranges from a silvery blue to a rich blue-green hue, providing a year-round display of vibrant color.</p><p>These stiff, sharply pointed needles contribute to the species' name, \"pungens,\" which signifies their pungent nature. In the wild, the Blue Spruce prefers moist, well-drained soils, typically found in mountainous river valleys. It produces cylindrical cones that hang elegantly from the branches, starting out purple and maturing to a pale brown.</p><p>Widely used as an ornamental tree due to its unique color and classic conical Christmas tree shape, the Blue Spruce is also the state tree of Colorado. Despite its beauty, it is a hardy tree, capable of withstanding cold climates and various soil conditions, making it a popular choice in landscapes across various regions.</p>"
   },
   {
     nameCommon: "Boxelder",
@@ -632,7 +942,8 @@ const initialTreesState = [
     fallColor: [
       "yellow"
     ],
-    slug: "boxelder"
+    slug: "boxelder",
+    description: "<p>The Boxelder, or Acer negundo, is a species of maple distinct for its adaptability and ruggedness. Often considered a lesser maple, this medium-sized tree typically grows to 30-50 feet tall. It has a broad crown and a high branching habit with several main limbs that create a somewhat irregular, rounded shape. Its bark is light gray-brown, deeply cleft into broad ridges, giving it a rough texture.</p><p>What sets the Boxelder apart from other maples is its compound leaves, which are unusual for the genus, consisting of 3-7 leaflets with a coarsely toothed margin. These leaves turn a pale yellow in the fall. It's a dioecious species, with male and female flowers appearing on separate trees in early spring, before the leaves emerge.</p><p>The Boxelder is often found along streams and in floodplains, thriving in a variety of soil conditions. While its wood is of little commercial value, the tree is known for its resilience and is sometimes planted as a fast-growing screen or shade tree. It's also known for attracting boxelder bugs, especially in the autumn and winter.</p>"
   },
   {
     nameCommon: "Buckthorn",
@@ -651,7 +962,8 @@ const initialTreesState = [
     fallColor: [
       "green"
     ],
-    slug: "buckthorn"
+    slug: "buckthorn",
+    description: "<p>The Buckthorn, Rhamnus cathartica, is a deciduous shrub or small tree native to Eurasia and known for its invasiveness in North American woodlands. It typically reaches 15-25 feet in height and thrives in a variety of soil types, often spreading aggressively in disturbed habitats.</p><p>Buckthorn is identifiable by its glossy, oval leaves with pronounced veins and finely serrated margins that turn yellow-green in fall. Inconspicuous yellow-green flowers bloom in spring and give way to small, dark berries in late summer and fall. These berries, while toxic to humans, are readily consumed by birds, facilitating the spread of Buckthorn seeds.</p><p>The tree's bark is gray-brown with prominent lenticels. It has a somewhat rounded to columnar shape, and its branches terminate in sharp thorns. While Buckthorn can be used for hedges and wildlife cover, its invasive nature has led many areas to discourage its planting. Control efforts are frequently employed to manage its spread in natural areas where it can outcompete native vegetation and disrupt ecosystems.</p>"
   },
   {
     nameCommon: "Bur Oak",
@@ -670,7 +982,8 @@ const initialTreesState = [
       "yellow",
       "brown"
     ],
-    slug: "buroak"
+    slug: "buroak",
+    description: "<p>The Bur Oak, Quercus macrocarpa, is a robust and stately tree native to North America, renowned for its longevity and strength. It can grow to an imposing height of 70 to 80 feet with an expansive crown that may reach just as wide. Its trunk is thick and deeply ridged, providing a rugged texture that adds to its impressive appearance.</p></p>Bur Oak leaves are large, with a classic lobed oak shape, turning a rich array of yellows and browns in the fall. It is especially known for its acorns, which are among the largest of any North American oak, featuring a distinctive, fringed cap that covers more than half of the nut.</p><p>Adapted to a variety of habitats, from floodplains to dry uplands, the Bur Oak is drought-resistant, thanks to its deep root system. It provides a habitat for wildlife, and its acorns are a valuable food source for several species. With its grand size and longevity, the Bur Oak is a cherished shade tree in landscapes and an important species in native woodland ecosystems.</p>"
   },
   {
     nameCommon: "Butternut",
@@ -689,7 +1002,8 @@ const initialTreesState = [
     fallColor: [
       "yellow"
     ],
-    slug: "butternut"
+    slug: "butternut",
+    description: "<p>The Butternut tree, Juglans cinerea, also known as the White Walnut, is a deciduous tree indigenous to the eastern United States and southeast Canada. This species grows to a height of 40 to 60 feet and often features a short trunk with a broad, open, spreading crown. The bark is light gray and deeply furrowed, developing a distinctive, diamond-shaped pattern as the tree matures.</p><p>Butternut's leaves are pinnately compound, with 11 to 17 leaflets that are finely toothed and sticky when young. In autumn, foliage turns a clear, bright yellow, adding seasonal interest to the landscape. Spring brings inconspicuous greenish flowers, followed by the production of oblong fruits encased in a green, hairy husk. These husks contain a rich, oily nut that is prized for its flavor and is often used in baking.</p><p>Unfortunately, the Butternut is facing decline due to the butternut canker disease, which has made it a species of conservation concern. Despite this, its light-colored wood is valued for carving and furniture-making, and its nuts continue to be a favorite for wildlife and humans alike.</p>"
   },
   {
     nameCommon: "Buttonbush",
@@ -709,7 +1023,8 @@ const initialTreesState = [
       "brown",
       "green"
     ],
-    slug: "buttonbush"
+    slug: "buttonbush",
+    description: "<p>The Buttonbush, Cephalanthus occidentalis, is a deciduous shrub or small tree, known for its unique and ornamental flower display. Typically found in wetlands and along waterways throughout eastern North America, it thrives in moist, rich soils, and can reach 6 to 12 feet in height.</p><p>Buttonbush's most striking feature is its spherical flower heads, which bloom in the summer. These fragrant, white to pale-pink flowers resemble pincushions and are a magnet for pollinators, including bees and butterflies. Following the flowers, the shrub produces button-like seed heads that persist into winter, offering continued visual interest and food for various bird species.</p><p>The plant's leaves are glossy green, arranged oppositely or in whorls of three, and become yellowish in fall. Its bark is light brown and roughened, adding texture to the winter landscape.</p><p>Though often used in rain gardens and naturalized plantings, Buttonbush is also an excellent choice for erosion control due to its dense root system. It's a valuable plant for wildlife and a charming addition to any water-influenced landscape design.</p>"
   },
   {
     nameCommon: "Chestnut Oak",
@@ -728,7 +1043,8 @@ const initialTreesState = [
       "yellow",
       "orange"
     ],
-    slug: "chestnutoak"
+    slug: "chestnutoak",
+    description: "<p>The Chestnut Oak, Quercus montana, is a durable and noble tree that graces the eastern United States, particularly the Appalachian Mountains. It's recognized by its impressive stature, often reaching 60 to 70 feet in height with a similarly expansive spread. This oak is well-suited to rocky slopes and dry ridges, where it demonstrates remarkable drought resistance thanks to its deep taproot.</p><p>The tree's bark is deeply furrowed with broad, rough ridges, and it's this thick, rugged bark that distinguishes the Chestnut Oak from other oaks and aids in its survival in xeric conditions. The foliage consists of oblong, coarsely toothed leaves that resemble those of the chestnut—broad with a dull, dark green upper surface and a paler underside. These leaves turn shades of yellow and russet in the fall.</p><p>In spring, the Chestnut Oak produces inconspicuous yellow-green flowers, which give way to sizable, round acorns, a valuable food source for wildlife. The wood of the Chestnut Oak is strong and heavy, making it valuable for timber and veneer production. As a landscape tree, it offers stately beauty and a resilient character, providing robust shade and a steadfast presence.</p>"
   },
   {
     nameCommon: "Chinquapin Oak",
@@ -744,7 +1060,8 @@ const initialTreesState = [
       "red",
       "brown"
     ],
-    slug: "chinquapinoak"
+    slug: "chinquapinoak",
+    description: "<p>The Chinquapin Oak, Quercus muehlenbergii, stands as a testament to the diversity and adaptability of oaks in North America. This medium-sized tree can reach heights of 40 to 50 feet, presenting a rounded canopy that offers dense shade. It is often found on well-drained upland soils but is also remarkably tolerant of varying moisture levels and pH, allowing it to thrive in a range of environments.</p><p>The leaves of the Chinquapin Oak are distinctive, with their coarsely serrated edges resembling the teeth of a saw, a notable departure from the classic lobed oak leaf. They boast a glossy, dark green hue above and a paler tone beneath, transitioning to shades of yellow to bronze in autumn. Springtime flowers are subtle, leading to the development of small, sweet acorns that are a wildlife favorite.</p><p>Its bark is light gray to flaky brown, providing interesting texture to the landscape. The Chinquapin Oak is prized for its durable, attractive wood and is often selected for reforestation and conservation projects, as well as a stately ornamental tree in parks and spacious landscapes.</p>"
   },
   {
     nameCommon: "Chokecherry",
@@ -764,7 +1081,8 @@ const initialTreesState = [
       "yellow",
       "red"
     ],
-    slug: "chokecherry"
+    slug: "chokecherry",
+    description: "<p>The Chokecherry tree, Prunus virginiana, is a small deciduous tree or large shrub that is widespread across much of North America. It typically grows to between 15 and 30 feet in height, featuring a slender profile with a crown that tends to be round and dense. This hardy species is versatile, growing in a variety of conditions from moist stream banks to dry hillsides.</p><p>Chokecherry leaves are oval-shaped with finely toothed margins, glossy on the top surface, and a paler green underneath. Come spring, the tree is adorned with elongated clusters of fragrant white flowers, which develop into dense strings of small, dark purple to black fruit by late summer. While the fruit is tart and astringent when raw, it becomes palatable when cooked and is often used in jellies and wines.</p><p>The tree's bark is gray to reddish-brown, marked by horizontal lenticels. Though not a first choice for lumber due to its small size, Chokecherry is valued in landscaping for its attractive spring blossoms and its ability to attract birds and butterflies to the garden. However, care should be taken as the seeds, leaves, and twigs contain compounds that are toxic to many mammals, including humans, when not properly processed.</p>"
   },
   {
     nameCommon: "Common Hackberry",
@@ -784,7 +1102,8 @@ const initialTreesState = [
     fallColor: [
       "yellow"
     ],
-    slug: "commonhackberry"
+    slug: "commonhackberry",
+    description: "<p>The Common Hackberry, Celtis occidentalis, is a sturdy native tree that graces the landscape with its distinctive presence. Adaptable and resilient, it commonly reaches 40 to 60 feet in height and thrives in a wide range of soil types, often found lining the streets or standing sentinel in parks due to its urban tolerance.</p><p>The Hackberry's bark is one of its most notable features, grayish in color, featuring a unique pattern of warty ridges and deep furrows. Its leaves are simple and serrated, oval to lance-shaped, with an asymmetrical base—emerging bright green in spring and maturing to a deeper green before yielding to a soft yellow in the fall.</p><p>Come autumn, the tree bears small, orange-red to dark purple berries, relished by birds and small mammals. These fruits, along with the tree’s ability to host butterfly larvae, make it an excellent choice for wildlife gardens. Despite its unassuming flowers, the Common Hackberry is a reliable and hardy species, offering a canopy of dappled shade and a robust, wind-resistant structure.</p>"
   },
   {
     nameCommon: "Common Hoptree",
@@ -804,7 +1123,8 @@ const initialTreesState = [
     fallColor: [
       "yellow"
     ],
-    slug: "commonhoptree"
+    slug: "commonhoptree",
+    description: "<p>The Common Hoptree, Ptelea trifoliata, is a deciduous understory tree or large shrub native to North America, typically found in woodlands and along streams. It usually grows to a modest height of 15 to 20 feet with a similar spread, characterized by a round, open crown that provides light, airy shade.</p><p>This tree is easily recognized by its compound leaves, which are arranged in groups of three (hence the name trifoliata). The leaves are a lustrous dark green, turning yellow-green in autumn. The Hoptree's tiny, greenish-white flowers may be inconspicuous, but they are fragrant and bloom in dense clusters in late spring to early summer. Following the flowers are distinctive, wafer-like samaras, or winged seeds, that persist through the winter, adding textural interest to the bare branches.</p><p>Adaptable to various soil conditions and drought-tolerant once established, the Common Hoptree is a versatile plant. It is often used in native plant gardens and as a filler in landscape borders, offering habitat and food for wildlife, including serving as a host plant for the Giant Swallowtail butterfly.</p>"
   },
   {
     nameCommon: "Common Prickly-ash",
@@ -823,7 +1143,8 @@ const initialTreesState = [
     fallColor: [
       "yellow"
     ],
-    slug: "commonprickly-ash"
+    slug: "commonprickly-ash",
+    description: "<p>The Common Prickly-ash, Zanthoxylum americanum, is a deciduous shrub or small tree native to the eastern and central United States and Canada, where it thrives along forest edges and in open woodlands. It reaches modest heights of up to 20 feet and is known for its compound leaves, which are made up of 5 to 11 ovate, glossy leaflets that exude a citrus-like fragrance when crushed.</p><p>Perhaps its most distinctive feature is the sharp, stout spines that stud its gray-brown branches, which historically have earned it the nickname of 'toothache tree' due to the numbing effect of its bark and leaves on the mouth. In spring, small, greenish-yellow clusters of flowers emerge, providing an early-season feast for pollinators. These blooms give way to small, reddish-brown berry-like fruits that persist into winter, offering food for birds and other wildlife.</p><p>The Prickly-ash is drought-resistant and adaptable to various soils, often used in naturalistic plantings and restoration projects. Its textured bark, spiny branches, and aromatic foliage make it a unique specimen for an ecological garden or a naturalized area.</p>"
   },
   {
     nameCommon: "Crab Apple",
@@ -831,6 +1152,7 @@ const initialTreesState = [
     family: "Rosaceae",
     familyCommon: "Rose",
     genus: "Malus",
+    species: "multiple",
     type: "deciduous",
     leafType: "simple",
     leafAttachment: "alternate",
@@ -838,25 +1160,27 @@ const initialTreesState = [
       "yellow",
       "red"
     ],
-    slug: "crabapple"
+    slug: "crabapple",
+    description: "<p>The Crab Apple tree, belonging to the genus Malus, is celebrated for its vibrant springtime display and its contributions to gardens and ecosystems. Typically growing to 15-25 feet tall, these deciduous trees are cherished for their abundant and fragrant blossoms that range in color from pristine whites to deep pinks and reds. The flowers not only add aesthetic value but also attract a variety of pollinators.</p><p>Following the floral showcase, the trees produce the namesake crab apples, small pome fruits that can be tart or mildly sweet. These fruits are often used in jellies and preserves and serve as an essential food source for birds and wildlife during the fall and winter months.</p><p>Crab Apple leaves are generally oval with a serrated edge, turning hues of yellow, orange, or red as autumn advances. The trees' rugged bark and twisting branches give them a picturesque appearance in the landscape year-round.</p><p>Highly adaptable, Crab Apple trees are used in urban settings for their modest size and are resistant to many diseases that affect larger fruiting apples. They offer year-round interest with their spring blooms, summer foliage, autumn fruit, and distinctive winter silhouette.</p>"
   },
-  // {
-  //   nameCommon: "Cucumber Tree",
-  //   order: "Magnoliales",
-  //   family: "Magnoliaceae",
-  //   familyCommon: "Magnolia",
-  //   genus: "Magnolia",
-  //   species: "Magnolia acuminata",
-  //   type: "deciduous",
-  //   leafType: "simple",
-  //   leafAttachment: "alternate",
-  //   fallColor: [
-  //     "yellow",
-  //     "dark yellow",
-  //     "brown"
-  //   ],
-  //   slug: "cucumbertree"
-  // },
+  {
+    nameCommon: "Cucumber Tree",
+    order: "Magnoliales",
+    family: "Magnoliaceae",
+    familyCommon: "Magnolia",
+    genus: "Magnolia",
+    species: "Magnolia acuminata",
+    type: "deciduous",
+    leafType: "simple",
+    leafAttachment: "alternate",
+    fallColor: [
+      "yellow",
+      "dark yellow",
+      "brown"
+    ],
+    slug: "cucumbertree",
+    description: "<p>The Cucumber Tree, Magnolia acuminata, stands as a magnificent deciduous species within the Magnolia family, soaring to heights of 50 to 80 feet in its native Eastern United States forests. This stately tree exhibits a straight trunk and a pyramidal to rounded crown as it matures, exuding an aura of elegance and strength.</p><p>Its leaves are sizeable and oblong, with a lush green hue, turning to a golden-yellow in the fall, adding a splash of color to the autumnal landscape. The tree derives its common name from its unique, cucumber-shaped green fruits, which mature to a deep red as they ripen, revealing bright red seeds that are favored by wildlife.</p><p>Spring brings forth the Cucumber Tree’s flowers, which are less showy than those of its magnolia relatives but hold a subtle beauty; they are yellow-green, tulip-shaped, and emerge high in the tree. With its tall stature and low-maintenance character, the Cucumber Tree is a majestic addition to large spaces, parks, and rural landscapes, offering a serene and shady retreat.</p>"
+  },
   {
     nameCommon: "Eastern Cottonwood",
     aka: [
@@ -873,7 +1197,8 @@ const initialTreesState = [
     fallColor: [
       "yellow"
     ],
-    slug: "easterncottonwood"
+    slug: "easterncottonwood",
+    description: "<p>The Eastern Cottonwood, Populus deltoides, is a fast-growing, towering tree of the Poplar family, reaching heights of up to 100 feet or more. Native to North America, it thrives in moist, fertile soils along riverbanks, floodplains, and wetland areas. This species is easily identified by its broad, triangular (deltoid) leaves, which flutter audibly in the breeze due to their flattened petioles.</p><p>In the spring, the Eastern Cottonwood becomes especially noticeable when it produces its namesake cotton-like seeds, which blanket the surrounding ground and water surfaces. The bark of young trees is smooth and silvery-white, becoming deeply furrowed, thick, and rugged with age.</p><p>The tree is a vital component of riparian ecosystems, stabilizing riverbanks and providing habitat for wildlife. Despite its utility in such environments, it is often regarded as a nuisance in urban areas due to its large size, extensive root systems, and the mess created by its seeds. Nonetheless, the Eastern Cottonwood is a hardy survivor, with a majestic presence that dominates the landscapes it inhabits.</p>"
   },
   {
     nameCommon: "Eastern Hemlock",
@@ -884,7 +1209,8 @@ const initialTreesState = [
     species: "Tsuga canadensis",
     type: "conifer",
     needleStructure: "single needle",
-    slug: "easternhemlock"
+    slug: "easternhemlock",
+    description: "<p>The Eastern Hemlock, Tsuga canadensis, is a timeless evergreen native to the northeastern United States and Canada, revered for its longevity and grace. With the potential to reach heights of over 70 feet, this conifer often forms a dense, pyramidal shape, characterized by its drooping branches and fine, feathery foliage.</p><p>The tree’s needles are small, delicate, and dark green with two distinct white stripes beneath, contributing to a soft texture that is almost feathery to the touch. Tiny, pendulous cones dangle from the branches, offering a subtle decorative effect. The bark is thick and furrowed, featuring a rich brown color that deepens with age.</p><p>Eastern Hemlocks favor cool, shaded areas, often found thriving in forested ravines and valleys. They play a crucial ecological role, providing shelter and food for wildlife. Unfortunately, they are under threat from the invasive hemlock woolly adelgid, which poses significant risks to their populations. Nonetheless, the Eastern Hemlock remains a beloved emblem of eastern American forests, prized for its wood, ornamental beauty, and serene presence.</p>"
   },
   {
     nameCommon: "Eastern Redbud",
@@ -903,7 +1229,8 @@ const initialTreesState = [
     fallColor: [
       "yellow"
     ],
-    slug: "easternredbud"
+    slug: "easternredbud",
+    description: "<p>The Eastern Redbud, Cercis canadensis, is a captivating small to medium-sized deciduous tree beloved for its early spring display of vivid, pink-purple flowers. Before its heart-shaped leaves unfurl, the redbud's bare branches and even its trunk are enveloped by clusters of these bright blooms, which later give way to flattened, bean-like seed pods that persist into winter.</p><p>Reaching heights of 20 to 30 feet, the redbud has a rounded canopy that provides dappled shade, making it a favored ornamental in gardens and parks. The leaves emerge reddish, turning to a lustrous green as they mature and then to shades of yellow in the fall, completing a year-round cycle of color.</p><p>Adaptable to a variety of soil conditions, though preferring well-drained sites, the Eastern Redbud is a native treasure from the eastern U.S. It is not only a feast for human eyes but also a source of nectar for pollinators, adding ecological value to its aesthetic appeal.</p>"
   },
   {
     nameCommon: "Eastern Redcedar",
@@ -914,28 +1241,30 @@ const initialTreesState = [
     species: "Juniperus virginiana",
     type: "conifer",
     needleStructure: "scaly needles",
-    slug: "easternredcedar"
+    slug: "easternredcedar",
+    description: "<p>The Eastern Redcedar, Juniperus virginiana, is an enduring evergreen tree with a broad natural range across the eastern United States. It is not a true cedar but a juniper, typically growing to 30-40 feet in height, though some specimens can soar up to 90 feet under ideal conditions. Its dense foliage takes on a conical shape in youth, becoming more columnar with age.</p><p>The tree’s needles are a deep, rich green, often with a tinge of blue, and can be prickly to the touch. With age, the Eastern Redcedar's bark becomes fibrous and reddish-brown, peeling off in long strips. This tree is dioecious, with separate male and female plants; the female trees bear small, blue, berry-like cones that are actually modified cones and are attractive to wildlife.</p><p>Hardy and drought-resistant, the Eastern Redcedar is frequently used as a windbreak or in landscape plantings, valued for its aromatic wood, which is commonly used in closets and chests to repel moths. Despite its usefulness, it is often considered invasive, as it can dominate prairies and grasslands if left unchecked.</p>"
   },
-  // {
-  //   nameCommon: "Eastern Wahoo",
-  //   aka: [
-  //     "American Wahoo",
-  //     "Burningbush",
-  //     "Hearts Bursting With Love"
-  //   ],
-  //   order: "Celastrales",
-  //   family: "Celastraceae",
-  //   familyCommon: "Staff-tree",
-  //   genus: "Euonymus",
-  //   species: "Euonymus atropurpureus",
-  //   type: "deciduous",
-  //   leafType: "simple",
-  //   leafAttachment: "opposite",
-  //   fallColor: [
-  //     "red"
-  //   ],
-  //   slug: "easternwahoo"
-  // },
+  {
+    nameCommon: "Eastern Wahoo",
+    aka: [
+      "American Wahoo",
+      "Burningbush",
+      "Hearts Bursting With Love"
+    ],
+    order: "Celastrales",
+    family: "Celastraceae",
+    familyCommon: "Staff-tree",
+    genus: "Euonymus",
+    species: "Euonymus atropurpureus",
+    type: "deciduous",
+    leafType: "simple",
+    leafAttachment: "opposite",
+    fallColor: [
+      "red"
+    ],
+    slug: "easternwahoo",
+    description: "<p>The Eastern Wahoo, Euonymus atropurpureus, is a native North American shrub or small tree that graces the understory of woodlands with its modest yet attractive presence. Typically reaching heights between 10 to 20 feet, its multi-stemmed form sports opposing, elliptical leaves that turn a striking red-purple in autumn, creating a vivid display.</p><p>Spring brings small, purplish flowers that, while not overly showy, add subtle interest and are followed by distinctive, deeply lobed fruits that split open to reveal bright scarlet seeds, which persist into winter and provide food for birds and wildlife.</p><p>Eastern Wahoo's bark is gray-brown and textured, contributing to its winter interest. This adaptable plant is often found in open woods and along stream banks, thriving in a variety of soil conditions. With its year-round ornamental appeal and its role as a food source for fauna, Eastern Wahoo is a valued addition to naturalistic gardens and restoration projects.</p>"
+  },
   {
     nameCommon: "Eastern White Pine",
     order: "Pinales",

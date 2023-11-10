@@ -43,6 +43,9 @@
                                     <div class="options-set">
                                         <div class="options-set-header">
                                             <h3>Needle Structure</h3>
+                                            <span>
+                                                <img src="/img/icons/spruce1_green.png" alt="">
+                                            </span>
                                         </div>
                                         <label v-for="needle in needleStructures" :key="needle">
                                             <input 
@@ -57,7 +60,9 @@
                                     <div class="options-set">
                                         <div class="options-set-header">
                                             <h3>Needles per Cluster</h3>
-                                            <h3>(Select Options)</h3>
+                                            <span>
+                                                <img src="/img/icons/spruce1_green.png" alt="">
+                                            </span>
                                         </div>
                                         <label v-for="cluster in needleClusters" :key="cluster">
                                             <input 

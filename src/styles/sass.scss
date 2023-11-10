@@ -626,10 +626,24 @@ footer {
   }
 }
 .options-set-header {
+  position:relative;
+  // display:flex;
+  // justify-content:space-between;
+  // align-items: flex-end;
+
   // background-color: coral;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
   border-bottom: 1px solid chartreuse;
+  span {
+    position: absolute;
+    right: 0;
+    top: 0;
+    img{
+      max-width: 20px;
+    }
+
+  }
 }
 // .mobile-menu-toggle {
 //   position: fixed;
