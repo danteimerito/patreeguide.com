@@ -637,14 +637,23 @@ footer {
   border-bottom: 1px solid chartreuse;
   span {
     position: absolute;
-    right: 0;
-    top: 0;
-    img{
-      max-width: 20px;
-    }
-
   }
 }
+.icon-conifer {
+  right: 0;
+  top: 2px;
+  img{
+    max-width: 20px;
+  }
+}
+.icon-deciduous {
+  right: 0;
+  top: 8px;
+  img {
+    max-width: 35px;
+  }
+}
+
 // .mobile-menu-toggle {
 //   position: fixed;
 //   right: 50px;
@@ -814,7 +823,6 @@ footer {
     height: auto;
   }
 }
-
 .contain-thumb {
   // display: flex;
   flex-direction: column;
