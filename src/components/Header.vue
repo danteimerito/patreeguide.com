@@ -78,7 +78,7 @@
                                         <div class="options-set-header">
                                             <h3>Leaf Type</h3>
                                             <span class="icon-deciduous">
-                                                <img src="/img/icons/deciduous_500px.png" alt="">
+                                                <img src="/img/icons/icon-deciduous_400px.png" alt="">
                                             </span>
                                         </div>
                                         <label v-for="leaf in leafTypes" :key="leaf">
@@ -95,7 +95,7 @@
                                         <div class="options-set-header">
                                             <h3>Compound Structure</h3>
                                             <span class="icon-deciduous">
-                                                <img src="/img/icons/deciduous_500px.png" alt="">
+                                                <img src="/img/icons/icon-deciduous_400px.png" alt="">
                                             </span>
                                         </div>
                                         <label v-for="structure in compoundStructures" :key="structure">
@@ -112,7 +112,7 @@
                                         <div class="options-set-header">
                                             <h3>Leaf Attachment</h3>
                                             <span class="icon-deciduous">
-                                                <img src="/img/icons/deciduous_500px.png" alt="">
+                                                <img src="/img/icons/icon-deciduous_400px.png" alt="">
                                             </span>
                                         </div>
                                         <label v-for="attachment in leafAttachments" :key="attachment">
@@ -129,7 +129,7 @@
                                         <div class="options-set-header">
                                             <h3>Fall Colors</h3>
                                             <span class="icon-deciduous">
-                                                <img src="/img/icons/deciduous_500px.png" alt="">
+                                                <img src="/img/icons/icon-deciduous_400px.png" alt="">
                                             </span>
                                         </div>
                                         <label v-for="color in fallColors" :key="color">
