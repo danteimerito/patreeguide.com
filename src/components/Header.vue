@@ -44,7 +44,7 @@
                                         <div class="options-set-header">
                                             <h3>Needle Structure</h3>
                                             <span class="icon-conifer">
-                                                <img src="/img/icons/spruce1_green.png" alt="">
+                                                <img src="/img/icons/icon_conifer_300px.png" alt="">
                                             </span>
                                         </div>
                                         <label v-for="needle in needleStructures" :key="needle">
@@ -61,7 +61,7 @@
                                         <div class="options-set-header">
                                             <h3>Needles per Cluster</h3>
                                             <span class="icon-conifer">
-                                                <img src="/img/icons/spruce1_green.png" alt="">
+                                                <img src="/img/icons/icon_conifer_300px.png" alt="">
                                             </span>
                                         </div>
                                         <label v-for="cluster in needleClusters" :key="cluster">
