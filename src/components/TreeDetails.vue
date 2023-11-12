@@ -63,10 +63,22 @@
                             </a>
                             <div v-html="tree.photo3Credit" class="contain-thumb"></div>
                         </div>
-
+                        
                         <div v-if="tree.photo4Src" class="contain-thumb">
-                            <div v-html="tree.photo4Src"></div>                            
-                        </div>                        
+                            <a  target="_blank"
+                                rel="noopener noreferrer"
+                                
+                                :href="tree.photo4Href"
+                            >
+                                <img 
+                                    fetchPriority="low"
+                                    width="256" 
+                                    :alt="tree.photo4Alt" 
+                                    :src="tree.photo4Src"
+                                >
+                            </a>
+                            <div v-html="tree.photo4Credit" class="contain-thumb"></div>
+                        </div>
 
                     </div>
 
