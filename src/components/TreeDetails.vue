@@ -64,7 +64,17 @@
                             <div v-html="tree.photo3Credit" class="contain-thumb"></div>
                         </div>
 
+                        <div v-if="tree.photo4Src" class="contain-thumb">
+                            <div v-html="tree.photo4Src"></div>                            
+                        </div>                        
+
                     </div>
+
+
+                    
+
+
+
                     
                 </div>
 
