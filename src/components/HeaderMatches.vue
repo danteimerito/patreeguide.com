@@ -3,20 +3,20 @@
             <div class="container">
                 <div class="options-panel-widgets">
 
-                    <div>
-                        <button @click="resetAllFilters" class="menu-reset">
+                    <div class="left">
+                        <button v-if="isAnyFilterSelected" @click="resetAllFilters" class="menu-reset">
                             Clear Filters
                         </button>
                     </div>
 
-                    <div class="matches">
+                    <div class="matches center">
                         <div class="matches-text"> Matches </div>
                         <div class="matches-num">
                             {{ filteredTreeCount }}
                         </div>
                     </div>
 
-                    <div>
+                    <div class="right">
                         <router-link to="/">     
                             <button v-if="menuIsOpen" @click="toggleMenu" class="button-view-results" >
                                 View Results
@@ -45,6 +45,28 @@ export default {
         },
     },
     computed: {
+    isAnyFilterSelected() {
+      return [
+        this.selectedTypes, 
+        this.selectedNeedles, 
+        this.selectedLeafTypes, 
+        this.selectedLeafAttachments, 
+        this.selectedFallColors, 
+        this.selectedCompoundStructures, 
+        this.selectedClusters
+      ].some(array => array && array.length > 0);
+    },  
+    areFiltersSelected() {
+      return [
+        this.selectedTypes, 
+        this.selectedNeedles, 
+        this.selectedLeafTypes, 
+        this.selectedLeafAttachments, 
+        this.selectedFallColors, 
+        this.selectedCompoundStructures, 
+        this.selectedClusters
+      ].every(array => array && array.length > 0);
+    },
     // Using mapState
         ...mapState({
             trees: state => state.trees,

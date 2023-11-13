@@ -43,6 +43,10 @@ button {
     background-color: var(--green-1);
   }
 }
+.button-inactive {
+  border: #333333;
+  color: #aaaaaa;
+}
 
 ul{
   list-style-type: none;
@@ -429,6 +433,11 @@ footer {
   display: flex;
   justify-content: space-around;
   margin: 11px 0;
+  div {
+    display: flex;
+    flex: 0 0 33.33%;
+    justify-content: center;
+  }
 }
 
 .single-tree-contain {
@@ -710,16 +719,6 @@ footer {
   // @media only screen and (max-width: 800px){
   //   margin-left: 15px;
   // }
-}
-.button-view-results {
-  @media only screen and (max-width: 800px){
-    // display: none;
-  }
-}
-.button-edit-filters {
-  @media only screen and (max-width: 800px){
-    // display: none;
-  }
 }
 
 .individual-tree {
