@@ -89,22 +89,30 @@ p {
 }
 
 body {
+  // forces scroll bar visible 
+  // to prevent page jump
+
+  // overflow: scroll;
   background-color:var(--green-2);
+  // background: url('../img/pexels11.jpg');
   background-size: cover;
+  background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: center, center;
-  // transition: all 2s;/
-  // min-height: 100vh;
-  // min-width: 100vw;
-  // @media (min-width: 1100px) {
-
-  //     background-size: contain;
-
-  // }
 }
 
+
+//background images
+// body.baldcypress {
+//   background-image: url('../img/forest2.jpg');
+// }
+// body.whitespruce {
+//   background-image: url('../img/forest4.jpg');
+// }
+
+
 .left-sixty{
+
   flex-basis: 60%;
   @media only screen and (max-width: 800px){
     flex-basis: 100%;
