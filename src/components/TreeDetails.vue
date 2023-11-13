@@ -227,8 +227,10 @@ export default {
         },
         updateBodyBackground() {
             // First set the blurred image
-            document.body.style.backgroundImage = `url(${this.blurredBackground})`;
             
+            // document.body.style.backgroundImage = `url(${this.blurredBackground})`;
+            document.getElementById("background").style.backgroundImage = `url(${this.blurredBackground})`;
+
             // Then load the full image
             this.loadFullImage();
         },
@@ -237,8 +239,10 @@ export default {
             img.src = this.fullBackground;
             img.onload = () => {
                 // On image load, set the full background image
-                document.body.style.backgroundImage = `url(${img.src})`;
-                document.body.classList.add('background-fade-in');
+                // document.body.style.backgroundImage = `url(${img.src})`;
+                // document.body.classList.add('background-fade-in');
+                document.getElementById("background").style.backgroundImage = `url(${img.src})`;
+                document.getElementById("background").classList.add('background-fade-in');
             };
         }
     },

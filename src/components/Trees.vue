@@ -143,12 +143,14 @@ export default {
                 const imageUrl = this.tree && this.tree.background ? `/img/${this.tree.background}` : defaultImageUrl;
 
                 // Set the background image style on the body tag
-                document.body.style.backgroundImage = `url(${imageUrl})`;
+                // document.body.style.backgroundImage = `url(${imageUrl})`;
+                document.getElementById("background").style.backgroundImage = `url(${imageUrl})`;
             }
         },
         beforeDestroy() {
             // When the component is destroyed, reset the body background if needed
-            document.body.style.backgroundImage = '';
-        }
+            // document.body.style.backgroundImage = '';
+            document.getElementById("background").style.backgroundImage = '';
+        } 
 }
 </script>
