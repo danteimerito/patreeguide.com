@@ -96,6 +96,11 @@ body {
   background-position: center;
   // min-height: 100vh;
   // min-width: 100vw;
+  @media (min-width: 1100px) {
+
+      background-size: cover;
+
+  }
 }
 
 .left-sixty{
