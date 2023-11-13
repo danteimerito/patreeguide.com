@@ -92,13 +92,12 @@ body {
   // forces scroll bar visible 
   // to prevent page jump
 
-  // overflow: scroll;
+  overflow: scroll;
   background-color:var(--green-2);
   // background: url('../img/pexels11.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-repeat: no-repeat;
 }
 
 

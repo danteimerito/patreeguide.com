@@ -1,10 +1,12 @@
 
 <template>
-  <Header />
-    <div class="container">
-      <router-view></router-view>  
-    </div>
-  <Footer />
+  <div id="background"></div>
+    <Header />
+      <div class="container">
+        <router-view></router-view>  
+      </div>
+    <Footer />
+
 </template>
 
 <script>
@@ -35,5 +37,14 @@ export default {
 
 <style>
 /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap'); */
-
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./img/bg_conifer1.jpg');
+  background-size: cover;
+  z-index: -5;
+}
 </style>
