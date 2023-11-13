@@ -93,44 +93,11 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  height: 100vh;
-  min-height: 1200px;
   background-position: center;
-
-    // forces scroll bar visible 
-  // to prevent page jump
-
-  // overflow: scroll;
-
-  // background: url('../img/example-image.jpg');
-  
-  // background-position: top;
-  // position: fixed;
-  // position: absolute;
-  // top:0px;
-  // left:0px;
-  // width: 100vw;
-  // height: auto;
-  
-  // min-width: 250px;
-
-    // background-image: url('your-image.jpg');
-    // background-size: cover; /* or specific size like 100% 100% */
-    // background-attachment: fixed;
-    @media (max-width: 768px) {
-      body {
-        // background-size: contain;
-      }
-    }
+  // min-height: 100vh;
+  // min-width: 100vw;
 }
 
-//background images
-// body.baldcypress {
-//   background-image: url('../img/forest2.jpg');
-// }
-// body.whitespruce {
-//   background-image: url('../img/forest4.jpg');
-// }
 .left-sixty{
   flex-basis: 60%;
   @media only screen and (max-width: 800px){
