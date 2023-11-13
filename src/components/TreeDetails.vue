@@ -228,6 +228,7 @@ export default {
         updateBodyBackground() {
             // First set the blurred image
             document.body.style.backgroundImage = `url(${this.blurredBackground})`;
+            
             // Then load the full image
             this.loadFullImage();
         },
