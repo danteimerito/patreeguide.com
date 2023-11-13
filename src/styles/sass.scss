@@ -93,14 +93,14 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center, center;
   // min-height: 100vh;
   // min-width: 100vw;
-  @media (min-width: 1100px) {
+  // @media (min-width: 1100px) {
 
-      background-size: contain;
+  //     background-size: contain;
 
-  }
+  // }
 }
 
 .left-sixty{
