@@ -42,6 +42,10 @@ button {
     cursor: pointer;
     background-color: var(--green-1);
   }
+  @media only screen and (max-width: 350px)  {
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+  }
 }
 .button-inactive {
   border: #333333;
@@ -438,6 +442,16 @@ footer {
     flex: 0 0 33.33%;
     justify-content: center;
   }
+  .left{
+    flex:2;
+
+  }
+  .center {
+    flex: 1;
+  }
+  .right {
+    flex: 2;
+  }
 }
 
 .single-tree-contain {
@@ -756,22 +770,8 @@ footer {
     margin-bottom: 1rem;
   }
   button {
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    // justify-content: center;
     background-color: rgba(0,0,0,0.2);
     border: 1px solid rgba(255, 255, 255, 0.5);
-    // border-radius: 3px; 
-    // // width: 120px;
-    // padding: 10px;
-    // margin: 5px;
-    // text-transform: capitalize;
-    // &:hover {
-    //   cursor: pointer;
-    //   background-color: var(--green-1);
-    //   border: 1px solid chartreuse;
-    // }
   }
 }
 
