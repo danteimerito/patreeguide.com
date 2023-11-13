@@ -1,11 +1,12 @@
 
 <template>
-  <div id="background"></div>
+  <div id="background">
     <Header />
       <div class="container">
         <router-view></router-view>  
       </div>
     <Footer />
+  </div>
 
 </template>
 
@@ -38,13 +39,20 @@ export default {
 <style>
 /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap'); */
 #background {
-  position: fixed;
-  top: 0;
+  /* div.background must be empty in this approach 
+  position: fixed;*/
+  /* top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  /* background-image: url('./img/bg_conifer1.jpg'); */
   background-size: cover;
-  z-index: -5;
+  z-index: -5;  */
+
+  /* Method 2: 
+    div.background must serve as a container for the rest of the content.
+  */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 </style>
