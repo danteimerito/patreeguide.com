@@ -1,6 +1,6 @@
 <template>
     <div class="options-panel-topbar">
-            <div class="container">
+            <div class="contain-widgets">
                 <div class="options-panel-widgets">
 
                     <div class="left">
