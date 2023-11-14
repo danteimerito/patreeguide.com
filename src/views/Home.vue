@@ -17,8 +17,48 @@ export default {
     Intro,
     Trees,
   },
+  watch: {
+    '$route': {
+      immediate: true,
+      handler() {
+          this.updateBodyBackground();
+      }
+    }
+  },
+  methods: {
+    updateBodyBackground() {
+      // First set the blurred image
+      
+      // document.body.style.backgroundImage = `url(${this.blurredBackground})`;
+      document.getElementById("background").style.backgroundImage = `url(../img/bg_pexels16_small.jpg)`;
 
-    computed: {
+      // Then load the full image
+      this.loadFullImage();
+    },
+    loadFullImage() {
+      const img = new Image();
+      img.src = this.fullBackground;
+      img.onload = () => {
+          // On image load, set the full background image
+          // document.body.style.backgroundImage = `url(${img.src})`;
+          // document.body.classList.add('background-fade-in');
+          document.getElementById("background").style.backgroundImage = `url(../img/bg_pexels16.jpg)`;
+          document.getElementById("background").classList.add('background-fade-in');
+      };
+    },
+  },
+  computed: {
+    blurredBackground() {
+        // Assuming you have a low-res version of the default background
+        const defaultBlurredImageUrl = '/img/bg_forest3_small.jpg';
+        
+        return this.tree && this.tree.backgroundSmall ? `/img/${this.tree.backgroundSmall}` : defaultBlurredImageUrl;
+    },
+    fullBackground() {
+        // Your existing logic to determine the URL of the full background
+        const defaultImageUrl = '/img/bg_forest3.jpg';
+        return this.tree && this.tree.background ? `/img/${this.tree.background}` : defaultImageUrl;
+    },
     isAnyFilterSelected() {
       return [
         this.selectedTypes, 
@@ -62,5 +102,6 @@ export default {
             );
         },
   },
+ 
 };
 </script>

@@ -1,12 +1,41 @@
 <template>
-    <div class="results">
-        <h1>Learn about the trees of Pennsylvania by identifying them by their features. </h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum vero eos, dolores error pariatur consectetur fugiat. Aliquid dicta dolor nisi perferendis minima, qui ab enim alias magni porro suscipit temporibus. Molestias, quod soluta? Repudiandae commodi dicta, sapiente eos, inventore omnis error incidunt impedit id consectetur beatae hic possimus temporibus facere? Molestiae sunt, fugit quod distinctio qui aperiam ducimus quasi! Cupiditate quas quam, in odit libero tempora reiciendis molestias dolorem nulla minus dolore non expedita repellendus a ad numquam. Natus dignissimos sequi pariatur quos, cupiditate velit at laborum ipsam iusto neque illo. Laborum corporis deserunt eligendi id laudantium unde iusto doloribus.</p>
+    <div class="single-tree-contain">
+        <div class="feature-card">
+            <h1>Easily Identify Trees in Pennsylvania</h1>
+            <h1>How it works:</h1>
+            <p><span>Step 1: </span>Find a Tree</p>
+            <p><span>Step 2: </span> Open the menu and select the tree's features</p>
+            <p><span>Step 3: </span> Click "View Results" to find a listing of possible matches</p>
+            <p><span>Step 4: </span> Click on a tree in the list to see more information</p>
+            <button @click="toggleMenu">Begin the Journey</button>
+        </div>
     </div>
 </template>
 
-<scripts>
-</scripts>
+<script>
+    import { mapState } from 'vuex';
+
+    export default {
+        name: 'Intro',
+        methods: {
+                toggleMenu() {
+                this.$store.commit('toggleMenu');
+            },
+        }
+        }
+        
+    
+</script>
 
 <style>
+.feature-card {
+    text-align:center;
+}
+.feature-card span {
+    font-weight: bold;
+    color: chartreuse;
+}
+.feature-card h1 {
+    margin-bottom: 1rem !important;
+}
 </style>

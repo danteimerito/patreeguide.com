@@ -2566,8 +2566,7 @@ export const store = createStore({
         state.selectedCompoundStructures = [];
         state.selectedLeafAttachments = [];
         state.selectedFallColors = [];
-    
-        // If you want to clear local storage as well:
+        // Clear local storage:
         localStorage.removeItem('selectedTypes');
         localStorage.removeItem('selectedNeedles');
         localStorage.removeItem('selectedClusters');

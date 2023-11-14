@@ -176,16 +176,16 @@ export default {
     }, 
     computed: {
         isAnyFilterSelected() {
-      return [
-        this.selectedTypes, 
-        this.selectedNeedles, 
-        this.selectedLeafTypes, 
-        this.selectedLeafAttachments, 
-        this.selectedFallColors, 
-        this.selectedCompoundStructures, 
-        this.selectedClusters
-      ].some(array => array && array.length > 0);
-    },
+            return [
+                this.selectedTypes, 
+                this.selectedNeedles, 
+                this.selectedLeafTypes, 
+                this.selectedLeafAttachments, 
+                this.selectedFallColors, 
+                this.selectedCompoundStructures, 
+                this.selectedClusters
+            ].some(array => array && array.length > 0);
+        },
         isMenuOpen: {
             get() {
                 return this.$store.state.isMenuOpen;
@@ -201,7 +201,6 @@ export default {
                 return false
             }
         },
-        
         ...mapState(['selectedTypes']),
         selectedTypesComputed: {
             get() {
@@ -211,7 +210,6 @@ export default {
             this.$store.dispatch('updateSelectedTypes', value);
             },
         },
-
         ...mapState(['selectedNeedles']),
         selectedNeedlesComputed: {
             get() {
@@ -221,8 +219,7 @@ export default {
             this.$store.dispatch('updateSelectedNeedles', value);
             },
         },
-
-      ...mapState(['selectedClusters']),
+        ...mapState(['selectedClusters']),
         selectedClustersComputed: {
             get() {
             return this.selectedClusters;
@@ -231,8 +228,7 @@ export default {
             this.$store.dispatch('updateSelectedClusters', value);
             },
         },
-
-      ...mapState(['selectedLeafTypes']),
+        ...mapState(['selectedLeafTypes']),
         selectedLeafTypesComputed: {
             get() {
             return this.selectedLeafTypes;
@@ -241,8 +237,7 @@ export default {
             this.$store.dispatch('updateSelectedLeafTypes', value);
             },
         },
-
-      ...mapState(['selectedCompoundStructures']),
+        ...mapState(['selectedCompoundStructures']),
         selectedCompoundStructuresComputed: {
             get() {
             return this.selectedCompoundStructures;
@@ -251,8 +246,7 @@ export default {
             this.$store.dispatch('updateSelectedCompoundStructures', value);
             },
         },
-
-      ...mapState(['selectedLeafAttachments']),
+        ...mapState(['selectedLeafAttachments']),
         selectedLeafAttachmentsComputed: {
             get() {
             return this.selectedLeafAttachments;
@@ -261,8 +255,7 @@ export default {
             this.$store.dispatch('updateSelectedLeafAttachments', value);
             },
         },
-
-      ...mapState(['selectedFallColors']),
+        ...mapState(['selectedFallColors']),
         selectedFallColorsComputed: {
             get() {
             return this.selectedFallColors;
@@ -271,8 +264,6 @@ export default {
             this.$store.dispatch('updateSelectedFallColors', value);
             },
         },
-
-
     }, 
     methods: {
         toggleMenu() {
