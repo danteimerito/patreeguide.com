@@ -7,7 +7,7 @@
             <div class="topbars">
                 <div class="menu-wrap">
                     <div class="menu-topbar" ref="">
-                        <div class="logo"><router-link to="/">PA TREE GUIDE </router-link></div>
+                        <div @click="logoClick" class="logo"><router-link to="/">PA TREE GUIDE </router-link></div>
                     </div>
 
                     <input 
@@ -16,7 +16,7 @@
                         v-model="isMenuOpen"
                     />
                     <HeaderMatches v-if="isMenuOpen"/>
-                    <HeaderMatches v-else-if="homePage"/>
+                    <HeaderMatches v-else-if="homePage && isAnyFilterSelected"/>
 
                     <div class="hamburger">
                         <div></div>
@@ -175,6 +175,17 @@ export default {
         HeaderMatches
     }, 
     computed: {
+        isAnyFilterSelected() {
+      return [
+        this.selectedTypes, 
+        this.selectedNeedles, 
+        this.selectedLeafTypes, 
+        this.selectedLeafAttachments, 
+        this.selectedFallColors, 
+        this.selectedCompoundStructures, 
+        this.selectedClusters
+      ].some(array => array && array.length > 0);
+    },
         isMenuOpen: {
             get() {
                 return this.$store.state.isMenuOpen;
@@ -266,6 +277,16 @@ export default {
     methods: {
         toggleMenu() {
             this.$store.commit('toggleMenu');
+        },
+        closeMenu() {
+            this.$store.commit('closeMenu');
+        },
+        resetAllFilters() {
+            this.$store.commit('resetFilters');
+        },
+        logoClick() {
+            this.$store.commit('resetFilters');
+            this.$store.commit('closeMenu');
         },
     }
 }

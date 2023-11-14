@@ -21,12 +21,12 @@ const routes = [
         component: TreeDetails,
         props: true
     },
-    {
-      path: '/family/:family',
-      name: 'Family',
-      component: Family,
-      props: true
-  }
+  //   {
+  //     path: '/family/:family',
+  //     name: 'Family',
+  //     component: Family,
+  //     props: true
+  // }
 ]
 
 const router = createRouter({
