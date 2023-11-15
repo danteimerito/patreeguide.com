@@ -3,8 +3,6 @@
     <Trees v-if="isAnyFilterSelected"/>
 </template>
 
-
-
 <script>
   import Trees from '../components/Trees'
   import Intro from '../components/Intro'

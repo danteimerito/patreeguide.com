@@ -9,6 +9,12 @@
               </router-link>
           </li>
         </ul>
+
+        <div v-if="filteredTrees.length < 1" class="feature-card">
+          <h1>We couldn't find any trees that match those criteria. </h1>
+          <button @click="tryAgain">Try Again</button>
+        </div>
+
       </div>
 </template>
 
@@ -130,27 +136,28 @@ export default {
             }
             }
         },
-        methods: {
-            updateBodyBackground() {
-                // Retrieve the tree data using a Vuex getter
-                const treeData = this.$store.getters.getTreeBySlug(this.$route.params.slug);
-
-                // Define a default background image path
-                const defaultImageUrl = '/img/bg_forest3.jpg';
-
-                // Construct the background image URL
-                // If treeData is defined and has a background, use that, otherwise use the default
-                const imageUrl = this.tree && this.tree.background ? `/img/${this.tree.background}` : defaultImageUrl;
-
-                // Set the background image style on the body tag
-                // document.body.style.backgroundImage = `url(${imageUrl})`;
-                document.getElementById("background").style.backgroundImage = `url(${imageUrl})`;
-            }
-        },
-        beforeDestroy() {
-            // When the component is destroyed, reset the body background if needed
-            // document.body.style.backgroundImage = '';
-            document.getElementById("background").style.backgroundImage = '';
-        } 
+    methods: {
+      tryAgain() {
+          this.$store.commit('toggleMenu');
+          this.$store.commit('resetFilters');
+      },
+      updateBodyBackground() {
+        // Retrieve the tree data using a Vuex getter
+        const treeData = this.$store.getters.getTreeBySlug(this.$route.params.slug);
+        // Define a default background image path
+        const defaultImageUrl = '/img/bg_forest3.jpg';
+        // Construct the background image URL
+        // If treeData is defined and has a background, use that, otherwise use the default
+        const imageUrl = this.tree && this.tree.background ? `/img/${this.tree.background}` : defaultImageUrl;
+        // Set the background image style on the body tag
+        // document.body.style.backgroundImage = `url(${imageUrl})`;
+        document.getElementById("background").style.backgroundImage = `url(${imageUrl})`;       
+      }       
+    },
+    beforeDestroy() {
+        // When the component is destroyed, reset the body background if needed
+        // document.body.style.backgroundImage = '';
+        document.getElementById("background").style.backgroundImage = '';
+    } 
 }
 </script>
