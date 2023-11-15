@@ -8,6 +8,8 @@
                 <div class="menu-wrap">
                     <div class="menu-topbar" ref="">
                         <div class="logo"><router-link to="/" @click="logoClick">PA TREE GUIDE </router-link></div>
+
+                        <div><router-link to="/about">About</router-link></div>
                     </div>
 
                     <input 

@@ -2,7 +2,7 @@ import {createRouter, createWebHistory} from 'vue-router'
 import About from '../views/About'
 import Home from '../views/Home'
 import TreeDetails from '../components/TreeDetails'
-import Family from '../components/Family'
+import NotFound from '../views/NotFound'
 
 const routes = [
     {
@@ -10,23 +10,22 @@ const routes = [
         name: 'Home',
         component: Home
     },
-    // {
-    //     path: '/about', 
-    //     name: 'About',
-    //     component: About
-    // },
+    {
+        path: '/about', 
+        name: 'About',
+        component: About
+    },
     {
         path: '/trees/:slug',
         name: 'TreeDetails',
         component: TreeDetails,
         props: true
     },
-  //   {
-  //     path: '/family/:family',
-  //     name: 'Family',
-  //     component: Family,
-  //     props: true
-  // }
+    {
+      path: '/:catchAll(.*)*', // This will match all routes
+      name: 'NotFound',
+      component: NotFound
+    }
 ]
 
 const router = createRouter({

@@ -247,17 +247,11 @@ export default {
         }
     },
     beforeDestroy() {
-        document.body.style.backgroundImage = '';
-        document.body.classList.remove('background-fade-in');
+        document.getElementById("background").style.backgroundImage = '';
+        // document.getElementById("background").classList.remove('background-fade-in');
     }
 }
 </script>
 
-<style>
-/* This should be in your global CSS */
-.background-fade-in {
-    transition: background-image 0.5s ease-in-out;
-}
-</style>
 
 

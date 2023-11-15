@@ -12,42 +12,34 @@
 </template>
 
 <script>
-
-
-import { mapState, mapGetters } from 'vuex';
+import { mapState } from 'vuex';
 
 export default {
   name: 'Intro',
-  watch: {
-    '$route': {
-      immediate: true,
-      handler() {
-          this.updateBodyBackground();
-      }
-    }
+  mounted() {
+    this.updateBodyBackground();
   },
   methods: {
     toggleMenu() {
                 this.$store.commit('toggleMenu');
     },
     updateBodyBackground() {
-      // First set the blurred image
-      
-      // document.body.style.backgroundImage = `url(${this.blurredBackground})`;
-      document.getElementById("background").style.backgroundImage = `url(../img/bg_forest3_small.jpg)`;
-
-      // Then load the full image
-      this.loadFullImage();
+      // Assuming the background element exists
+      const backgroundElement = document.getElementById("background");
+      if (backgroundElement) {
+        backgroundElement.style.backgroundImage = 'url(/img/bg_pexels7_small.jpg)';
+        this.loadFullImage();
+      }
     },
     loadFullImage() {
       const img = new Image();
-      img.src = this.fullBackground;
+      img.src = '/img/bg_pexels7.jpg';
       img.onload = () => {
-          // On image load, set the full background image
-          // document.body.style.backgroundImage = `url(${img.src})`;
-          // document.body.classList.add('background-fade-in');
-          document.getElementById("background").style.backgroundImage = `url(../img/bg_forest3.jpg)`;
-          document.getElementById("background").classList.add('background-fade-in');
+        const backgroundElement = document.getElementById("background");
+        if (backgroundElement) {
+          backgroundElement.style.backgroundImage = 'url(/img/bg_pexels7.jpg)';
+          backgroundElement.classList.add('background-fade-in');
+        }
       };
     },
   },
@@ -86,9 +78,7 @@ export default {
     ]),
   },
  
-};
-        
-    
+}; 
 </script>
 
 <style>
@@ -103,3 +93,5 @@ export default {
     margin-bottom: 1rem !important;
 }
 </style>
+
+

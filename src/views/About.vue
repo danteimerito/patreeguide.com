@@ -7,5 +7,38 @@
             </div>
         </div>
     </div>
-    
 </template>
+
+
+<script>
+export default {
+
+    watch: {
+            '$route': {
+            immediate: true, // This ensures the handler is called right after the component is mounted
+            handler() {
+                this.updateBodyBackground();
+            }
+            }
+        },
+    methods: {
+      updateBodyBackground() {
+        // Retrieve the tree data using a Vuex getter
+        const treeData = this.$store.getters.getTreeBySlug(this.$route.params.slug);
+        // Define a default background image path
+        const defaultImageUrl = '/img/bg_forest3.jpg';
+        // Construct the background image URL
+        // If treeData is defined and has a background, use that, otherwise use the default
+        const imageUrl = this.tree && this.tree.background ? `/img/${this.tree.background}` : defaultImageUrl;
+        // Set the background image style on the body tag
+        // document.body.style.backgroundImage = `url(${imageUrl})`;
+        document.getElementById("background").style.backgroundImage = `url(${imageUrl})`;       
+      }       
+    },
+    beforeDestroy() {
+        // When the component is destroyed, reset the body background if needed
+        // document.body.style.backgroundImage = '';
+        document.getElementById("background").style.backgroundImage = '';
+    } 
+}
+</script>
