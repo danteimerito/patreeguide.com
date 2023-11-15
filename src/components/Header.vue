@@ -7,7 +7,7 @@
             <div class="topbars">
                 <div class="menu-wrap">
                     <div class="menu-topbar" ref="">
-                        <div @click="logoClick" class="logo"><router-link to="/">PA TREE GUIDE </router-link></div>
+                        <div class="logo"><router-link to="/" @click="logoClick">PA TREE GUIDE </router-link></div>
                     </div>
 
                     <input 
