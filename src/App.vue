@@ -51,8 +51,9 @@ export default {
   /* Method 2: 
     div.background must serve as a container for the rest of the content.
   */
-  background-size: cover;
+  /* background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: fixed; */
+  
 }
 </style>
