@@ -792,8 +792,9 @@ footer {
 #background {
   transition: background-image 0.5s ease-in-out;
 
-  min-height: 100vh;
-  min-height: 100lvh;
+  // min-height: 100vh;
+  // min-height: 100lvh;
+  background-size: 150lvw, 150lvh;
 }
 .background-fade-in {
 //  add fade-in effect on page background images
