@@ -794,7 +794,8 @@ footer {
 
   // min-height: 100vh;
   // min-height: 100lvh;
-  background-size: 150lvw, 150lvh;
+  background-size: cover;
+  background-size: auto, 100lvh;
   background-repeat: no-repeat;
 }
 .background-fade-in {
