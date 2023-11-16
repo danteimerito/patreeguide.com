@@ -790,16 +790,14 @@ footer {
 }
 
 #background {
+  background-image: url(/public/img/bg_conifer1.jpg);
   transition: background-image 0.5s ease-in-out;
-
-  // min-height: 100vh;
-  // min-height: 100lvh;
-    background-position: center;
+  background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  height: 100lvh;
   background-repeat: no-repeat;
 }
+
 .background-fade-in {
 //  add fade-in effect on page background images
   // transition: background-image 0.5s ease-in-out;

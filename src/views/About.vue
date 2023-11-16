@@ -11,11 +11,20 @@
 </template>
 
 
+
+
 <script>
 import { onMounted, onBeforeUnmount } from 'vue';
 import Trees from '../components/Trees.vue'
 
 export default {
+  mounted() {
+    this.setBackgroundHeight();
+    window.addEventListener('resize', this.setBackgroundHeight);
+  },
+  beforeUnmount() {
+    window.removeEventListener('resize', this.setBackgroundHeight);
+  },
     components: {
         Trees
     },
@@ -49,6 +58,10 @@ export default {
             }
         },
     methods: {
+      setBackgroundHeight() {
+      const vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    },
       updateBodyBackground() {
         // Retrieve the tree data using a Vuex getter
         const treeData = this.$store.getters.getTreeBySlug(this.$route.params.slug);
@@ -71,5 +84,25 @@ export default {
 </script>
 
   
+
+<!-- <script>
+import { onMounted, onBeforeUnmount } from 'vue';
+import Trees from '../components/Trees.vue'
+export default {
+  mounted() {
+    this.setBackgroundHeight();
+    window.addEventListener('resize', this.setBackgroundHeight);
+  },
+  beforeUnmount() {
+    window.removeEventListener('resize', this.setBackgroundHeight);
+  },
+  methods: {
+    setBackgroundHeight() {
+      const vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    }
+  }
+};
+</script> -->
 
   
