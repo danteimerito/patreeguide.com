@@ -23,7 +23,7 @@ export default {
       const adjustBackground = () => {
         const element = document.getElementById('background-element');
         if (element) {
-          element.style.height = `${window.innerHeight}px`;
+          element.style.height = `${window.outerHeight}px`;
         }
       };
   
