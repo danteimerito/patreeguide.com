@@ -790,15 +790,19 @@ footer {
 }
 
 #background {
+  // background-image: displayed dynamically;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   transition: background-image 0.5s ease-in-out;
-
+  height: 100lvh;
+  
+  background-attachment: fixed;
+  
+  
+  // background-size: 20lvw;
   // min-height: 100vh;
   // min-height: 100lvh;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-  // background-size: 20lvw;
-  background-repeat: no-repeat;
 }
 .background-fade-in {
 //  add fade-in effect on page background images
