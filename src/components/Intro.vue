@@ -1,5 +1,5 @@
 <template>
-    <div class="single-tree-contain">
+    <div class="contain-flex">
         <div class="feature-card">
             <h1>Easily Identify Trees in Pennsylvania</h1>
             <h1>How it works:</h1>

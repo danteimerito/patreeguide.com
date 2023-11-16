@@ -37,7 +37,9 @@
                                             v-model="selectedTypesComputed" 
                                             />
                                             {{ type }}
+                                            <img :src="iconMappings[type]" alt="Icon" class="checkbox-icon">
                                         </label>
+                                        
                                     </div>
 
                                     <div class="options-set">
@@ -88,6 +90,7 @@
                                             v-model="selectedLeafTypesComputed" 
                                             />
                                             {{ leaf }}
+                                            <img :src="iconMappings[leaf]" alt="Icon" class="checkbox-icon">
                                         </label>
                                     </div>
 
@@ -164,6 +167,14 @@ export default {
             compoundStructures: ['single', 'twice', 'palmate'],
             leafAttachments: ['opposite', 'alternate'],
             fallColors: ['red','orange','brown','yellow','green','purple'],
+            iconMappings: {
+                'conifer': '/img/icons/icon-conifer-300px.png',
+                'deciduous': '/img/icons/icon-deciduous_400px.png',
+                'simple': '/img/icons/icon-simple-leaf.png',
+                'lobed': '/img/icons/icon-lobed-leaf.png',
+                'compound': '/img/icons/icon-simple-leaf.png',
+                // ... mappings for other items ...
+            },
 
         };
     },
