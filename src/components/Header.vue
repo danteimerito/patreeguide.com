@@ -42,11 +42,11 @@
                                         
                                     </div>
 
-                                    <div class="options-set">
+                                    <div v-if="this.selectedTypes.includes('conifer')" class="options-set">
                                         <div class="options-set-header">
                                             <h3>Needle Structure</h3>
                                             <span class="icon-conifer">
-                                                <img src="/img/icons/icon_conifer_300px.png" alt="">
+                                                <img src="/img/icons/icon-conifer-300px.png" alt="">
                                             </span>
                                         </div>
                                         <label v-for="needle in needleStructures" :key="needle">
@@ -59,11 +59,11 @@
                                         </label>
                                     </div>
 
-                                    <div class="options-set">
+                                    <div v-if="this.selectedNeedles.includes('clustered needles')" class="options-set">
                                         <div class="options-set-header">
                                             <h3>Needles per Cluster</h3>
                                             <span class="icon-conifer">
-                                                <img src="/img/icons/icon_conifer_300px.png" alt="">
+                                                <img src="/img/icons/icon-conifer-300px.png" alt="">
                                             </span>
                                         </div>
                                         <label v-for="cluster in needleClusters" :key="cluster">
@@ -76,7 +76,7 @@
                                         </label>
                                     </div>
 
-                                    <div class="options-set">
+                                    <div v-if="this.selectedTypes.includes('deciduous')" class="options-set">
                                         <div class="options-set-header">
                                             <h3>Leaf Type</h3>
                                             <span class="icon-deciduous">
@@ -94,7 +94,7 @@
                                         </label>
                                     </div>
 
-                                    <div class="options-set">
+                                    <div v-if="selectedLeafTypes.includes('compound')" class="options-set">
                                         <div class="options-set-header">
                                             <h3>Compound Structure</h3>
                                             <span class="icon-deciduous">
@@ -111,7 +111,7 @@
                                         </label>
                                     </div>
 
-                                    <div class="options-set">
+                                    <div v-if="this.selectedTypes.includes('deciduous')" class="options-set">
                                         <div class="options-set-header">
                                             <h3>Leaf Attachment</h3>
                                             <span class="icon-deciduous">
@@ -128,7 +128,7 @@
                                         </label>
                                     </div>
 
-                                    <div class="options-set">
+                                    <div v-if="this.selectedTypes.includes('deciduous')" class="options-set">
                                         <div class="options-set-header">
                                             <h3>Fall Colors</h3>
                                             <span class="icon-deciduous">
