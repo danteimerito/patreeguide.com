@@ -27,17 +27,17 @@ export default {
       // Assuming the background element exists
       const backgroundElement = document.getElementById("background");
       if (backgroundElement) {
-        backgroundElement.style.backgroundImage = 'url(/img/bg_pexels7_small.jpg)';
+        backgroundElement.style.backgroundImage = 'url(/img/bg_forest3_small.jpg)';
         this.loadFullImage();
       }
     },
     loadFullImage() {
       const img = new Image();
-      img.src = '/img/bg_pexels7.jpg';
+      img.src = '/img/bg_forest3.jpg';
       img.onload = () => {
         const backgroundElement = document.getElementById("background");
         if (backgroundElement) {
-          backgroundElement.style.backgroundImage = 'url(/img/bg_pexels7.jpg)';
+          backgroundElement.style.backgroundImage = 'url(/img/bg_forest3.jpg)';
           backgroundElement.classList.add('background-fade-in');
         }
       };
