@@ -25,40 +25,44 @@
                         <div>
                             <div>
                                 <div class="options-panel">
-
-                                    <div class="options-set">
-                                        <div class="options-set-header">
-                                            <h3>Tree Type</h3>
+                                    
+                                    <transition name="fade-slide">
+                                        <div class="options-set">
+                                            <div class="options-set-header">
+                                                <h3>Tree Type</h3>
+                                            </div>
+                                            <label v-for="type in treeTypes" :key="type">
+                                                <input 
+                                                type="checkbox" 
+                                                :value="type" 
+                                                v-model="selectedTypesComputed" 
+                                                />
+                                                {{ type }}
+                                                <img :src="iconMappings[type]" alt="Icon" class="checkbox-icon">
+                                            </label>
                                         </div>
-                                        <label v-for="type in treeTypes" :key="type">
-                                            <input 
-                                            type="checkbox" 
-                                            :value="type" 
-                                            v-model="selectedTypesComputed" 
-                                            />
-                                            {{ type }}
-                                            <img :src="iconMappings[type]" alt="Icon" class="checkbox-icon">
-                                        </label>
-                                        
-                                    </div>
+                                    </transition>
 
-                                    <div v-if="this.selectedTypes.includes('conifer') || this.selectedNeedles.length > 0" class="options-set">
-                                        <div class="options-set-header">
-                                            <h3>Needle Structure</h3>
-                                            <span class="icon-conifer">
-                                                <img src="/img/icons/icon-conifer-300px.png" alt="">
-                                            </span>
+                                    <transition name="fade-slide">
+                                        <div v-if="this.selectedTypes.includes('conifer') || this.selectedNeedles.length > 0" class="options-set">
+                                            <div class="options-set-header">
+                                                <h3>Needle Structure</h3>
+                                                <span class="icon-conifer">
+                                                    <img src="/img/icons/icon-conifer-300px.png" alt="">
+                                                </span>
+                                            </div>
+                                            <label v-for="needle in needleStructures" :key="needle">
+                                                <input 
+                                                type="checkbox" 
+                                                :value="needle" 
+                                                v-model="selectedNeedlesComputed" 
+                                                />
+                                                {{ needle }}
+                                            </label>
                                         </div>
-                                        <label v-for="needle in needleStructures" :key="needle">
-                                            <input 
-                                            type="checkbox" 
-                                            :value="needle" 
-                                            v-model="selectedNeedlesComputed" 
-                                            />
-                                            {{ needle }}
-                                        </label>
-                                    </div>
+                                    </transition>
 
+                                    <transition name="fade-slide">
                                     <div v-if="this.selectedNeedles.includes('clustered needles') || this.selectedClusters.length > 0" class="options-set">
                                         <div class="options-set-header">
                                             <h3>Needles per Cluster</h3>
@@ -75,7 +79,9 @@
                                             {{ cluster }}
                                         </label>
                                     </div>
+                                    </transition>
 
+                                    <transition name="fade-slide">
                                     <div v-if="this.selectedTypes.includes('deciduous') || this.selectedLeafTypes.length > 0" class="options-set">
                                         <div class="options-set-header">
                                             <h3>Leaf Type</h3>
@@ -93,7 +99,9 @@
                                             <img :src="iconMappings[leaf]" alt="Icon" class="checkbox-icon">
                                         </label>
                                     </div>
+                                    </transition>
 
+                                    <transition name="fade-slide">
                                     <div v-if="selectedLeafTypes.includes('compound') || selectedCompoundStructures.length > 0" class="options-set">
                                         <div class="options-set-header">
                                             <h3>Compound Structure</h3>
@@ -110,7 +118,9 @@
                                             {{ structure }}
                                         </label>
                                     </div>
+                                    </transition>
 
+                                    <transition name="fade-slide">
                                     <div v-if="this.selectedTypes.includes('deciduous') || this.selectedLeafAttachments.length > 0" class="options-set">
                                         <div class="options-set-header">
                                             <h3>Leaf Attachment</h3>
@@ -127,7 +137,10 @@
                                             {{ attachment }}
                                         </label>
                                     </div>
+                                    </transition>
 
+                                    
+                                    <transition name="fade-slide">
                                     <div v-if="this.selectedTypes.includes('deciduous') || this.selectedFallColors.length > 0" class="options-set">
                                         <div class="options-set-header">
                                             <h3>Fall Colors</h3>
@@ -140,6 +153,7 @@
                                             {{ color }}
                                         </label>
                                     </div>
+                                </transition>
 
                                 </div>
                             </div>
@@ -185,7 +199,13 @@ export default {
     components: {
         HeaderMatches
     }, 
-    computed: {     
+    computed: {  
+        enterAnimationDuration() {
+            return 500; // Duration in milliseconds for entering animation
+        },
+        leaveAnimationDuration() {
+            return 300; // Duration in milliseconds for leaving animation
+        },   
         isAnyFilterSelected() {
             return [
                 this.selectedTypes, 
@@ -295,5 +315,20 @@ export default {
 </script>
 
 <style scoped>
+/* Enter and leave active */
+.fade-slide-enter-active, .fade-slide-leave-active {
+  transition: opacity 0.5s, transform 0.5s;
+}
 
+/* Enter from and leave to (initial state) */
+.fade-slide-enter-from, .fade-slide-leave-to {
+  opacity: 0;
+  transform: translateY(10px); /* Adjust as needed */
+}
+
+/* Enter to and leave from (final state) */
+.fade-slide-enter-to, .fade-slide-leave-from {
+  opacity: 1;
+  transform: translateY(0);
+}
 </style>
