@@ -21,6 +21,7 @@ const initialSelectedLeafAttachments = savedSelectedLeafAttachments ? JSON.parse
 const savedSelectedFallColors = localStorage.getItem('selectedFallColors');
 const initialSelectedFallColors = savedSelectedFallColors ? JSON.parse(savedSelectedFallColors) : [];
 
+
 const initialTreesState = [
   {
     nameCommon: "Alternate-leaved Dogwood",
@@ -40,24 +41,20 @@ const initialTreesState = [
       "red"
     ],
     slug: "alternate-leaveddogwood",
-    background: "bg_pexels1.jpg", 
+    background: "bg_pexels1.jpg",
     backgroundSmall: "bg_pexels1_small.jpg",
-
-    photo1Credit: '<a target="blank_" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/User:IvanTortuga">Cody Hough</a> <a target="blank_" rel="noopener noreferrer" href="https://commons.wikimedia.org/wiki/File:Cornus_alternifolia_005.jpg">Cornus alternifolia 005</a> <a target="blank_" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" rel="license">CC BY-SA 3.0</a>',
+    photo1Credit: "<a target=\"blank_\" rel=\"noopener noreferrer\" href=\"https://en.wikipedia.org/wiki/User:IvanTortuga\">Cody Hough</a> <a target=\"blank_\" rel=\"noopener noreferrer\" href=\"https://commons.wikimedia.org/wiki/File:Cornus_alternifolia_005.jpg\">Cornus alternifolia 005</a> <a target=\"blank_\" rel=\"noopener noreferrer\" href=\"https://creativecommons.org/licenses/by-sa/3.0/legalcode\" rel=\"license\">CC BY-SA 3.0</a>",
     photo1Href: "https://en.wikipedia.org/wiki/Cornus_alternifolia#/media/File:Cornus_alternifolia_005.jpg",
     photo1Alt: "Cornus alternifolia 005",
     photo1Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Cornus_alternifolia_005.jpg/256px-Cornus_alternifolia_005.jpg",
-
     photo2Credit: "Elbert L. Little, Jr., of the U.S. Department of Agriculture, Forest Service, and others, Public domain, via Wikimedia Commons",
     photo2Href: "https://en.wikipedia.org/wiki/Cornus_alternifolia#/media/File:Cornus_alternifolia_range_map_1.png",
     photo2Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Cornus_alternifolia_range_map_1.png/256px-Cornus_alternifolia_range_map_1.png",
-
-    photo3Credit: '<a target="blank_" rel="noopener noreferrer" href="https://commons.wikimedia.org/wiki/User:Jaknouse">Jaknouse</a> <a target="blank_" rel="noopener noreferrer" href="https://commons.wikimedia.org/wiki/File:Jk-cornus_alternifoliaflower.jpg">Jk-cornus alternifoliaflower</a> <a target="blank_" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" rel="license">CC BY-SA 3.0</a>',
+    photo3Credit: "<a target=\"blank_\" rel=\"noopener noreferrer\" href=\"https://commons.wikimedia.org/wiki/User:Jaknouse\">Jaknouse</a> <a target=\"blank_\" rel=\"noopener noreferrer\" href=\"https://commons.wikimedia.org/wiki/File:Jk-cornus_alternifoliaflower.jpg\">Jk-cornus alternifoliaflower</a> <a target=\"blank_\" rel=\"noopener noreferrer\" href=\"https://creativecommons.org/licenses/by-sa/3.0/legalcode\" rel=\"license\">CC BY-SA 3.0</a>",
     photo3Href: "https://en.wikipedia.org/wiki/Cornus_alternifolia#/media/File:Jk-cornus_alternifoliaflower.jpg",
     photo3Alt: "Jk-cornus alternifoliaflower",
     photo3Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Jk-cornus_alternifoliaflower.jpg/256px-Jk-cornus_alternifoliaflower.jpg",
-
-    description:  "<p>The Alternate-leaved Dogwood (Cornus alternifolia), also known as Pagoda Dogwood for its tiered, horizontal branches, is a deciduous tree that boasts a unique architectural flair in woodland gardens. This North American native typically matures to a modest 15-25 feet tall, flourishing in the understory with a preference for partial shade and well-drained, acidic soils. Its leaves, arranged alternately as its name suggests—uncommon among dogwoods—emerge as a bright green, turning to purplish-red in the fall. In late spring to early summer, the tree is adorned with clusters of small, creamy-white flowers, which give way to dark blue berries on red stems, providing a feast for native birds. The tree's bark, mottled and gray, adds winter interest. With a low canopy and non-invasive root system, the Alternate-leaved Dogwood is a versatile addition to residential landscapes, offering year-round visual appeal and ecological benefits.</p>"
+    description: "<p>The Alternate-leaved Dogwood (Cornus alternifolia), also known as Pagoda Dogwood for its tiered, horizontal branches, is a deciduous tree that boasts a unique architectural flair in woodland gardens. This North American native typically matures to a modest 15-25 feet tall, flourishing in the understory with a preference for partial shade and well-drained, acidic soils. Its leaves, arranged alternately as its name suggests—uncommon among dogwoods—emerge as a bright green, turning to purplish-red in the fall. In late spring to early summer, the tree is adorned with clusters of small, creamy-white flowers, which give way to dark blue berries on red stems, providing a feast for native birds. The tree's bark, mottled and gray, adds winter interest. With a low canopy and non-invasive root system, the Alternate-leaved Dogwood is a versatile addition to residential landscapes, offering year-round visual appeal and ecological benefits.</p>"
   },
   {
     nameCommon: "American Basswood",
@@ -77,24 +74,21 @@ const initialTreesState = [
       "orange"
     ],
     slug: "americanbasswood",
-    background: "bg_pexels7.jpg", 
+    background: "bg_pexels7.jpg",
     backgroundSmall: "bg_pexels7_small.jpg",
     description: "<p>The American Basswood (Tilia americana), a stately decidome that can soar to grand heights of 60-120 feet, is renowned for its expansive canopy, which provides a lush, deep shade. This native North American tree is often found in rich, moist woods and along streams throughout the eastern and central United States. It has a broadly columnar to rounded shape, with a straight trunk and symmetrically branching crown. Heart-shaped, serrated leaves flutter in the slightest breeze and turn a vibrant yellow come autumn. In early summer, small, fragrant cream-colored flowers dangle from slender peduncles, drawing in a symphony of pollinators; these blooms later develop into small, nut-like fruits. The Basswood's soft, lightweight wood is highly valued for carving and woodworking. A gentle giant in the landscape, the American Basswood is a favorite for wildlife and a classical choice for shade in urban and rural settings.</p>",
-
-    photo1Credit: '<a target="blank_" rel="noopener noreferrer" href="https://commons.wikimedia.org/wiki/File:Tilia_americana,_Arnold_Arboretum_-_IMG_5911.JPG">Public domain, via Wikimedia Commons</a>',
+    photo1Credit: "<a target=\"blank_\" rel=\"noopener noreferrer\" href=\"https://commons.wikimedia.org/wiki/File:Tilia_americana,_Arnold_Arboretum_-_IMG_5911.JPG\">Public domain, via Wikimedia Commons</a>",
     photo1Href: "https://en.wikipedia.org/wiki/Tilia_americana#/media/File:Tilia_americana,_Arnold_Arboretum_-_IMG_5911.JPG",
     photo1Alt: "Tilia americana, Arnold Arboretum - IMG 5911",
     photo1Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Tilia_americana%2C_Arnold_Arboretum_-_IMG_5911.JPG/256px-Tilia_americana%2C_Arnold_Arboretum_-_IMG_5911.JPG",
-
-    photo2Credit: '<a target="blank_" rel="noopener noreferrer" href="https://www.flickr.com/people/138014579@N08">Plant Image Library</a> <a target="blank_" rel="noopener noreferrer" href="https://commons.wikimedia.org/wiki/File:Tilia_americana_(American_Linden)_(28268263222).jpg">Tilia americana (American Linden) (28268263222)</a> <a target="blank_" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by-sa/2.0/legalcode" rel="license">CC BY-SA 2.0</a>',
+    photo2Credit: "<a target=\"blank_\" rel=\"noopener noreferrer\" href=\"https://www.flickr.com/people/138014579@N08\">Plant Image Library</a> <a target=\"blank_\" rel=\"noopener noreferrer\" href=\"https://commons.wikimedia.org/wiki/File:Tilia_americana_(American_Linden)_(28268263222).jpg\">Tilia americana (American Linden) (28268263222)</a> <a target=\"blank_\" rel=\"noopener noreferrer\" href=\"https://creativecommons.org/licenses/by-sa/2.0/legalcode\" rel=\"license\">CC BY-SA 2.0</a>",
     photo2Href: "https://en.wikipedia.org/wiki/Tilia_americana#/media/File:Tilia_americana_(American_Linden)_(28268263222).jpg",
     photo2Alt: "Tilia americana (American Linden) (28268263222)",
     photo2Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Tilia_americana_%28American_Linden%29_%2828268263222%29.jpg/256px-Tilia_americana_%28American_Linden%29_%2828268263222%29.jpg",
-
     photo3Credit: "U.S. Geological Survey, Public domain, via Wikimedia Commons",
     photo3Href: "https://en.wikipedia.org/wiki/Tilia_americana#/media/File:Tlilia_americana_map.png",
     photo3Alt: "Tlilia americana map",
-    photo3Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Tlilia_americana_map.png/256px-Tlilia_americana_map.png",
+    photo3Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Tlilia_americana_map.png/256px-Tlilia_americana_map.png"
   },
   {
     nameCommon: "American Beech",
@@ -113,25 +107,22 @@ const initialTreesState = [
       "yellow",
       "brown"
     ],
-    slug: "americanbeech", 
-    background:"bg_forest1.jpg",
+    slug: "americanbeech",
+    background: "bg_forest1.jpg",
     backgroundSmall: "bg_forest1_small.jpg",
     description: "<p>The American Beech (Fagus grandifolia) is a noble and imposing hardwood, native to the eastern United States and southeastern Canada. Its grandeur is evident as it reaches up to 80 feet tall with a broad, rounded crown. The smooth, silvery-gray bark is unmistakably sleek, often carved with initials that persist for decades. Its elliptical leaves are a glossy green, with finely toothed margins, turning a rich bronze in the fall, often lingering on the branches into winter. Spring unfurls tiny, inconspicuous flowers, succeeded by small, prickly husks that contain edible nuts, coveted by wildlife. This tree prefers well-drained, acidic soils and doesn't tolerate urban pollution well, making it a staple in less disturbed forested areas. American Beech is slow-growing but long-lived, often reaching 300 years, with its stately presence and dense canopy offering a serene backdrop or an anchor in larger landscapes.</p>",
-
-    photo1Credit: '<a target="blank_" rel="noopener noreferrer" href="https://commons.wikimedia.org/wiki/User:Marqqq">Marqqq</a> <a target="blank_" rel="noopener noreferrer" href="https://commons.wikimedia.org/wiki/File:Beech_with_Branches.jpg">Beech with Branches</a> <a target="blank_" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" rel="license">CC BY-SA 3.0</a>',
+    photo1Credit: "<a target=\"blank_\" rel=\"noopener noreferrer\" href=\"https://commons.wikimedia.org/wiki/User:Marqqq\">Marqqq</a> <a target=\"blank_\" rel=\"noopener noreferrer\" href=\"https://commons.wikimedia.org/wiki/File:Beech_with_Branches.jpg\">Beech with Branches</a> <a target=\"blank_\" rel=\"noopener noreferrer\" href=\"https://creativecommons.org/licenses/by-sa/3.0/legalcode\" rel=\"license\">CC BY-SA 3.0</a>",
     photo1Href: "https://en.wikipedia.org/wiki/Fagus_grandifolia#/media/File:Beech_with_Branches.jpg",
     photo1Alt: "Beech with Branches",
     photo1Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Beech_with_Branches.jpg/256px-Beech_with_Branches.jpg",
-
-    photo2Credit: '<a target="blank_" rel="noopener noreferrer" href="https://commons.wikimedia.org/wiki/User:Dcrjsr">Dcrjsr</a> <a target="blank_" rel="noopener noreferrer" href="https://commons.wikimedia.org/wiki/File:Fagus_grandifolia_beech_leaves_close.jpg">Fagus grandifolia beech leaves close</a> <a target="blank_" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by/3.0/legalcode" rel="license">CC BY 3.0</a>',
-    photo2Href: 'https://en.wikipedia.org/wiki/Fagus_grandifolia#/media/File:Fagus_grandifolia_beech_leaves_close.jpg',
+    photo2Credit: "<a target=\"blank_\" rel=\"noopener noreferrer\" href=\"https://commons.wikimedia.org/wiki/User:Dcrjsr\">Dcrjsr</a> <a target=\"blank_\" rel=\"noopener noreferrer\" href=\"https://commons.wikimedia.org/wiki/File:Fagus_grandifolia_beech_leaves_close.jpg\">Fagus grandifolia beech leaves close</a> <a target=\"blank_\" rel=\"noopener noreferrer\" href=\"https://creativecommons.org/licenses/by/3.0/legalcode\" rel=\"license\">CC BY 3.0</a>",
+    photo2Href: "https://en.wikipedia.org/wiki/Fagus_grandifolia#/media/File:Fagus_grandifolia_beech_leaves_close.jpg",
     photo2Alt: "Fagus grandifolia beech leaves close",
     photo2Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Fagus_grandifolia_beech_leaves_close.jpg/256px-Fagus_grandifolia_beech_leaves_close.jpg",
-
     photo3Credit: "Elbert L. Little, Jr., of the U.S. Department of Agriculture, Forest Service, and others, Public domain, via Wikimedia Commons",
     photo3Href: "https://commons.wikimedia.org/wiki/File:Fagus_grandifolia_range_map_1.png",
     photo3Alt: "Fagus grandifolia range map 1",
-    photo3Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Fagus_grandifolia_range_map_1.png/256px-Fagus_grandifolia_range_map_1.png",
+    photo3Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Fagus_grandifolia_range_map_1.png/256px-Fagus_grandifolia_range_map_1.png"
   },
   {
     nameCommon: "American Bladdernut",
@@ -142,29 +133,22 @@ const initialTreesState = [
     species: "Staphylea trifolia",
     type: "deciduous",
     leafType: "compound",
-    compoundStructure: "single",
+    compoundStructure: "pinnate",
     leafAttachment: "opposite",
     fallColor: [
       "yellow",
       "brown"
     ],
-    slug: "americanbladdernut", 
+    slug: "americanbladdernut",
     description: "<p>The American Bladdernut (Staphylea trifolia) is a charming, underutilized deciduous shrub or small tree, typically growing to a modest height of 10-15 feet. Native to the understory of Eastern North America's forests, this plant thrives in moist, well-drained soils, often along stream banks and in rich woodlands. Its most distinctive feature is the inflated, bladder-like seed pods that hang in clusters, turning from green to a papery brown as they mature in the fall. These whimsical pods add a unique textural element to the landscape and a point of interest in winter after the leaves have fallen. The tree's foliage is comprised of trifoliate leaves, which are arranged oppositely on arching branches, presenting a soft green hue in spring and transforming to a clear yellow in autumn. In spring, drooping clusters of fragrant, bell-shaped white flowers grace the tree, providing a delicate floral display. The American Bladdernut is a versatile and low-maintenance choice for naturalized areas or woodland gardens.</p>",
-
-    photo1Credit: '<a target="blank_" rel="noopener noreferrer" href="https://commons.wikimedia.org/wiki/User:Nonenmac">Randy A. Nonenmacher</a> <a target="blank_" rel="noopener noreferrer" href="https://commons.wikimedia.org/wiki/File:Staphylea_trifolia_SCA-3462.jpg">Staphylea trifolia SCA-3462</a> <a target="blank_" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" rel="license">CC BY-SA 3.0</a>',
+    photo1Credit: "<a target=\"blank_\" rel=\"noopener noreferrer\" href=\"https://commons.wikimedia.org/wiki/User:Nonenmac\">Randy A. Nonenmacher</a> <a target=\"blank_\" rel=\"noopener noreferrer\" href=\"https://commons.wikimedia.org/wiki/File:Staphylea_trifolia_SCA-3462.jpg\">Staphylea trifolia SCA-3462</a> <a target=\"blank_\" rel=\"noopener noreferrer\" href=\"https://creativecommons.org/licenses/by-sa/3.0/legalcode\" rel=\"license\">CC BY-SA 3.0\"</a>",
     photo1Href: "https://en.wikipedia.org/wiki/Staphylea_trifolia#/media/File:Staphylea_trifolia_SCA-3462.jpg",
     photo1Alt: "Staphylea trifolia SCA-3462",
     photo1Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Staphylea_trifolia_SCA-3462.jpg/256px-Staphylea_trifolia_SCA-3462.jpg",
-
     photo2Credit: "U.S. Geological Survey, Public domain, via Wikimedia Commons",
     photo2Href: "https://en.wikipedia.org/wiki/Staphylea_trifolia#/media/File:Staphylea_trifolia_range_map.png",
     photo2Alt: "Staphylea trifolia range map",
-    photo2Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Staphylea_trifolia_range_map.png/256px-Staphylea_trifolia_range_map.png",
-
-    // photo3Credit: "",
-    // photo3Href: "",
-    // photo3Alt: "",
-    // photo3Src: "",
+    photo2Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Staphylea_trifolia_range_map.png/256px-Staphylea_trifolia_range_map.png"
   },
   {
     nameCommon: "American Chestnut",
@@ -181,26 +165,18 @@ const initialTreesState = [
     ],
     slug: "americanchestnut",
     description: "<p>The American Chestnut (Castanea dentata) was once a titan of the Eastern American forests, casting its shadow across the landscape with towering heights reaching up to 100 feet. Recognized by its broad, spreading canopy, the tree was both a timber staple and a critical wildlife food source, with its abundant, nutritious nuts. Its leaves are long and narrow with a toothed edge, and they turn to a golden hue in autumn. However, the early 20th century saw this species decimated by the chestnut blight, a fungal disease accidentally introduced from imported Asiatic chestnut trees. The blight's devastation transformed this once-dominant tree into a rarity, leaving behind only the sprouting stumps of former giants, as the blight does not affect the roots which can still resprout. Efforts are ongoing to restore this species through science and selective breeding with blight-resistant trees. The American Chestnut's tale is a poignant reminder of the fragility and interconnectedness of ecological systems.</p>",
-
-    photo1Credit: 'The original uploader was <a target="blank_" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/de:User:Peatcher">Peatcher</a> at <a target="blank_" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/de:">German Wikipedia</a> <a target="blank_" rel="noopener noreferrer" href="https://commons.wikimedia.org/wiki/File:American_Chestnut.JPG">American Chestnut</a> <a target="blank_" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" rel="license">CC BY-SA 3.0</a>',
+    photo1Credit: "The original uploader was <a target=\"blank_\" rel=\"noopener noreferrer\" href=\"https://en.wikipedia.org/wiki/de:User:Peatcher\">Peatcher</a> at <a target=\"blank_\" rel=\"noopener noreferrer\" href=\"https://en.wikipedia.org/wiki/de:\">German Wikipedia</a> <a target=\"blank_\" rel=\"noopener noreferrer\" href=\"https://commons.wikimedia.org/wiki/File:American_Chestnut.JPG\">American Chestnut</a> <a target=\"blank_\" rel=\"noopener noreferrer\" href=\"https://creativecommons.org/licenses/by-sa/3.0/legalcode\" rel=\"license\">CC BY-SA 3.0</a>",
     photo1Href: "https://en.wikipedia.org/wiki/American_chestnut#/media/File:American_Chestnut.JPG",
     photo1Alt: "American Chestnut",
     photo1Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/American_Chestnut.JPG/256px-American_Chestnut.JPG",
-
     photo2Credit: "Elbert L. Little, Jr., of the U.S. Department of Agriculture, Forest Service, and others, Public domain, via Wikimedia Commons",
     photo2Href: "https://en.wikipedia.org/wiki/American_chestnut#/media/File:Castanea_dentata_range_map_2.png",
     photo2Alt: "Castanea dentata range map 2",
     photo2Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Castanea_dentata_range_map_2.png/256px-Castanea_dentata_range_map_2.png",
-
-
-    photo3Credit: 'Original uploader was <a target="blank_" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Vanvlitp">Vanvlitp</a> at <a href="https://en.wikipedia.org">en.wikipedia</a>, <a target="blank_" rel="noopener noreferrer" href="https://commons.wikimedia.org/wiki/File:AmericanChestnutPollen.JPG">AmericanChestnutPollen</a>, <a target="blank_" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" rel="license">CC BY-SA 3.0</a>',
+    photo3Credit: "Original uploader was <a target=\"blank_\" rel=\"noopener noreferrer\" href=\"https://en.wikipedia.org/wiki/Vanvlitp\">Vanvlitp</a> at <a href=\"https://en.wikipedia.org\">en.wikipedia</a>, <a target=\"blank_\" rel=\"noopener noreferrer\" href=\"https://commons.wikimedia.org/wiki/File:AmericanChestnutPollen.JPG\">AmericanChestnutPollen</a>, <a target=\"blank_\" rel=\"noopener noreferrer\" href=\"https://creativecommons.org/licenses/by-sa/3.0/legalcode\" rel=\"license\">CC BY-SA 3.0</a>",
     photo3Href: "https://en.wikipedia.org/wiki/American_chestnut#/media/File:AmericanChestnutPollen.JPG",
     photo3Alt: "American Chestnut Pollen",
-    photo3Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/AmericanChestnutPollen.JPG/256px-AmericanChestnutPollen.JPG",
-
-  
-
-
+    photo3Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/AmericanChestnutPollen.JPG/256px-AmericanChestnutPollen.JPG"
   },
   {
     nameCommon: "American Elm",
@@ -221,23 +197,18 @@ const initialTreesState = [
     ],
     slug: "americanelm",
     description: "<p>The American Elm (Ulmus americana) once lined the streets of towns across North America with its distinctive vase-like silhouette reaching heights of 60-80 feet. This beloved deciduous tree was famed for its dense canopy of serrated, ovate leaves, which turned golden yellow in fall, and its ability to thrive in various soil types. In the spring, small, inconspicuous flowers appear before the leaves, developing into flat, papery samaras, or winged seeds. However, the mid-20th century saw this majestic tree besieged by Dutch elm disease, a fungal infection spread by bark beetles, leading to widespread decimation of the population. Despite this, the American Elm remains a symbol of strength and endurance, with ongoing efforts to cultivate disease-resistant varieties. Its wood, once used for shipbuilding and furniture, is now less commonly harvested due to its rarity. The American Elm's story is one of both ecological loss and the hope for restoration.</p>",
-
-    photo1Credit: '<a href="https://commons.wikimedia.org/wiki/User:Msact">Marty Aligata</a>, <a href="https://commons.wikimedia.org/wiki/File:American_Elm_Tree,_Old_South_Street,_Northampton,_MA_-_October_2019.jpg">American Elm Tree, Old South Street, Northampton, MA - October 2019</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" rel="license">CC BY-SA 4.0</a>',
+    photo1Credit: "<a href=\"https://commons.wikimedia.org/wiki/User:Msact\">Marty Aligata</a>, <a href=\"https://commons.wikimedia.org/wiki/File:American_Elm_Tree,_Old_South_Street,_Northampton,_MA_-_October_2019.jpg\">American Elm Tree, Old South Street, Northampton, MA - October 2019</a>, <a href=\"https://creativecommons.org/licenses/by-sa/4.0/legalcode\" rel=\"license\">CC BY-SA 4.0</a>",
     photo1Href: "https://en.wikipedia.org/wiki/Ulmus_americana#/media/File:American_Elm_Tree,_Old_South_Street,_Northampton,_MA_-_October_2019.jpg",
     photo1Alt: "American Elm Tree, Old South Street, Northampton, MA - October 2019",
     photo1Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/American_Elm_Tree%2C_Old_South_Street%2C_Northampton%2C_MA_-_October_2019.jpg/256px-American_Elm_Tree%2C_Old_South_Street%2C_Northampton%2C_MA_-_October_2019.jpg",
-
-    photo2Credit: '<a href="https://www.flickr.com/people/35478170@N08">Matt Lavin</a> from Bozeman, Montana, USA, <a href="https://commons.wikimedia.org/wiki/File:Ulmus_americana_(5102579562).jpg">Ulmus americana (5102579562)</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0/legalcode" rel="license">CC BY-SA 2.0</a>',
+    photo2Credit: "<a href=\"https://www.flickr.com/people/35478170@N08\">Matt Lavin</a> from Bozeman, Montana, USA, <a href=\"https://commons.wikimedia.org/wiki/File:Ulmus_americana_(5102579562).jpg\">Ulmus americana (5102579562)</a>, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/legalcode\" rel=\"license\">CC BY-SA 2.0</a>",
     photo2Href: "https://en.wikipedia.org/wiki/Ulmus_americana#/media/File:Ulmus_americana_(5102579562).jpg",
     photo2Alt: "Ulmus americana (5102579562)",
     photo2Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Ulmus_americana_%285102579562%29.jpg/256px-Ulmus_americana_%285102579562%29.jpg",
-
-    photo3Credit: 'Judy Gallagher, <a href="https://commons.wikimedia.org/wiki/File:American_Elm_-_Ulmus_americana,_Occoquan_Regional_Park,_Lorton,_Virginia.jpg">American Elm - Ulmus americana, Occoquan Regional Park, Lorton, Virginia</a>, <a href="https://creativecommons.org/licenses/by/2.0/legalcode" rel="license">CC BY 2.0</a>',
+    photo3Credit: "Judy Gallagher, <a href=\"https://commons.wikimedia.org/wiki/File:American_Elm_-_Ulmus_americana,_Occoquan_Regional_Park,_Lorton,_Virginia.jpg\">American Elm - Ulmus americana, Occoquan Regional Park, Lorton, Virginia</a>, <a href=\"https://creativecommons.org/licenses/by/2.0/legalcode\" rel=\"license\">CC BY 2.0</a>",
     photo3Href: "https://en.wikipedia.org/wiki/Ulmus_americana#/media/File:American_Elm_-_Ulmus_americana,_Occoquan_Regional_Park,_Lorton,_Virginia.jpg",
     photo3Alt: "American Elm - Ulmus americana, Occoquan Regional Park, Lorton, Virginia",
-    photo3Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/American_Elm_-_Ulmus_americana%2C_Occoquan_Regional_Park%2C_Lorton%2C_Virginia.jpg/256px-American_Elm_-_Ulmus_americana%2C_Occoquan_Regional_Park%2C_Lorton%2C_Virginia.jpg",
-
-
+    photo3Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/American_Elm_-_Ulmus_americana%2C_Occoquan_Regional_Park%2C_Lorton%2C_Virginia.jpg/256px-American_Elm_-_Ulmus_americana%2C_Occoquan_Regional_Park%2C_Lorton%2C_Virginia.jpg"
   },
   {
     nameCommon: "American Hophornbeam",
@@ -260,23 +231,22 @@ const initialTreesState = [
     ],
     slug: "americanhophornbeam",
     description: "<p>The American Hophornbeam (Ostrya virginiana), also known as Ironwood for its dense, hard timber, is a small to medium-sized deciduous tree that often grows to 40 feet in height. It features a rounded crown with slender, spreading branches, and flaky bark that adds texture to landscapes. Native to North America, it thrives in well-drained soils, from deep forests to rocky slopes. Its leaves are ovate and sharply-toothed, resembling those of the elm but more finely textured, turning yellow to orange in the fall. Spring brings long, attractive catkins, followed by distinctive hop-like fruit clusters that persist through winter, providing interest and food for wildlife. The tree's wood is valued for tool handles and sporting equipment, owing to its toughness. Unassuming yet resilient, the American Hophornbeam is a low-maintenance choice for naturalized areas or as a landscape specimen where its subtle beauty and durable nature can be appreciated.</p>",
-    photo1Credit: '<a href="https://commons.wikimedia.org/wiki/User:Eric_in_SF">Eric Hunt</a>, <a href="https://commons.wikimedia.org/wiki/File:Ostrya_virginiana_2.jpg">Ostrya virginiana 2</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" rel="license">CC BY-SA 3.0</a>',
+    photo1Credit: "<a href=\"https://commons.wikimedia.org/wiki/User:Eric_in_SF\">Eric Hunt</a>, <a href=\"https://commons.wikimedia.org/wiki/File:Ostrya_virginiana_2.jpg\">Ostrya virginiana 2</a>, <a href=\"https://creativecommons.org/licenses/by-sa/3.0/legalcode\" rel=\"license\">CC BY-SA 3.0</a>",
     photo1Href: "https://en.wikipedia.org/wiki/Ostrya_virginiana#/media/File:Ostrya_virginiana_2.jpg",
     photo1Alt: "Ostrya virginiana 2",
     photo1Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Ostrya_virginiana_2.jpg/256px-Ostrya_virginiana_2.jpg",
-
-    photo2Credit: '<a href="https://www.flickr.com/people/86548370@N00">Katja Schulz</a> from Washington, D. C., USA, <a href="https://commons.wikimedia.org/wiki/File:Eastern_Hophornbeam_-_Flickr_-_treegrow_(4).jpg">Eastern Hophornbeam - Flickr - treegrow (4)</a>, <a href="https://creativecommons.org/licenses/by/2.0/legalcode" rel="license">CC BY 2.0</a>',
+    photo2Credit: "<a href=\"https://www.flickr.com/people/86548370@N00\">Katja Schulz</a> from Washington, D. C., USA, <a href=\"https://commons.wikimedia.org/wiki/File:Eastern_Hophornbeam_-_Flickr_-_treegrow_(4).jpg\">Eastern Hophornbeam - Flickr - treegrow (4)</a>, <a href=\"https://creativecommons.org/licenses/by/2.0/legalcode\" rel=\"license\">CC BY 2.0</a>",
     photo2Href: "https://en.wikipedia.org/wiki/Ostrya_virginiana#/media/File:Eastern_Hophornbeam_-_Flickr_-_treegrow_(4).jpg",
     photo2Alt: "Eastern Hophornbeam - Flickr - treegrow (4)",
     photo2Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Eastern_Hophornbeam_-_Flickr_-_treegrow_%284%29.jpg/256px-Eastern_Hophornbeam_-_Flickr_-_treegrow_%284%29.jpg",
-    photo3Credit: '<a href="https://www.flickr.com/people/86548370@N00">Katja Schulz</a> from Washington, D. C., USA, <a href="https://commons.wikimedia.org/wiki/File:Eastern_Hophornbeam_-_Flickr_-_treegrow_(3).jpg">Eastern Hophornbeam - Flickr - treegrow (3)</a>, <a href="https://creativecommons.org/licenses/by/2.0/legalcode" rel="license">CC BY 2.0</a>',
+    photo3Credit: "<a href=\"https://www.flickr.com/people/86548370@N00\">Katja Schulz</a> from Washington, D. C., USA, <a href=\"https://commons.wikimedia.org/wiki/File:Eastern_Hophornbeam_-_Flickr_-_treegrow_(3).jpg\">Eastern Hophornbeam - Flickr - treegrow (3)</a>, <a href=\"https://creativecommons.org/licenses/by/2.0/legalcode\" rel=\"license\">CC BY 2.0</a>",
     photo3Href: "https://en.wikipedia.org/wiki/Ostrya_virginiana#/media/File:Eastern_Hophornbeam_-_Flickr_-_treegrow_(3).jpg",
     photo3Alt: "Eastern Hophornbeam - Flickr - treegrow (3)",
     photo3Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Eastern_Hophornbeam_-_Flickr_-_treegrow_%283%29.jpg/256px-Eastern_Hophornbeam_-_Flickr_-_treegrow_%283%29.jpg",
-    photo4Credit:'Elbert L. Little, Jr., Public domain, via Wikimedia Commons',
-    photo4Href:"https://en.wikipedia.org/wiki/Ostrya_virginiana#/media/File:Ostrya_virginiana_range_map.jpg",
+    photo4Credit: "Elbert L. Little, Jr., Public domain, via Wikimedia Commons",
+    photo4Href: "https://en.wikipedia.org/wiki/Ostrya_virginiana#/media/File:Ostrya_virginiana_range_map.jpg",
     photo4Alt: "Ostrya virginiana range map",
-    photo4Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Ostrya_virginiana_range_map.jpg/256px-Ostrya_virginiana_range_map.jpg",
+    photo4Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Ostrya_virginiana_range_map.jpg/256px-Ostrya_virginiana_range_map.jpg"
   },
   {
     nameCommon: "American Mountain-ash",
@@ -287,25 +257,21 @@ const initialTreesState = [
     species: "Sorbus americana",
     type: "deciduous",
     leafType: "compound",
-    compoundStructure: "single",
+    compoundStructure: "pinnate",
     leafAttachment: "alternate",
     fallColor: [
       "yellow"
     ],
-    slug: "americanmountain-ash", 
+    slug: "americanmountain-ash",
     description: "The American Mountain-ash (Sorbus americana) is a small, decorative tree native to the northeastern United States and eastern Canada, flourishing in the cooler climates of higher altitudes and northern latitudes. Typically reaching 15 to 30 feet in height, it graces the landscape with a rounded crown and fine, textured foliage. Its compound leaves are composed of numerous leaflets, turning a striking array of oranges and reds in the autumn. In late spring to early summer, the tree is adorned with dense clusters of white flowers, which develop into vibrant, orange-red berries by late summer. These berry clusters persist into winter, offering a valuable food source for birds and wildlife. The Mountain-ash is not a true ash but is so named for its ash-like leaves. Its slender gray bark and modest stature make it an excellent choice for residential gardens where its ornamental berries and fall color can be a focal point.",
-    photo1Credit: '<a href="https://commons.wikimedia.org/wiki/User:Bruce_Marlin">Bruce Marlin</a>, <a href="https://commons.wikimedia.org/wiki/File:Sorbus_americana.jpg">Sorbus americana</a>, <a href="https://creativecommons.org/licenses/by-sa/2.5/legalcode" rel="license">CC BY-SA 2.5</a>',
+    photo1Credit: "<a href=\"https://commons.wikimedia.org/wiki/User:Bruce_Marlin\">Bruce Marlin</a>, <a href=\"https://commons.wikimedia.org/wiki/File:Sorbus_americana.jpg\">Sorbus americana</a>, <a href=\"https://creativecommons.org/licenses/by-sa/2.5/legalcode\" rel=\"license\">CC BY-SA 2.5</a>",
     photo1Href: "https://en.wikipedia.org/wiki/Sorbus_americana#/media/File:Sorbus_americana.jpg",
     photo1Alt: "Sorbus americana",
     photo1Src: "https://upload.wikimedia.org/wikipedia/commons/4/48/Sorbus_americana.jpg",
     photo2Credit: "U.S. Geological Survey, Public domain, via Wikimedia Commons",
     photo2Href: "https://en.wikipedia.org/wiki/Sorbus_americana#/media/File:Sorbus_americana.png",
     photo2Alt: "Sorbus americana range map",
-    photo2Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Sorbus_americana.png/256px-Sorbus_americana.png",
-    // photo3Credit: "",
-    // photo3Href: "",
-    // photo3Alt: "",
-    // photo3Src: "",
+    photo2Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Sorbus_americana.png/256px-Sorbus_americana.png"
   },
   {
     nameCommon: "American Papaw",
@@ -322,7 +288,7 @@ const initialTreesState = [
     ],
     slug: "americanpapaw",
     description: "The American Pawpaw (Asimina triloba) presents a lush, tropical appearance, yet it is indigenous to the temperate woodlands of North America. This small deciduous tree grows to about 20 feet tall and thrives in the understory, preferring rich, well-drained soils. Its broad, oblong leaves, which can reach up to 12 inches in length, turn a deep yellow in the fall. In the spring, the pawpaw tree is distinctive for its unusual, purplish-brown flowers, which give way to large, green, mango-like fruits by late summer. The fruits have a custard-like texture with a flavor reminiscent of bananas mixed with mango, and are beloved by both humans and wildlife. As the largest edible fruit native to the United States, the pawpaw is gaining popularity for its unique taste and nutritional value. With its natural resilience and low maintenance, the American Pawpaw is a rewarding addition for those looking to cultivate native edibles and support local biodiversity.",
-    photo1Credit: '<a href="https://commons.wikimedia.org/wiki/User:Cbarlow">Cbarlow</a>, <a href="https://commons.wikimedia.org/wiki/File:Pawpaw_patch_shade_2.jpg">Pawpaw patch shade 2</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" rel="license">CC BY-SA 4.0</a>',
+    photo1Credit: "<a href=\"https://commons.wikimedia.org/wiki/User:Cbarlow\">Cbarlow</a>, <a href=\"https://commons.wikimedia.org/wiki/File:Pawpaw_patch_shade_2.jpg\">Pawpaw patch shade 2</a>, <a href=\"https://creativecommons.org/licenses/by-sa/4.0/legalcode\" rel=\"license\">CC BY-SA 4.0</a>",
     photo1Href: "https://en.wikipedia.org/wiki/Asimina_triloba#/media/File:Pawpaw_patch_shade_2.jpg",
     photo1Alt: "Pawpaw patch shade 2",
     photo1Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Pawpaw_patch_shade_2.jpg/256px-Pawpaw_patch_shade_2.jpg",
@@ -333,7 +299,7 @@ const initialTreesState = [
     photo3Credit: "Elbert L. Little, Jr., of the U.S. Department of Agriculture, Forest Service, and others, Public domain, via Wikimedia Commons",
     photo3Href: "https://en.wikipedia.org/wiki/Asimina_triloba#/media/File:Asimina_triloba_range_map_1.png",
     photo3Alt: "Asimina triloba range map 1",
-    photo3Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Asimina_triloba_range_map_1.png/256px-Asimina_triloba_range_map_1.png",
+    photo3Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Asimina_triloba_range_map_1.png/256px-Asimina_triloba_range_map_1.png"
   },
   {
     nameCommon: "American Persimmon",
@@ -356,19 +322,18 @@ const initialTreesState = [
     ],
     slug: "americanpersimmon",
     description: "<p>The American Persimmon (Diospyros virginiana) is a native deciduous tree that graces the Eastern United States with its presence. Growing to a height of 35-60 feet, this species is renowned for its hardiness and adaptability, thriving in a variety of soils and conditions. The persimmon's bark is distinctive—dark, thick, and deeply furrowed, providing textural interest throughout the year. Its leaves are broad and glossy, offering a rich, green canopy in summer before turning to vivid shades of yellow, orange, and red in the autumn.</p><p>Springtime blooms are inconspicuous, but they give way to the tree's true bounty: the persimmon fruit. These round, orange berries are astringent when unripe but become sweet and custard-like after the first frost, making them a treat for wildlife and humans alike. The fruits have a long history of use in traditional Native American cuisine and are still valued today for their flavor and nutritional content. The American Persimmon is not just a food source but also a striking ornamental tree, particularly attractive to those interested in native planting and wildlife gardening.</p>",
-    photo1Credit: 'Gphoto, <a href="https://commons.wikimedia.org/wiki/File:Persimmon.jpg">Persimmon</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" rel="license">CC BY-SA 3.0</a>',
+    photo1Credit: "Gphoto, <a href=\"https://commons.wikimedia.org/wiki/File:Persimmon.jpg\">Persimmon</a>, <a href=\"https://creativecommons.org/licenses/by-sa/3.0/legalcode\" rel=\"license\">CC BY-SA 3.0</a>",
     photo1Href: "https://en.wikipedia.org/wiki/Diospyros_virginiana#/media/File:Persimmon.jpg",
     photo1Alt: "Persimmon",
     photo1Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Persimmon.jpg/256px-Persimmon.jpg",
-
-    photo2Credit: '<a href="https://commons.wikimedia.org/wiki/User:Peterwchen">Peterwchen</a>, <a href="https://commons.wikimedia.org/wiki/File:Diospyros_virginiana-fruit.jpg">Diospyros virginiana-fruit</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" rel="license">CC BY-SA 4.0</a>',
+    photo2Credit: "<a href=\"https://commons.wikimedia.org/wiki/User:Peterwchen\">Peterwchen</a>, <a href=\"https://commons.wikimedia.org/wiki/File:Diospyros_virginiana-fruit.jpg\">Diospyros virginiana-fruit</a>, <a href=\"https://creativecommons.org/licenses/by-sa/4.0/legalcode\" rel=\"license\">CC BY-SA 4.0\"</a>",
     photo2Href: "https://en.wikipedia.org/wiki/Diospyros_virginiana#/media/File:Diospyros_virginiana-fruit.jpg",
     photo2Alt: "Diospyros virginiana-fruit",
     photo2Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Diospyros_virginiana-fruit.jpg/256px-Diospyros_virginiana-fruit.jpg",
     photo3Credit: "U.S. Geological Survey, Public domain, via Wikimedia Commons",
     photo3Href: "https://en.wikipedia.org/wiki/Diospyros_virginiana#/media/File:Diospyros_virginiana_map.png",
     photo3Alt: "Diospyros virginiana range map",
-    photo3Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Diospyros_virginiana_map.png/256px-Diospyros_virginiana_map.png",    
+    photo3Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Diospyros_virginiana_map.png/256px-Diospyros_virginiana_map.png"
   },
   {
     nameCommon: "American Plum",
@@ -389,20 +354,18 @@ const initialTreesState = [
     ],
     slug: "americanplum",
     description: "The American Plum (Prunus americana), also known as Wild Plum, is a versatile deciduous tree native to North America, adaptable to a range of environments from stream banks to prairies. Typically growing to 15-25 feet in height, it forms a rounded shape with a thicket of branches that can be trained as a single trunk or allowed to spread naturally. In early spring, before the foliage unfurls, the tree is covered with a profusion of fragrant white flowers, attracting pollinators and signaling the end of winter. The blossoms give way to small, red to yellow plums with a tart flavor, ripening by late summer. These fruits are enjoyed by wildlife and can be used in jams and jellies. The leaves are serrated and green, turning to yellow or red hues in the fall. The American Plum's rugged bark and branch structure provide winter interest, making it a resilient and attractive choice for naturalized areas or as a wildlife-friendly addition to the home garden.",
-    photo1Credit: '<a href="https://www.flickr.com/photos/33762104@N00">Andrew Ciscel</a>, <a href="https://commons.wikimedia.org/wiki/File:Prunus_americana.jpg">Prunus americana</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0/legalcode" rel="license">CC BY-SA 2.0</a>',
+    photo1Credit: "<a href=\"https://www.flickr.com/photos/33762104@N00\">Andrew Ciscel</a>, <a href=\"https://commons.wikimedia.org/wiki/File:Prunus_americana.jpg\">Prunus americana</a>, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/legalcode\" rel=\"license\">CC BY-SA 2.0</a>",
     photo1Href: "https://en.wikipedia.org/wiki/Prunus_americana#/media/File:Prunus_americana.jpg",
     photo1Alt: "Prunus americana",
     photo1Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Prunus_americana.jpg/256px-Prunus_americana.jpg",
-
-    photo2Credit: 'USDA-NRCS PLANTS Database / Herman, D.E., et al. 1996. North Dakota tree handbook. USDA NRCS ND State Soil Conservation Committee; NDSU Extension and Western Area Power Administration, Bismarck., Public domain, via Wikimedia Commons',
+    photo2Credit: "USDA-NRCS PLANTS Database / Herman, D.E., et al. 1996. North Dakota tree handbook. USDA NRCS ND State Soil Conservation Committee; NDSU Extension and Western Area Power Administration, Bismarck., Public domain, via Wikimedia Commons",
     photo2Href: "https://en.wikipedia.org/wiki/Prunus_americana#/media/File:Pram_004_php.jpg",
     photo2Alt: "American Plum",
     photo2Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Pram_004_php.jpg/256px-Pram_004_php.jpg",
-    
     photo3Credit: "Elbert L. Little, Jr., of the U.S. Department of Agriculture, Forest Service, Public domain, via Wikimedia Commons",
     photo3Href: "https://en.wikipedia.org/wiki/Prunus_americana#/media/File:Prunus_americana_range_map_1.png",
     photo3Alt: "Prunus americana range map",
-    photo3Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Prunus_americana_range_map_1.png/256px-Prunus_americana_range_map_1.png",
+    photo3Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Prunus_americana_range_map_1.png/256px-Prunus_americana_range_map_1.png"
   },
   {
     nameCommon: "American Pussy Willow",
@@ -422,19 +385,18 @@ const initialTreesState = [
     ],
     slug: "americanpussywillow",
     description: "<p>The American Pussy Willow (Salix discolor) is a beloved harbinger of spring, with its distinctive soft, silver catkins that burst forth on bare branches, often while the chill of winter still lingers. This deciduous shrub or small tree is native to North America, typically reaching 6 to 15 feet in height, and is cherished for its early-season interest and ease of care. The pussy willow's branches spread informally, creating a loosely structured, rounded silhouette.</p><p>The catkins, which precede the leaves, are a favorite in floral arrangements and are one of the first sources of pollen for bees. As the season progresses, the catkins give way to lance-shaped, light green leaves. The pussy willow thrives in moist, well-drained soil, and full to partial sunlight, often naturally occurring near wetlands and stream banks. Its ability to tolerate wet conditions makes it an excellent choice for rain gardens or naturalized areas. With minimal pruning, the American Pussy Willow remains a charming and rustic addition to any landscape.</p>",
-    photo1Credit: 'Public domain, via Wikimedia Commons',
+    photo1Credit: "Public domain, via Wikimedia Commons",
     photo1Href: "https://en.wikipedia.org/wiki/Salix_discolor#/media/File:Pussy_willow_branch.jpg",
     photo1Alt: "Pussy willow branch",
     photo1Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Pussy_willow_branch.jpg/256px-Pussy_willow_branch.jpg",
-  
     photo2Credit: "Public domain, via Wikimedia Commons",
     photo2Href: "https://en.wikipedia.org/wiki/Salix_discolor#/media/File:Salix_discolor_(USDA).jpg",
     photo2Alt: "American Pussy Willow",
     photo2Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Salix_discolor_%28USDA%29.jpg/154px-Salix_discolor_%28USDA%29.jpg",
-    photo3Credit: '<a href="https://commons.wikimedia.org/wiki/User:Silk666">Silk666</a>, <a href="https://commons.wikimedia.org/wiki/File:S_discolor_male_flowers.JPG">S discolor male flowers</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" rel="license">CC BY-SA 3.0</a>',
+    photo3Credit: "<a href=\"https://commons.wikimedia.org/wiki/User:Silk666\">Silk666</a>, <a href=\"https://commons.wikimedia.org/wiki/File:S_discolor_male_flowers.JPG\">S discolor male flowers</a>, <a href=\"https://creativecommons.org/licenses/by-sa/3.0/legalcode\" rel=\"license\">CC BY-SA 3.0</a>",
     photo3Href: "https://en.wikipedia.org/wiki/Salix_discolor#/media/File:S_discolor_male_flowers.JPG",
     photo3Alt: "male flowers",
-    photo3Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/S_discolor_male_flowers.JPG/256px-S_discolor_male_flowers.JPG",
+    photo3Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/S_discolor_male_flowers.JPG/256px-S_discolor_male_flowers.JPG"
   },
   {
     nameCommon: "American Sweetgum",
@@ -453,24 +415,22 @@ const initialTreesState = [
     ],
     slug: "americansweetgum",
     description: "<p>The American Sweetgum (Liquidambar styraciflua) is a striking deciduous tree cherished for its star-shaped leaves and brilliant autumnal colors. Towering at an impressive height of 60 to 75 feet, it casts a commanding presence with a pyramidal to oval form. The glossy green leaves transition through a splendid palette of reds, purples, and oranges as the seasons turn, offering a spectacular fall display.</p><p>Springtime ushers in inconspicuous flowers, which develop into the tree's distinctive spiky seed balls. These seed pods hang from the branches throughout the winter, adding texture to the bare limbs. The sweetgum's bark is deeply furrowed, featuring corky ridges that create an interesting pattern with age.</p><p>Preferring full sun and moist, rich soils, the sweetgum is a popular landscaping choice, often used in parks and large spaces. However, its seed pods can be a nuisance in residential settings. Despite this, the American Sweetgum remains valued for its ornamental beauty and as a source of hardwood.</p>",
-    photo1Credit: '<a href="https://commons.wikimedia.org/wiki/User:Famartin">Famartin</a>, <a href="https://commons.wikimedia.org/wiki/File:2014-11-02_13_06_29_Sweet_Gum_during_autumn_along_Lower_Ferry_Road_in_Ewing,_New_Jersey.JPG">2014-11-02 13 06 29 Sweet Gum during autumn along Lower Ferry Road in Ewing, New Jersey</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" rel="license">CC BY-SA 4.0</a>',
+    photo1Credit: "<a href=\"https://commons.wikimedia.org/wiki/User:Famartin\">Famartin</a>, <a href=\"https://commons.wikimedia.org/wiki/File:2014-11-02_13_06_29_Sweet_Gum_during_autumn_along_Lower_Ferry_Road_in_Ewing,_New_Jersey.JPG\">2014-11-02 13 06 29 Sweet Gum during autumn along Lower Ferry Road in Ewing, New Jersey</a>, <a href=\"https://creativecommons.org/licenses/by-sa/4.0/legalcode\" rel=\"license\">CC BY-SA 4.0</a>",
     photo1Href: "https://en.wikipedia.org/wiki/Liquidambar_styraciflua#/media/File:2014-11-02_13_06_29_Sweet_Gum_during_autumn_along_Lower_Ferry_Road_in_Ewing,_New_Jersey.JPG",
     photo1Alt: "Sweet Gum during autumn along Lower Ferry Road in Ewing, New Jersey 2014-11-02 13 06 29 ",
     photo1Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/2014-11-02_13_06_29_Sweet_Gum_during_autumn_along_Lower_Ferry_Road_in_Ewing%2C_New_Jersey.JPG/256px-2014-11-02_13_06_29_Sweet_Gum_during_autumn_along_Lower_Ferry_Road_in_Ewing%2C_New_Jersey.JPG",
-
-    photo2Credit: 'Photo: <a href="https://commons.wikimedia.org/wiki/User:JLPC">JLPC</a> /&nbsp;<a href="/wiki/Main_Page">Wikimedia Commons</a>&nbsp;/&nbsp;<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/wiki/File:Liquidambar_feuilles_FR_2013.jpg">Liquidambar feuilles FR 2013</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" rel="license">CC BY-SA 3.0</a>',
+    photo2Credit: "Photo: <a href=\"https://commons.wikimedia.org/wiki/User:JLPC\">JLPC</a> /&nbsp;<a href=\"/wiki/Main_Page\">Wikimedia Commons</a>&nbsp;/&nbsp;<a href=\"https://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>, <a href=\"https://commons.wikimedia.org/wiki/File:Liquidambar_feuilles_FR_2013.jpg\">Liquidambar feuilles FR 2013</a>, <a href=\"https://creativecommons.org/licenses/by-sa/3.0/legalcode\" rel=\"license\">CC BY-SA 3.0</a>",
     photo2Href: "https://en.wikipedia.org/wiki/Liquidambar_styraciflua#/media/File:Liquidambar_feuilles_FR_2013.jpg",
     photo2Alt: "Liquidambar feuilles FR 2013",
     photo2Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Liquidambar_feuilles_FR_2013.jpg/256px-Liquidambar_feuilles_FR_2013.jpg",
-   
-    photo3Credit: 'Shane Vaughn, <a href="https://commons.wikimedia.org/wiki/File:Liquidambar_styraciflua_bloom.JPG">Liquidambar styraciflua bloom</a>, <a href="https://creativecommons.org/licenses/by/3.0/legalcode" rel="license">CC BY 3.0</a>',
+    photo3Credit: "Shane Vaughn, <a href=\"https://commons.wikimedia.org/wiki/File:Liquidambar_styraciflua_bloom.JPG\">Liquidambar styraciflua bloom</a>, <a href=\"https://creativecommons.org/licenses/by/3.0/legalcode\" rel=\"license\">CC BY 3.0</a>",
     photo3Href: "https://en.wikipedia.org/wiki/Liquidambar_styraciflua#/media/File:Liquidambar_styraciflua_bloom.JPG",
     photo3Alt: "Liquidambar styraciflua bloom",
     photo3Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Liquidambar_styraciflua_bloom.JPG/256px-Liquidambar_styraciflua_bloom.JPG",
     photo4Credit: "Elbert L. Little, Jr., of the U.S. Department of Agriculture, Forest Service, Public domain, via Wikimedia Commons",
     photo4Href: "https://en.wikipedia.org/wiki/Liquidambar_styraciflua#/media/File:Liquidambar_styraciflua_range_map_4.png",
     photo4Alt: "Liquidambar styraciflua range map",
-    photo4Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Liquidambar_styraciflua_range_map_4.png/256px-Liquidambar_styraciflua_range_map_4.png",
+    photo4Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Liquidambar_styraciflua_range_map_4.png/256px-Liquidambar_styraciflua_range_map_4.png"
   },
   {
     nameCommon: "American Sycamore",
@@ -496,20 +456,18 @@ const initialTreesState = [
     photo1Href: "https://en.wikipedia.org/wiki/Platanus_occidentalis#/media/File:Sycamore_in_Warren_County,_Indiana.png",
     photo1Alt: "Sycamore in Warren County, Indiana",
     photo1Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Sycamore_in_Warren_County%2C_Indiana.png/256px-Sycamore_in_Warren_County%2C_Indiana.png",
-
-    photo2Credit: '<a href="https://commons.wikimedia.org/wiki/User:John_P_Salvatore">John P Salvatore</a>, <a href="https://commons.wikimedia.org/wiki/File:Sycamore_Tree_Leaf.jpg">Sycamore Tree Leaf</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" rel="license">CC BY-SA 4.0</a>',
+    photo2Credit: "<a href=\"https://commons.wikimedia.org/wiki/User:John_P_Salvatore\">John P Salvatore</a>, <a href=\"https://commons.wikimedia.org/wiki/File:Sycamore_Tree_Leaf.jpg\">Sycamore Tree Leaf</a>, <a href=\"https://creativecommons.org/licenses/by-sa/4.0/legalcode\" rel=\"license\">CC BY-SA 4.0</a>",
     photo2Href: "https://en.wikipedia.org/wiki/Platanus_occidentalis#/media/File:Sycamore_Tree_Leaf.jpg",
     photo2Alt: "Sycamore Tree Leaf",
     photo2Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Sycamore_Tree_Leaf.jpg/256px-Sycamore_Tree_Leaf.jpg",
-
-    photo3Credit: '<a href="https://commons.wikimedia.org/wiki/User:Myrichiehaynes">Richard Stephen Haynes</a>, <a href="https://commons.wikimedia.org/wiki/File:Sycamore_Tree_Bark.jpg">Sycamore Tree Bark</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" rel="license">CC BY-SA 4.0</a>',
+    photo3Credit: "<a href=\"https://commons.wikimedia.org/wiki/User:Myrichiehaynes\">Richard Stephen Haynes</a>, <a href=\"https://commons.wikimedia.org/wiki/File:Sycamore_Tree_Bark.jpg\">Sycamore Tree Bark</a>, <a href=\"https://creativecommons.org/licenses/by-sa/4.0/legalcode\" rel=\"license\">CC BY-SA 4.0</a>",
     photo3Href: "https://en.wikipedia.org/wiki/Platanus_occidentalis#/media/File:Sycamore_Tree_Bark.jpg",
     photo3Alt: "Sycamore Tree Bark",
     photo3Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Sycamore_Tree_Bark.jpg/256px-Sycamore_Tree_Bark.jpg",
-    photo4Credit: 'U.S. Geological Survey, Public domain, via Wikimedia Commons',
+    photo4Credit: "U.S. Geological Survey, Public domain, via Wikimedia Commons",
     photo4Href: "https://en.wikipedia.org/wiki/Platanus_occidentalis#/media/File:Platanus_occidentalis_map.png",
     photo4Alt: "Platanus occidentalis range map",
-    photo4Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Platanus_occidentalis_map.png/256px-Platanus_occidentalis_map.png",    
+    photo4Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Platanus_occidentalis_map.png/256px-Platanus_occidentalis_map.png"
   },
   {
     nameCommon: "Amur Maple",
@@ -528,20 +486,12 @@ const initialTreesState = [
       "red",
       "orange"
     ],
-    slug: "amurmaple", 
-    description: '<p>The Amur Maple (Acer ginnala), a native to the northeastern regions of Asia, is a small, versatile deciduous tree or large shrub that is increasingly popular in temperate climates for its ornamental qualities and modest size, typically growing to 15-20 feet in height. With a rounded to open crown, the tree is well-suited for urban gardens and spaces where larger maples would be overwhelming.</p><p>The leaves of the Amur Maple are simple and palmate, resembling miniature versions of the classic maple leaf. They emerge in spring as fresh green, turning to vibrant shades of yellow, orange, and deep red in the fall, providing a spectacular autumn display. In spring, fragrant yellow-white flowers appear, giving way to winged samaras (maple "helicopters") that mature from green to red.</p><p>Hardy and adaptable, the Amur Maple can tolerate a range of soil conditions and is drought-resistant once established. It is often used in landscaping for hedges, screens, or as a stand-alone specimen. Its ability to withstand harsh conditions makes it an attractive and practical choice for gardeners seeking a touch of fall color and year-round interest.</p>',
-    photo1Credit: '<a href="https://commons.wikimedia.org/wiki/User:MPF">MPF</a>, <a href="https://commons.wikimedia.org/wiki/File:Acer_ginnala.jpg">Acer ginnala</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" rel="license">CC BY-SA 3.0</a>',
+    slug: "amurmaple",
+    description: "<p>The Amur Maple (Acer ginnala), a native to the northeastern regions of Asia, is a small, versatile deciduous tree or large shrub that is increasingly popular in temperate climates for its ornamental qualities and modest size, typically growing to 15-20 feet in height. With a rounded to open crown, the tree is well-suited for urban gardens and spaces where larger maples would be overwhelming.</p><p>The leaves of the Amur Maple are simple and palmate, resembling miniature versions of the classic maple leaf. They emerge in spring as fresh green, turning to vibrant shades of yellow, orange, and deep red in the fall, providing a spectacular autumn display. In spring, fragrant yellow-white flowers appear, giving way to winged samaras (maple \"helicopters\") that mature from green to red.</p><p>Hardy and adaptable, the Amur Maple can tolerate a range of soil conditions and is drought-resistant once established. It is often used in landscaping for hedges, screens, or as a stand-alone specimen. Its ability to withstand harsh conditions makes it an attractive and practical choice for gardeners seeking a touch of fall color and year-round interest.</p>",
+    photo1Credit: "<a href=\"https://commons.wikimedia.org/wiki/User:MPF\">MPF</a>, <a href=\"https://commons.wikimedia.org/wiki/File:Acer_ginnala.jpg\">Acer ginnala</a>, <a href=\"https://creativecommons.org/licenses/by-sa/3.0/legalcode\" rel=\"license\">CC BY-SA 3.0</a>",
     photo1Href: "https://en.wikipedia.org/wiki/Acer_ginnala#/media/File:Acer_ginnala.jpg",
     photo1Alt: "Acer ginnala",
-    photo1Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Acer_ginnala.jpg/256px-Acer_ginnala.jpg",
-    // photo2Credit: "",
-    // photo2Href: "",
-    // photo2Alt: "",
-    // photo2Src: "",
-    // photo3Credit: "",
-    // photo3Href: "",
-    // photo3Alt: "",
-    // photo3Src: "",
+    photo1Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Acer_ginnala.jpg/256px-Acer_ginnala.jpg"
   },
   {
     nameCommon: "Austrian Pine",
@@ -560,22 +510,22 @@ const initialTreesState = [
     ],
     slug: "austrianpine",
     description: "<p>The Austrian Pine (Pinus nigra), also known as the Black Pine, is a robust, evergreen conifer that brings a stately and enduring presence to landscapes. Native to Europe, this species has been widely planted across North America, reaching heights of 40 to 60 feet. It boasts a dense, pyramidal shape in its youth that matures into a rounded and sometimes irregular crown, providing a robust silhouette against the sky.</p><p>The tree's long, dark green needles, growing in pairs, are stiff and lush, offering year-round color and texture. They cluster densely on the branches, creating a thick canopy that provides ample shade. The Austrian Pine is easily recognizable by its thick, deeply fissured, dark gray to black bark, which adds a rugged character especially appreciated in winter months.</p><p>Highly adaptable to a variety of conditions, this pine is valued for its tolerance to urban pollution and soil compaction, making it a favored choice for city plantings and windbreaks. Its sturdy nature and classic coniferous form make the Austrian Pine a reliable and attractive addition to any setting seeking a touch of evergreen resilience.</p>",
-    photo1Credit: '<a href="https://commons.wikimedia.org/wiki/User:Gvm">Gvm</a>, <a href="https://commons.wikimedia.org/wiki/File:Forest_in_Bulgaria_near_Dundukovo_dam.jpg">Forest in Bulgaria near Dundukovo dam</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" rel="license">CC BY-SA 3.0</a>',
+    photo1Credit: "<a href=\"https://commons.wikimedia.org/wiki/User:Gvm\">Gvm</a>, <a href=\"https://commons.wikimedia.org/wiki/File:Forest_in_Bulgaria_near_Dundukovo_dam.jpg\">Forest in Bulgaria near Dundukovo dam</a>, <a href=\"https://creativecommons.org/licenses/by-sa/3.0/legalcode\" rel=\"license\">CC BY-SA 3.0</a>",
     photo1Href: "https://en.wikipedia.org/wiki/Pinus_nigra#/media/File:Forest_in_Bulgaria_near_Dundukovo_dam.jpg",
     photo1Alt: "Forest in Bulgaria near Dundukovo dam",
     photo1Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Forest_in_Bulgaria_near_Dundukovo_dam.jpg/256px-Forest_in_Bulgaria_near_Dundukovo_dam.jpg",
-    photo2Credit: '<a href="https://cs.wikipedia.org/wiki/User:Dezidor">Dezidor</a>, <a href="https://commons.wikimedia.org/wiki/File:Borovicová_šiška.jpg">Borovicová šiška</a>, <a href="https://creativecommons.org/licenses/by/3.0/legalcode" rel="license">CC BY 3.0</a>',
+    photo2Credit: "<a href=\"https://cs.wikipedia.org/wiki/User:Dezidor\">Dezidor</a>, <a href=\"https://commons.wikimedia.org/wiki/File:Borovicová_šiška.jpg\">Borovicová šiška</a>, <a href=\"https://creativecommons.org/licenses/by/3.0/legalcode\" rel=\"license\">CC BY 3.0</a>",
     photo2Href: "https://en.wikipedia.org/wiki/Pinus_nigra#/media/File:Borovicov%C3%A1_%C5%A1i%C5%A1ka.jpg",
     photo2Alt: "Foliage and cone",
     photo2Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Borovicov%C3%A1_%C5%A1i%C5%A1ka.jpg/256px-Borovicov%C3%A1_%C5%A1i%C5%A1ka.jpg",
-    photo3Credit: '<a href="https://commons.wikimedia.org/wiki/User:Famartin">Famartin</a>, <a href="https://commons.wikimedia.org/wiki/File:2021-05-07_12_50_37_Pollen_cones_on_an_Austrian_Pine_within_Franklin_Glen_Park_in_the_Franklin_Glen_section_of_Chantilly,_Fairfax_County,_Virginia.jpg">2021-05-07 12 50 37 Pollen cones on an Austrian Pine within Franklin Glen Park in the Franklin Glen section of Chantilly, Fairfax County, Virginia</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" rel="license">CC BY-SA 4.0</a>',
+    photo3Credit: "<a href=\"https://commons.wikimedia.org/wiki/User:Famartin\">Famartin</a>, <a href=\"https://commons.wikimedia.org/wiki/File:2021-05-07_12_50_37_Pollen_cones_on_an_Austrian_Pine_within_Franklin_Glen_Park_in_the_Franklin_Glen_section_of_Chantilly,_Fairfax_County,_Virginia.jpg\">2021-05-07 12 50 37 Pollen cones on an Austrian Pine within Franklin Glen Park in the Franklin Glen section of Chantilly, Fairfax County, Virginia</a>, <a href=\"https://creativecommons.org/licenses/by-sa/4.0/legalcode\" rel=\"license\">CC BY-SA 4.0</a>",
     photo3Href: "https://en.wikipedia.org/wiki/Pinus_nigra#/media/File:2021-05-07_12_50_37_Pollen_cones_on_an_Austrian_Pine_within_Franklin_Glen_Park_in_the_Franklin_Glen_section_of_Chantilly,_Fairfax_County,_Virginia.jpg",
     photo3Alt: "Pollen cones on an Austrian Pine within Franklin Glen Park in the Franklin Glen section of Chantilly, Fairfax County, Virginia 2021-05-07 12 50 37",
     photo3Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/2021-05-07_12_50_37_Pollen_cones_on_an_Austrian_Pine_within_Franklin_Glen_Park_in_the_Franklin_Glen_section_of_Chantilly%2C_Fairfax_County%2C_Virginia.jpg/256px-2021-05-07_12_50_37_Pollen_cones_on_an_Austrian_Pine_within_Franklin_Glen_Park_in_the_Franklin_Glen_section_of_Chantilly%2C_Fairfax_County%2C_Virginia.jpg",
-    photo4Credit: 'Photo (c)2007 Derek Ramsey (<a href="https://en.wikipedia.org/wiki/User:Ram-Man">Ram-Man</a>), <a href="https://commons.wikimedia.org/wiki/File:Austrian_Pine_Pinus_nigra_Bark_Closeup_2000px.jpg">Austrian Pine Pinus nigra Bark Closeup 2000px</a>, <a href="https://creativecommons.org/licenses/by-sa/2.5/legalcode" rel="license">CC BY-SA 2.5</a>',
+    photo4Credit: "Photo (c)2007 Derek Ramsey (<a href=\"https://en.wikipedia.org/wiki/User:Ram-Man\">Ram-Man</a>), <a href=\"https://commons.wikimedia.org/wiki/File:Austrian_Pine_Pinus_nigra_Bark_Closeup_2000px.jpg\">Austrian Pine Pinus nigra Bark Closeup 2000px</a>, <a href=\"https://creativecommons.org/licenses/by-sa/2.5/legalcode\" rel=\"license\">CC BY-SA 2.5</a>",
     photo4Href: "https://en.wikipedia.org/wiki/Pinus_nigra#/media/File:Austrian_Pine_Pinus_nigra_Bark_Closeup_2000px.jpg",
     photo4Alt: "Austrian Pine Pinus nigra Bark Closeup",
-    photo4Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Austrian_Pine_Pinus_nigra_Bark_Closeup_2000px.jpg/256px-Austrian_Pine_Pinus_nigra_Bark_Closeup_2000px.jpg",
+    photo4Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Austrian_Pine_Pinus_nigra_Bark_Closeup_2000px.jpg/256px-Austrian_Pine_Pinus_nigra_Bark_Closeup_2000px.jpg"
   },
   {
     nameCommon: "Bald Cypress",
@@ -590,20 +540,19 @@ const initialTreesState = [
       "brown"
     ],
     slug: "baldcypress",
-    description: '<p>The Bald Cypress (Taxodium distichum) is a stately deciduous conifer, iconic in Southern swamps but adaptable to drier lands and cooler climates. Reaching heights of 50 to 70 feet, it is easily recognized by its unique, buttressed trunk and feathery, light green needles that turn a rusty orange before shedding in fall. The tree’s silhouette is strikingly elegant, with a straight, tapering trunk and a pyramidal canopy that becomes more open and spreading with age.</p><p>Native to the southeastern United States, the Bald Cypress is famed for its "knees," woody projections that rise from the roots around the tree, believed to help with gas exchange and stability in its often waterlogged habitat. This remarkable tree is not only a survivor of wet conditions but is also remarkably rot-resistant, making its wood valuable for construction.</p><p>The Bald Cypress is a tree of resilience and beauty, thriving where few others can, and providing vital ecosystem services, as well as aesthetic value to parks, gardens, and natural areas.</p>',
-
-    photo1Credit: '<a href="https://en.wikipedia.org/wiki/User:CarTick">CarTick</a> at <a href="https://en.wikipedia.org/wiki/">English Wikipedia</a>, <a href="https://commons.wikimedia.org/wiki/File:Baldcypress_cone.jpg">Baldcypress cone</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" rel="license">CC BY-SA 3.0</a>',
+    description: "<p>The Bald Cypress (Taxodium distichum) is a stately deciduous conifer, iconic in Southern swamps but adaptable to drier lands and cooler climates. Reaching heights of 50 to 70 feet, it is easily recognized by its unique, buttressed trunk and feathery, light green needles that turn a rusty orange before shedding in fall. The tree’s silhouette is strikingly elegant, with a straight, tapering trunk and a pyramidal canopy that becomes more open and spreading with age.</p><p>Native to the southeastern United States, the Bald Cypress is famed for its \"knees,\" woody projections that rise from the roots around the tree, believed to help with gas exchange and stability in its often waterlogged habitat. This remarkable tree is not only a survivor of wet conditions but is also remarkably rot-resistant, making its wood valuable for construction.</p><p>The Bald Cypress is a tree of resilience and beauty, thriving where few others can, and providing vital ecosystem services, as well as aesthetic value to parks, gardens, and natural areas.</p>",
+    photo1Credit: "<a href=\"https://en.wikipedia.org/wiki/User:CarTick\">CarTick</a> at <a href=\"https://en.wikipedia.org/wiki/\">English Wikipedia</a>, <a href=\"https://commons.wikimedia.org/wiki/File:Baldcypress_cone.jpg\">Baldcypress cone</a>, <a href=\"https://creativecommons.org/licenses/by-sa/3.0/legalcode\" rel=\"license\">CC BY-SA 3.0</a>",
     photo1Href: "https://en.wikipedia.org/wiki/Taxodium_distichum#/media/File:Baldcypress_cone.jpg",
     photo1Alt: "Baldcypress cone",
     photo1Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Baldcypress_cone.jpg/256px-Baldcypress_cone.jpg",
-    photo2Credit: 'Photo by and (c)2006 Derek Ramsey (<a href="https://en.wikipedia.org/wiki/User:Ram-Man">Ram-Man</a>), <a href="https://commons.wikimedia.org/wiki/File:Bald_Cypress_Leaves_2264px.jpg">Bald Cypress Leaves 2264px</a>, <a href="https://creativecommons.org/licenses/by-sa/2.5/legalcode" rel="license">CC BY-SA 2.5</a>',
+    photo2Credit: "Photo by and (c)2006 Derek Ramsey (<a href=\"https://en.wikipedia.org/wiki/User:Ram-Man\">Ram-Man</a>), <a href=\"https://commons.wikimedia.org/wiki/File:Bald_Cypress_Leaves_2264px.jpg\">Bald Cypress Leaves 2264px</a>, <a href=\"https://creativecommons.org/licenses/by-sa/2.5/legalcode\" rel=\"license\">CC BY-SA 2.5</a>",
     photo2Href: "https://en.wikipedia.org/wiki/Taxodium_distichum#/media/File:Bald_Cypress_Leaves_2264px.jpg",
     photo2Alt: "Bald Cypress Leaves 2264px",
     photo2Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Bald_Cypress_Leaves_2264px.jpg/256px-Bald_Cypress_Leaves_2264px.jpg",
     photo3Credit: "USGS, Public domain, via Wikimedia Commons",
     photo3Href: "https://en.wikipedia.org/wiki/Taxodium_distichum#/media/File:Baldcypress_range.jpg",
     photo3Alt: "Baldcypress native range map",
-    photo3Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Baldcypress_range.jpg/256px-Baldcypress_range.jpg",
+    photo3Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Baldcypress_range.jpg/256px-Baldcypress_range.jpg"
   },
   {
     nameCommon: "Balsam Fir",
@@ -616,18 +565,14 @@ const initialTreesState = [
     needleStructure: "single needle",
     slug: "balsamfir",
     description: "<p>The Balsam Fir (Abies balsamea) is a quintessential evergreen conifer native to the cold climates of the northeastern United States and Canada. It reaches a mature height of 45 to 75 feet, displaying a classic conical shape that embodies the spirit of the northern woods. Its dark-green, aromatic needles are arranged in a spiral fashion along the branches, which are dense and contribute to the tree's compact appearance.</p><p>Distinct for its smooth, gray bark and the resin-filled blisters that dot its surface, the Balsam Fir exudes a distinctive fragrance, especially when its needles or resin blisters are crushed. In late fall, it produces upright, cylindrical cones that disintegrate on the tree, releasing seeds to the wind.</p><p>The Balsam Fir is highly valued for its wood, essential oils, and as a traditional Christmas tree. Its dense foliage provides shelter for wildlife and contributes to the picturesque, snow-laden landscapes of the boreal forest. Hardy and shade-tolerant, it’s a symbol of the wilderness and a staple in both natural forests and cultivated landscapes.</p>",
-    photo1Credit: 'U.S. Fish and Wildlife Service, Public domain, via Wikimedia Commons',
+    photo1Credit: "U.S. Fish and Wildlife Service, Public domain, via Wikimedia Commons",
     photo1Href: "https://en.wikipedia.org/wiki/Abies_balsamea#/media/File:Abies_balsamea.jpg",
     photo1Alt: "Balsam Fir",
     photo1Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Abies_balsamea.jpg/256px-Abies_balsamea.jpg",
-    photo2Credit: 'Elbert L. Little, Jr., U.S. Department of Agriculture, Forest Service, and others, Public domain, via Wikimedia Commons',
+    photo2Credit: "Elbert L. Little, Jr., U.S. Department of Agriculture, Forest Service, and others, Public domain, via Wikimedia Commons",
     photo2Href: "https://en.wikipedia.org/wiki/Abies_balsamea#/media/File:Abies_balsamea_range_map_3.png",
     photo2Alt: "Abies balsamea range map 3",
-    photo2Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Abies_balsamea_range_map_3.png/256px-Abies_balsamea_range_map_3.png",
-    // photo3Credit: "",
-    // photo3Href: "",
-    // photo3Alt: "",
-    // photo3Src: "",
+    photo2Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Abies_balsamea_range_map_3.png/256px-Abies_balsamea_range_map_3.png"
   },
   {
     nameCommon: "Balsam Poplar",
@@ -649,20 +594,18 @@ const initialTreesState = [
     ],
     slug: "balsampoplar",
     description: "<p>The Balsam Poplar (Populus balsamifera), also known as the Balm of Gilead, is a hardy deciduous tree native to the northern regions of North America. With a typical height of 50 to 80 feet, it grows rapidly, forming a tall and narrow silhouette that is robust and hardy against the backdrop of cold climates. Its bark is dark gray and deeply furrowed, providing textural interest throughout the year.</p><p>In early spring, before the leaves unfurl, the Balsam Poplar is adorned with resinous buds that exude a distinctively fragrant, sticky balsam scent. These buds are often harvested for medicinal salves and ointments. The leaves are shiny green, broad, and ovate with finely toothed edges, fluttering and rustling in the breeze, turning yellow in the fall.</p><p>Known for its cotton-like seeds that float through the air in spring, the Balsam Poplar plays a crucial role in riparian ecosystems, providing erosion control and habitat. It's valued for its quick growth, making it an excellent choice for windbreaks and privacy screens in landscape design.</p>",
-    photo1Credit: 'USDA-NRCS PLANTS Database Public domain, via Wikimedia Commons',
+    photo1Credit: "USDA-NRCS PLANTS Database Public domain, via Wikimedia Commons",
     photo1Href: "https://en.wikipedia.org/wiki/Populus_balsamifera#/media/File:Populus_balsamifera.jpg",
     photo1Alt: "Populus balsamifera",
     photo1Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Populus_balsamifera.jpg/256px-Populus_balsamifera.jpg",
-
-    photo2Credit: '<a href="https://commons.wikimedia.org/wiki/User:1Veertje">Vera de Kok</a>, <a href="https://commons.wikimedia.org/wiki/File:Reykjavík_-_tree_of_the_year_2016.jpeg">Reykjavík - tree of the year 2016</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" rel="license">CC BY-SA 3.0</a>',
+    photo2Credit: "<a href=\"https://commons.wikimedia.org/wiki/User:1Veertje\">Vera de Kok</a>, <a href=\"https://commons.wikimedia.org/wiki/File:Reykjavík_-_tree_of_the_year_2016.jpeg\">Reykjavík - tree of the year 2016</a>, <a href=\"https://creativecommons.org/licenses/by-sa/3.0/legalcode\" rel=\"license\">CC BY-SA 3.0</a>",
     photo2Href: "https://en.wikipedia.org/wiki/Populus_balsamifera#/media/File:Reykjav%C3%ADk_-_tree_of_the_year_2016.jpeg",
     photo2Alt: "Reykjavík - tree of the year 2016",
     photo2Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Reykjav%C3%ADk_-_tree_of_the_year_2016.jpeg/256px-Reykjav%C3%ADk_-_tree_of_the_year_2016.jpeg",
-
-    photo3Credit: 'USGS Public domain, via Wikimedia Commons',
+    photo3Credit: "USGS Public domain, via Wikimedia Commons",
     photo3Href: "https://en.wikipedia.org/wiki/Populus_balsamifera#/media/File:Populus_balsamifera_range_map_1.png",
     photo3Alt: "Populus balsamifera range map 1",
-    photo3Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Populus_balsamifera_range_map_1.png/256px-Populus_balsamifera_range_map_1.png",
+    photo3Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Populus_balsamifera_range_map_1.png/256px-Populus_balsamifera_range_map_1.png"
   },
   {
     nameCommon: "Bitternut Hickory",
@@ -673,7 +616,7 @@ const initialTreesState = [
     species: "Carya cordiformis",
     type: "deciduous",
     leafType: "compound",
-    compoundStructure: "single",
+    compoundStructure: "pinnate",
     leafAttachment: "alternate",
     fallColor: [
       "yellow",
@@ -681,25 +624,22 @@ const initialTreesState = [
     ],
     slug: "bitternuthickory",
     description: "<p>The Bitternut Hickory (Carya cordiformis) is a tall and stately deciduous tree that is native to the eastern United States. It typically soars to heights of 50 to 80 feet, characterized by a straight, slender trunk and a well-formed, rounded crown. Its bark is smooth and gray when young, becoming shaggy and more deeply furrowed with age, adding to the tree's dignified appearance.</p><p>Noted for its pinnately compound leaves, which usually feature 7 to 11 lance-shaped, serrated leaflets, the Bitternut Hickory's foliage is a vibrant green that transitions to a cheerful yellow in the autumn, creating a bright canopy. The tree produces small, greenish-yellow male and female flowers on the same tree, with the females developing into the bitter-tasting nuts that give the tree its name. These nuts are encased in thin, yellow-green husks that split open when mature.</p><p>Although not favored for human consumption due to their bitter flavor, the nuts are an important food source for wildlife. The Bitternut Hickory is a valuable hardwood species, often used in furniture making and for its high-quality firewood. With its tall stature and strong wood, the Bitternut Hickory is a noble feature in forests, parks, and large landscapes.</p>",
-    photo1Credit: '<a href="https://commons.wikimedia.org/wiki/User:MPF">MPF</a> assumed., <a href="https://commons.wikimedia.org/wiki/File:Carya_cordiformis.jpg">Carya cordiformis</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" rel="license">CC BY-SA 3.0</a>',
+    photo1Credit: "<a href=\"https://commons.wikimedia.org/wiki/User:MPF\">MPF</a> assumed., <a href=\"https://commons.wikimedia.org/wiki/File:Carya_cordiformis.jpg\">Carya cordiformis</a>, <a href=\"https://creativecommons.org/licenses/by-sa/3.0/legalcode\" rel=\"license\">CC BY-SA 3.0</a>",
     photo1Href: "https://en.wikipedia.org/wiki/Carya_cordiformis#/media/File:Carya_cordiformis.jpg",
     photo1Alt: "Carya cordiformis",
     photo1Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Carya_cordiformis.jpg/256px-Carya_cordiformis.jpg",
-
-    photo2Credit: '<a href="https://www.flickr.com/people/138014579@N08">Plant Image Library</a> from Boston, USA, <a href="https://commons.wikimedia.org/wiki/File:Carya_cordiformis_(Bitternut_Hickory)_(37064132791).jpg">Carya cordiformis (Bitternut Hickory) (37064132791)</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0/legalcode" rel="license">CC BY-SA 2.0</a>',
+    photo2Credit: "<a href=\"https://www.flickr.com/people/138014579@N08\">Plant Image Library</a> from Boston, USA, <a href=\"https://commons.wikimedia.org/wiki/File:Carya_cordiformis_(Bitternut_Hickory)_(37064132791).jpg\">Carya cordiformis (Bitternut Hickory) (37064132791)</a>, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/legalcode\" rel=\"license\">CC BY-SA 2.0</a>",
     photo2Href: "https://en.wikipedia.org/wiki/Carya_cordiformis#/media/File:Carya_cordiformis_(Bitternut_Hickory)_(37064132791).jpg",
     photo2Alt: "Carya cordiformis (Bitternut Hickory)",
     photo2Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Carya_cordiformis_%28Bitternut_Hickory%29_%2837064132791%29.jpg/256px-Carya_cordiformis_%28Bitternut_Hickory%29_%2837064132791%29.jpg",
-
-    photo3Credit: 'USDA Public domain, via Wikimedia Commons',
+    photo3Credit: "USDA Public domain, via Wikimedia Commons",
     photo3Href: "https://en.wikipedia.org/wiki/Carya_cordiformis#/media/File:Carya_cordiformis_range_map_1.png",
     photo3Alt: "Carya cordiformis range map",
     photo3Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Carya_cordiformis_range_map_1.png/256px-Carya_cordiformis_range_map_1.png",
-
-    photo4Credit: '<a href="https://commons.wikimedia.org/wiki/User:Akgarb">William (Ned) Friedman</a>, <a href="https://commons.wikimedia.org/wiki/File:Carya_cordiformis_male_flowers.jpg">Carya cordiformis male flowers</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" rel="license">CC BY-SA 4.0</a>',
+    photo4Credit: "<a href=\"https://commons.wikimedia.org/wiki/User:Akgarb\">William (Ned) Friedman</a>, <a href=\"https://commons.wikimedia.org/wiki/File:Carya_cordiformis_male_flowers.jpg\">Carya cordiformis male flowers</a>, <a href=\"https://creativecommons.org/licenses/by-sa/4.0/legalcode\" rel=\"license\">CC BY-SA 4.0</a>",
     photo4Href: "https://en.wikipedia.org/wiki/Carya_cordiformis#/media/File:Carya_cordiformis_male_flowers.jpg",
     photo4Alt: "Carya cordiformis male flowers",
-    photo4Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Carya_cordiformis_male_flowers.jpg/128px-Carya_cordiformis_male_flowers.jpg",
+    photo4Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Carya_cordiformis_male_flowers.jpg/128px-Carya_cordiformis_male_flowers.jpg"
   },
   {
     nameCommon: "Black Ash",
@@ -710,28 +650,26 @@ const initialTreesState = [
     species: "Fraxinus nigra",
     type: "deciduous",
     leafType: "compound",
-    compoundStructure: "single",
+    compoundStructure: "pinnate",
     leafAttachment: "opposite",
     fallColor: [
       "yellow",
       "brown"
     ],
     slug: "blackash",
-    description: '<p>The Black Ash (Fraxinus nigra) is a deciduous hardwood tree that is indigenous to wetland areas of the northeastern United States and Canada. This slender, medium-sized tree typically grows to heights of 40 to 60 feet. It has a straight trunk with a narrow, rounded crown, and its bark is dark gray to brown with deep furrows and intersecting ridges, creating a diamond-like pattern.</p><p>The tree’s leaves are compound, with 7 to 11 leaflets that are dark green and turn a muted yellow in the fall. Black Ash is dioecious, with separate male and female flowers that appear on different trees before the emergence of leaves. The female trees produce winged samaras that are dispersed by the wind.</p><p>Black Ash is notable for its ability to thrive in wet, swampy conditions, and its wood is highly valued for its flexibility and strength, particularly in the making of baskets, hence its nickname, "basket ash." However, the species is under threat from the invasive Emerald Ash Borer, which has devastated populations of ash trees across North America.</p>',
-    photo1Credit: 'Keith Kanoti, Maine Forest Service, USA, <a href="https://commons.wikimedia.org/wiki/File:Fraxinus_nigra_leaves.jpg">Fraxinus nigra leaves</a>, <a href="https://creativecommons.org/licenses/by/3.0/us/deed.en" rel="license">CC BY 3.0 US</a>',
+    description: "<p>The Black Ash (Fraxinus nigra) is a deciduous hardwood tree that is indigenous to wetland areas of the northeastern United States and Canada. This slender, medium-sized tree typically grows to heights of 40 to 60 feet. It has a straight trunk with a narrow, rounded crown, and its bark is dark gray to brown with deep furrows and intersecting ridges, creating a diamond-like pattern.</p><p>The tree’s leaves are compound, with 7 to 11 leaflets that are dark green and turn a muted yellow in the fall. Black Ash is dioecious, with separate male and female flowers that appear on different trees before the emergence of leaves. The female trees produce winged samaras that are dispersed by the wind.</p><p>Black Ash is notable for its ability to thrive in wet, swampy conditions, and its wood is highly valued for its flexibility and strength, particularly in the making of baskets, hence its nickname, \"basket ash.\" However, the species is under threat from the invasive Emerald Ash Borer, which has devastated populations of ash trees across North America.</p>",
+    photo1Credit: "Keith Kanoti, Maine Forest Service, USA, <a href=\"https://commons.wikimedia.org/wiki/File:Fraxinus_nigra_leaves.jpg\">Fraxinus nigra leaves</a>, <a href=\"https://creativecommons.org/licenses/by/3.0/us/deed.en\" rel=\"license\">CC BY 3.0 US</a>",
     photo1Href: "https://en.wikipedia.org/wiki/Fraxinus_nigra#/media/File:Fraxinus_nigra_leaves.jpg",
     photo1Alt: "Fraxinus nigra leaves",
     photo1Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Fraxinus_nigra_leaves.jpg/256px-Fraxinus_nigra_leaves.jpg",
-  
-    photo2Credit: '<a href="https://commons.wikimedia.org/wiki/User:Kkl456">Kkl456</a>, <a href="https://commons.wikimedia.org/wiki/File:FraNigBark.jpeg">FraNigBark</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" rel="license">CC BY-SA 4.0</a>',
+    photo2Credit: "<a href=\"https://commons.wikimedia.org/wiki/User:Kkl456\">Kkl456</a>, <a href=\"https://commons.wikimedia.org/wiki/File:FraNigBark.jpeg\">FraNigBark</a>, <a href=\"https://creativecommons.org/licenses/by-sa/4.0/legalcode\" rel=\"license\">CC BY-SA 4.0</a>",
     photo2Href: "https://en.wikipedia.org/wiki/Fraxinus_nigra#/media/File:FraNigBark.jpeg",
     photo2Alt: "Fraxinus nigra Bark",
     photo2Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/FraNigBark.jpeg/256px-FraNigBark.jpeg",
-
-    photo3Credit: 'USGS Public domain, via Wikimedia Commons',
+    photo3Credit: "USGS Public domain, via Wikimedia Commons",
     photo3Href: "https://en.wikipedia.org/wiki/Fraxinus_nigra#/media/File:Fraxinus_nigra_range_map_3.png",
     photo3Alt: "Fraxinus nigra range map",
-    photo3Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Fraxinus_nigra_range_map_3.png/256px-Fraxinus_nigra_range_map_3.png",
+    photo3Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Fraxinus_nigra_range_map_3.png/256px-Fraxinus_nigra_range_map_3.png"
   },
   {
     nameCommon: "Black Cherry",
@@ -753,25 +691,22 @@ const initialTreesState = [
     ],
     slug: "blackcherry",
     description: "<p>The Black Cherry (Prunus serotina), also known as Wild Cherry, is a deciduous hardwood species esteemed for both its ecological contributions and valuable lumber. Native to Eastern North America, it reaches heights of 50 to 80 feet in forest settings, displaying a straight trunk and a round-topped canopy when grown in the open.</p><p>The tree's bark is dark and scaly, becoming deeply furrowed with age, and is easily recognizable by its burnt cornflake appearance. In spring, it bears elongated clusters of fragrant white flowers, followed by small, shiny, red-black cherries in late summer. These fruits are a favorite among birds and wildlife, though their bitter taste is less favored by humans until cooked and sweetened.</p><p>Black Cherry leaves are lanceolate and finely toothed, turning yellow to red in the fall. The wood is prized for its rich color and fine grain, used in cabinetry and fine furniture. This cherry species is also known for its medicinal properties, with bark that has been traditionally used as a cough remedy. However, care must be taken as parts of the plant contain cyanide and are toxic if ingested in large quantities.</p>",
-    photo1Credit: 'anonymous, <a href="https://commons.wikimedia.org/wiki/File:Amerikaanse_vogelkers_Prunus_serotina_closeup.jpg">Amerikaanse vogelkers Prunus serotina closeup</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" rel="license">CC BY-SA 3.0</a>',
+    photo1Credit: "anonymous, <a href=\"https://commons.wikimedia.org/wiki/File:Amerikaanse_vogelkers_Prunus_serotina_closeup.jpg\">Amerikaanse vogelkers Prunus serotina closeup</a>, <a href=\"https://creativecommons.org/licenses/by-sa/3.0/legalcode\" rel=\"license\">CC BY-SA 3.0</a>",
     photo1Href: "https://en.wikipedia.org/wiki/Prunus_serotina#/media/File:Amerikaanse_vogelkers_Prunus_serotina_closeup.jpg",
     photo1Alt: "Prunus serotina",
     photo1Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Amerikaanse_vogelkers_Prunus_serotina_closeup.jpg/195px-Amerikaanse_vogelkers_Prunus_serotina_closeup.jpg",
-
     photo2Credit: "Public domain, via Wikimedia Commons",
     photo2Href: "https://en.wikipedia.org/wiki/Prunus_serotina#/media/File:PrunusSerotinaBark.jpg",
     photo2Alt: "Prunus Serotina Bark",
     photo2Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/PrunusSerotinaBark.jpg/256px-PrunusSerotinaBark.jpg",
-    
-    photo3Credit: '<a href="https://commons.wikimedia.org/wiki/User:Rasbak">Rasbak</a>, <a href="https://commons.wikimedia.org/wiki/File:Amerikaanse_vogelkers_bessen_Prunus_serotina.jpg">Amerikaanse vogelkers bessen Prunus serotina</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" rel="license">CC BY-SA 3.0</a>',
+    photo3Credit: "<a href=\"https://commons.wikimedia.org/wiki/User:Rasbak\">Rasbak</a>, <a href=\"https://commons.wikimedia.org/wiki/File:Amerikaanse_vogelkers_bessen_Prunus_serotina.jpg\">Amerikaanse vogelkers bessen Prunus serotina</a>, <a href=\"https://creativecommons.org/licenses/by-sa/3.0/legalcode\" rel=\"license\">CC BY-SA 3.0</a>",
     photo3Href: "https://en.wikipedia.org/wiki/Prunus_serotina#/media/File:Amerikaanse_vogelkers_bessen_Prunus_serotina.jpg",
     photo3Alt: "Prunus Serotina",
     photo3Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Amerikaanse_vogelkers_bessen_Prunus_serotina.jpg/256px-Amerikaanse_vogelkers_bessen_Prunus_serotina.jpg",
-
-    photo4Credit: 'USDA, Forest Service, Public domain, via Wikimedia Commons',
+    photo4Credit: "USDA, Forest Service, Public domain, via Wikimedia Commons",
     photo4Href: "https://en.wikipedia.org/wiki/Prunus_serotina#/media/File:Prunus_serotina_range_map_1.png",
     photo4Alt: "Prunus serotina range map",
-    photo4Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Prunus_serotina_range_map_1.png/256px-Prunus_serotina_range_map_1.png",
+    photo4Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Prunus_serotina_range_map_1.png/256px-Prunus_serotina_range_map_1.png"
   },
   {
     nameCommon: "Black Locust",
@@ -782,27 +717,25 @@ const initialTreesState = [
     species: "Robinia pseudoacacia",
     type: "deciduous",
     leafType: "compound",
-    compoundStructure: "single",
+    compoundStructure: "pinnate",
     leafAttachment: "alternate",
     fallColor: [
       "yellow"
     ],
     slug: "blacklocust",
     description: "<p>The Black Locust (Robinia pseudoacacia) is a fast-growing deciduous tree that is native to the southeastern United States but has been widely planted and naturalized elsewhere. It typically reaches heights of 40 to 100 feet, with a narrow crown and an open, irregular form that lends a rugged appearance to the landscape.</p><p>The tree's bark is deeply furrowed, featuring a dark brown or gray color that provides textural interest. In late spring, it is adorned with fragrant, drooping clusters of white, pea-like flowers that attract bees and butterflies. These blossoms give way to smooth, flat seed pods that persist into winter.</p><p>Black Locust leaves are pinnately compound with small, oval leaflets that flutter in the breeze, creating dappled sunlight beneath. The foliage turns a modest yellow in the fall. Known for its extremely hard and rot-resistant wood, Black Locust is valued for use in outdoor construction and furniture. Despite its beauty and utility, it is often considered invasive outside its native range due to its prolific seeding and rapid growth.</p>",
-    photo2Credit: '<a href="https://commons.wikimedia.org/wiki/User:HoHey22">HoHey22</a>, <a href="https://commons.wikimedia.org/wiki/File:Black_Locust_Leaf_Close_Up.jpg">Black Locust Leaf Close Up</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" rel="license">CC BY-SA 4.0</a>',
+    photo2Credit: "<a href=\"https://commons.wikimedia.org/wiki/User:HoHey22\">HoHey22</a>, <a href=\"https://commons.wikimedia.org/wiki/File:Black_Locust_Leaf_Close_Up.jpg\">Black Locust Leaf Close Up</a>, <a href=\"https://creativecommons.org/licenses/by-sa/4.0/legalcode\" rel=\"license\">CC BY-SA 4.0</a>",
     photo2Href: "https://en.wikipedia.org/wiki/Robinia_pseudoacacia#/media/File:Black_Locust_Leaf_Close_Up.jpg",
     photo2Alt: "Black Locust Leaf Close Up",
     photo2Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Black_Locust_Leaf_Close_Up.jpg/256px-Black_Locust_Leaf_Close_Up.jpg",
-
-    photo1Credit: 'AnRo0002, CC0, via Wikimedia Commons',
+    photo1Credit: "AnRo0002, CC0, via Wikimedia Commons",
     photo1Href: "https://en.wikipedia.org/wiki/Robinia_pseudoacacia#/media/File:20130528Robinia_pseudoacacia_Hockenheim4.jpg",
     photo1Alt: "Robinia pseudoacacia",
     photo1Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/20130528Robinia_pseudoacacia_Hockenheim4.jpg/256px-20130528Robinia_pseudoacacia_Hockenheim4.jpg",
-
-    photo3Credit: '<a href="https://commons.wikimedia.org/wiki/User:Llez">H. Zell</a>, <a href="https://commons.wikimedia.org/wiki/File:Robinia_pseudoacacia_004.JPG">Robinia pseudoacacia 004</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" rel="license">CC BY-SA 3.0</a>',
+    photo3Credit: "<a href=\"https://commons.wikimedia.org/wiki/User:Llez\">H. Zell</a>, <a href=\"https://commons.wikimedia.org/wiki/File:Robinia_pseudoacacia_004.JPG\">Robinia pseudoacacia 004</a>, <a href=\"https://creativecommons.org/licenses/by-sa/3.0/legalcode\" rel=\"license\">CC BY-SA 3.0</a>",
     photo3Href: "https://en.wikipedia.org/wiki/Robinia_pseudoacacia#/media/File:Robinia_pseudoacacia_004.JPG",
     photo3Alt: "Robinia pseudoacacia",
-    photo3Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Robinia_pseudoacacia_004.JPG/256px-Robinia_pseudoacacia_004.JPG",
+    photo3Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Robinia_pseudoacacia_004.JPG/256px-Robinia_pseudoacacia_004.JPG"
   },
   {
     nameCommon: "Black Maple",
@@ -819,20 +752,14 @@ const initialTreesState = [
     ],
     slug: "blackmaple",
     description: "<p>The Black Maple (Acer nigrum), a close relative of the sugar maple, is a deciduous tree revered for its striking presence and valuable sap. Found in the central and eastern United States, it grows to heights of 60 to 80 feet, forming a rounded, dense canopy that provides generous shade. Its bark is dark, deeply furrowed, and becomes almost black with age, hence the name.</p><p>The tree’s leaves are telltale, with three main lobes that are less pronounced than those of its sugar maple cousin, featuring drooping edges and a deep green hue that shifts to vibrant yellow and burnt orange in autumn. Spring brings small, yellow-green flowers that are often hidden beneath the foliage, followed by the winged samaras typical of maples, twirling to the ground in a helicopter-like fashion.</p><p>Black Maple's sap is a source for maple syrup, and its hard, strong wood is sought after for furniture and flooring. Adaptable and hardy, the Black Maple is a testament to the enduring beauty and utility of the Acer family.</p>",
-    photo1Credit: 'Daderot, CC0, via Wikimedia Commons',
+    photo1Credit: "Daderot, CC0, via Wikimedia Commons",
     photo1Href: "https://en.wikipedia.org/wiki/Acer_nigrum#/media/File:Acer_nigrum_-_University_of_Kentucky_Arboretum_-_DSC09326.JPG",
     photo1Alt: "Acer nigrum - University of Kentucky Arboretum",
     photo1Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Acer_nigrum_-_University_of_Kentucky_Arboretum_-_DSC09326.JPG/256px-Acer_nigrum_-_University_of_Kentucky_Arboretum_-_DSC09326.JPG",
-
-    photo2Credit: 'USGS, Public domain, via Wikimedia Commons',
+    photo2Credit: "USGS, Public domain, via Wikimedia Commons",
     photo2Href: "https://en.wikipedia.org/wiki/Acer_nigrum#/media/File:Acer_nigrum_range_map_1.png",
     photo2Alt: "Acer nigrum range map",
-    photo2Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Acer_nigrum_range_map_1.png/256px-Acer_nigrum_range_map_1.png",
-
-    // photo3Credit: "",
-    // photo3Href: "",
-    // photo3Alt: "",
-    // photo3Src: "",
+    photo2Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Acer_nigrum_range_map_1.png/256px-Acer_nigrum_range_map_1.png"
   },
   {
     nameCommon: "Black Oak",
@@ -853,20 +780,18 @@ const initialTreesState = [
     ],
     slug: "blackoak",
     description: "<p>The Black Oak (Quercus velutina), a member of the broad oak genus, is a robust and enduring species indigenous to the eastern and central United States. This deciduous tree towers to heights of 50 to 60 feet, occasionally reaching up to 90 feet under optimal conditions. It boasts a broad, rounded crown supported by a sturdy trunk, its bark characteristically dark, deeply furrowed, and nearly black, giving rise to its common name.</p><p>The Black Oak's leaves are distinguished by their shiny, dark green upper surfaces and a paler, often bristly underside. Come autumn, these leaves transform into a brilliant display of reds, oranges, and yellows, decorating the landscape with a classic fall palette. The tree produces acorns that are a vital food source for local wildlife.</p><p>It is valued for its strong, heavy wood, commonly used in flooring, furniture, and interior finishes. Despite its tough exterior, the Black Oak is susceptible to oak wilt, a serious fungal disease. The tree's hardiness and the ecological richness it provides make it a staple of its native woodland habitats.</p>",
-    photo1Credit: '<a href="https://commons.wikimedia.org/wiki/File:Quercus_velutina_001.jpg">Quercus velutina</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" rel="license">CC BY-SA 3.0</a>',
+    photo1Credit: "<a href=\"https://commons.wikimedia.org/wiki/File:Quercus_velutina_001.jpg\">Quercus velutina</a>, <a href=\"https://creativecommons.org/licenses/by-sa/3.0/legalcode\" rel=\"license\">CC BY-SA 3.0</a>",
     photo1Href: "https://en.wikipedia.org/wiki/Quercus_velutina#/media/File:Quercus_velutina_001.jpg",
     photo1Alt: "Quercus velutina",
     photo1Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Quercus_velutina_001.jpg/256px-Quercus_velutina_001.jpg",
-
-    photo2Credit: '<a href="https://www.flickr.com/people/34669428@N06">Bruce Kirchoff</a> from Greensboro, NC, USA, <a href="https://commons.wikimedia.org/wiki/File:Quercus_velutina_(23837102639).jpg">Quercus velutina (23837102639)</a>, <a href="https://creativecommons.org/licenses/by/2.0/legalcode" rel="license">CC BY 2.0</a>',
+    photo2Credit: "<a href=\"https://www.flickr.com/people/34669428@N06\">Bruce Kirchoff</a> from Greensboro, NC, USA, <a href=\"https://commons.wikimedia.org/wiki/File:Quercus_velutina_(23837102639).jpg\">Quercus velutina (23837102639)</a>, <a href=\"https://creativecommons.org/licenses/by/2.0/legalcode\" rel=\"license\">CC BY 2.0</a>",
     photo2Href: "https://en.wikipedia.org/wiki/Quercus_velutina#/media/File:Quercus_velutina_(23837102639).jpg",
     photo2Alt: "Quercus velutina",
     photo2Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Quercus_velutina_%2823837102639%29.jpg/256px-Quercus_velutina_%2823837102639%29.jpg",
-
     photo3Credit: "USGS, Public domain, via Wikimedia Commons",
     photo3Href: "https://en.wikipedia.org/wiki/Quercus_velutina#/media/File:Quercus_velutina_range_map_1.png",
     photo3Alt: "Quercus velutina range map",
-    photo3Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Quercus_velutina_range_map_1.png/256px-Quercus_velutina_range_map_1.png",
+    photo3Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Quercus_velutina_range_map_1.png/256px-Quercus_velutina_range_map_1.png"
   },
   {
     nameCommon: "Black Poplar",
@@ -885,7 +810,7 @@ const initialTreesState = [
       "yellow",
       "brown"
     ],
-    slug: "blackpoplar", 
+    slug: "blackpoplar",
     description: "<p>The Black Poplar (Populus nigra), a native of Europe and Western Asia, is a tall deciduous tree that has been widely cultivated elsewhere, including North America. It typically soars to heights of 80 to 100 feet, marked by a thick, deeply fissured bark that is dark grey-brown in color. The Black Poplar is particularly noted for its vigorous growth and lofty, spreading crown that provides expansive shade.</p><p>Its leaves are diamond-shaped to triangular, with serrated margins and a glossy, dark green appearance that turns yellow in the fall. The tree is dioecious, with male and female flowers developing on separate trees. The male catkins are red and showy, while the females are more subdued. After pollination, female trees produce fluffy, cotton-like seeds that are dispersed by the wind.</p><p>The Black Poplar is celebrated for its resilience in urban environments and its use in windbreaks and screening. Its timber is soft but tough, often used in manufacturing and for matches. With its imposing stature, the Black Poplar is a prominent feature in many European landscapes, symbolizing strength and endurance.</p>"
   },
   {
@@ -912,7 +837,7 @@ const initialTreesState = [
     species: "Juglans nigra",
     type: "deciduous",
     leafType: "compound",
-    compoundStructure: "single",
+    compoundStructure: "pinnate",
     leafAttachment: "alternate",
     fallColor: [
       "yellow-green",
@@ -995,7 +920,7 @@ const initialTreesState = [
     type: "conifer",
     needleStructure: "single needle",
     slug: "bluespruce",
-    description:"<p>The Blue Spruce, scientifically known as Picea pungens, is a majestic evergreen native to the Rocky Mountains of the United States. Characterized by its impressive stature, it can reach skyward to heights of 50 to 75 feet, presenting a broad, pyramidal shape with sturdy, horizontal branches. The tree's most striking feature is its needle foliage, which ranges from a silvery blue to a rich blue-green hue, providing a year-round display of vibrant color.</p><p>These stiff, sharply pointed needles contribute to the species' name, \"pungens,\" which signifies their pungent nature. In the wild, the Blue Spruce prefers moist, well-drained soils, typically found in mountainous river valleys. It produces cylindrical cones that hang elegantly from the branches, starting out purple and maturing to a pale brown.</p><p>Widely used as an ornamental tree due to its unique color and classic conical Christmas tree shape, the Blue Spruce is also the state tree of Colorado. Despite its beauty, it is a hardy tree, capable of withstanding cold climates and various soil conditions, making it a popular choice in landscapes across various regions.</p>"
+    description: "<p>The Blue Spruce, scientifically known as Picea pungens, is a majestic evergreen native to the Rocky Mountains of the United States. Characterized by its impressive stature, it can reach skyward to heights of 50 to 75 feet, presenting a broad, pyramidal shape with sturdy, horizontal branches. The tree's most striking feature is its needle foliage, which ranges from a silvery blue to a rich blue-green hue, providing a year-round display of vibrant color.</p><p>These stiff, sharply pointed needles contribute to the species' name, \"pungens,\" which signifies their pungent nature. In the wild, the Blue Spruce prefers moist, well-drained soils, typically found in mountainous river valleys. It produces cylindrical cones that hang elegantly from the branches, starting out purple and maturing to a pale brown.</p><p>Widely used as an ornamental tree due to its unique color and classic conical Christmas tree shape, the Blue Spruce is also the state tree of Colorado. Despite its beauty, it is a hardy tree, capable of withstanding cold climates and various soil conditions, making it a popular choice in landscapes across various regions.</p>"
   },
   {
     nameCommon: "Boxelder",
@@ -1010,7 +935,7 @@ const initialTreesState = [
     species: "Acer negundo",
     type: "deciduous",
     leafType: "compound",
-    compoundStructure: "single",
+    compoundStructure: "pinnate",
     leafAttachment: "opposite",
     fallColor: [
       "yellow"
@@ -1070,7 +995,7 @@ const initialTreesState = [
     species: "Juglans cinerea",
     type: "deciduous",
     leafType: "compound",
-    compoundStructure: "single",
+    compoundStructure: "pinnate",
     leafAttachment: "alternate",
     fallColor: [
       "yellow"
@@ -1191,7 +1116,7 @@ const initialTreesState = [
     species: "Ptelea trifoliata",
     type: "deciduous",
     leafType: "compound",
-    compoundStructure: "single",
+    compoundStructure: "pinnate",
     leafAttachment: "alternate",
     fallColor: [
       "yellow"
@@ -1211,7 +1136,7 @@ const initialTreesState = [
     species: "Zanthoxylum americanum",
     type: "deciduous",
     leafType: "compound",
-    compoundStructure: "single",
+    compoundStructure: "pinnate",
     leafAttachment: "alternate",
     fallColor: [
       "yellow"
@@ -1351,10 +1276,9 @@ const initialTreesState = [
       5
     ],
     slug: "easternwhitepine",
-    background: "bg_conifer1.jpg", 
+    background: "bg_conifer1.jpg",
     backgroundSmall: "bg_conifer1_small.jpg",
     description: "The Eastern White Pine (Pinus strobus), native to the northeastern United States and eastern Canada, stands as a majestic symbol of the North American forests. Recognizable by its tall, straight trunk and whorled branches, this tree can grow upwards of 80 feet, with some ancient specimens reaching double that height. Its soft, flexible needles, grouped in bundles of five, give the tree a delicate, feathery appearance. Beyond its beauty, the Eastern White Pine has played a pivotal role in American history. In colonial times, its straight and tall trunks were coveted for ship masts. The tree's wood, light yet durable, is widely used in construction and woodworking today. This species also provides habitat and sustenance for various wildlife, including birds and squirrels. With its rich historical significance and continued ecological importance, the Eastern White Pine remains a cherished icon of the northeastern landscape.",
-    background: "bg_conifer1.jpg",
     photo1: ""
   },
   {
@@ -1398,7 +1322,7 @@ const initialTreesState = [
     species: "Sorbus aucuparia",
     type: "deciduous",
     leafType: "compound",
-    compoundStructure: "single",
+    compoundStructure: "pinnate",
     leafAttachment: "alternate",
     fallColor: [
       "yellow"
@@ -1469,7 +1393,7 @@ const initialTreesState = [
     species: "Fraxinus pennsylvanica",
     type: "deciduous",
     leafType: "compound",
-    compoundStructure: "single",
+    compoundStructure: "pinnate",
     leafAttachment: "opposite",
     fallColor: [
       "yellow"
@@ -1509,7 +1433,7 @@ const initialTreesState = [
     species: "Gleditsia triacanthos",
     type: "deciduous",
     leafType: "compound",
-    compoundStructure: "twice",
+    compoundStructure: "twice pinnate",
     leafAttachment: "alternate",
     fallColor: [
       "yellow"
@@ -1561,7 +1485,7 @@ const initialTreesState = [
     species: "Gymnocladus dioicus",
     type: "deciduous",
     leafType: "compound",
-    compoundStructure: "twice",
+    compoundStructure: "twice pinnate",
     leafAttachment: "alternate",
     fallColor: [
       "yellow"
@@ -1601,7 +1525,7 @@ const initialTreesState = [
     species: "Carya tomentosa",
     type: "deciduous",
     leafType: "compound",
-    compoundStructure: "single",
+    compoundStructure: "pinnate",
     leafAttachment: "alternate",
     fallColor: [
       "yellow"
@@ -1819,7 +1743,7 @@ const initialTreesState = [
     species: "vernix",
     type: "deciduous",
     leafType: "compound",
-    compoundStructure: "single",
+    compoundStructure: "pinnate",
     leafAttachment: "alternate",
     fallColor: [
       "yellow",
@@ -1899,7 +1823,7 @@ const initialTreesState = [
     species: "Carya glabra",
     type: "deciduous",
     leafType: "compound",
-    compoundStructure: "single",
+    compoundStructure: "pinnate",
     leafAttachment: "alternate",
     fallColor: [
       "yellow"
@@ -2045,7 +1969,7 @@ const initialTreesState = [
     species: "Carya ovata",
     type: "deciduous",
     leafType: "compound",
-    compoundStructure: "single",
+    compoundStructure: "pinnate",
     leafAttachment: "alternate",
     fallColor: [
       "yellow"
@@ -2065,7 +1989,7 @@ const initialTreesState = [
     species: "Carya laciniosa",
     type: "deciduous",
     leafType: "compound",
-    compoundStructure: "single",
+    compoundStructure: "pinnate",
     leafAttachment: "alternate",
     fallColor: [
       "yellow"
@@ -2188,7 +2112,7 @@ const initialTreesState = [
     species: "Rhus glabra",
     type: "deciduous",
     leafType: "compound",
-    compoundStructure: "single",
+    compoundStructure: "pinnate",
     leafAttachment: "alternate",
     fallColor: [
       "red"
@@ -2204,7 +2128,7 @@ const initialTreesState = [
     species: "Rhus typhina",
     type: "deciduous",
     leafType: "compound",
-    compoundStructure: "single",
+    compoundStructure: "pinnate",
     leafAttachment: "alternate",
     fallColor: [
       "red",
@@ -2289,8 +2213,11 @@ const initialTreesState = [
     species: "Larix laricina",
     type: "conifer",
     needleStructure: "clustered needles",
-    needleCluster: ["12-30"],
-    slug: "tamarack"
+    needleCluster: [
+      "12-30"
+    ],
+    slug: "tamarack",
+    description: "<p>The Tamarack tree, Larix laricina, also known as the American Larch, is a unique deciduous conifer native to the cold, wetlands of North America. Unlike most conifers, it sheds its needles each winter, standing out with its dazzling autumnal transformation. Tamaracks reach moderate heights of 40 to 80 feet, growing with a narrow, conical shape that becomes more open with age.</p><p>In spring, the Tamarack bursts into life with soft, light green needles, which turn a brilliant yellow-gold in the fall before dropping, leaving the tree bare in winter. Its needles are short and borne in dense clusters on older branches, giving the tree a feathery texture. Small, rounded cones emerge, initially red and maturing to brown.</p><p>The Tamarack's bark is tight and gray-brown, becoming deeply fissured over time. Adapted to cold, boggy soils, it’s often found in swamps and wet northern forests. Despite its preference for wet conditions, it is surprisingly fire-resistant. The Tamarack plays a vital role in its ecosystem and is valued for its rot-resistant wood. With its unique deciduous nature, this tree offers a striking seasonal display, especially vivid in autumn landscapes.</p>"
   },
   {
     nameCommon: "Tree Of Heaven",
@@ -2301,7 +2228,7 @@ const initialTreesState = [
     species: "Ailanthus altissima",
     type: "deciduous",
     leafType: "compound",
-    compoundStructure: "single",
+    compoundStructure: "pinnate",
     leafAttachment: "alternate",
     fallColor: [
       "yellow"
@@ -2390,7 +2317,7 @@ const initialTreesState = [
     species: "Fraxinus americana",
     type: "deciduous",
     leafType: "compound",
-    compoundStructure: "single",
+    compoundStructure: "pinnate",
     leafAttachment: "opposite",
     fallColor: [
       "bronze",
@@ -2520,6 +2447,7 @@ const initialTreesState = [
     slug: "yellowbuckeye"
   }
 ];
+
 
 export const store = createStore({
     state() {
