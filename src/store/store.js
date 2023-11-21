@@ -1496,1029 +1496,1029 @@ const initialTreesState = [
     ],
     slug: "hawthorn"
   },
-  // {
-  //   nameCommon: "Honey Locust",
-  //   aka: [
-  //     "Thorny Locust",
-  //     "Thorny Honeylocust"
-  //   ],
-  //   order: "Fabales",
-  //   family: "Fabaceae",
-  //   familyCommon: "legume, pea or bean",
-  //   genus: "Gleditsia",
-  //   species: "Gleditsia triacanthos",
-  //   type: "deciduous",
-  //   leafType: "compound",
-  //   compoundStructure: "twice",
-  //   leafAttachment: "alternate",
-  //   fallColor: [
-  //     "yellow"
-  //   ],
-  //   slug: "honeylocust"
-  // },
-  // {
-  //   nameCommon: "Horsechestnut",
-  //   order: "Sapindales",
-  //   family: "Sapindaceae",
-  //   familyCommon: "Horsechestnut",
-  //   genus: "Aesculus",
-  //   species: "Aesculus hippocastanum",
-  //   type: "deciduous",
-  //   leafType: "compound",
-  //   compoundStructure: "palmate",
-  //   leafAttachment: "opposite",
-  //   fallColor: [
-  //     "yellow"
-  //   ],
-  //   slug: "horsechestnut"
-  // },
-  // {
-  //   nameCommon: "Juneberry",
-  //   aka: [
-  //     "Serviceberry"
-  //   ],
-  //   order: "Rosales",
-  //   family: "Rosaceae",
-  //   familyCommon: "Rose",
-  //   genus: "Amelanchier",
-  //   species: "Amelanchier arborea",
-  //   type: "deciduous",
-  //   leafType: "simple",
-  //   leafAttachment: "alternate",
-  //   fallColor: [
-  //     "yellow",
-  //     "red"
-  //   ],
-  //   slug: "juneberry"
-  // },
-  // {
-  //   nameCommon: "Kentucky Coffeetree",
-  //   order: "Fabales",
-  //   family: "Fabaceae",
-  //   familyCommon: "legume, pea or bean",
-  //   subFamily: "Caesalpinioideae",
-  //   genus: "Gymnocladus",
-  //   species: "Gymnocladus dioicus",
-  //   type: "deciduous",
-  //   leafType: "compound",
-  //   compoundStructure: "twice",
-  //   leafAttachment: "alternate",
-  //   fallColor: [
-  //     "yellow"
-  //   ],
-  //   slug: "kentuckycoffeetree"
-  // },
-  // {
-  //   nameCommon: "Large-tooth Aspen",
-  //   aka: [
-  //     "Big-tooth Aspen",
-  //     "American Aspen",
-  //     "Canadian Poplar",
-  //     "White Poplar"
-  //   ],
-  //   order: "Malpighiales",
-  //   family: "Salicaceae",
-  //   familyCommon: "Willow",
-  //   genus: "Populus",
-  //   species: "Populus grandidentata",
-  //   type: "deciduous",
-  //   leafType: "simple",
-  //   leafAttachment: "alternate",
-  //   fallColor: [
-  //     "yellow"
-  //   ],
-  //   slug: "large-toothaspen"
-  // },
-  // {
-  //   nameCommon: "Mockernut Hickory",
-  //   aka: [
-  //     "White Hickory"
-  //   ],
-  //   order: "Fagales",
-  //   family: "Juglandaceae",
-  //   familyCommon: "Walnut",
-  //   genus: "Carya",
-  //   species: "Carya tomentosa",
-  //   type: "deciduous",
-  //   leafType: "compound",
-  //   compoundStructure: "single",
-  //   leafAttachment: "alternate",
-  //   fallColor: [
-  //     "yellow"
-  //   ],
-  //   slug: "mockernuthickory"
-  // },
-  // {
-  //   nameCommon: "Mountain Maple",
-  //   aka: [
-  //     "Dwarf Maple",
-  //     "Moose Maple",
-  //     "White Maple"
-  //   ],
-  //   order: "Sapindales",
-  //   family: "Sapindaceae",
-  //   familyCommon: "Maple",
-  //   genus: "Acer",
-  //   species: "Acer spicatum",
-  //   type: "deciduous",
-  //   leafType: "lobed",
-  //   leafAttachment: "opposite",
-  //   fallColor: [
-  //     "red",
-  //     "orange"
-  //   ],
-  //   slug: "mountainmaple"
-  // },
-  // {
-  //   nameCommon: "Nannyberry",
-  //   aka: [
-  //     "Sheepberry",
-  //     "Sweet Viburnum"
-  //   ],
-  //   order: "Dipsacales",
-  //   family: "Adoxaceae",
-  //   familyCommon: "Honeysuckle",
-  //   genus: "Viburnum",
-  //   species: "Viburnum lentago",
-  //   type: "deciduous",
-  //   leafType: "simple",
-  //   leafAttachment: "opposite",
-  //   fallColor: [
-  //     "red",
-  //     "purple"
-  //   ],
-  //   slug: "nannyberry"
-  // },
-  // {
-  //   nameCommon: "Northern Catalpa",
-  //   aka: [
-  //     "Hardy Catalpa",
-  //     "Hardy Catalpa",
-  //     "Western Catalpa",
-  //     "Cigar Tree",
-  //     "Catawba-tree",
-  //     "Bois Chavanon"
-  //   ],
-  //   order: "Lamiales",
-  //   family: "Bignoniaceae",
-  //   familyCommon: "Trumpet creeper",
-  //   genus: "Catalpa",
-  //   species: "Catalpa speciosa",
-  //   type: "deciduous",
-  //   leafType: "simple",
-  //   leafAttachment: "opposite",
-  //   fallColor: [
-  //     "yellow",
-  //     "green",
-  //     "yellow-green",
-  //     "black"
-  //   ],
-  //   slug: "northerncatalpa"
-  // },
-  // {
-  //   nameCommon: "Northern Red Oak",
-  //   order: "Fagales",
-  //   family: "Fagaceae",
-  //   familyCommon: "Beech",
-  //   genus: "Quercus",
-  //   species: "Quercus rubra",
-  //   type: "deciduous",
-  //   leafType: "lobed",
-  //   leafAttachment: "alternate",
-  //   fallColor: [
-  //     "red",
-  //     "brown"
-  //   ],
-  //   slug: "northernredoak"
-  // },
-  // {
-  //   nameCommon: "Norway Maple",
-  //   order: "Sapindales",
-  //   family: "Sapindaceae",
-  //   familyCommon: "Maple",
-  //   genus: "Acer",
-  //   species: "Acer platanoides",
-  //   type: "deciduous",
-  //   leafType: "lobed",
-  //   leafAttachment: "opposite",
-  //   fallColor: [
-  //     "yellow",
-  //     "orange"
-  //   ],
-  //   slug: "norwaymaple"
-  // },
-  // {
-  //   nameCommon: "Norway Spruce",
-  //   order: "Pinales",
-  //   family: "Pinaceae",
-  //   familyCommon: "Pine",
-  //   genus: "Picea",
-  //   species: "Picea abies",
-  //   type: "conifer",
-  //   needleStructure: "single needle",
-  //   slug: "norwayspruce"
-  // },
-  // {
-  //   nameCommon: "Ohio Buckeye",
-  //   aka: [
-  //     "American Buckeye",
-  //     "Fetid Buckeye"
-  //   ],
-  //   order: "Sapindales",
-  //   family: "Sapindaceae",
-  //   familyCommon: "Horsechestnut",
-  //   genus: "Aesculus",
-  //   species: "Aesculus glabra",
-  //   type: "deciduous",
-  //   leafType: "compound",
-  //   compoundStructure: "palmate",
-  //   leafAttachment: "opposite",
-  //   fallColor: [
-  //     "yellow",
-  //     "orange"
-  //   ],
-  //   slug: "ohiobuckeye"
-  // },
-  // {
-  //   nameCommon: "Osage Orange",
-  //   aka: [
-  //     "Hedge Apple"
-  //   ],
-  //   order: "Rosales",
-  //   family: "Moraceae",
-  //   familyCommon: "Mulberry",
-  //   genus: "Maclura",
-  //   species: "Maclura pomifera",
-  //   type: "deciduous",
-  //   leafType: "simple",
-  //   leafAttachment: "alternate",
-  //   fallColor: [
-  //     "yellow"
-  //   ],
-  //   slug: "osageorange"
-  // },
-  // {
-  //   nameCommon: "Paper Birch",
-  //   aka: [
-  //     "(American) White Birch",
-  //     "Canoe Birch"
-  //   ],
-  //   order: "Fagales",
-  //   family: "Betulaceae",
-  //   familyCommon: "Birch",
-  //   genus: "Betula",
-  //   species: "Betula papyrifera",
-  //   type: "deciduous",
-  //   leafType: "simple",
-  //   leafAttachment: "alternate",
-  //   fallColor: [
-  //     "yellow"
-  //   ],
-  //   slug: "paperbirch"
-  // },
-  // {
-  //   nameCommon: "Pin Oak",
-  //   aka: [
-  //     "Spanish Oak"
-  //   ],
-  //   order: "Fagales",
-  //   family: "Fagaceae",
-  //   familyCommon: "Beech",
-  //   genus: "Quercus",
-  //   species: "Quercus palustris",
-  //   type: "deciduous",
-  //   leafType: "lobed",
-  //   leafAttachment: "alternate",
-  //   fallColor: [
-  //     "red",
-  //     "dark red",
-  //     "brown"
-  //   ],
-  //   slug: "pinoak"
-  // },
-  // {
-  //   nameCommon: "Pitch Pine",
-  //   order: "Pinales",
-  //   family: "Pinaceae",
-  //   familyCommon: "Pine",
-  //   genus: "Pinus",
-  //   species: "Pinus rigida",
-  //   type: "conifer",
-  //   needleStructure: "clustered needles",
-  //   needleCluster: [
-  //     3
-  //   ],
-  //   slug: "pitchpine"
-  // },
-  // {
-  //   nameCommon: "Poison Sumac",
-  //   order: "Sapindales",
-  //   family: "Anacardiaceae",
-  //   familyCommon: "Cashew",
-  //   genus: "Toxicodendron",
-  //   species: "vernix",
-  //   type: "deciduous",
-  //   leafType: "compound",
-  //   compoundStructure: "single",
-  //   leafAttachment: "alternate",
-  //   fallColor: [
-  //     "yellow",
-  //     "red"
-  //   ],
-  //   slug: "poisonsumac"
-  // },
-  // {
-  //   nameCommon: "Post Oak",
-  //   aka: [
-  //     "Iron Oak"
-  //   ],
-  //   order: "Fagales",
-  //   family: "Fagaceae",
-  //   familyCommon: "Beech",
-  //   genus: "Quercus",
-  //   species: "Quercus stellata",
-  //   type: "deciduous",
-  //   leafType: "lobed",
-  //   leafAttachment: "alternate",
-  //   fallColor: [
-  //     "brown"
-  //   ],
-  //   slug: "postoak"
-  // },
-  // {
-  //   nameCommon: "Quaking Aspen",
-  //   aka: [
-  //     "Trembling Aspen",
-  //     "Golden Aspen"
-  //   ],
-  //   order: "Malpighiales",
-  //   family: "Salicaceae",
-  //   familyCommon: "Willow",
-  //   genus: "Populus",
-  //   species: "Populus tremuloides",
-  //   type: "deciduous",
-  //   leafType: "simple",
-  //   leafAttachment: "alternate",
-  //   fallColor: [
-  //     "yellow",
-  //     "golden"
-  //   ],
-  //   slug: "quakingaspen"
-  // },
-  // {
-  //   nameCommon: "Red Cherry",
-  //   aka: [
-  //     "Pin Cherry",
-  //     "Fire Cherry",
-  //     "Bird Cherry"
-  //   ],
-  //   order: "Rosales",
-  //   family: "Rosaceae",
-  //   familyCommon: "Rose",
-  //   genus: "Prunus",
-  //   species: "Prunus pensylvanica",
-  //   type: "deciduous",
-  //   leafType: "simple",
-  //   leafAttachment: "alternate",
-  //   fallColor: [
-  //     "purple",
-  //     "red"
-  //   ],
-  //   slug: "redcherry"
-  // },
-  // {
-  //   nameCommon: "Red Hickory",
-  //   aka: [
-  //     "Pignut Hickory",
-  //     "Smoothbark Hickory"
-  //   ],
-  //   order: "Fagales",
-  //   family: "Juglndaceae",
-  //   familyCommon: "Walnut",
-  //   genus: "Carya",
-  //   species: "Carya glabra",
-  //   type: "deciduous",
-  //   leafType: "compound",
-  //   compoundStructure: "single",
-  //   leafAttachment: "alternate",
-  //   fallColor: [
-  //     "yellow"
-  //   ],
-  //   slug: "redhickory"
-  // },
-  // {
-  //   nameCommon: "Red Maple",
-  //   aka: [
-  //     "Swamp Maple",
-  //     "Water Maple",
-  //     "Soft Maple"
-  //   ],
-  //   order: "Sapindales",
-  //   family: "Sapindaceae",
-  //   familyCommon: "Maple",
-  //   genus: "Acer",
-  //   species: "Acer rubrum",
-  //   type: "deciduous",
-  //   leafType: "lobed",
-  //   leafAttachment: "opposite",
-  //   fallColor: [
-  //     "red",
-  //     "orange"
-  //   ],
-  //   slug: "redmaple"
-  // },
-  // {
-  //   nameCommon: "Red Mulberry",
-  //   order: "Rosales",
-  //   family: "Moraceae",
-  //   familyCommon: "Mulberry",
-  //   genus: "Morus",
-  //   species: "Morus rubra",
-  //   type: "deciduous",
-  //   leafType: "simple",
-  //   leafAttachment: "alternate",
-  //   fallColor: [
-  //     "yellow"
-  //   ],
-  //   slug: "redmulberry"
-  // },
-  // {
-  //   nameCommon: "Red Pine",
-  //   order: "Pinales",
-  //   family: "Pinaceae",
-  //   familyCommon: "Pine",
-  //   genus: "Pinus",
-  //   species: "Pinus resinosa",
-  //   type: "conifer",
-  //   needleStructure: "clustered needles",
-  //   needleCluster: [
-  //     2
-  //   ],
-  //   slug: "redpine"
-  // },
-  // {
-  //   nameCommon: "Red Spruce",
-  //   order: "Pinales",
-  //   family: "Pinaceae",
-  //   familyCommon: "Pine",
-  //   genus: "Picea",
-  //   species: "Picea rubens",
-  //   type: "conifer",
-  //   needleStructure: "single needle",
-  //   slug: "redspruce"
-  // },
-  // {
-  //   nameCommon: "Russian Olive",
-  //   aka: [
-  //     "Silver Berry",
-  //     "Oleaster",
-  //     "Wild Olive"
-  //   ],
-  //   order: "Rosales",
-  //   family: "Elaeagnaceae",
-  //   familyCommon: "Oleaster",
-  //   genus: "Elaeagnus",
-  //   species: "Elaeagnus angustifolia",
-  //   type: "deciduous",
-  //   leafType: "simple",
-  //   leafAttachment: "alternate",
-  //   fallColor: [
-  //     "brown"
-  //   ],
-  //   slug: "russianolive"
-  // },
-  // {
-  //   nameCommon: "Sassafras",
-  //   order: "Laurales",
-  //   family: "Lauraceae",
-  //   familyCommon: "Laurel",
-  //   genus: "Sassafras",
-  //   species: "Sassafras albidum",
-  //   type: "deciduous",
-  //   leafType: "lobed",
-  //   leafAttachment: "alternate",
-  //   fallColor: [
-  //     "yellow",
-  //     "red"
-  //   ],
-  //   slug: "sassafras"
-  // },
-  // {
-  //   nameCommon: "Scarlet Oak",
-  //   order: "Fagales",
-  //   family: "Fagaceae",
-  //   familyCommon: "Beech",
-  //   genus: "Quercus",
-  //   species: "Quercus coccinea",
-  //   type: "deciduous",
-  //   leafType: "lobed",
-  //   leafAttachment: "alternate",
-  //   fallColor: [
-  //     "red",
-  //     "scarlet"
-  //   ],
-  //   slug: "scarletoak"
-  // },
-  // {
-  //   nameCommon: "Scotch Pine",
-  //   aka: [
-  //     "Scots Pine"
-  //   ],
-  //   order: "Pinales",
-  //   family: "Pinaceae",
-  //   familyCommon: "Pine",
-  //   genus: "Pinus",
-  //   species: "Pinus sylvestris",
-  //   type: "conifer",
-  //   needleStructure: "clustered needles",
-  //   needleCluster: [
-  //     2
-  //   ],
-  //   slug: "scotchpine"
-  // },
-  // {
-  //   nameCommon: "Shagbark Hickory",
-  //   order: "Fagales",
-  //   family: "Juglandaceae",
-  //   familyCommon: "Walnut",
-  //   genus: "Carya",
-  //   species: "Carya ovata",
-  //   type: "deciduous",
-  //   leafType: "compound",
-  //   compoundStructure: "single",
-  //   leafAttachment: "alternate",
-  //   fallColor: [
-  //     "yellow"
-  //   ],
-  //   slug: "shagbarkhickory"
-  // },
-  // // {
-  // //   nameCommon: "Shellbark Hickory",
-  // //   aka: [
-  // //     "Big Shagbark Hickory",
-  // //     "Kingnut"
-  // //   ],
-  // //   order: "Fagales",
-  // //   family: "Juglandaceae",
-  // //   familyCommon: "Walnut",
-  // //   genus: "Carya",
-  // //   species: "Carya laciniosa",
-  // //   type: "deciduous",
-  // //   leafType: "compound",
-  // //   compoundStructure: "single",
-  // //   leafAttachment: "alternate",
-  // //   fallColor: [
-  // //     "yellow"
-  // //   ],
-  // //   slug: "shellbarkhickory"
-  // // },
-  // // {
-  // //   nameCommon: "Shingle Oak",
-  // //   order: "Fagales",
-  // //   family: "Fagaceae",
-  // //   familyCommon: "Beech",
-  // //   genus: "Quercus",
-  // //   species: "Quercus imbricaria",
-  // //   type: "deciduous",
-  // //   leafType: "simple",
-  // //   leafAttachment: "alternate",
-  // //   fallColor: [
-  // //     "yellow",
-  // //     "red",
-  // //     "brown"
-  // //   ],
-  // //   slug: "shingleoak"
-  // // },
-  // // {
-  // //   nameCommon: "Shortleaf Pine",
-  // //   order: "Pinales",
-  // //   family: "Pinaceae",
-  // //   familyCommon: "Pine",
-  // //   genus: "Pinus",
-  // //   species: "Pinus echinata",
-  // //   type: "conifer",
-  // //   needleStructure: "clustered needles",
-  // //   needleCluster: [
-  // //     2,
-  // //     3
-  // //   ],
-  // //   slug: "shortleafpine"
-  // // },
-  // // {
-  // //   nameCommon: "Shumard Oak",
-  // //   order: "Fagales",
-  // //   family: "Fagaceae",
-  // //   familyCommon: "Beech",
-  // //   genus: "Quercus",
-  // //   species: "Quercus shumardii",
-  // //   type: "deciduous",
-  // //   leafType: "lobed",
-  // //   leafAttachment: "alternate",
-  // //   fallColor: [
-  // //     "red",
-  // //     "brown"
-  // //   ],
-  // //   slug: "shumardoak"
-  // // },
-  // // {
-  // //   nameCommon: "Siberian Elm",
-  // //   aka: [
-  // //     "Asiatic Elm",
-  // //     "Dwarf Elm"
-  // //   ],
-  // //   order: "Rosales",
-  // //   family: "Ulmaceae",
-  // //   familyCommon: "Elm",
-  // //   genus: "Ulmus",
-  // //   species: "Ulmus pumila",
-  // //   type: "deciduous",
-  // //   leafType: "simple",
-  // //   leafAttachment: "alternate",
-  // //   fallColor: [
-  // //     "yellow"
-  // //   ],
-  // //   slug: "siberianelm"
-  // // },
-  // // {
-  // //   nameCommon: "Silver Maple",
-  // //   order: "Sapindales",
-  // //   family: "Sapindaceae",
-  // //   familyCommon: "Maple",
-  // //   genus: "Acer",
-  // //   species: "Acer saccharinum",
-  // //   type: "deciduous",
-  // //   leafType: "lobed",
-  // //   leafAttachment: "opposite",
-  // //   fallColor: [
-  // //     "yellow",
-  // //     "orange"
-  // //   ],
-  // //   slug: "silvermaple"
-  // // },
-  // // {
-  // //   nameCommon: "Slippery Elm",
-  // //   aka: [
-  // //     "Red Elm",
-  // //     "Water Elm"
-  // //   ],
-  // //   order: "Rosales",
-  // //   family: "Ulmaceae",
-  // //   familyCommon: "Elm",
-  // //   genus: "Ulmus",
-  // //   species: "Ulmus rubra",
-  // //   type: "deciduous",
-  // //   leafType: "simple",
-  // //   leafAttachment: "alternate",
-  // //   fallColor: [
-  // //     "yellow"
-  // //   ],
-  // //   slug: "slipperyelm"
-  // // },
-  // // {
-  // //   nameCommon: "Smooth Sumac",
-  // //   aka: [
-  // //     "White Sumac",
-  // //     "Upland Sumac",
-  // //     "Scarlet Sumac"
-  // //   ],
-  // //   order: "Sapindales",
-  // //   family: "Anacardiaceae",
-  // //   familyCommon: "Cashew",
-  // //   genus: "Rhus",
-  // //   species: "Rhus glabra",
-  // //   type: "deciduous",
-  // //   leafType: "compound",
-  // //   compoundStructure: "single",
-  // //   leafAttachment: "alternate",
-  // //   fallColor: [
-  // //     "red"
-  // //   ],
-  // //   slug: "smoothsumac"
-  // // },
-  // // {
-  // //   nameCommon: "Staghorn Sumac",
-  // //   order: "Sapindales",
-  // //   family: "Anacardiaceae",
-  // //   familyCommon: "Cashew",
-  // //   genus: "Rhus",
-  // //   species: "Rhus typhina",
-  // //   type: "deciduous",
-  // //   leafType: "compound",
-  // //   compoundStructure: "single",
-  // //   leafAttachment: "alternate",
-  // //   fallColor: [
-  // //     "red",
-  // //     "maroon"
-  // //   ],
-  // //   slug: "staghornsumac"
-  // // },
-  // // {
-  // //   nameCommon: "Striped Maple",
-  // //   aka: [
-  // //     "Moosewood",
-  // //     "Moose Maple",
-  // //     "Goosefoot Maple"
-  // //   ],
-  // //   order: "Sapindales",
-  // //   family: "Sapindaceae",
-  // //   familyCommon: "Maple",
-  // //   genus: "Acer",
-  // //   species: "Acer pensylvanicum",
-  // //   type: "deciduous",
-  // //   leafType: "lobed",
-  // //   leafAttachment: "opposite",
-  // //   fallColor: [
-  // //     "yellow"
-  // //   ],
-  // //   slug: "stripedmaple"
-  // // },
-  // // {
-  // //   nameCommon: "Sugar Maple",
-  // //   order: "Sapindales",
-  // //   family: "Sapindaceae",
-  // //   familyCommon: "Maple",
-  // //   genus: "Acer",
-  // //   species: "Acer saccharum",
-  // //   type: "deciduous",
-  // //   leafType: "lobed",
-  // //   leafAttachment: "opposite",
-  // //   fallColor: [
-  // //     "orange",
-  // //     "red"
-  // //   ],
-  // //   slug: "sugarmaple"
-  // // },
-  // // {
-  // //   nameCommon: "Swamp White Oak",
-  // //   aka: [
-  // //     "Bicolor Oak"
-  // //   ],
-  // //   order: "Fagales",
-  // //   family: "Fagaceae",
-  // //   familyCommon: "Beech",
-  // //   genus: "Quercus",
-  // //   species: "Quercus bicolor",
-  // //   type: "deciduous",
-  // //   leafType: "lobed",
-  // //   leafAttachment: "alternate",
-  // //   fallColor: [
-  // //     "brown"
-  // //   ],
-  // //   slug: "swampwhiteoak"
-  // // },
-  // // {
-  // //   nameCommon: "Table Mountain Pine",
-  // //   order: "Pinales",
-  // //   family: "Pinaceae",
-  // //   familyCommon: "Pine",
-  // //   genus: "Pinus",
-  // //   species: "Pinus pungens",
-  // //   type: "conifer",
-  // //   needleStructure: "clustered needles",
-  // //   needleCluster: [
-  // //     2
-  // //   ],
-  // //   slug: "tablemountainpine"
-  // // },
-  // // {
-  // //   nameCommon: "Tamarack",
-  // //   order: "Pinales",
-  // //   family: "Pinaceae",
-  // //   familyCommon: "Pine",
-  // //   genus: "Larix",
-  // //   species: "Larix laricina",
-  // //   type: "conifer",
-  // //   needleStructure: "clustered needles",
-  // //   needleCluster: ["12-30"],
-  // //   slug: "tamarack"
-  // // },
-  // // {
-  // //   nameCommon: "Tree Of Heaven",
-  // //   order: "Sapindales",
-  // //   family: "Simaroubaceae",
-  // //   familyCommon: "Quassia",
-  // //   genus: "Ailanthus",
-  // //   species: "Ailanthus altissima",
-  // //   type: "deciduous",
-  // //   leafType: "compound",
-  // //   compoundStructure: "single",
-  // //   leafAttachment: "alternate",
-  // //   fallColor: [
-  // //     "yellow"
-  // //   ],
-  // //   slug: "treeofheaven"
-  // // },
-  // // {
-  // //   nameCommon: "Tulip Tree",
-  // //   aka: [
-  // //     "Yellow Poplar"
-  // //   ],
-  // //   order: "Magnoliales",
-  // //   family: "Magnoliaceae",
-  // //   familyCommon: "Magnolia",
-  // //   genus: "Liriodendron",
-  // //   species: "Liriodendron tulipifera",
-  // //   type: "deciduous",
-  // //   leafType: "lobed",
-  // //   leafAttachment: "alternate",
-  // //   fallColor: [
-  // //     "yellow"
-  // //   ],
-  // //   slug: "tuliptree"
-  // // },
-  // // {
-  // //   nameCommon: "Tupelo",
-  // //   aka: [
-  // //     "Black Tupelo",
-  // //     "Black Gum",
-  // //     "Sour Gum"
-  // //   ],
-  // //   order: "Cornales",
-  // //   family: "Nyssaceae",
-  // //   familyCommon: "Dogwood",
-  // //   genus: "Nyssa",
-  // //   species: "Nyssa sylvatica",
-  // //   type: "deciduous",
-  // //   leafType: "simple",
-  // //   leafAttachment: "alternate",
-  // //   fallColor: [
-  // //     "red"
-  // //   ],
-  // //   slug: "tupelo"
-  // // },
-  // // {
-  // //   nameCommon: "Virginia Pine",
-  // //   order: "Pinales",
-  // //   family: "Pinaceae",
-  // //   familyCommon: "Pine",
-  // //   genus: "Pinus",
-  // //   species: "Pinus virginiana",
-  // //   type: "conifer",
-  // //   needleStructure: "clustered needles",
-  // //   needleCluster: [
-  // //     2
-  // //   ],
-  // //   slug: "virginiapine"
-  // // },
-  // // {
-  // //   nameCommon: "Weeping Willow",
-  // //   aka: [
-  // //     "Babylon Willow"
-  // //   ],
-  // //   order: "Malpighiales",
-  // //   family: "Salicaceae",
-  // //   familyCommon: "Willow",
-  // //   genus: "Salix",
-  // //   species: "Salix babylonica",
-  // //   type: "deciduous",
-  // //   leafType: "simple",
-  // //   leafAttachment: "alternate",
-  // //   fallColor: [
-  // //     "yellow"
-  // //   ],
-  // //   slug: "weepingwillow"
-  // // },
-  // // {
-  // //   nameCommon: "White Ash",
-  // //   aka: [
-  // //     "American Ash"
-  // //   ],
-  // //   order: "Lamiales",
-  // //   family: "Oleaceae",
-  // //   familyCommon: "Olive",
-  // //   genus: "Fraxinus",
-  // //   species: "Fraxinus americana",
-  // //   type: "deciduous",
-  // //   leafType: "compound",
-  // //   compoundStructure: "single",
-  // //   leafAttachment: "opposite",
-  // //   fallColor: [
-  // //     "bronze",
-  // //     "purple"
-  // //   ],
-  // //   slug: "whiteash"
-  // // },
-  // // {
-  // //   nameCommon: "White Oak",
-  // //   order: "Fagales",
-  // //   family: "Fagaceae",
-  // //   familyCommon: "Beech",
-  // //   genus: "Quercus",
-  // //   species: "Quercus alba",
-  // //   type: "deciduous",
-  // //   leafType: "lobed",
-  // //   leafAttachment: "alternate",
-  // //   fallColor: [
-  // //     "red",
-  // //     "brown"
-  // //   ],
-  // //   slug: "whiteoak"
-  // // },
-  // // {
-  // //   nameCommon: "White Poplar",
-  // //   order: "Malpighiales",
-  // //   family: "Salicaceae",
-  // //   familyCommon: "Willow",
-  // //   genus: "Populus",
-  // //   species: "Populus alba",
-  // //   type: "deciduous",
-  // //   leafType: "lobed",
-  // //   leafAttachment: "alternate",
-  // //   fallColor: [
-  // //     "yellow",
-  // //     "brown"
-  // //   ],
-  // //   slug: "whitepoplar"
-  // // },
-  // // {
-  // //   nameCommon: "White Spruce",
-  // //   order: "Pinales",
-  // //   family: "Pinaceae",
-  // //   familyCommon: "Pine",
-  // //   genus: "Picea",
-  // //   species: "Picea glauca",
-  // //   type: "conifer",
-  // //   needleStructure: "single needle",
-  // //   slug: "whitespruce"
-  // // },
-  // // {
-  // //   nameCommon: "Wild Apple",
-  // //   aka: [
-  // //     "Eating Apple",
-  // //     "Cooking Apple",
-  // //     "Culinary Apple"
-  // //   ],
-  // //   order: "Rosales",
-  // //   family: "Rosaceae",
-  // //   familyCommon: "Rose",
-  // //   genus: "Malus",
-  // //   species: "",
-  // //   type: "deciduous",
-  // //   leafType: "simple",
-  // //   leafAttachment: "alternate",
-  // //   fallColor: [
-  // //     "brown"
-  // //   ],
-  // //   slug: "wildapple"
-  // // },
-  // // {
-  // //   nameCommon: "Witch-hazel",
-  // //   aka: [
-  // //     "Common Witch-hazel",
-  // //     "American Witch-hazel"
-  // //   ],
-  // //   order: "Saxifragales",
-  // //   family: "Hamamelidaceae",
-  // //   familyCommon: "Witch-hazel",
-  // //   genus: "Hamamelis",
-  // //   species: "Hamamelis virginiana",
-  // //   type: "deciduous",
-  // //   leafType: "simple",
-  // //   leafAttachment: "alternate",
-  // //   fallColor: [
-  // //     "yellow"
-  // //   ],
-  // //   slug: "witch-hazel"
-  // // },
-  // // {
-  // //   nameCommon: "Yellow Birch",
-  // //   aka: [
-  // //     "Golden Birch"
-  // //   ],
-  // //   order: "Fagales",
-  // //   family: "Betulaceae",
-  // //   familyCommon: "Birch",
-  // //   genus: "Betula",
-  // //   species: "Betula alleghaniensis",
-  // //   type: "deciduous",
-  // //   leafType: "simple",
-  // //   leafAttachment: "alternate",
-  // //   fallColor: [
-  // //     "yellow"
-  // //   ],
-  // //   slug: "yellowbirch"
-  // // },
-  // // {
-  // //   nameCommon: "Yellow Buckeye",
-  // //   aka: [
-  // //     "Common Buckeye",
-  // //     "Sweet Buckeye"
-  // //   ],
-  // //   order: "Sapindales",
-  // //   family: "Sapindaceae",
-  // //   familyCommon: "Horsechestnut",
-  // //   genus: "Aesculus",
-  // //   species: "Aesculus flava",
-  // //   type: "deciduous",
-  // //   leafType: "compound",
-  // //   compoundStructure: "palmate",
-  // //   leafAttachment: "opposite",
-  // //   fallColor: [
-  // //     "yellow",
-  // //     "orange"
-  // //   ],
-  // //   slug: "yellowbuckeye"
-  // // }
+  {
+    nameCommon: "Honey Locust",
+    aka: [
+      "Thorny Locust",
+      "Thorny Honeylocust"
+    ],
+    order: "Fabales",
+    family: "Fabaceae",
+    familyCommon: "legume, pea or bean",
+    genus: "Gleditsia",
+    species: "Gleditsia triacanthos",
+    type: "deciduous",
+    leafType: "compound",
+    compoundStructure: "twice",
+    leafAttachment: "alternate",
+    fallColor: [
+      "yellow"
+    ],
+    slug: "honeylocust"
+  },
+  {
+    nameCommon: "Horsechestnut",
+    order: "Sapindales",
+    family: "Sapindaceae",
+    familyCommon: "Horsechestnut",
+    genus: "Aesculus",
+    species: "Aesculus hippocastanum",
+    type: "deciduous",
+    leafType: "compound",
+    compoundStructure: "palmate",
+    leafAttachment: "opposite",
+    fallColor: [
+      "yellow"
+    ],
+    slug: "horsechestnut"
+  },
+  {
+    nameCommon: "Juneberry",
+    aka: [
+      "Serviceberry"
+    ],
+    order: "Rosales",
+    family: "Rosaceae",
+    familyCommon: "Rose",
+    genus: "Amelanchier",
+    species: "Amelanchier arborea",
+    type: "deciduous",
+    leafType: "simple",
+    leafAttachment: "alternate",
+    fallColor: [
+      "yellow",
+      "red"
+    ],
+    slug: "juneberry"
+  },
+  {
+    nameCommon: "Kentucky Coffeetree",
+    order: "Fabales",
+    family: "Fabaceae",
+    familyCommon: "legume, pea or bean",
+    subFamily: "Caesalpinioideae",
+    genus: "Gymnocladus",
+    species: "Gymnocladus dioicus",
+    type: "deciduous",
+    leafType: "compound",
+    compoundStructure: "twice",
+    leafAttachment: "alternate",
+    fallColor: [
+      "yellow"
+    ],
+    slug: "kentuckycoffeetree"
+  },
+  {
+    nameCommon: "Large-tooth Aspen",
+    aka: [
+      "Big-tooth Aspen",
+      "American Aspen",
+      "Canadian Poplar",
+      "White Poplar"
+    ],
+    order: "Malpighiales",
+    family: "Salicaceae",
+    familyCommon: "Willow",
+    genus: "Populus",
+    species: "Populus grandidentata",
+    type: "deciduous",
+    leafType: "simple",
+    leafAttachment: "alternate",
+    fallColor: [
+      "yellow"
+    ],
+    slug: "large-toothaspen"
+  },
+  {
+    nameCommon: "Mockernut Hickory",
+    aka: [
+      "White Hickory"
+    ],
+    order: "Fagales",
+    family: "Juglandaceae",
+    familyCommon: "Walnut",
+    genus: "Carya",
+    species: "Carya tomentosa",
+    type: "deciduous",
+    leafType: "compound",
+    compoundStructure: "single",
+    leafAttachment: "alternate",
+    fallColor: [
+      "yellow"
+    ],
+    slug: "mockernuthickory"
+  },
+  {
+    nameCommon: "Mountain Maple",
+    aka: [
+      "Dwarf Maple",
+      "Moose Maple",
+      "White Maple"
+    ],
+    order: "Sapindales",
+    family: "Sapindaceae",
+    familyCommon: "Maple",
+    genus: "Acer",
+    species: "Acer spicatum",
+    type: "deciduous",
+    leafType: "lobed",
+    leafAttachment: "opposite",
+    fallColor: [
+      "red",
+      "orange"
+    ],
+    slug: "mountainmaple"
+  },
+  {
+    nameCommon: "Nannyberry",
+    aka: [
+      "Sheepberry",
+      "Sweet Viburnum"
+    ],
+    order: "Dipsacales",
+    family: "Adoxaceae",
+    familyCommon: "Honeysuckle",
+    genus: "Viburnum",
+    species: "Viburnum lentago",
+    type: "deciduous",
+    leafType: "simple",
+    leafAttachment: "opposite",
+    fallColor: [
+      "red",
+      "purple"
+    ],
+    slug: "nannyberry"
+  },
+  {
+    nameCommon: "Northern Catalpa",
+    aka: [
+      "Hardy Catalpa",
+      "Hardy Catalpa",
+      "Western Catalpa",
+      "Cigar Tree",
+      "Catawba-tree",
+      "Bois Chavanon"
+    ],
+    order: "Lamiales",
+    family: "Bignoniaceae",
+    familyCommon: "Trumpet creeper",
+    genus: "Catalpa",
+    species: "Catalpa speciosa",
+    type: "deciduous",
+    leafType: "simple",
+    leafAttachment: "opposite",
+    fallColor: [
+      "yellow",
+      "green",
+      "yellow-green",
+      "black"
+    ],
+    slug: "northerncatalpa"
+  },
+  {
+    nameCommon: "Northern Red Oak",
+    order: "Fagales",
+    family: "Fagaceae",
+    familyCommon: "Beech",
+    genus: "Quercus",
+    species: "Quercus rubra",
+    type: "deciduous",
+    leafType: "lobed",
+    leafAttachment: "alternate",
+    fallColor: [
+      "red",
+      "brown"
+    ],
+    slug: "northernredoak"
+  },
+  {
+    nameCommon: "Norway Maple",
+    order: "Sapindales",
+    family: "Sapindaceae",
+    familyCommon: "Maple",
+    genus: "Acer",
+    species: "Acer platanoides",
+    type: "deciduous",
+    leafType: "lobed",
+    leafAttachment: "opposite",
+    fallColor: [
+      "yellow",
+      "orange"
+    ],
+    slug: "norwaymaple"
+  },
+  {
+    nameCommon: "Norway Spruce",
+    order: "Pinales",
+    family: "Pinaceae",
+    familyCommon: "Pine",
+    genus: "Picea",
+    species: "Picea abies",
+    type: "conifer",
+    needleStructure: "single needle",
+    slug: "norwayspruce"
+  },
+  {
+    nameCommon: "Ohio Buckeye",
+    aka: [
+      "American Buckeye",
+      "Fetid Buckeye"
+    ],
+    order: "Sapindales",
+    family: "Sapindaceae",
+    familyCommon: "Horsechestnut",
+    genus: "Aesculus",
+    species: "Aesculus glabra",
+    type: "deciduous",
+    leafType: "compound",
+    compoundStructure: "palmate",
+    leafAttachment: "opposite",
+    fallColor: [
+      "yellow",
+      "orange"
+    ],
+    slug: "ohiobuckeye"
+  },
+  {
+    nameCommon: "Osage Orange",
+    aka: [
+      "Hedge Apple"
+    ],
+    order: "Rosales",
+    family: "Moraceae",
+    familyCommon: "Mulberry",
+    genus: "Maclura",
+    species: "Maclura pomifera",
+    type: "deciduous",
+    leafType: "simple",
+    leafAttachment: "alternate",
+    fallColor: [
+      "yellow"
+    ],
+    slug: "osageorange"
+  },
+  {
+    nameCommon: "Paper Birch",
+    aka: [
+      "(American) White Birch",
+      "Canoe Birch"
+    ],
+    order: "Fagales",
+    family: "Betulaceae",
+    familyCommon: "Birch",
+    genus: "Betula",
+    species: "Betula papyrifera",
+    type: "deciduous",
+    leafType: "simple",
+    leafAttachment: "alternate",
+    fallColor: [
+      "yellow"
+    ],
+    slug: "paperbirch"
+  },
+  {
+    nameCommon: "Pin Oak",
+    aka: [
+      "Spanish Oak"
+    ],
+    order: "Fagales",
+    family: "Fagaceae",
+    familyCommon: "Beech",
+    genus: "Quercus",
+    species: "Quercus palustris",
+    type: "deciduous",
+    leafType: "lobed",
+    leafAttachment: "alternate",
+    fallColor: [
+      "red",
+      "dark red",
+      "brown"
+    ],
+    slug: "pinoak"
+  },
+  {
+    nameCommon: "Pitch Pine",
+    order: "Pinales",
+    family: "Pinaceae",
+    familyCommon: "Pine",
+    genus: "Pinus",
+    species: "Pinus rigida",
+    type: "conifer",
+    needleStructure: "clustered needles",
+    needleCluster: [
+      3
+    ],
+    slug: "pitchpine"
+  },
+  {
+    nameCommon: "Poison Sumac",
+    order: "Sapindales",
+    family: "Anacardiaceae",
+    familyCommon: "Cashew",
+    genus: "Toxicodendron",
+    species: "vernix",
+    type: "deciduous",
+    leafType: "compound",
+    compoundStructure: "single",
+    leafAttachment: "alternate",
+    fallColor: [
+      "yellow",
+      "red"
+    ],
+    slug: "poisonsumac"
+  },
+  {
+    nameCommon: "Post Oak",
+    aka: [
+      "Iron Oak"
+    ],
+    order: "Fagales",
+    family: "Fagaceae",
+    familyCommon: "Beech",
+    genus: "Quercus",
+    species: "Quercus stellata",
+    type: "deciduous",
+    leafType: "lobed",
+    leafAttachment: "alternate",
+    fallColor: [
+      "brown"
+    ],
+    slug: "postoak"
+  },
+  {
+    nameCommon: "Quaking Aspen",
+    aka: [
+      "Trembling Aspen",
+      "Golden Aspen"
+    ],
+    order: "Malpighiales",
+    family: "Salicaceae",
+    familyCommon: "Willow",
+    genus: "Populus",
+    species: "Populus tremuloides",
+    type: "deciduous",
+    leafType: "simple",
+    leafAttachment: "alternate",
+    fallColor: [
+      "yellow",
+      "golden"
+    ],
+    slug: "quakingaspen"
+  },
+  {
+    nameCommon: "Red Cherry",
+    aka: [
+      "Pin Cherry",
+      "Fire Cherry",
+      "Bird Cherry"
+    ],
+    order: "Rosales",
+    family: "Rosaceae",
+    familyCommon: "Rose",
+    genus: "Prunus",
+    species: "Prunus pensylvanica",
+    type: "deciduous",
+    leafType: "simple",
+    leafAttachment: "alternate",
+    fallColor: [
+      "purple",
+      "red"
+    ],
+    slug: "redcherry"
+  },
+  {
+    nameCommon: "Red Hickory",
+    aka: [
+      "Pignut Hickory",
+      "Smoothbark Hickory"
+    ],
+    order: "Fagales",
+    family: "Juglndaceae",
+    familyCommon: "Walnut",
+    genus: "Carya",
+    species: "Carya glabra",
+    type: "deciduous",
+    leafType: "compound",
+    compoundStructure: "single",
+    leafAttachment: "alternate",
+    fallColor: [
+      "yellow"
+    ],
+    slug: "redhickory"
+  },
+  {
+    nameCommon: "Red Maple",
+    aka: [
+      "Swamp Maple",
+      "Water Maple",
+      "Soft Maple"
+    ],
+    order: "Sapindales",
+    family: "Sapindaceae",
+    familyCommon: "Maple",
+    genus: "Acer",
+    species: "Acer rubrum",
+    type: "deciduous",
+    leafType: "lobed",
+    leafAttachment: "opposite",
+    fallColor: [
+      "red",
+      "orange"
+    ],
+    slug: "redmaple"
+  },
+  {
+    nameCommon: "Red Mulberry",
+    order: "Rosales",
+    family: "Moraceae",
+    familyCommon: "Mulberry",
+    genus: "Morus",
+    species: "Morus rubra",
+    type: "deciduous",
+    leafType: "simple",
+    leafAttachment: "alternate",
+    fallColor: [
+      "yellow"
+    ],
+    slug: "redmulberry"
+  },
+  {
+    nameCommon: "Red Pine",
+    order: "Pinales",
+    family: "Pinaceae",
+    familyCommon: "Pine",
+    genus: "Pinus",
+    species: "Pinus resinosa",
+    type: "conifer",
+    needleStructure: "clustered needles",
+    needleCluster: [
+      2
+    ],
+    slug: "redpine"
+  },
+  {
+    nameCommon: "Red Spruce",
+    order: "Pinales",
+    family: "Pinaceae",
+    familyCommon: "Pine",
+    genus: "Picea",
+    species: "Picea rubens",
+    type: "conifer",
+    needleStructure: "single needle",
+    slug: "redspruce"
+  },
+  {
+    nameCommon: "Russian Olive",
+    aka: [
+      "Silver Berry",
+      "Oleaster",
+      "Wild Olive"
+    ],
+    order: "Rosales",
+    family: "Elaeagnaceae",
+    familyCommon: "Oleaster",
+    genus: "Elaeagnus",
+    species: "Elaeagnus angustifolia",
+    type: "deciduous",
+    leafType: "simple",
+    leafAttachment: "alternate",
+    fallColor: [
+      "brown"
+    ],
+    slug: "russianolive"
+  },
+  {
+    nameCommon: "Sassafras",
+    order: "Laurales",
+    family: "Lauraceae",
+    familyCommon: "Laurel",
+    genus: "Sassafras",
+    species: "Sassafras albidum",
+    type: "deciduous",
+    leafType: "lobed",
+    leafAttachment: "alternate",
+    fallColor: [
+      "yellow",
+      "red"
+    ],
+    slug: "sassafras"
+  },
+  {
+    nameCommon: "Scarlet Oak",
+    order: "Fagales",
+    family: "Fagaceae",
+    familyCommon: "Beech",
+    genus: "Quercus",
+    species: "Quercus coccinea",
+    type: "deciduous",
+    leafType: "lobed",
+    leafAttachment: "alternate",
+    fallColor: [
+      "red",
+      "scarlet"
+    ],
+    slug: "scarletoak"
+  },
+  {
+    nameCommon: "Scotch Pine",
+    aka: [
+      "Scots Pine"
+    ],
+    order: "Pinales",
+    family: "Pinaceae",
+    familyCommon: "Pine",
+    genus: "Pinus",
+    species: "Pinus sylvestris",
+    type: "conifer",
+    needleStructure: "clustered needles",
+    needleCluster: [
+      2
+    ],
+    slug: "scotchpine"
+  },
+  {
+    nameCommon: "Shagbark Hickory",
+    order: "Fagales",
+    family: "Juglandaceae",
+    familyCommon: "Walnut",
+    genus: "Carya",
+    species: "Carya ovata",
+    type: "deciduous",
+    leafType: "compound",
+    compoundStructure: "single",
+    leafAttachment: "alternate",
+    fallColor: [
+      "yellow"
+    ],
+    slug: "shagbarkhickory"
+  },
+  {
+    nameCommon: "Shellbark Hickory",
+    aka: [
+      "Big Shagbark Hickory",
+      "Kingnut"
+    ],
+    order: "Fagales",
+    family: "Juglandaceae",
+    familyCommon: "Walnut",
+    genus: "Carya",
+    species: "Carya laciniosa",
+    type: "deciduous",
+    leafType: "compound",
+    compoundStructure: "single",
+    leafAttachment: "alternate",
+    fallColor: [
+      "yellow"
+    ],
+    slug: "shellbarkhickory"
+  },
+  {
+    nameCommon: "Shingle Oak",
+    order: "Fagales",
+    family: "Fagaceae",
+    familyCommon: "Beech",
+    genus: "Quercus",
+    species: "Quercus imbricaria",
+    type: "deciduous",
+    leafType: "simple",
+    leafAttachment: "alternate",
+    fallColor: [
+      "yellow",
+      "red",
+      "brown"
+    ],
+    slug: "shingleoak"
+  },
+  {
+    nameCommon: "Shortleaf Pine",
+    order: "Pinales",
+    family: "Pinaceae",
+    familyCommon: "Pine",
+    genus: "Pinus",
+    species: "Pinus echinata",
+    type: "conifer",
+    needleStructure: "clustered needles",
+    needleCluster: [
+      2,
+      3
+    ],
+    slug: "shortleafpine"
+  },
+  {
+    nameCommon: "Shumard Oak",
+    order: "Fagales",
+    family: "Fagaceae",
+    familyCommon: "Beech",
+    genus: "Quercus",
+    species: "Quercus shumardii",
+    type: "deciduous",
+    leafType: "lobed",
+    leafAttachment: "alternate",
+    fallColor: [
+      "red",
+      "brown"
+    ],
+    slug: "shumardoak"
+  },
+  {
+    nameCommon: "Siberian Elm",
+    aka: [
+      "Asiatic Elm",
+      "Dwarf Elm"
+    ],
+    order: "Rosales",
+    family: "Ulmaceae",
+    familyCommon: "Elm",
+    genus: "Ulmus",
+    species: "Ulmus pumila",
+    type: "deciduous",
+    leafType: "simple",
+    leafAttachment: "alternate",
+    fallColor: [
+      "yellow"
+    ],
+    slug: "siberianelm"
+  },
+  {
+    nameCommon: "Silver Maple",
+    order: "Sapindales",
+    family: "Sapindaceae",
+    familyCommon: "Maple",
+    genus: "Acer",
+    species: "Acer saccharinum",
+    type: "deciduous",
+    leafType: "lobed",
+    leafAttachment: "opposite",
+    fallColor: [
+      "yellow",
+      "orange"
+    ],
+    slug: "silvermaple"
+  },
+  {
+    nameCommon: "Slippery Elm",
+    aka: [
+      "Red Elm",
+      "Water Elm"
+    ],
+    order: "Rosales",
+    family: "Ulmaceae",
+    familyCommon: "Elm",
+    genus: "Ulmus",
+    species: "Ulmus rubra",
+    type: "deciduous",
+    leafType: "simple",
+    leafAttachment: "alternate",
+    fallColor: [
+      "yellow"
+    ],
+    slug: "slipperyelm"
+  },
+  {
+    nameCommon: "Smooth Sumac",
+    aka: [
+      "White Sumac",
+      "Upland Sumac",
+      "Scarlet Sumac"
+    ],
+    order: "Sapindales",
+    family: "Anacardiaceae",
+    familyCommon: "Cashew",
+    genus: "Rhus",
+    species: "Rhus glabra",
+    type: "deciduous",
+    leafType: "compound",
+    compoundStructure: "single",
+    leafAttachment: "alternate",
+    fallColor: [
+      "red"
+    ],
+    slug: "smoothsumac"
+  },
+  {
+    nameCommon: "Staghorn Sumac",
+    order: "Sapindales",
+    family: "Anacardiaceae",
+    familyCommon: "Cashew",
+    genus: "Rhus",
+    species: "Rhus typhina",
+    type: "deciduous",
+    leafType: "compound",
+    compoundStructure: "single",
+    leafAttachment: "alternate",
+    fallColor: [
+      "red",
+      "maroon"
+    ],
+    slug: "staghornsumac"
+  },
+  {
+    nameCommon: "Striped Maple",
+    aka: [
+      "Moosewood",
+      "Moose Maple",
+      "Goosefoot Maple"
+    ],
+    order: "Sapindales",
+    family: "Sapindaceae",
+    familyCommon: "Maple",
+    genus: "Acer",
+    species: "Acer pensylvanicum",
+    type: "deciduous",
+    leafType: "lobed",
+    leafAttachment: "opposite",
+    fallColor: [
+      "yellow"
+    ],
+    slug: "stripedmaple"
+  },
+  {
+    nameCommon: "Sugar Maple",
+    order: "Sapindales",
+    family: "Sapindaceae",
+    familyCommon: "Maple",
+    genus: "Acer",
+    species: "Acer saccharum",
+    type: "deciduous",
+    leafType: "lobed",
+    leafAttachment: "opposite",
+    fallColor: [
+      "orange",
+      "red"
+    ],
+    slug: "sugarmaple"
+  },
+  {
+    nameCommon: "Swamp White Oak",
+    aka: [
+      "Bicolor Oak"
+    ],
+    order: "Fagales",
+    family: "Fagaceae",
+    familyCommon: "Beech",
+    genus: "Quercus",
+    species: "Quercus bicolor",
+    type: "deciduous",
+    leafType: "lobed",
+    leafAttachment: "alternate",
+    fallColor: [
+      "brown"
+    ],
+    slug: "swampwhiteoak"
+  },
+  {
+    nameCommon: "Table Mountain Pine",
+    order: "Pinales",
+    family: "Pinaceae",
+    familyCommon: "Pine",
+    genus: "Pinus",
+    species: "Pinus pungens",
+    type: "conifer",
+    needleStructure: "clustered needles",
+    needleCluster: [
+      2
+    ],
+    slug: "tablemountainpine"
+  },
+  {
+    nameCommon: "Tamarack",
+    order: "Pinales",
+    family: "Pinaceae",
+    familyCommon: "Pine",
+    genus: "Larix",
+    species: "Larix laricina",
+    type: "conifer",
+    needleStructure: "clustered needles",
+    needleCluster: ["12-30"],
+    slug: "tamarack"
+  },
+  {
+    nameCommon: "Tree Of Heaven",
+    order: "Sapindales",
+    family: "Simaroubaceae",
+    familyCommon: "Quassia",
+    genus: "Ailanthus",
+    species: "Ailanthus altissima",
+    type: "deciduous",
+    leafType: "compound",
+    compoundStructure: "single",
+    leafAttachment: "alternate",
+    fallColor: [
+      "yellow"
+    ],
+    slug: "treeofheaven"
+  },
+  {
+    nameCommon: "Tulip Tree",
+    aka: [
+      "Yellow Poplar"
+    ],
+    order: "Magnoliales",
+    family: "Magnoliaceae",
+    familyCommon: "Magnolia",
+    genus: "Liriodendron",
+    species: "Liriodendron tulipifera",
+    type: "deciduous",
+    leafType: "lobed",
+    leafAttachment: "alternate",
+    fallColor: [
+      "yellow"
+    ],
+    slug: "tuliptree"
+  },
+  {
+    nameCommon: "Tupelo",
+    aka: [
+      "Black Tupelo",
+      "Black Gum",
+      "Sour Gum"
+    ],
+    order: "Cornales",
+    family: "Nyssaceae",
+    familyCommon: "Dogwood",
+    genus: "Nyssa",
+    species: "Nyssa sylvatica",
+    type: "deciduous",
+    leafType: "simple",
+    leafAttachment: "alternate",
+    fallColor: [
+      "red"
+    ],
+    slug: "tupelo"
+  },
+  {
+    nameCommon: "Virginia Pine",
+    order: "Pinales",
+    family: "Pinaceae",
+    familyCommon: "Pine",
+    genus: "Pinus",
+    species: "Pinus virginiana",
+    type: "conifer",
+    needleStructure: "clustered needles",
+    needleCluster: [
+      2
+    ],
+    slug: "virginiapine"
+  },
+  {
+    nameCommon: "Weeping Willow",
+    aka: [
+      "Babylon Willow"
+    ],
+    order: "Malpighiales",
+    family: "Salicaceae",
+    familyCommon: "Willow",
+    genus: "Salix",
+    species: "Salix babylonica",
+    type: "deciduous",
+    leafType: "simple",
+    leafAttachment: "alternate",
+    fallColor: [
+      "yellow"
+    ],
+    slug: "weepingwillow"
+  },
+  {
+    nameCommon: "White Ash",
+    aka: [
+      "American Ash"
+    ],
+    order: "Lamiales",
+    family: "Oleaceae",
+    familyCommon: "Olive",
+    genus: "Fraxinus",
+    species: "Fraxinus americana",
+    type: "deciduous",
+    leafType: "compound",
+    compoundStructure: "single",
+    leafAttachment: "opposite",
+    fallColor: [
+      "bronze",
+      "purple"
+    ],
+    slug: "whiteash"
+  },
+  {
+    nameCommon: "White Oak",
+    order: "Fagales",
+    family: "Fagaceae",
+    familyCommon: "Beech",
+    genus: "Quercus",
+    species: "Quercus alba",
+    type: "deciduous",
+    leafType: "lobed",
+    leafAttachment: "alternate",
+    fallColor: [
+      "red",
+      "brown"
+    ],
+    slug: "whiteoak"
+  },
+  {
+    nameCommon: "White Poplar",
+    order: "Malpighiales",
+    family: "Salicaceae",
+    familyCommon: "Willow",
+    genus: "Populus",
+    species: "Populus alba",
+    type: "deciduous",
+    leafType: "lobed",
+    leafAttachment: "alternate",
+    fallColor: [
+      "yellow",
+      "brown"
+    ],
+    slug: "whitepoplar"
+  },
+  {
+    nameCommon: "White Spruce",
+    order: "Pinales",
+    family: "Pinaceae",
+    familyCommon: "Pine",
+    genus: "Picea",
+    species: "Picea glauca",
+    type: "conifer",
+    needleStructure: "single needle",
+    slug: "whitespruce"
+  },
+  {
+    nameCommon: "Wild Apple",
+    aka: [
+      "Eating Apple",
+      "Cooking Apple",
+      "Culinary Apple"
+    ],
+    order: "Rosales",
+    family: "Rosaceae",
+    familyCommon: "Rose",
+    genus: "Malus",
+    species: "",
+    type: "deciduous",
+    leafType: "simple",
+    leafAttachment: "alternate",
+    fallColor: [
+      "brown"
+    ],
+    slug: "wildapple"
+  },
+  {
+    nameCommon: "Witch-hazel",
+    aka: [
+      "Common Witch-hazel",
+      "American Witch-hazel"
+    ],
+    order: "Saxifragales",
+    family: "Hamamelidaceae",
+    familyCommon: "Witch-hazel",
+    genus: "Hamamelis",
+    species: "Hamamelis virginiana",
+    type: "deciduous",
+    leafType: "simple",
+    leafAttachment: "alternate",
+    fallColor: [
+      "yellow"
+    ],
+    slug: "witch-hazel"
+  },
+  {
+    nameCommon: "Yellow Birch",
+    aka: [
+      "Golden Birch"
+    ],
+    order: "Fagales",
+    family: "Betulaceae",
+    familyCommon: "Birch",
+    genus: "Betula",
+    species: "Betula alleghaniensis",
+    type: "deciduous",
+    leafType: "simple",
+    leafAttachment: "alternate",
+    fallColor: [
+      "yellow"
+    ],
+    slug: "yellowbirch"
+  },
+  {
+    nameCommon: "Yellow Buckeye",
+    aka: [
+      "Common Buckeye",
+      "Sweet Buckeye"
+    ],
+    order: "Sapindales",
+    family: "Sapindaceae",
+    familyCommon: "Horsechestnut",
+    genus: "Aesculus",
+    species: "Aesculus flava",
+    type: "deciduous",
+    leafType: "compound",
+    compoundStructure: "palmate",
+    leafAttachment: "opposite",
+    fallColor: [
+      "yellow",
+      "orange"
+    ],
+    slug: "yellowbuckeye"
+  }
 ];
 
 export const store = createStore({

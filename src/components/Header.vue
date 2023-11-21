@@ -117,6 +117,7 @@
                                             v-model="selectedCompoundStructuresComputed" 
                                             />
                                             {{ structure }}
+                                            <img :src="iconMappings[structure]" alt="Icon" class="checkbox-icon">
                                         </label>
                                     </div>
                                     </transition>
@@ -185,15 +186,17 @@ export default {
             iconMappings: {
                 'conifer': '/img/icons/icon-conifer-300px.png',
                 'deciduous': '/img/icons/icon-deciduous_400px.png',
+                'single needle': '/img/icons/icon-single-needle.svg',
+                'clustered needles': '/img/icons/icon-clustered-needles.svg',
+                'scaly needles': '/img/icons/icon-scaly-needles.svg',
                 'simple': '/img/icons/icon-simple-leaf.svg',
                 'lobed': '/img/icons/icon-lobed-leaf.svg',
                 'compound': '/img/icons/icon-compound-leaf-horizontal.svg',
-                'palmate': '/img/icons/icon-simple-leaf.svg',
-
-                'single needle': '/img/icons/icon-lobed-leaf.svg',
-                'clustered needles': '/img/icons/icon-lobed-leaf.svg',
-                'red': '/img/icons/icon-lobed-leaf.svg',
-                // ... mappings for other items ...
+                'single': '/img/icons/icon-compound-leaf-horizontal.svg',
+                'twice': '/img/icons/icon-compound-twice.svg',
+                'palmate': '/img/icons/icon-compound-palmate.svg',
+                'opposite': '',
+                'alternate': '',
             },
 
         };
