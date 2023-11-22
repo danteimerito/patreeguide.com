@@ -185,8 +185,8 @@ export default {
             leafAttachments: ['opposite', 'alternate'],
             fallColors: ['red','orange','brown','yellow','green','purple'],
             iconMappings: {
-                'conifer': '/img/icons/icon-conifer-4.svg',
-                'deciduous': '/img/icons/icon-deciduous-11.svg',
+                'conifer': '/img/icons/icon-conifer.svg',
+                'deciduous': '/img/icons/icon-deciduous.svg',
                 'single needle': '/img/icons/icon-single-needle.svg',
                 'clustered needles': '/img/icons/icon-clustered-needles.svg',
                 'scaly needles': '/img/icons/icon-scaly-needles.svg',
