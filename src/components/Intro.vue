@@ -1,7 +1,7 @@
 <template>
     <div class="contain-no-padding">
         <div class="feature-card">
-            <h1>Easily Identify Trees in Pennsylvania</h1>
+            <h1>Easily Identify Trees in Pennsylvania.</h1>
             <button @click="toggleMenu">Begin the Journey</button>
         </div>
     </div>

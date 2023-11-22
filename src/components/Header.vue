@@ -137,6 +137,7 @@
                                             v-model="selectedLeafAttachmentsComputed" 
                                             />
                                             {{ attachment }}
+                                            <img :src="iconMappings[attachment]" alt="Icon" class="checkbox-icon">
                                         </label>
                                     </div>
                                     </transition>
@@ -184,8 +185,8 @@ export default {
             leafAttachments: ['opposite', 'alternate'],
             fallColors: ['red','orange','brown','yellow','green','purple'],
             iconMappings: {
-                'conifer': '/img/icons/icon-conifer-300px.png',
-                'deciduous': '/img/icons/icon-deciduous_400px.png',
+                'conifer': '/img/icons/icon-conifer.svg',
+                'deciduous': '/img/icons/icon-deciduous.svg',
                 'single needle': '/img/icons/icon-single-needle.svg',
                 'clustered needles': '/img/icons/icon-clustered-needles.svg',
                 'scaly needles': '/img/icons/icon-scaly-needles.svg',
@@ -195,8 +196,8 @@ export default {
                 'pinnate': '/img/icons/icon-compound-leaf-horizontal.svg',
                 'twice pinnate': '/img/icons/icon-compound-twice.svg',
                 'palmate': '/img/icons/icon-compound-palmate.svg',
-                'opposite': '',
-                'alternate': '',
+                'opposite': '/img/icons/icon-attachment-opposite.svg',
+                'alternate': '/img/icons/icon-attachment-alternate.svg',
             },
 
         };

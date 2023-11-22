@@ -509,6 +509,8 @@ const initialTreesState = [
       2
     ],
     slug: "austrianpine",
+    background: "bg_conifer1.jpg",
+    backgroundSmall: "bg_conifer1_small.jpg",
     description: "<p>The Austrian Pine (Pinus nigra), also known as the Black Pine, is a robust, evergreen conifer that brings a stately and enduring presence to landscapes. Native to Europe, this species has been widely planted across North America, reaching heights of 40 to 60 feet. It boasts a dense, pyramidal shape in its youth that matures into a rounded and sometimes irregular crown, providing a robust silhouette against the sky.</p><p>The tree's long, dark green needles, growing in pairs, are stiff and lush, offering year-round color and texture. They cluster densely on the branches, creating a thick canopy that provides ample shade. The Austrian Pine is easily recognizable by its thick, deeply fissured, dark gray to black bark, which adds a rugged character especially appreciated in winter months.</p><p>Highly adaptable to a variety of conditions, this pine is valued for its tolerance to urban pollution and soil compaction, making it a favored choice for city plantings and windbreaks. Its sturdy nature and classic coniferous form make the Austrian Pine a reliable and attractive addition to any setting seeking a touch of evergreen resilience.</p>",
     photo1Credit: "<a href=\"https://commons.wikimedia.org/wiki/User:Gvm\">Gvm</a>, <a href=\"https://commons.wikimedia.org/wiki/File:Forest_in_Bulgaria_near_Dundukovo_dam.jpg\">Forest in Bulgaria near Dundukovo dam</a>, <a href=\"https://creativecommons.org/licenses/by-sa/3.0/legalcode\" rel=\"license\">CC BY-SA 3.0</a>",
     photo1Href: "https://en.wikipedia.org/wiki/Pinus_nigra#/media/File:Forest_in_Bulgaria_near_Dundukovo_dam.jpg",
@@ -540,6 +542,8 @@ const initialTreesState = [
       "brown"
     ],
     slug: "baldcypress",
+    background: "bg_conifer1.jpg",
+    backgroundSmall: "bg_conifer1_small.jpg",
     description: "<p>The Bald Cypress (Taxodium distichum) is a stately deciduous conifer, iconic in Southern swamps but adaptable to drier lands and cooler climates. Reaching heights of 50 to 70 feet, it is easily recognized by its unique, buttressed trunk and feathery, light green needles that turn a rusty orange before shedding in fall. The tree’s silhouette is strikingly elegant, with a straight, tapering trunk and a pyramidal canopy that becomes more open and spreading with age.</p><p>Native to the southeastern United States, the Bald Cypress is famed for its \"knees,\" woody projections that rise from the roots around the tree, believed to help with gas exchange and stability in its often waterlogged habitat. This remarkable tree is not only a survivor of wet conditions but is also remarkably rot-resistant, making its wood valuable for construction.</p><p>The Bald Cypress is a tree of resilience and beauty, thriving where few others can, and providing vital ecosystem services, as well as aesthetic value to parks, gardens, and natural areas.</p>",
     photo1Credit: "<a href=\"https://en.wikipedia.org/wiki/User:CarTick\">CarTick</a> at <a href=\"https://en.wikipedia.org/wiki/\">English Wikipedia</a>, <a href=\"https://commons.wikimedia.org/wiki/File:Baldcypress_cone.jpg\">Baldcypress cone</a>, <a href=\"https://creativecommons.org/licenses/by-sa/3.0/legalcode\" rel=\"license\">CC BY-SA 3.0</a>",
     photo1Href: "https://en.wikipedia.org/wiki/Taxodium_distichum#/media/File:Baldcypress_cone.jpg",
@@ -564,6 +568,8 @@ const initialTreesState = [
     type: "conifer",
     needleStructure: "single needle",
     slug: "balsamfir",
+    background: "bg_conifer1.jpg",
+    backgroundSmall: "bg_conifer1_small.jpg",
     description: "<p>The Balsam Fir (Abies balsamea) is a quintessential evergreen conifer native to the cold climates of the northeastern United States and Canada. It reaches a mature height of 45 to 75 feet, displaying a classic conical shape that embodies the spirit of the northern woods. Its dark-green, aromatic needles are arranged in a spiral fashion along the branches, which are dense and contribute to the tree's compact appearance.</p><p>Distinct for its smooth, gray bark and the resin-filled blisters that dot its surface, the Balsam Fir exudes a distinctive fragrance, especially when its needles or resin blisters are crushed. In late fall, it produces upright, cylindrical cones that disintegrate on the tree, releasing seeds to the wind.</p><p>The Balsam Fir is highly valued for its wood, essential oils, and as a traditional Christmas tree. Its dense foliage provides shelter for wildlife and contributes to the picturesque, snow-laden landscapes of the boreal forest. Hardy and shade-tolerant, it’s a symbol of the wilderness and a staple in both natural forests and cultivated landscapes.</p>",
     photo1Credit: "U.S. Fish and Wildlife Service, Public domain, via Wikimedia Commons",
     photo1Href: "https://en.wikipedia.org/wiki/Abies_balsamea#/media/File:Abies_balsamea.jpg",
@@ -823,6 +829,8 @@ const initialTreesState = [
     type: "conifer",
     needleStructure: "single needle",
     slug: "blackspruce",
+    background: "bg_conifer1.jpg",
+    backgroundSmall: "bg_conifer1_small.jpg",
     description: "<p>The Black Spruce (Picea mariana) is a hardy, evergreen conifer native to the boreal forests of North America. It stands with a straight, cylindrical trunk, reaching modest heights of 30 to 50 feet, a stature that is somewhat diminutive in comparison to other spruces. Its bark is thin, scaly, and gray-brown, flaking off in small circular plates.</p><p>This spruce's crown is narrowly conical, with short, stiff branches that are clothed in a dense cover of short, needle-like leaves. These needles exhibit a bluish-green hue, providing a year-round color display. In the spring, the Black Spruce shows off its reproductive prowess with purple (male) and red (female) cones, which later mature to a ruddy brown.</p><p>Adapted to cooler climates and wet, acidic soils, the Black Spruce often dominates in swampy areas. Its wood is utilized in the paper industry, and it is also a traditional source of spruce gum. The tree's compact size and tolerance of harsh conditions make it a symbol of the resilience and stark beauty of the northern wilderness.</p>"
   },
   {
@@ -920,6 +928,8 @@ const initialTreesState = [
     type: "conifer",
     needleStructure: "single needle",
     slug: "bluespruce",
+    background: "bg_conifer1.jpg",
+    backgroundSmall: "bg_conifer1_small.jpg",
     description: "<p>The Blue Spruce, scientifically known as Picea pungens, is a majestic evergreen native to the Rocky Mountains of the United States. Characterized by its impressive stature, it can reach skyward to heights of 50 to 75 feet, presenting a broad, pyramidal shape with sturdy, horizontal branches. The tree's most striking feature is its needle foliage, which ranges from a silvery blue to a rich blue-green hue, providing a year-round display of vibrant color.</p><p>These stiff, sharply pointed needles contribute to the species' name, \"pungens,\" which signifies their pungent nature. In the wild, the Blue Spruce prefers moist, well-drained soils, typically found in mountainous river valleys. It produces cylindrical cones that hang elegantly from the branches, starting out purple and maturing to a pale brown.</p><p>Widely used as an ornamental tree due to its unique color and classic conical Christmas tree shape, the Blue Spruce is also the state tree of Colorado. Despite its beauty, it is a hardy tree, capable of withstanding cold climates and various soil conditions, making it a popular choice in landscapes across various regions.</p>"
   },
   {
@@ -1208,6 +1218,8 @@ const initialTreesState = [
     type: "conifer",
     needleStructure: "single needle",
     slug: "easternhemlock",
+    background: "bg_conifer1.jpg",
+    backgroundSmall: "bg_conifer1_small.jpg",
     description: "<p>The Eastern Hemlock, Tsuga canadensis, is a timeless evergreen native to the northeastern United States and Canada, revered for its longevity and grace. With the potential to reach heights of over 70 feet, this conifer often forms a dense, pyramidal shape, characterized by its drooping branches and fine, feathery foliage.</p><p>The tree’s needles are small, delicate, and dark green with two distinct white stripes beneath, contributing to a soft texture that is almost feathery to the touch. Tiny, pendulous cones dangle from the branches, offering a subtle decorative effect. The bark is thick and furrowed, featuring a rich brown color that deepens with age.</p><p>Eastern Hemlocks favor cool, shaded areas, often found thriving in forested ravines and valleys. They play a crucial ecological role, providing shelter and food for wildlife. Unfortunately, they are under threat from the invasive hemlock woolly adelgid, which poses significant risks to their populations. Nonetheless, the Eastern Hemlock remains a beloved emblem of eastern American forests, prized for its wood, ornamental beauty, and serene presence.</p>"
   },
   {
@@ -1240,6 +1252,8 @@ const initialTreesState = [
     type: "conifer",
     needleStructure: "scaly needles",
     slug: "easternredcedar",
+    background: "bg_conifer1.jpg",
+    backgroundSmall: "bg_conifer1_small.jpg",
     description: "<p>The Eastern Redcedar, Juniperus virginiana, is an enduring evergreen tree with a broad natural range across the eastern United States. It is not a true cedar but a juniper, typically growing to 30-40 feet in height, though some specimens can soar up to 90 feet under ideal conditions. Its dense foliage takes on a conical shape in youth, becoming more columnar with age.</p><p>The tree’s needles are a deep, rich green, often with a tinge of blue, and can be prickly to the touch. With age, the Eastern Redcedar's bark becomes fibrous and reddish-brown, peeling off in long strips. This tree is dioecious, with separate male and female plants; the female trees bear small, blue, berry-like cones that are actually modified cones and are attractive to wildlife.</p><p>Hardy and drought-resistant, the Eastern Redcedar is frequently used as a windbreak or in landscape plantings, valued for its aromatic wood, which is commonly used in closets and chests to repel moths. Despite its usefulness, it is often considered invasive, as it can dominate prairies and grasslands if left unchecked.</p>"
   },
   {
@@ -1290,7 +1304,9 @@ const initialTreesState = [
     species: "Thuja occidentalis",
     type: "conifer",
     needleStructure: "scaly needles",
-    slug: "easternwhite-cedar"
+    slug: "easternwhite-cedar",
+    background: "bg_conifer1.jpg",
+    backgroundSmall: "bg_conifer1_small.jpg",
   },
   {
     nameCommon: "English Oak",
@@ -1640,7 +1656,9 @@ const initialTreesState = [
     species: "Picea abies",
     type: "conifer",
     needleStructure: "single needle",
-    slug: "norwayspruce"
+    slug: "norwayspruce",
+    background: "bg_conifer1.jpg",
+    backgroundSmall: "bg_conifer1_small.jpg",
   },
   {
     nameCommon: "Ohio Buckeye",
@@ -1732,7 +1750,9 @@ const initialTreesState = [
     needleCluster: [
       3
     ],
-    slug: "pitchpine"
+    slug: "pitchpine",
+    background: "bg_conifer1.jpg",
+    backgroundSmall: "bg_conifer1_small.jpg",
   },
   {
     nameCommon: "Poison Sumac",
@@ -1878,7 +1898,9 @@ const initialTreesState = [
     needleCluster: [
       2
     ],
-    slug: "redpine"
+    slug: "redpine",
+    background: "bg_conifer1.jpg",
+    backgroundSmall: "bg_conifer1_small.jpg",
   },
   {
     nameCommon: "Red Spruce",
@@ -1889,7 +1911,9 @@ const initialTreesState = [
     species: "Picea rubens",
     type: "conifer",
     needleStructure: "single needle",
-    slug: "redspruce"
+    slug: "redspruce",
+    background: "bg_conifer1.jpg",
+    backgroundSmall: "bg_conifer1_small.jpg",
   },
   {
     nameCommon: "Russian Olive",
@@ -1958,7 +1982,9 @@ const initialTreesState = [
     needleCluster: [
       2
     ],
-    slug: "scotchpine"
+    slug: "scotchpine",
+    background: "bg_conifer1.jpg",
+    backgroundSmall: "bg_conifer1_small.jpg",
   },
   {
     nameCommon: "Shagbark Hickory",
@@ -2026,7 +2052,9 @@ const initialTreesState = [
       2,
       3
     ],
-    slug: "shortleafpine"
+    slug: "shortleafpine",
+    background: "bg_conifer1.jpg",
+    backgroundSmall: "bg_conifer1_small.jpg",
   },
   {
     nameCommon: "Shumard Oak",
@@ -2202,7 +2230,9 @@ const initialTreesState = [
     needleCluster: [
       2
     ],
-    slug: "tablemountainpine"
+    slug: "tablemountainpine",
+    background: "bg_conifer1.jpg",
+    backgroundSmall: "bg_conifer1_small.jpg",
   },
   {
     nameCommon: "Tamarack",
@@ -2217,6 +2247,8 @@ const initialTreesState = [
       "12-30"
     ],
     slug: "tamarack",
+    background: "bg_conifer1.jpg",
+    backgroundSmall: "bg_conifer1_small.jpg",
     description: "<p>The Tamarack tree, Larix laricina, also known as the American Larch, is a unique deciduous conifer native to the cold, wetlands of North America. Unlike most conifers, it sheds its needles each winter, standing out with its dazzling autumnal transformation. Tamaracks reach moderate heights of 40 to 80 feet, growing with a narrow, conical shape that becomes more open with age.</p><p>In spring, the Tamarack bursts into life with soft, light green needles, which turn a brilliant yellow-gold in the fall before dropping, leaving the tree bare in winter. Its needles are short and borne in dense clusters on older branches, giving the tree a feathery texture. Small, rounded cones emerge, initially red and maturing to brown.</p><p>The Tamarack's bark is tight and gray-brown, becoming deeply fissured over time. Adapted to cold, boggy soils, it’s often found in swamps and wet northern forests. Despite its preference for wet conditions, it is surprisingly fire-resistant. The Tamarack plays a vital role in its ecosystem and is valued for its rot-resistant wood. With its unique deciduous nature, this tree offers a striking seasonal display, especially vivid in autumn landscapes.</p>"
   },
   {
@@ -2285,7 +2317,9 @@ const initialTreesState = [
     needleCluster: [
       2
     ],
-    slug: "virginiapine"
+    slug: "virginiapine",
+    background: "bg_conifer1.jpg",
+    backgroundSmall: "bg_conifer1_small.jpg",
   },
   {
     nameCommon: "Weeping Willow",
@@ -2366,7 +2400,9 @@ const initialTreesState = [
     species: "Picea glauca",
     type: "conifer",
     needleStructure: "single needle",
-    slug: "whitespruce"
+    slug: "whitespruce",
+    background: "bg_conifer1.jpg",
+    backgroundSmall: "bg_conifer1_small.jpg",
   },
   {
     nameCommon: "Wild Apple",
