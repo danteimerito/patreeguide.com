@@ -96,6 +96,22 @@
                             <div v-html="tree.photo5Credit" class="contain-thumb"></div>
                         </div>
 
+                        <div v-if="tree.photo6Src" class="contain-thumb">
+                            <a  target="_blank"
+                                rel="noopener noreferrer"
+                                
+                                :href="tree.photo6Href"
+                            >
+                                <img 
+                                    fetchPriority="low"
+                                    width="256" 
+                                    :alt="tree.photo6Alt" 
+                                    :src="tree.photo6Src"
+                                >
+                            </a>
+                            <div v-html="tree.photo6Credit" class="contain-thumb"></div>
+                        </div>
+
                     </div>
 
 
