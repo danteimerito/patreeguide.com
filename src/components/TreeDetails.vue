@@ -80,6 +80,22 @@
                             <div v-html="tree.photo4Credit" class="contain-thumb"></div>
                         </div>
 
+                        <div v-if="tree.photo5Src" class="contain-thumb">
+                            <a  target="_blank"
+                                rel="noopener noreferrer"
+                                
+                                :href="tree.photo5Href"
+                            >
+                                <img 
+                                    fetchPriority="low"
+                                    width="256" 
+                                    :alt="tree.photo5Alt" 
+                                    :src="tree.photo5Src"
+                                >
+                            </a>
+                            <div v-html="tree.photo5Credit" class="contain-thumb"></div>
+                        </div>
+
                     </div>
 
 
