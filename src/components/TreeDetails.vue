@@ -112,6 +112,23 @@
                             <div v-html="tree.photo6Credit" class="contain-thumb"></div>
                         </div>
 
+                        <div v-if="tree.photo7Src" class="contain-thumb">
+                            <a  target="_blank"
+                                rel="noopener noreferrer"
+                                
+                                :href="tree.photo7Href"
+                            >
+                                <img 
+                                    fetchPriority="low"
+                                    width="256" 
+                                    :alt="tree.photo7Alt" 
+                                    :src="tree.photo7Src"
+                                >
+                            </a>
+                            <div v-html="tree.photo7Credit" class="contain-thumb"></div>
+                        </div>
+
+
                     </div>
 
 
