@@ -1,12 +1,12 @@
 
 <template>
-  <div id="background">
+  <div id="background"></div>
     <Header />
       <div class="container">
         <router-view></router-view>  
       </div>
     <Footer />
-  </div>
+  
 
 </template>
 
