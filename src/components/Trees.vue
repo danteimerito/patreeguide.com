@@ -22,17 +22,42 @@
 import { mapState } from 'vuex';
 
 export default {
-    data() {
-        return {
-            treeTypes: ['conifer', 'deciduous'],
-            needleStructures: ['single needle', 'clustered needles', 'scaly needles'],
-            needleClusters: [2,3,5,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30],
-            leafTypes: ['simple', 'lobed', 'compound'],
-            compoundStructures: ['single', 'twice', 'palmate'],
-            leafAttachments: ['opposite', 'alternate'],
-            fallColors: ['red','orange','brown','yellow','green','purple'],
-        };
-    },
+
+  data() {
+    return {
+      treeTypes: ['conifer', 'deciduous'],
+      selectedTreeTypes: [],
+
+      needleStructures: ['single needle', 'clustered needles', 'scaly needles'],
+      selectedNeedleStructures: [],
+
+      needleClusters: [2,3,5,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30],
+      selectedNeedleClusters: [],
+
+      leafTypes: ['simple', 'lobed', 'compound'],
+      selectedLeafTypes: [],
+
+      compoundStructures: ['single', 'twice', 'palmate'],
+      selectedCompoundStructures: [],
+
+      leafAttachments: ['opposite', 'alternate'],
+      selectedLeafAttachments: [],
+
+      fallColors: ['red','orange','brown','yellow','green','purple'],
+      selectedFallColors: []
+    };
+  },
+    // data() {
+    //     return {
+    //         treeTypes: ['conifer', 'deciduous'],
+    //         needleStructures: ['single needle', 'clustered needles', 'scaly needles'],
+    //         needleClusters: [2,3,5,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30],
+    //         leafTypes: ['simple', 'lobed', 'compound'],
+    //         compoundStructures: ['single', 'twice', 'palmate'],
+    //         leafAttachments: ['opposite', 'alternate'],
+    //         fallColors: ['red','orange','brown','yellow','green','purple'],
+    //     };
+    // },
     name: 'Trees', 
     computed: {
       ...mapState(['selectedTypes']),
