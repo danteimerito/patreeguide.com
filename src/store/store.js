@@ -1,26 +1,25 @@
 import { createStore } from 'vuex';
 
-// const savedSelectedTypes = localStorage.getItem('selectedTypes');
-// const initialSelectedTypes = savedSelectedTypes ? JSON.parse(savedSelectedTypes) : [];
+const savedSelectedTypes = localStorage.getItem('selectedTypes');
+const initialSelectedTypes = savedSelectedTypes ? JSON.parse(savedSelectedTypes) : [];
 
-// const savedSelectedNeedles = localStorage.getItem('selectedNeedles');
-// const initialSelectedNeedles = savedSelectedNeedles ? JSON.parse(savedSelectedNeedles) : [];
+const savedSelectedNeedles = localStorage.getItem('selectedNeedles');
+const initialSelectedNeedles = savedSelectedNeedles ? JSON.parse(savedSelectedNeedles) : [];
 
-// const savedSelectedClusters = localStorage.getItem('selectedClusters');
-// const initialSelectedClusters = savedSelectedClusters ? JSON.parse(savedSelectedClusters) : [];
+const savedSelectedClusters = localStorage.getItem('selectedClusters');
+const initialSelectedClusters = savedSelectedClusters ? JSON.parse(savedSelectedClusters) : [];
 
-// const savedSelectedLeafTypes = localStorage.getItem('selectedLeafTypes');
-// const initialSelectedLeafTypes = savedSelectedLeafTypes ? JSON.parse(savedSelectedLeafTypes) : [];
+const savedSelectedLeafTypes = localStorage.getItem('selectedLeafTypes');
+const initialSelectedLeafTypes = savedSelectedLeafTypes ? JSON.parse(savedSelectedLeafTypes) : [];
 
-// const savedSelectedCompoundStructures = localStorage.getItem('selectedCompoundStructures');
-// const initialSelectedCompoundStructures = savedSelectedCompoundStructures ? JSON.parse(savedSelectedCompoundStructures) : [];
+const savedSelectedCompoundStructures = localStorage.getItem('selectedCompoundStructures');
+const initialSelectedCompoundStructures = savedSelectedCompoundStructures ? JSON.parse(savedSelectedCompoundStructures) : [];
 
-// const savedSelectedLeafAttachments = localStorage.getItem('selectedLeafAttachments');
-// const initialSelectedLeafAttachments = savedSelectedLeafAttachments ? JSON.parse(savedSelectedLeafAttachments) : [];
+const savedSelectedLeafAttachments = localStorage.getItem('selectedLeafAttachments');
+const initialSelectedLeafAttachments = savedSelectedLeafAttachments ? JSON.parse(savedSelectedLeafAttachments) : [];
 
-// const savedSelectedFallColors = localStorage.getItem('selectedFallColors');
-// const initialSelectedFallColors = savedSelectedFallColors ? JSON.parse(savedSelectedFallColors) : [];
-
+const savedSelectedFallColors = localStorage.getItem('selectedFallColors');
+const initialSelectedFallColors = savedSelectedFallColors ? JSON.parse(savedSelectedFallColors) : [];
 
 const initialTreesState = [
   {
@@ -4831,27 +4830,18 @@ const initialTreesState = [
   // }
 ];
 
-
 export const store = createStore({
     state() {
         return {
           trees: [...initialTreesState], 
-          // selectedTypes: initialSelectedTypes,
-          // selectedNeedles: initialSelectedNeedles,
-          // selectedClusters: initialSelectedClusters,
-          // selectedLeafTypes: initialSelectedLeafTypes,
-          // selectedCompoundStructures: initialSelectedCompoundStructures,
-          // selectedLeafAttachments: initialSelectedLeafAttachments,
-          // selectedFallColors: initialSelectedFallColors,
-          selectedTypes: [],
-          selectedNeedles: [],
-          selectedClusters: [],
-          selectedLeafTypes: [],
-          selectedCompoundStructures: [],
-          selectedLeafAttachments: [],
-          selectedFallColors: [],
-          
           isMenuOpen: false,
+          selectedTypes: initialSelectedTypes,
+          selectedNeedles: initialSelectedNeedles,
+          selectedClusters: initialSelectedClusters,
+          selectedLeafTypes: initialSelectedLeafTypes,
+          selectedCompoundStructures: initialSelectedCompoundStructures,
+          selectedLeafAttachments: initialSelectedLeafAttachments,
+          selectedFallColors: initialSelectedFallColors,
         };
     },
     getters: {
@@ -4897,7 +4887,6 @@ export const store = createStore({
         }
     },
     mutations: {
-
       resetFilters(state) {
         // Reset filters to initial state or empty arrays
         state.selectedTypes = [];
