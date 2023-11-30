@@ -31,6 +31,22 @@ export default {
         }
     }
   },
+
+
+  mounted() {
+    this.resetAllFilters();
+    this.closeMenu();
+  },
+  methods: {
+    resetAllFilters() {
+      this.$store.commit('resetFilters');
+    },
+    closeMenu() {
+      this.$store.commit('closeMenu');
+    }
+  },
+
+
 }
 
 
