@@ -31,45 +31,10 @@ export default {
         }
     }
   },
-
-
-  mounted() {
-    this.resetAllFilters();
-    this.closeMenu();
-  },
-  methods: {
-    resetAllFilters() {
-      this.$store.commit('resetFilters');
-    },
-    closeMenu() {
-      this.$store.commit('closeMenu');
-    }
-  },
-
-
 }
 
 
 </script>
 
 <style>
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap'); */
-#background {
-  /* div.background must be empty in this approach 
-  position: fixed;*/
-  /* top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  z-index: -5;  */
-
-  /* Method 2: 
-    div.background must serve as a container for the rest of the content.
-  */
-  /* background-size: cover;
-  background-position: center;
-  background-attachment: fixed; */
-  
-}
 </style>

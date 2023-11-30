@@ -320,7 +320,18 @@ export default {
             this.$store.commit('resetFilters');
             this.$store.commit('closeMenu');
         },
-    }
+
+        resetAllCheckboxes() {
+        this.selectedTypes = [];
+        this.selectedNeedles = [];
+        // ... reset other checkbox arrays ...
+        },
+    },
+
+    mounted() {
+        this.resetAllCheckboxes();
+        // ... other mounted logic ...
+    },
 }
 </script>
 
