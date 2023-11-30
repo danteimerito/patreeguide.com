@@ -1,28 +1,5 @@
 import { createStore } from 'vuex';
 
-const savedSelectedTypes = sessionStorage.getItem('selectedTypes');
-const initialSelectedTypes = savedSelectedTypes ? JSON.parse(savedSelectedTypes) : [];
-
-const savedSelectedNeedles = sessionStorage.getItem('selectedNeedles');
-const initialSelectedNeedles = savedSelectedNeedles ? JSON.parse(savedSelectedNeedles) : [];
-
-const savedSelectedClusters = sessionStorage.getItem('selectedClusters');
-const initialSelectedClusters = savedSelectedClusters ? JSON.parse(savedSelectedClusters) : [];
-
-const savedSelectedLeafTypes = sessionStorage.getItem('selectedLeafTypes');
-const initialSelectedLeafTypes = savedSelectedLeafTypes ? JSON.parse(savedSelectedLeafTypes) : [];
-
-const savedSelectedCompoundStructures = sessionStorage.getItem('selectedCompoundStructures');
-const initialSelectedCompoundStructures = savedSelectedCompoundStructures ? JSON.parse(savedSelectedCompoundStructures) : [];
-
-const savedSelectedLeafAttachments = sessionStorage.getItem('selectedLeafAttachments');
-const initialSelectedLeafAttachments = savedSelectedLeafAttachments ? JSON.parse(savedSelectedLeafAttachments) : [];
-
-const savedSelectedFallColors = sessionStorage.getItem('selectedFallColors');
-const initialSelectedFallColors = savedSelectedFallColors ? JSON.parse(savedSelectedFallColors) : [];
-
-//////////////////////////////////////////////////////////////
-
 // const savedSelectedTypes = localStorage.getItem('selectedTypes');
 // const initialSelectedTypes = savedSelectedTypes ? JSON.parse(savedSelectedTypes) : [];
 
@@ -4859,13 +4836,21 @@ export const store = createStore({
     state() {
         return {
           trees: [...initialTreesState], 
-          selectedTypes: initialSelectedTypes,
-          selectedNeedles: initialSelectedNeedles,
-          selectedClusters: initialSelectedClusters,
-          selectedLeafTypes: initialSelectedLeafTypes,
-          selectedCompoundStructures: initialSelectedCompoundStructures,
-          selectedLeafAttachments: initialSelectedLeafAttachments,
-          selectedFallColors: initialSelectedFallColors,
+          // selectedTypes: initialSelectedTypes,
+          // selectedNeedles: initialSelectedNeedles,
+          // selectedClusters: initialSelectedClusters,
+          // selectedLeafTypes: initialSelectedLeafTypes,
+          // selectedCompoundStructures: initialSelectedCompoundStructures,
+          // selectedLeafAttachments: initialSelectedLeafAttachments,
+          // selectedFallColors: initialSelectedFallColors,
+          selectedTypes: [],
+          selectedNeedles: [],
+          selectedClusters: [],
+          selectedLeafTypes: [],
+          selectedCompoundStructures: [],
+          selectedLeafAttachments: [],
+          selectedFallColors: [],
+          
           isMenuOpen: false,
         };
     },
