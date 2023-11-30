@@ -321,18 +321,18 @@ export default {
             this.$store.commit('closeMenu');
         },
 
-        resetAllCheckboxes() {
-        this.selectedTypes = [];
-        this.selectedNeedles = [];
-        this.selectedClusters = [];
-        this.selectedLeafTypes = [];
-        this.selectedCompoundStructures = [];
-        this.selectedLeafAttachments = [];
-        this.selectedFallColors = [];
+        // resetAllCheckboxes() {
+        // this.selectedTypes = [];
+        // this.selectedNeedles = [];
+        // this.selectedClusters = [];
+        // this.selectedLeafTypes = [];
+        // this.selectedCompoundStructures = [];
+        // this.selectedLeafAttachments = [];
+        // this.selectedFallColors = [];
         
         
         
-        },
+        // },
     },
 
     // mounted() {

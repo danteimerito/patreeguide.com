@@ -31,6 +31,31 @@ export default {
         }
     }
   },
+
+
+  mounted() {
+    document.addEventListener('visibilitychange', this.handleVisibilityChange);
+  },
+  beforeUnmount() {
+    document.removeEventListener('visibilitychange', this.handleVisibilityChange);
+  },
+  methods: {
+    handleVisibilityChange() {
+      if (document.visibilityState === 'visible') {
+        this.forceRerender();
+      }
+    },
+    forceRerender() {
+      this.$forceUpdate(); // force the current component to re-render
+
+      // If you have specific data properties to reset, do it here
+      // this.myDataProperty = someDefaultValue;
+    },
+  },
+
+
+
+
 }
 
 
