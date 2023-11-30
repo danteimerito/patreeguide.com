@@ -1,25 +1,47 @@
 import { createStore } from 'vuex';
 
-const savedSelectedTypes = localStorage.getItem('selectedTypes');
+const savedSelectedTypes = sessionStorage.getItem('selectedTypes');
 const initialSelectedTypes = savedSelectedTypes ? JSON.parse(savedSelectedTypes) : [];
 
-const savedSelectedNeedles = localStorage.getItem('selectedNeedles');
+const savedSelectedNeedles = sessionStorage.getItem('selectedNeedles');
 const initialSelectedNeedles = savedSelectedNeedles ? JSON.parse(savedSelectedNeedles) : [];
 
-const savedSelectedClusters = localStorage.getItem('selectedClusters');
+const savedSelectedClusters = sessionStorage.getItem('selectedClusters');
 const initialSelectedClusters = savedSelectedClusters ? JSON.parse(savedSelectedClusters) : [];
 
-const savedSelectedLeafTypes = localStorage.getItem('selectedLeafTypes');
+const savedSelectedLeafTypes = sessionStorage.getItem('selectedLeafTypes');
 const initialSelectedLeafTypes = savedSelectedLeafTypes ? JSON.parse(savedSelectedLeafTypes) : [];
 
-const savedSelectedCompoundStructures = localStorage.getItem('selectedCompoundStructures');
+const savedSelectedCompoundStructures = sessionStorage.getItem('selectedCompoundStructures');
 const initialSelectedCompoundStructures = savedSelectedCompoundStructures ? JSON.parse(savedSelectedCompoundStructures) : [];
 
-const savedSelectedLeafAttachments = localStorage.getItem('selectedLeafAttachments');
+const savedSelectedLeafAttachments = sessionStorage.getItem('selectedLeafAttachments');
 const initialSelectedLeafAttachments = savedSelectedLeafAttachments ? JSON.parse(savedSelectedLeafAttachments) : [];
 
-const savedSelectedFallColors = localStorage.getItem('selectedFallColors');
+const savedSelectedFallColors = sessionStorage.getItem('selectedFallColors');
 const initialSelectedFallColors = savedSelectedFallColors ? JSON.parse(savedSelectedFallColors) : [];
+
+
+// const savedSelectedTypes = localStorage.getItem('selectedTypes');
+// const initialSelectedTypes = savedSelectedTypes ? JSON.parse(savedSelectedTypes) : [];
+
+// const savedSelectedNeedles = localStorage.getItem('selectedNeedles');
+// const initialSelectedNeedles = savedSelectedNeedles ? JSON.parse(savedSelectedNeedles) : [];
+
+// const savedSelectedClusters = localStorage.getItem('selectedClusters');
+// const initialSelectedClusters = savedSelectedClusters ? JSON.parse(savedSelectedClusters) : [];
+
+// const savedSelectedLeafTypes = localStorage.getItem('selectedLeafTypes');
+// const initialSelectedLeafTypes = savedSelectedLeafTypes ? JSON.parse(savedSelectedLeafTypes) : [];
+
+// const savedSelectedCompoundStructures = localStorage.getItem('selectedCompoundStructures');
+// const initialSelectedCompoundStructures = savedSelectedCompoundStructures ? JSON.parse(savedSelectedCompoundStructures) : [];
+
+// const savedSelectedLeafAttachments = localStorage.getItem('selectedLeafAttachments');
+// const initialSelectedLeafAttachments = savedSelectedLeafAttachments ? JSON.parse(savedSelectedLeafAttachments) : [];
+
+// const savedSelectedFallColors = localStorage.getItem('selectedFallColors');
+// const initialSelectedFallColors = savedSelectedFallColors ? JSON.parse(savedSelectedFallColors) : [];
 
 
 const initialTreesState = [
