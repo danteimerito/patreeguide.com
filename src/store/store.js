@@ -21,6 +21,7 @@ const initialSelectedLeafAttachments = savedSelectedLeafAttachments ? JSON.parse
 const savedSelectedFallColors = sessionStorage.getItem('selectedFallColors');
 const initialSelectedFallColors = savedSelectedFallColors ? JSON.parse(savedSelectedFallColors) : [];
 
+//////////////////////////////////////////////////////////////
 
 // const savedSelectedTypes = localStorage.getItem('selectedTypes');
 // const initialSelectedTypes = savedSelectedTypes ? JSON.parse(savedSelectedTypes) : [];
