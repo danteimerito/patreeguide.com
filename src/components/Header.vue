@@ -324,14 +324,20 @@ export default {
         resetAllCheckboxes() {
         this.selectedTypes = [];
         this.selectedNeedles = [];
-        // ... reset other checkbox arrays ...
+        this.selectedClusters = [];
+        this.selectedLeafTypes = [];
+        this.selectedCompoundStructures = [];
+        this.selectedLeafAttachments = [];
+        this.selectedFallColors = [];
+        
+        
+        
         },
     },
 
-    mounted() {
-        this.resetAllCheckboxes();
-        // ... other mounted logic ...
-    },
+    // mounted() {
+    //     this.resetAllCheckboxes();
+    // },
 }
 </script>
 
