@@ -1,12 +1,10 @@
 /* CORE STYLES */
 :root {
-  /* --green-1: rgba(82, 104, 82, 1); */
   --green-1: rgba(31, 51, 34, 0.75);
   --brown-1: rgba(121, 84, 4, 0.75);
   --green-2: rgb(52, 75, 52);
   --green-3: rgb(34, 53, 34);
   --green-4: rgb(34, 53, 34);
-  // --green-5: rgba(44, 82, 43, 0.85);
   --green-5: rgba(23, 32, 23, 0.75);
 
   --beige-1: rgb(143, 175, 147);
@@ -61,9 +59,7 @@ ul{
 
 .bg-green-trans{
   color: white;
-  // margin: 1rem 0;
   padding: 0.25rem 2rem 0.25rem 2rem;
-  // min-height: 80px;
   background-color: var(--green-1);
   border-radius: 4px;
   display: flex;
@@ -97,27 +93,8 @@ p {
 }
 
 body {
-  // forces scroll bar visible 
-  // to prevent page jump
-
-  // overflow: scroll;
-
   background-color:var(--green-2);
-  // background: url('../img/pexels11.jpg');
-  // background-size: cover;
-  // background-position: center;
-  // background-attachment: fixed;
 }
-
-
-//background images
-// body.baldcypress {
-//   background-image: url('../img/forest2.jpg');
-// }
-// body.whitespruce {
-//   background-image: url('../img/forest4.jpg');
-// }
-
 
 .left-sixty{
 
@@ -258,9 +235,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  // @media only screen and (max-width: 800px){
-  //   display: none;
-  // }
 }
 
 /* Hamburger Line */
@@ -319,47 +293,24 @@ footer {
 
 /* Show Menu */
 .menu-wrap .toggler:checked ~ .menu {
-  // background-color:var(--green-1);
   visibility: visible;
-  // width: 300px;
   width: 100%;
-  // background: url('../img/forest3.jpg');
-  // background-size: cover;
-  // background-position: center;
-  // background-attachment: fixed;
   transition: 0.5s all ease;
-  @media only screen and (max-width: 500px){
-    // width: 200px;
-  }
 }
 
 .menu > div {
   padding: 0rem 0rem 2rem 0rem; 
   color: white;
-  // width: 300px;
   width: 100%;
   overflow: hidden;
-  // background-color: blue;
-  // background-color: var(--green-1);
-  @media only screen and (max-width: 500px){
-    // width: 190px;
-    // padding-left: 1rem;
-  }
 }
 .menu-wrap .toggler:checked ~ .menu > div {
-  /* padding: 3rem 1rem 2rem 2rem; */
-  /* padding: 2rem 1rem 2rem 60px; */
   padding: 0rem 0rem 2rem 0rem; 
   color: white;
-  // width: 300px;
   width: 100%;
   overflow: hidden;
-  /* background-color: blue; */
   /* transition-duration: var(--menu-speed); */
-  @media only screen and (max-width: 500px){
-    // width: 190px;
-    // padding-left: 1rem;
-  }
+
 }
 
 .menu-wrap .menu {
@@ -368,11 +319,7 @@ footer {
   position: fixed;
   top: 0;
   left: 0;
-
-  overflow: scroll;
-
-  /* margin-top: 3.75rem; */
-  // padding-bottom: 3.75rem;
+  overflow: auto;
   width: 0px;
   height: 100%; 
 }
@@ -394,10 +341,6 @@ footer {
 }
 .options-panel h3 {
   font-size: 1.5rem;
-  // margin-bottom: 1.5rem;
-  // margin-top: 2rem;
-  // border-bottom: 1px solid chartreuse;
-  // color: rgb(179, 252, 106);
   color: white;
 }
 .options-panel input[type=checkbox] {
@@ -820,6 +763,7 @@ footer {
   }
 }
 
+// creates background jumpiness on chrome mobile
 // #background {
 //   background-image: url(/public/img/bg_conifer1.jpg);
 //   transition: background-image 0.5s ease-in-out;
@@ -830,6 +774,7 @@ footer {
 //   min-height: calc(var(--vh, 1vh) * 100);
 // }
 
+// resolves background jumpiness on chrome mobile
 #background {
   position: fixed;
   top: 0;
@@ -838,13 +783,7 @@ footer {
   height: 100vh;
   background-image: url(/public/img/bg_conifer1.jpg);
   background-size: cover;
-  z-index: -100;
-  // transition: background-image 0.5s ease-in-out;
-  // background-position: center;
-  // background-attachment: fixed;
-  // background-size: cover;
-  // background-repeat: no-repeat;
-  // min-height: calc(var(--vh, 1vh) * 100);
+  z-index: -1;
 }
 
 .background-fade-in {
