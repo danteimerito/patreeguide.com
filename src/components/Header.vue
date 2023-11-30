@@ -320,24 +320,7 @@ export default {
             this.$store.commit('resetFilters');
             this.$store.commit('closeMenu');
         },
-
-        // resetAllCheckboxes() {
-        // this.selectedTypes = [];
-        // this.selectedNeedles = [];
-        // this.selectedClusters = [];
-        // this.selectedLeafTypes = [];
-        // this.selectedCompoundStructures = [];
-        // this.selectedLeafAttachments = [];
-        // this.selectedFallColors = [];
-        
-        
-        
-        // },
     },
-
-    // mounted() {
-    //     this.resetAllCheckboxes();
-    // },
 }
 </script>
 
