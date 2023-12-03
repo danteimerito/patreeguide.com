@@ -121,8 +121,8 @@ const initialTreesState = [
       "brown"
     ],
     slug: "americanbeech",
-    background: "bg_forest1.jpg",
-    backgroundSmall: "bg_forest1_small.jpg",
+    background: "bg-large/bg-49.jpg",
+    backgroundSmall: "bg-small/bg-49.jpg",
     description: "<p>The American Beech (Fagus grandifolia) is a noble and imposing hardwood, native to the eastern United States and southeastern Canada. Its grandeur is evident as it reaches up to 80 feet tall with a broad, rounded crown. The smooth, silvery-gray bark is unmistakably sleek, often carved with initials that persist for decades. Its elliptical leaves are a glossy green, with finely toothed margins, turning a rich bronze in the fall, often lingering on the branches into winter. Spring unfurls tiny, inconspicuous flowers, succeeded by small, prickly husks that contain edible nuts, coveted by wildlife. This tree prefers well-drained, acidic soils and doesn't tolerate urban pollution well, making it a staple in less disturbed forested areas. American Beech is slow-growing but long-lived, often reaching 300 years, with its stately presence and dense canopy offering a serene backdrop or an anchor in larger landscapes.</p>",
     photo1Credit: "<a target=\"blank_\" rel=\"noopener noreferrer\" href=\"https://commons.wikimedia.org/wiki/File:Beech_with_Branches.jpg\">Beech with Branches</a>, <a target=\"blank_\" rel=\"noopener noreferrer\" href=\"https://commons.wikimedia.org/wiki/User:Marqqq\">Marqqq</a>, <a target=\"blank_\" rel=\"noopener noreferrer\" href=\"https://creativecommons.org/licenses/by-sa/3.0/legalcode\" rel=\"license\">CC BY-SA 3.0</a>",
     photo1Href: "https://en.wikipedia.org/wiki/Fagus_grandifolia#/media/File:Beech_with_Branches.jpg",
@@ -5194,6 +5194,8 @@ const initialTreesState = [
   }
 ];
 
+
+
 export const store = createStore({
     state() {
         return {
@@ -5302,12 +5304,12 @@ export const store = createStore({
         // ... other mutations
     },
     actions: {      
-        asyncAddItem({ commit }, newItem) {
-            // For example, simulating an async action with a timeout
-            setTimeout(() => {
-                commit('addItem', newItem);
-            }, 1000);
-        },
+        // asyncAddItem({ commit }, newItem) {
+        //     // For example, simulating an async action with a timeout
+        //     setTimeout(() => {
+        //         commit('addItem', newItem);
+        //     }, 1000);
+        // },
         updateSelectedTypes({ commit }, types) {
           commit('setSelectedTypes', types);
         },

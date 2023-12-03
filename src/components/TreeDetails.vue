@@ -144,12 +144,7 @@
                             <div v-html="tree.photo8Credit" class="contain-thumb"></div>
                         </div>
 
-
                     </div>
-
-
-                    
-
 
 
                     
