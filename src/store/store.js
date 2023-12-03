@@ -40,8 +40,8 @@ const initialTreesState = [
       "red"
     ],
     slug: "alternate-leaveddogwood",
-    background: "bg_pexels1.jpg",
-    backgroundSmall: "bg_pexels1_small.jpg",
+    background: "bg-large/bg-1.jpg",
+    backgroundSmall: "bg-small/bg-1.jpg",
     description: "<p>The Alternate-leaved Dogwood (Cornus alternifolia), also known as Pagoda Dogwood for its tiered, horizontal branches, is a deciduous tree that boasts a unique architectural flair in woodland gardens. This North American native typically matures to a modest 15-25 feet tall, flourishing in the understory with a preference for partial shade and well-drained, acidic soils. Its leaves, arranged alternately as its name suggests—uncommon among dogwoods—emerge as a bright green, turning to purplish-red in the fall. In late spring to early summer, the tree is adorned with clusters of small, creamy-white flowers, which give way to dark blue berries on red stems, providing a feast for native birds. The tree's bark, mottled and gray, adds winter interest. With a low canopy and non-invasive root system, the Alternate-leaved Dogwood is a versatile addition to residential landscapes, offering year-round visual appeal and ecological benefits.</p>",
     photo1Credit: "<a target=\"blank_\" rel=\"noopener noreferrer\" href=\"https://commons.wikimedia.org/wiki/File:Cornus_alternifolia_005.jpg\">Fruit</a>, <a target=\"blank_\" rel=\"noopener noreferrer\" href=\"https://en.wikipedia.org/wiki/User:IvanTortuga\">Cody Hough</a>, <a target=\"blank_\" rel=\"noopener noreferrer\" href=\"https://creativecommons.org/licenses/by-sa/3.0/legalcode\" rel=\"license\">CC BY-SA 3.0</a>",
     photo1Href: "https://en.wikipedia.org/wiki/Cornus_alternifolia#/media/File:Cornus_alternifolia_005.jpg",
@@ -86,8 +86,8 @@ const initialTreesState = [
       "orange"
     ],
     slug: "americanbasswood",
-    background: "bg_pexels7.jpg",
-    backgroundSmall: "bg_pexels7_small.jpg",
+    background: "bg-large/bg-2.jpg",
+    backgroundSmall: "bg-small/bg-2.jpg",
     description: "<p>The American Basswood (Tilia americana), a stately decidome that can soar to grand heights of 60-120 feet, is renowned for its expansive canopy, which provides a lush, deep shade. This native North American tree is often found in rich, moist woods and along streams throughout the eastern and central United States. It has a broadly columnar to rounded shape, with a straight trunk and symmetrically branching crown. Heart-shaped, serrated leaves flutter in the slightest breeze and turn a vibrant yellow come autumn. In early summer, small, fragrant cream-colored flowers dangle from slender peduncles, drawing in a symphony of pollinators; these blooms later develop into small, nut-like fruits. The Basswood's soft, lightweight wood is highly valued for carving and woodworking. A gentle giant in the landscape, the American Basswood is a favorite for wildlife and a classical choice for shade in urban and rural settings.</p>",
     photo1Credit: "<a target=\"blank_\" rel=\"noopener noreferrer\" href=\"https://commons.wikimedia.org/wiki/File:Tilia_americana,_Arnold_Arboretum_-_IMG_5911.JPG\">American Basswood tree. Public domain, via Wikimedia Commons</a>",
     photo1Href: "https://en.wikipedia.org/wiki/Tilia_americana#/media/File:Tilia_americana,_Arnold_Arboretum_-_IMG_5911.JPG",
@@ -121,8 +121,8 @@ const initialTreesState = [
       "brown"
     ],
     slug: "americanbeech",
-    background: "bg-large/bg-49.jpg",
-    backgroundSmall: "bg-small/bg-49.jpg",
+    background: "bg-large/bg-3.jpg",
+    backgroundSmall: "bg-small/bg-3.jpg",
     description: "<p>The American Beech (Fagus grandifolia) is a noble and imposing hardwood, native to the eastern United States and southeastern Canada. Its grandeur is evident as it reaches up to 80 feet tall with a broad, rounded crown. The smooth, silvery-gray bark is unmistakably sleek, often carved with initials that persist for decades. Its elliptical leaves are a glossy green, with finely toothed margins, turning a rich bronze in the fall, often lingering on the branches into winter. Spring unfurls tiny, inconspicuous flowers, succeeded by small, prickly husks that contain edible nuts, coveted by wildlife. This tree prefers well-drained, acidic soils and doesn't tolerate urban pollution well, making it a staple in less disturbed forested areas. American Beech is slow-growing but long-lived, often reaching 300 years, with its stately presence and dense canopy offering a serene backdrop or an anchor in larger landscapes.</p>",
     photo1Credit: "<a target=\"blank_\" rel=\"noopener noreferrer\" href=\"https://commons.wikimedia.org/wiki/File:Beech_with_Branches.jpg\">Beech with Branches</a>, <a target=\"blank_\" rel=\"noopener noreferrer\" href=\"https://commons.wikimedia.org/wiki/User:Marqqq\">Marqqq</a>, <a target=\"blank_\" rel=\"noopener noreferrer\" href=\"https://creativecommons.org/licenses/by-sa/3.0/legalcode\" rel=\"license\">CC BY-SA 3.0</a>",
     photo1Href: "https://en.wikipedia.org/wiki/Fagus_grandifolia#/media/File:Beech_with_Branches.jpg",
@@ -174,6 +174,8 @@ const initialTreesState = [
       "yellow",
       "brown"
     ],
+    background: "bg-large/bg-4.jpg",
+    backgroundSmall: "bg-small/bg-4.jpg",
     slug: "americanbladdernut",
     description: "<p>The American Bladdernut (Staphylea trifolia) is a charming, underutilized deciduous shrub or small tree, typically growing to a modest height of 10-15 feet. Native to the understory of Eastern North America's forests, this plant thrives in moist, well-drained soils, often along stream banks and in rich woodlands. Its most distinctive feature is the inflated, bladder-like seed pods that hang in clusters, turning from green to a papery brown as they mature in the fall. These whimsical pods add a unique textural element to the landscape and a point of interest in winter after the leaves have fallen. The tree's foliage is comprised of trifoliate leaves, which are arranged oppositely on arching branches, presenting a soft green hue in spring and transforming to a clear yellow in autumn. In spring, drooping clusters of fragrant, bell-shaped white flowers grace the tree, providing a delicate floral display. The American Bladdernut is a versatile and low-maintenance choice for naturalized areas or woodland gardens.</p>",
 
@@ -201,6 +203,8 @@ const initialTreesState = [
       "yellow"
     ],
     slug: "americanchestnut",
+    background: "bg-large/bg-5.jpg",
+    backgroundSmall: "bg-small/bg-5.jpg",
     description: "<p>The American Chestnut (Castanea dentata) was once a titan of the Eastern American forests, casting its shadow across the landscape with towering heights reaching up to 100 feet. Recognized by its broad, spreading canopy, the tree was both a timber staple and a critical wildlife food source, with its abundant, nutritious nuts. Its leaves are long and narrow with a toothed edge, and they turn to a golden hue in autumn. However, the early 20th century saw this species decimated by the chestnut blight, a fungal disease accidentally introduced from imported Asiatic chestnut trees. The blight's devastation transformed this once-dominant tree into a rarity, leaving behind only the sprouting stumps of former giants, as the blight does not affect the roots which can still resprout. Efforts are ongoing to restore this species through science and selective breeding with blight-resistant trees. The American Chestnut's tale is a poignant reminder of the fragility and interconnectedness of ecological systems.</p>",
     photo1Credit: "<a target=\"blank_\" rel=\"noopener noreferrer\" href=\"https://commons.wikimedia.org/wiki/File:American_Chestnut.JPG\">American Chestnut Nuts with Burrs and Leaves. </a>The original uploader was <a target=\"blank_\" rel=\"noopener noreferrer\" href=\"https://en.wikipedia.org/wiki/de:User:Peatcher\">Peatcher</a> at <a target=\"blank_\" rel=\"noopener noreferrer\" href=\"https://en.wikipedia.org/wiki/de:\">German Wikipedia</a>, <a target=\"blank_\" rel=\"noopener noreferrer\" href=\"https://creativecommons.org/licenses/by-sa/3.0/legalcode\" rel=\"license\">CC BY-SA 3.0</a>",
     photo1Href: "https://en.wikipedia.org/wiki/American_chestnut#/media/File:American_Chestnut.JPG",
@@ -245,6 +249,8 @@ const initialTreesState = [
       "yellow"
     ],
     slug: "americanelm",
+    background: "bg-large/bg-6.jpg",
+    backgroundSmall: "bg-small/bg-6.jpg",
     description: "<p>The American Elm (Ulmus americana) once lined the streets of towns across North America with its distinctive vase-like silhouette reaching heights of 60-80 feet. This beloved deciduous tree was famed for its dense canopy of serrated, ovate leaves, which turned golden yellow in fall, and its ability to thrive in various soil types. In the spring, small, inconspicuous flowers appear before the leaves, developing into flat, papery samaras, or winged seeds. However, the mid-20th century saw this majestic tree besieged by Dutch elm disease, a fungal infection spread by bark beetles, leading to widespread decimation of the population. Despite this, the American Elm remains a symbol of strength and endurance, with ongoing efforts to cultivate disease-resistant varieties. Its wood, once used for shipbuilding and furniture, is now less commonly harvested due to its rarity. The American Elm's story is one of both ecological loss and the hope for restoration.</p>",
     photo1Credit: "<a href=\"https://commons.wikimedia.org/wiki/File:American_Elm_Tree,_Old_South_Street,_Northampton,_MA_-_October_2019.jpg\">American elm tree known as \"Ed Cotton's elm,\"</a>, <a href=\"https://commons.wikimedia.org/wiki/User:Msact\">Marty Aligata</a>, <a href=\"https://creativecommons.org/licenses/by-sa/4.0/legalcode\" rel=\"license\">CC BY-SA 4.0</a>",
     photo1Href: "https://en.wikipedia.org/wiki/Ulmus_americana#/media/File:American_Elm_Tree,_Old_South_Street,_Northampton,_MA_-_October_2019.jpg",
@@ -296,6 +302,8 @@ const initialTreesState = [
       "yellow"
     ],
     slug: "americanhophornbeam",
+    background: "bg-large/bg-7.jpg",
+    backgroundSmall: "bg-small/bg-7.jpg",
     description: "<p>The American Hophornbeam (Ostrya virginiana), also known as Ironwood for its dense, hard timber, is a small to medium-sized deciduous tree that often grows to 40 feet in height. It features a rounded crown with slender, spreading branches, and flaky bark that adds texture to landscapes. Native to North America, it thrives in well-drained soils, from deep forests to rocky slopes. Its leaves are ovate and sharply-toothed, resembling those of the elm but more finely textured, turning yellow to orange in the fall. Spring brings long, attractive catkins, followed by distinctive hop-like fruit clusters that persist through winter, providing interest and food for wildlife. The tree's wood is valued for tool handles and sporting equipment, owing to its toughness. Unassuming yet resilient, the American Hophornbeam is a low-maintenance choice for naturalized areas or as a landscape specimen where its subtle beauty and durable nature can be appreciated.</p>",
     
     photo1Credit: "An exceptionally large trunk. Public domain, via Wikimedia Commons",
@@ -344,6 +352,8 @@ const initialTreesState = [
       "yellow"
     ],
     slug: "americanmountain-ash",
+    background: "bg-large/bg-8.jpg",
+    backgroundSmall: "bg-small/bg-8.jpg",
     description: "The American Mountain-ash (Sorbus americana) is a small, decorative tree native to the northeastern United States and eastern Canada, flourishing in the cooler climates of higher altitudes and northern latitudes. Typically reaching 15 to 30 feet in height, it graces the landscape with a rounded crown and fine, textured foliage. Its compound leaves are composed of numerous leaflets, turning a striking array of oranges and reds in the autumn. In late spring to early summer, the tree is adorned with dense clusters of white flowers, which develop into vibrant, orange-red berries by late summer. These berry clusters persist into winter, offering a valuable food source for birds and wildlife. The Mountain-ash is not a true ash but is so named for its ash-like leaves. Its slender gray bark and modest stature make it an excellent choice for residential gardens where its ornamental berries and fall color can be a focal point.",
     photo1Credit: "<a href=\"https://commons.wikimedia.org/wiki/File:Sorbus_americana.jpg\">American Mountain-ash fruits and foliage</a>, <a href=\"https://commons.wikimedia.org/wiki/User:Bruce_Marlin\">Bruce Marlin</a>, <a href=\"https://creativecommons.org/licenses/by-sa/2.5/legalcode\" rel=\"license\">CC BY-SA 2.5</a>",
     photo1Href: "https://en.wikipedia.org/wiki/Sorbus_americana#/media/File:Sorbus_americana.jpg",
@@ -369,6 +379,8 @@ const initialTreesState = [
       "yellow"
     ],
     slug: "americanpapaw",
+    background: "bg-large/bg-9.jpg",
+    backgroundSmall: "bg-small/bg-9.jpg",
     description: "<p>The American Pawpaw, Asimina triloba, is a small, deciduous tree native to the eastern United States. It stands out with its unique tropical-like appearance, unusual in temperate climates. The tree typically grows to 15-30 feet tall and is characterized by its broad, spreading form and large, drooping leaves, which turn a striking yellow in the fall.</p><p>The Pawpaw's most notable feature is its fruit, which is the largest edible fruit native to the United States. These oblong, green fruits turn brown or yellow when ripe and have a custard-like texture with a flavor reminiscent of bananas, mangoes, and melon. In spring, the Pawpaw produces small, dark red flowers that, while not particularly showy, are interesting and fragrant.</p><p>Often found in the understory of hardwood forests or along river banks, the Pawpaw is a valuable tree for wildlife, providing food and habitat. It's also gaining popularity in home gardens and orchards for its unique fruit and attractive foliage.</p>",
     photo1Credit: "<a href=\"https://commons.wikimedia.org/wiki/File:Pawpaw_patch_shade_2.jpg\">American Pawpaw trees</a>, <a href=\"https://commons.wikimedia.org/wiki/User:Cbarlow\">Cbarlow</a>, <a href=\"https://creativecommons.org/licenses/by-sa/4.0/legalcode\" rel=\"license\">CC BY-SA 4.0</a>",
     photo1Href: "https://en.wikipedia.org/wiki/Asimina_triloba#/media/File:Pawpaw_patch_shade_2.jpg",
@@ -430,6 +442,8 @@ const initialTreesState = [
       "yellow"
     ],
     slug: "americanpersimmon",
+    background: "bg-large/bg-10.jpg",
+    backgroundSmall: "bg-small/bg-10.jpg",
     description: "<p>The American Persimmon (Diospyros virginiana) is a native deciduous tree that graces the Eastern United States with its presence. Growing to a height of 35-60 feet, this species is renowned for its hardiness and adaptability, thriving in a variety of soils and conditions. The persimmon's bark is distinctive—dark, thick, and deeply furrowed, providing textural interest throughout the year. Its leaves are broad and glossy, offering a rich, green canopy in summer before turning to vivid shades of yellow, orange, and red in the autumn.</p><p>Springtime blooms are inconspicuous, but they give way to the tree's true bounty: the persimmon fruit. These round, orange berries are astringent when unripe but become sweet and custard-like after the first frost, making them a treat for wildlife and humans alike. The fruits have a long history of use in traditional Native American cuisine and are still valued today for their flavor and nutritional content. The American Persimmon is not just a food source but also a striking ornamental tree, particularly attractive to those interested in native planting and wildlife gardening.</p>",
     photo1Credit: "<a href=\"https://commons.wikimedia.org/wiki/File:Persimmon.jpg\">American persimmon tree bearing fruit in the fall</a>, Gphoto, <a href=\"https://creativecommons.org/licenses/by-sa/3.0/legalcode\" rel=\"license\">CC BY-SA 3.0</a>",
     photo1Href: "https://en.wikipedia.org/wiki/Diospyros_virginiana#/media/File:Persimmon.jpg",
@@ -489,6 +503,8 @@ const initialTreesState = [
       "gold"
     ],
     slug: "americanplum",
+    background: "bg-large/bg-11.jpg",
+    backgroundSmall: "bg-small/bg-11.jpg",
     description: "The American Plum (Prunus americana), also known as Wild Plum, is a versatile deciduous tree native to North America, adaptable to a range of environments from stream banks to prairies. Typically growing to 15-25 feet in height, it forms a rounded shape with a thicket of branches that can be trained as a single trunk or allowed to spread naturally. In early spring, before the foliage unfurls, the tree is covered with a profusion of fragrant white flowers, attracting pollinators and signaling the end of winter. The blossoms give way to small, red to yellow plums with a tart flavor, ripening by late summer. These fruits are enjoyed by wildlife and can be used in jams and jellies. The leaves are serrated and green, turning to yellow or red hues in the fall. The American Plum's rugged bark and branch structure provide winter interest, making it a resilient and attractive choice for naturalized areas or as a wildlife-friendly addition to the home garden.",
     photo1Credit: "<a href=\"https://commons.wikimedia.org/wiki/File:Prunus_americana.jpg\">American Plum flowers</a>, <a href=\"https://www.flickr.com/photos/33762104@N00\">Andrew Ciscel</a>, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/legalcode\" rel=\"license\">CC BY-SA 2.0</a>",
     photo1Href: "https://en.wikipedia.org/wiki/Prunus_americana#/media/File:Prunus_americana.jpg",
@@ -522,6 +538,8 @@ const initialTreesState = [
       "yellow"
     ],
     slug: "americanpussywillow",
+    background: "bg-large/bg-12.jpg",
+    backgroundSmall: "bg-small/bg-12.jpg",
     description: "<p>The American Pussy Willow (Salix discolor) is a beloved harbinger of spring, with its distinctive soft, silver catkins that burst forth on bare branches, often while the chill of winter still lingers. This deciduous shrub or small tree is native to North America, typically reaching 6 to 15 feet in height, and is cherished for its early-season interest and ease of care. The pussy willow's branches spread informally, creating a loosely structured, rounded silhouette.</p><p>The catkins, which precede the leaves, are a favorite in floral arrangements and are one of the first sources of pollen for bees. As the season progresses, the catkins give way to lance-shaped, light green leaves. The pussy willow thrives in moist, well-drained soil, and full to partial sunlight, often naturally occurring near wetlands and stream banks. Its ability to tolerate wet conditions makes it an excellent choice for rain gardens or naturalized areas. With minimal pruning, the American Pussy Willow remains a charming and rustic addition to any landscape.</p>",
     photo1Credit: "Branch with catkins in early spring. Public domain, via Wikimedia Commons",
     photo1Href: "https://en.wikipedia.org/wiki/Salix_discolor#/media/File:Pussy_willow_branch.jpg",
@@ -564,6 +582,8 @@ const initialTreesState = [
       "red"
     ],
     slug: "americansweetgum",
+    background: "bg-large/bg-13.jpg",
+    backgroundSmall: "bg-small/bg-13.jpg",
     description: "<p>The American Sweetgum (Liquidambar styraciflua) is a striking deciduous tree cherished for its star-shaped leaves and brilliant autumnal colors. Towering at an impressive height of 60 to 75 feet, it casts a commanding presence with a pyramidal to oval form. The glossy green leaves transition through a splendid palette of reds, purples, and oranges as the seasons turn, offering a spectacular fall display.</p><p>Springtime ushers in inconspicuous flowers, which develop into the tree's distinctive spiky seed balls. These seed pods hang from the branches throughout the winter, adding texture to the bare limbs. The sweetgum's bark is deeply furrowed, featuring corky ridges that create an interesting pattern with age.</p><p>Preferring full sun and moist, rich soils, the sweetgum is a popular landscaping choice, often used in parks and large spaces. However, its seed pods can be a nuisance in residential settings. Despite this, the American Sweetgum remains valued for its ornamental beauty and as a source of hardwood.</p>",
     photo1Credit: "<a href=\"https://commons.wikimedia.org/wiki/File:2014-11-02_13_06_29_Sweet_Gum_during_autumn_along_Lower_Ferry_Road_in_Ewing,_New_Jersey.JPG\">American Sweet Gum during autumn</a>, <a href=\"https://commons.wikimedia.org/wiki/User:Famartin\">Famartin</a>, <a href=\"https://creativecommons.org/licenses/by-sa/4.0/legalcode\" rel=\"license\">CC BY-SA 4.0</a>",
     photo1Href: "https://en.wikipedia.org/wiki/Liquidambar_styraciflua#/media/File:2014-11-02_13_06_29_Sweet_Gum_during_autumn_along_Lower_Ferry_Road_in_Ewing,_New_Jersey.JPG",
@@ -619,6 +639,8 @@ const initialTreesState = [
       "brown"
     ],
     slug: "americansycamore",
+    background: "bg-large/bg-14.jpg",
+    backgroundSmall: "bg-small/bg-14.jpg",
     description: "<p>The American Sycamore (Platanus occidentalis), also known as the American Plane or Buttonwood, is a grand, fast-growing deciduous tree known for its size and longevity. Dominating the landscape with heights reaching 70 to 100 feet, it boasts a massive, sturdy trunk and a wide-spreading canopy that can provide ample shade. This tree is easily recognizable by its mottled exfoliating bark, which flakes off in patches to reveal a creamy white and green inner bark, giving the trunk and limbs a distinctive camouflage-like appearance.</p><p>Its large, palmate leaves are bright green and turn to a golden brown in the fall, before dropping to reveal round, ball-like seed clusters that dangle from the branches. These seeds persist through winter, decorating the bare tree. The American Sycamore is a hardy species, often planted in urban environments for its tolerance to pollution and its ability to thrive in a wide range of soil conditions. With its impressive stature and unique bark, it serves as a striking ornamental tree for large landscapes.</p>",
 
     photo1Credit: "Sycamore in winter showing persistent fruit. Public domain, via Wikimedia Commons.",
