@@ -5288,8 +5288,8 @@ backgroundSmall: "bg-small/bg-35.jpg",
       "yellow"
     ],
     slug: "yellowbirch",
-    background: "bg-large/bg-94b.jpg",
-    backgroundSmall: "bg-small/bg-94b.jpg",
+    background: "bg-large/bg-94.jpg",
+    backgroundSmall: "bg-small/bg-94.jpg",
     description: "<p>The Yellow Birch, Betula alleghaniensis, is a striking deciduous tree native to the northeastern United States and southeastern Canada. It is one of the largest North American birches, typically growing to 60-75 feet in height, sometimes reaching up to 100 feet in its natural forest habitat. The Yellow Birch is especially known for its distinctive bark, which peels in thin, horizontal strips and has a silvery-golden hue, giving the tree its common name.</p><p>The leaves of the Yellow Birch are oval to nearly heart-shaped with finely serrated edges, turning a bright yellow in the fall, adding to the tree's ornamental appeal. In the spring, it produces catkins, followed by small winged seeds that are dispersed by the wind. The bark has a characteristic wintergreen scent when crushed. The tree's wood is hard and strong, making it valuable for furniture, flooring, and veneers.</p><p>With its attractive bark, lovely fall color, and graceful form, the Yellow Birch is a popular choice for landscaping in cooler climates. It prefers moist, well-drained soils and is often found in mixed hardwood forests, adding beauty and diversity to the landscape.</p>",
 
     photo1Credit: "<a href=\"https://commons.wikimedia.org/wiki/File:Betula_alleghaniensis_5349050.jpg\">Yellow birch foliage</a>, Keith Kanoti, <a href=\"https://creativecommons.org/licenses/by/3.0/legalcode\" rel=\"license\">CC BY 3.0</a>",
