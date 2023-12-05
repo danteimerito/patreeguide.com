@@ -4504,8 +4504,8 @@ backgroundSmall: "bg-small/bg-35.jpg",
     ],
     slug: "stripedmaple",
     // 164 or 44
-    background: "bg-large/bg-164.jpg",
-    backgroundSmall: "bg-small/bg-164.jpg",
+    background: "bg-large/bg-44.jpg",
+    backgroundSmall: "bg-small/bg-44.jpg",
 
     description: "<p>The Striped Maple, Acer pensylvanicum, also known as Moosewood or Goosefoot Maple, is a small deciduous understory tree native to the northeastern United States and southeastern Canada. It typically grows to 15-30 feet in height, making it one of the smaller maple species. Its common name derives from the distinctive green and white striped bark, which is particularly noticeable on young stems and becomes more subtle on older trunks.</p><p>The leaves of the Striped Maple are large, broad, and have three lobes, resembling the shape of a goose's foot. These leaves are a bright green color and turn a striking yellow or orange in the fall. In the spring, the tree produces long, drooping clusters of yellowish-green flowers, followed by the development of winged samaras. This maple is known for its preference for cool, moist, shaded areas, often found in the understory of hardwood forests.</p><p>While it is not a major timber tree, the Striped Maple is valued for its ornamental appeal, especially suited to naturalized woodland gardens. Its unique bark, attractive foliage, and modest size make it a charming addition to the landscape.</p>",
 
