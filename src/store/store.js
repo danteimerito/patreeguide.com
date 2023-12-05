@@ -1103,8 +1103,8 @@ backgroundSmall: "bg-small/bg-35.jpg",
       "yellow"
     ],
     slug: "blackmaple",
-    background: "bg-large/bg-44.jpg",
-    backgroundSmall: "bg-small/bg-44.jpg",
+    background: "bg-large/bg-162.jpg",
+    backgroundSmall: "bg-small/bg-162.jpg",
     description: "<p>The Black Maple (Acer nigrum), a close relative of the sugar maple, is a deciduous tree revered for its striking presence and valuable sap. Found in the central and eastern United States, it grows to heights of 60 to 80 feet, forming a rounded, dense canopy that provides generous shade. Its bark is dark, deeply furrowed, and becomes almost black with age, hence the name.</p><p>The tree’s leaves are telltale, with three main lobes that are less pronounced than those of its sugar maple cousin, featuring drooping edges and a deep green hue that shifts to vibrant yellow and burnt orange in autumn. Spring brings small, yellow-green flowers that are often hidden beneath the foliage, followed by the winged samaras typical of maples, twirling to the ground in a helicopter-like fashion.</p><p>Black Maple's sap is a source for maple syrup, and its hard, strong wood is sought after for furniture and flooring. Adaptable and hardy, the Black Maple is a testament to the enduring beauty and utility of the Acer family.</p>",
     photo1Credit: "Black Maple tree. Daderot, CC0, via Wikimedia Commons",
     photo1Href: "https://en.wikipedia.org/wiki/Acer_nigrum#/media/File:Acer_nigrum_-_University_of_Kentucky_Arboretum_-_DSC09326.JPG",
@@ -3730,6 +3730,8 @@ backgroundSmall: "bg-small/bg-35.jpg",
       "orange"
     ],
     slug: "redmaple",
+    background: "bg-large/bg-167.jpg",
+    backgroundSmall: "bg-small/bg-166.jpg",
     description: "<p>The Red Maple, Acer rubrum, is a highly versatile and widely distributed deciduous tree in eastern North America. Renowned for its stunning fall color, it typically reaches heights of 40 to 60 feet, forming a rounded to oval crown. This tree is particularly celebrated for its brilliant red foliage in autumn, although its leaves can also turn shades of orange and yellow, creating a spectacular display.</p><p>In early spring, the Red Maple is one of the first trees to blossom, producing small red or yellow flowers before the leaves emerge. These are followed by the production of distinctive red samaras, commonly known as \"helicopter seeds.\" The bark of young trees is smooth and gray, becoming darker and more furrowed with age. Its leaves are 3 to 5 lobed, with a serrated margin and a paler underside.</p><p>The Red Maple's adaptability to a wide range of soil conditions and its vibrant seasonal changes make it a popular choice for landscaping in both urban and rural settings. It provides habitat and food for wildlife, including birds and small mammals, and is often used in parks and public gardens for its ornamental value and moderate size.</p>",
     photo1Credit: "<a href=\"https://commons.wikimedia.org/wiki/File:2014-10-30_11_09_40_Red_Maple_during_autumn_on_Lower_Ferry_Road_in_Ewing,_New_Jersey.JPG\">Red Maple during autumn </a>, <a href=\"https://commons.wikimedia.org/wiki/User:Famartin\">Famartin</a>, <a href=\"https://creativecommons.org/licenses/by-sa/4.0/legalcode\" rel=\"license\">CC BY-SA 4.0</a>",
     photo1Href: "https://en.wikipedia.org/wiki/Acer_rubrum#/media/File:2014-10-30_11_09_40_Red_Maple_during_autumn_on_Lower_Ferry_Road_in_Ewing,_New_Jersey.JPG",
@@ -4501,6 +4503,10 @@ backgroundSmall: "bg-small/bg-35.jpg",
       "yellow"
     ],
     slug: "stripedmaple",
+    // 164 or 44
+    background: "bg-large/bg-164.jpg",
+    backgroundSmall: "bg-small/bg-164.jpg",
+
     description: "<p>The Striped Maple, Acer pensylvanicum, also known as Moosewood or Goosefoot Maple, is a small deciduous understory tree native to the northeastern United States and southeastern Canada. It typically grows to 15-30 feet in height, making it one of the smaller maple species. Its common name derives from the distinctive green and white striped bark, which is particularly noticeable on young stems and becomes more subtle on older trunks.</p><p>The leaves of the Striped Maple are large, broad, and have three lobes, resembling the shape of a goose's foot. These leaves are a bright green color and turn a striking yellow or orange in the fall. In the spring, the tree produces long, drooping clusters of yellowish-green flowers, followed by the development of winged samaras. This maple is known for its preference for cool, moist, shaded areas, often found in the understory of hardwood forests.</p><p>While it is not a major timber tree, the Striped Maple is valued for its ornamental appeal, especially suited to naturalized woodland gardens. Its unique bark, attractive foliage, and modest size make it a charming addition to the landscape.</p>",
 
     photo1Credit: "Striped maple leaves. Public domain, via Wikimedia Commons.",
