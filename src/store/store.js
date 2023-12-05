@@ -4291,6 +4291,8 @@ backgroundSmall: "bg-small/bg-35.jpg",
       "yellow"
     ],
     slug: "siberianelm",
+    background: "bg-large/bg-180.jpg",
+    backgroundSmall: "bg-small/bg-180.jpg",
     description: "<p>The Siberian Elm, Ulmus pumila, is a hardy and fast-growing deciduous tree, native to eastern Asia and extensively planted in various parts of the world. It typically reaches heights of 50 to 70 feet, characterized by a rounded, open canopy and a somewhat irregular form. This tree is particularly valued for its ability to withstand harsh conditions, including poor soil, air pollution, and drought.</p><p>The leaves of the Siberian Elm are small and ovate with a toothed margin and a rough texture, turning yellow in the fall. In early spring, the tree produces inconspicuous, small flowers, followed by flat, winged seeds known as samaras. The bark of the Siberian Elm is dark gray and deeply furrowed, providing a textured appearance throughout the year.</p><p>While the Siberian Elm is admired for its resilience and adaptability, it is considered invasive in some areas, as it can spread rapidly and outcompete native vegetation. Despite this, its quick growth and tolerance to urban environments make it a common choice for street and windbreak plantings in challenging conditions.</p>",
     photo1Credit: "<a href=\"https://commons.wikimedia.org/wiki/File:Ulmus_pumila.jpg\">Typical cultivated Siberian elm. </a> <a href=\"https://commons.wikimedia.org/wiki/User:Bruce_Marlin\">Bruce Marlin</a>, <a href=\"https://creativecommons.org/licenses/by-sa/3.0/legalcode\" rel=\"license\">CC BY-SA 3.0</a>",
     photo1Href: "https://en.wikipedia.org/wiki/Ulmus_pumila#/media/File:Ulmus_pumila.jpg",
