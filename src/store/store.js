@@ -503,8 +503,8 @@ const initialTreesState = [
       "gold"
     ],
     slug: "americanplum",
-    background: "bg-large/bg-32.jpg",
-    backgroundSmall: "bg-small/bg-32.jpg",
+    background: "bg-large/bg-32b.jpg",
+    backgroundSmall: "bg-small/bg-32b.jpg",
     description: "The American Plum (Prunus americana), also known as Wild Plum, is a versatile deciduous tree native to North America, adaptable to a range of environments from stream banks to prairies. Typically growing to 15-25 feet in height, it forms a rounded shape with a thicket of branches that can be trained as a single trunk or allowed to spread naturally. In early spring, before the foliage unfurls, the tree is covered with a profusion of fragrant white flowers, attracting pollinators and signaling the end of winter. The blossoms give way to small, red to yellow plums with a tart flavor, ripening by late summer. These fruits are enjoyed by wildlife and can be used in jams and jellies. The leaves are serrated and green, turning to yellow or red hues in the fall. The American Plum's rugged bark and branch structure provide winter interest, making it a resilient and attractive choice for naturalized areas or as a wildlife-friendly addition to the home garden.",
     photo1Credit: "<a href=\"https://commons.wikimedia.org/wiki/File:Prunus_americana.jpg\">American Plum flowers</a>, <a href=\"https://www.flickr.com/photos/33762104@N00\">Andrew Ciscel</a>, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/legalcode\" rel=\"license\">CC BY-SA 2.0</a>",
     photo1Href: "https://en.wikipedia.org/wiki/Prunus_americana#/media/File:Prunus_americana.jpg",
