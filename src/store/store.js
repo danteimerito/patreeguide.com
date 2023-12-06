@@ -639,8 +639,8 @@ const initialTreesState = [
       "brown"
     ],
     slug: "americansycamore",
-    background: "bg-large/bg-125.jpg",
-    backgroundSmall: "bg-small/bg-125.jpg",
+    background: "bg-large/bg-125b.jpg",
+    backgroundSmall: "bg-small/bg-125b.jpg",
     description: "<p>The American Sycamore (Platanus occidentalis), also known as the American Plane or Buttonwood, is a grand, fast-growing deciduous tree known for its size and longevity. Dominating the landscape with heights reaching 70 to 100 feet, it boasts a massive, sturdy trunk and a wide-spreading canopy that can provide ample shade. This tree is easily recognizable by its mottled exfoliating bark, which flakes off in patches to reveal a creamy white and green inner bark, giving the trunk and limbs a distinctive camouflage-like appearance.</p><p>Its large, palmate leaves are bright green and turn to a golden brown in the fall, before dropping to reveal round, ball-like seed clusters that dangle from the branches. These seeds persist through winter, decorating the bare tree. The American Sycamore is a hardy species, often planted in urban environments for its tolerance to pollution and its ability to thrive in a wide range of soil conditions. With its impressive stature and unique bark, it serves as a striking ornamental tree for large landscapes.</p>",
 
     photo1Credit: "Sycamore in winter showing persistent fruit. Public domain, via Wikimedia Commons.",
