@@ -2723,8 +2723,8 @@ backgroundSmall: "bg-small/bg-35.jpg",
       "yellow"
     ],
     slug: "honeylocust",
-    background: "bg-large/bg-151b.jpg",
-  backgroundSmall: "bg-small/bg-151b.jpg",
+    background: "bg-large/bg-151c.jpg",
+  backgroundSmall: "bg-small/bg-151c.jpg",
     description: "<p>The Honey Locust, Gleditsia triacanthos, is a deciduous tree renowned for its unique appearance and adaptability. Native to central North America, it can grow to a height of 60 to 80 feet, featuring a rapid growth rate and a spreading, open canopy that provides light, dappled shade. One of the most distinctive features of the Honey Locust is its long, twisted, and often branched thorns, which can grow up to several inches long on both its trunk and branches.</p><p>The tree's leaves are pinnately or bipinnately compound, creating a delicate, fern-like texture. In the fall, these leaves turn a bright, clear yellow, offering a beautiful contrast to the landscape. Honey Locusts also produce long, flat, and twisted seed pods that mature in the fall. These pods contain a sweet, edible pulp, which was historically used as a food source by Native Americans and early settlers.</p><p>Highly tolerant of different environmental conditions, including poor soils and urban pollution, the Honey Locust is a popular choice in urban landscaping. Its wood is strong and durable, making it useful for furniture and flooring. Despite its thorns, which can be absent in thornless cultivated varieties, the Honey Locust is valued for its beauty, shade, and environmental resilience.</p>",
 
     photo1Credit: "<a href=\"https://commons.wikimedia.org/wiki/File:2014-10-11_12_49_16_Honey_Locust_foliage_during_autumn_in_Elko,_Nevada.JPG\">Honey Locust foliage during autumn</a>, <a href=\"https://commons.wikimedia.org/wiki/User:Famartin\">Famartin</a>, <a href=\"https://creativecommons.org/licenses/by-sa/4.0/legalcode\" rel=\"license\">CC BY-SA 4.0</a>",
