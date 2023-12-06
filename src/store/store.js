@@ -352,8 +352,8 @@ const initialTreesState = [
       "yellow"
     ],
     slug: "americanmountain-ash",
-    background: "bg-large/bg-107.jpg",
-    backgroundSmall: "bg-small/bg-107.jpg",
+    background: "bg-large/bg-107c.jpg",
+    backgroundSmall: "bg-small/bg-107c.jpg",
     description: "The American Mountain-ash (Sorbus americana) is a small, decorative tree native to the northeastern United States and eastern Canada, flourishing in the cooler climates of higher altitudes and northern latitudes. Typically reaching 15 to 30 feet in height, it graces the landscape with a rounded crown and fine, textured foliage. Its compound leaves are composed of numerous leaflets, turning a striking array of oranges and reds in the autumn. In late spring to early summer, the tree is adorned with dense clusters of white flowers, which develop into vibrant, orange-red berries by late summer. These berry clusters persist into winter, offering a valuable food source for birds and wildlife. The Mountain-ash is not a true ash but is so named for its ash-like leaves. Its slender gray bark and modest stature make it an excellent choice for residential gardens where its ornamental berries and fall color can be a focal point.",
     photo1Credit: "<a href=\"https://commons.wikimedia.org/wiki/File:Sorbus_americana.jpg\">American Mountain-ash fruits and foliage</a>, <a href=\"https://commons.wikimedia.org/wiki/User:Bruce_Marlin\">Bruce Marlin</a>, <a href=\"https://creativecommons.org/licenses/by-sa/2.5/legalcode\" rel=\"license\">CC BY-SA 2.5</a>",
     photo1Href: "https://en.wikipedia.org/wiki/Sorbus_americana#/media/File:Sorbus_americana.jpg",
