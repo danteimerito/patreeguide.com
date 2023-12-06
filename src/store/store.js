@@ -538,8 +538,8 @@ const initialTreesState = [
       "yellow"
     ],
     slug: "americanpussywillow",
-    background: "bg-large/bg-61b.jpg",
-    backgroundSmall: "bg-small/bg-61b.jpg",
+    background: "bg-large/bg-61.jpg",
+    backgroundSmall: "bg-small/bg-61.jpg",
     description: "<p>The American Pussy Willow (Salix discolor) is a beloved harbinger of spring, with its distinctive soft, silver catkins that burst forth on bare branches, often while the chill of winter still lingers. This deciduous shrub or small tree is native to North America, typically reaching 6 to 15 feet in height, and is cherished for its early-season interest and ease of care. The pussy willow's branches spread informally, creating a loosely structured, rounded silhouette.</p><p>The catkins, which precede the leaves, are a favorite in floral arrangements and are one of the first sources of pollen for bees. As the season progresses, the catkins give way to lance-shaped, light green leaves. The pussy willow thrives in moist, well-drained soil, and full to partial sunlight, often naturally occurring near wetlands and stream banks. Its ability to tolerate wet conditions makes it an excellent choice for rain gardens or naturalized areas. With minimal pruning, the American Pussy Willow remains a charming and rustic addition to any landscape.</p>",
     photo1Credit: "Branch with catkins in early spring. Public domain, via Wikimedia Commons",
     photo1Href: "https://en.wikipedia.org/wiki/Salix_discolor#/media/File:Pussy_willow_branch.jpg",
