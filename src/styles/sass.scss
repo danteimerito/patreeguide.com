@@ -1,4 +1,7 @@
-/* CORE STYLES */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
 :root {
   --green-1: rgba(31, 51, 34, 0.75);
   --brown-1: rgba(121, 84, 4, 0.75);
@@ -22,6 +25,7 @@ a {
   color: white;
 }
 h1 {
+  font-family: serif;
   margin: 1rem 0;
   font-size: 2rem;
   
@@ -655,6 +659,9 @@ footer {
   // @media only screen and (max-width: 800px){
   //   margin-left: 15px;
   // }
+  a {
+    font-family: serif;
+  }
 }
 
 .individual-tree {
