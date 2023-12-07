@@ -23,17 +23,17 @@ export default {
       // Assuming the background element exists
       const backgroundElement = document.getElementById("background");
       if (backgroundElement) {
-        backgroundElement.style.backgroundImage = 'url(/img/bg_forest3_small.jpg)';
+        backgroundElement.style.backgroundImage = 'url(/img/bg_forest3_small_reverse.jpg)';
         this.loadFullImage();
       }
     },
     loadFullImage() {
       const img = new Image();
-      img.src = '/img/bg_forest3.jpg';
+      img.src = '/img/bg_forest3_reverse.jpg';
       img.onload = () => {
         const backgroundElement = document.getElementById("background");
         if (backgroundElement) {
-          backgroundElement.style.backgroundImage = 'url(/img/bg_forest3.jpg)';
+          backgroundElement.style.backgroundImage = 'url(/img/bg_forest3_reverse.jpg)';
           backgroundElement.classList.add('background-fade-in');
         }
       };
@@ -42,13 +42,13 @@ export default {
   computed: {
     blurredBackground() {
         // Assuming you have a low-res version of the default background
-        const defaultBlurredImageUrl = '/img/bg_forest3_small.jpg';
+        const defaultBlurredImageUrl = '/img/bg_forest3_small_reverse.jpg';
         
         return this.tree && this.tree.backgroundSmall ? `/img/${this.tree.backgroundSmall}` : defaultBlurredImageUrl;
     },
     fullBackground() {
         // Your existing logic to determine the URL of the full background
-        const defaultImageUrl = '/img/bg_forest3.jpg';
+        const defaultImageUrl = '/img/bg_forest3_reverse.jpg';
         return this.tree && this.tree.background ? `/img/${this.tree.background}` : defaultImageUrl;
     },
     isAnyFilterSelected() {

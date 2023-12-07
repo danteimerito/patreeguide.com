@@ -145,7 +145,7 @@ export default {
         // Retrieve the tree data using a Vuex getter
         const treeData = this.$store.getters.getTreeBySlug(this.$route.params.slug);
         // Define a default background image path
-        const defaultImageUrl = '/img/bg_forest3.jpg';
+        const defaultImageUrl = '/img/bg_forest3_reverse.jpg';
         // Construct the background image URL
         // If treeData is defined and has a background, use that, otherwise use the default
         const imageUrl = this.tree && this.tree.background ? `/img/${this.tree.background}` : defaultImageUrl;
