@@ -19,14 +19,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: serif;
 }
 a {
   text-decoration: none;
   color: white;
 }
-h1, h2, h3, h4, h5, h6, p {
-  font-family: serif;
-}
+// h1, h2, h3, h4, h5, h6, p {
+//   font-family: serif;
+// }
 h1 {
   margin: 1rem 0;
   font-size: 2rem;
@@ -661,9 +662,9 @@ footer {
   // @media only screen and (max-width: 800px){
   //   margin-left: 15px;
   // }
-  a {
-    font-family: serif;
-  }
+  // a {
+  //   font-family: serif;
+  // }
 }
 
 .individual-tree {
