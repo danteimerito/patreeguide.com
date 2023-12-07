@@ -13,21 +13,23 @@
   --beige-1: rgb(143, 175, 147);
   
   --menu-speed: 0.5s;
+
+  --font-stack-serif: 'Times New Roman', Times, serif;
+  --font-stack-sans-serif: Arial, Roboto, 'Segoe UI', 'Open Sans', sans-serif;
+
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: serif;
+  font-family: var(--font-stack-serif);
 }
 a {
   text-decoration: none;
   color: white;
 }
-// h1, h2, h3, h4, h5, h6, p {
-//   font-family: serif;
-// }
+
 h1 {
   margin: 1rem 0;
   font-size: 2rem;
@@ -38,6 +40,7 @@ h1 {
   
 }
 button {
+  font-family: var(--font-stack-sans-serif);
   background: var(--green-2);
   border: 1px solid chartreuse;
   color: white;
@@ -506,7 +509,7 @@ footer {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 3px; 
   padding: 0.4rem 1rem;
-  margin: 0 0.5rem 0.5rem 0;
+  margin: 0 0.5rem 0 0;
   text-transform: capitalize;
 }
 
