@@ -1,4 +1,4 @@
-import { NULL } from 'sass';
+// import { NULL } from 'sass';
 import { createStore } from 'vuex';
 
 const savedSelectedTypes = localStorage.getItem('selectedTypes');
@@ -5715,8 +5715,6 @@ backgroundSmall: "bg-small/bg-35.jpg",
     photo6Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Aesculus_flava_range_map_1.png/256px-Aesculus_flava_range_map_1.png",
   }
 ];
-
-
 
 export const store = createStore({
     state() {
