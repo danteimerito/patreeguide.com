@@ -5044,7 +5044,7 @@ backgroundSmall: "bg-small/bg-35.jpg",
     type: "conifer",
     needleStructure: "clustered needles",
     needleCluster: [
-      "12-30"
+      "10-30"
     ],
     fallColor: [
       "yellow",

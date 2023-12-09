@@ -179,7 +179,7 @@ export default {
         return {
             treeTypes: ['conifer', 'deciduous'],
             needleStructures: ['single needle', 'clustered needles', 'scaly needles'],
-            needleClusters: [2,3,5,"12-30"],
+            needleClusters: [2,3,5,"10-30"],
             leafTypes: ['simple', 'lobed', 'compound'],
             compoundStructures: ['pinnate', 'twice pinnate', 'palmate'],
             leafAttachments: ['opposite', 'alternate'],
