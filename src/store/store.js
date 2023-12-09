@@ -1,3 +1,4 @@
+import { NULL } from 'sass';
 import { createStore } from 'vuex';
 
 const savedSelectedTypes = localStorage.getItem('selectedTypes');
@@ -22,6 +23,333 @@ const savedSelectedFallColors = localStorage.getItem('selectedFallColors');
 const initialSelectedFallColors = savedSelectedFallColors ? JSON.parse(savedSelectedFallColors) : [];
 
 const initialTreesState = [
+  {
+    nameCommon: "Allegheny Serviceberry",
+    aka: [
+      "Smooth Serviceberry",
+      "Allegheny Shadbush"
+    ],
+    order: "Rosales",
+    family: "Rosaceae",
+    familyCommon: "Rose",
+    genus: "Amelanchier",
+    species: "Amelanchier laevis",
+    type: "deciduous",
+    leafType: "simple",
+    compoundStructure: null,
+    leafAttachment: "alternate",
+    fallColor: [
+      "yellow",
+      "red",
+      "orange"
+    ],
+    slug: "allegheny-serviceberry",
+    background: null,
+    backgroundSmall: null,
+    description: "<p>The Allegheny Serviceberry, Amelanchier laevis, is a charming deciduous tree native to Eastern North America. It grows typically between 15 to 25 feet tall, forming a rounded, open crown. Renowned for its multi-season interest, it bears delicate white flowers in early spring, which give way to edible purplish-black berries in early summer, relished by both humans and wildlife.</p><p>The leaves are simple and elliptical, starting as a coppery color, turning to bright green in summer, and finally transforming into a mix of yellow, red, and orange hues in the fall. This tree's smooth gray bark adds winter interest to the landscape.</p><p>Commonly found in woodlands and along stream banks, the Allegheny Serviceberry is a popular choice for naturalized plantings and is used as an ornamental plant in residential landscapes for its compact size and minimal maintenance requirements. In addition to its visual appeal, it is also valued for its hardiness and adaptability to a variety of soil conditions.</p>",
+  },
+  {
+    nameCommon: "Atlantic White Cedar",
+    aka: ["white cedar", "whitecedar", "southern white cedar"],
+    order: "Cupressales",
+    family: "Cupressaceae",
+    familyCommon: "Cypress",
+    genus: "Chamaecyparis",
+    species: "Chamaecyparis thyoides",
+    type: "conifer",
+    needleStructure: "scaly needles",
+    slug: "atlantic-white-cedar",
+    description: "<p>The Atlantic White Cedar, Chamaecyparis thyoides, is a slender, evergreen conifer native to the coastal plains of the eastern United States. It typically reaches heights of 40 to 50 feet, characterized by its narrow, columnar form and dense, fine-textured foliage. This tree is an important species in wetland habitats, often found in freshwater bogs and along swamp margins.</p><p>The leaves of the Atlantic White Cedar are small, scale-like, and arranged in flattened sprays, giving the foliage a soft, feathery appearance. The color varies from a light green to a glaucous blue-green, adding a subtle yet attractive hue to the landscape. The tree produces small, round cones that mature from green to brown and are relatively inconspicuous.</p><p>The wood of the Atlantic White Cedar is highly valued for its resistance to decay and is traditionally used in boat building, shingles, and cooperage. Due to its affinity for wet conditions and its narrow, upright growth habit, the Atlantic White Cedar is a popular choice for wetland restoration projects and for use in landscape plantings where space is limited. Its ornamental appeal and ecological importance make it a cherished species within its native range.</p>",
+  },
+  {
+    nameCommon: "Bear Oak",
+    aka: ["Scrub Oak"],
+    order: "Fagales",
+    family: "Fagaceae",
+    familyCommon: "Beech",
+    genus: "Quercus",
+    species: "Quercus ilicifolia",
+    type: "deciduous",
+    leafType: "lobed",
+    leafAttachment: "alternate",
+    slug: "bear-oak",
+    description: "<p>The Bear Oak, Quercus ilicifolia, is a small and hardy deciduous tree or large shrub, native to the northeastern United States. Often growing to a modest height of 6 to 20 feet, it is characterized by its dense, rounded canopy and shrubby habit, making it an ideal choice for smaller landscapes or naturalized areas. The Bear Oak is particularly well-suited to dry, sandy, or rocky soils, often found in upland forests and barrens, where it contributes to the ecological diversity of these habitats.</p><p>The leaves of the Bear Oak are small and deeply lobed, with a bristle at each tip, resembling those of its larger oak relatives. They are dark green and slightly glossy, turning to shades of red and bronze in the fall. The tree produces small acorns, which are a food source for wildlife. The Bear Oak's bark is gray to dark brown, with a rough, ridged texture.</p><p>While not widely known for commercial lumber use, the Bear Oak is valued for its ecological role in supporting wildlife and stabilizing soils in challenging environments. Its ability to thrive in poor soils and its compact size make it a unique and versatile native species for conservation plantings and naturalistic landscaping.</p>",
+  },
+  {
+    nameCommon: "Blackhaw",
+    aka: ["Blackhaw Viburnum", "Stag Bush"],
+    order: "Dipsacales",
+    family: "Adoxaceae",
+    familyCommon: "Moschatel",
+    genus: "Viburnum",
+    species: "Viburnum prunifolium",
+    type: "deciduous",
+    leafType: "simple",
+    leafAttachment: "opposite",
+    slug: "blackhaw",
+    description: "<p>The Blackhaw, Viburnum prunifolium, is a versatile and hardy deciduous shrub or small tree, native to the woodlands and thickets of eastern North America. Typically reaching heights of 12 to 15 feet, it can stretch up to 30 feet under optimal conditions. Known for its adaptability, the Blackhaw flourishes in a variety of soil types, making it a favored choice for diverse landscape settings.</p><p>The leaves of the Blackhaw are simple, ovate, and finely toothed, exhibiting a rich green color that transitions to shades of red and purple in the fall. In spring, the tree produces clusters of creamy white flowers, offering a delicate, fragrant display. These blooms give way to blue-black berries in the fall, which are both ornamental and a valuable food source for birds and wildlife. The bark is rough and dark, adding winter interest with its textured appearance.</p><p>Valued for its ornamental appeal, the Blackhaw is often used in hedgerows, woodland gardens, and as a specimen plant. Its hard, strong wood has been historically used for various small-scale applications, including tool handles. The Blackhaw's combination of floral beauty, vibrant fall color, and winter interest make it a diverse and appealing addition to any landscape.</p>",
+  },
+  {
+    nameCommon: "Common Pear",
+    aka: ["European Pear"],
+    order: "Rosales",
+    family: "Rosaceae",
+    familyCommon: "Rose",
+    genus: "Pyrus",
+    species: "Pyrus communis",
+    type: "deciduous",
+    leafType: "simple",
+    leafAttachment: "alternate",
+    fallColor: ["yellow", "red"],
+    slug: "common-pear",
+    background: null,
+    backgroundSmall: null,
+    description: "<p>The Common Pear, Pyrus communis, is a widely cultivated deciduous tree known for its delicious fruit and ornamental value. Originating from Europe and parts of Asia, it typically grows to a height of 20 to 30 feet, making it suitable for a variety of landscape settings, including orchards, gardens, and parks. The Common Pear tree is characterized by its upright, pyramidal growth habit when young, which becomes more rounded and spreading with age.</p><p>In early spring, the tree is adorned with a profusion of white flowers, which not only add aesthetic value but also attract pollinators. These blossoms give way to the well-known pear fruit, which varies in size, shape, and flavor among different cultivars. The leaves of the Common Pear are glossy, dark green, and oval-shaped, providing a lush backdrop to the tree's seasonal cycles. In the fall, the foliage may turn varying shades of yellow, red, or purple, adding to the tree's ornamental appeal.</p><p>The Common Pear is valued not only for its fruit, which is widely consumed fresh and used in cooking and canning, but also for its wood, which is used in fine woodworking and musical instrument construction. With its delightful blossoms, edible fruit, and attractive form, the Common Pear tree is a cherished addition to both functional and decorative landscapes.</p>",
+  },
+  {
+    nameCommon: "Common Winterberry",
+    aka: ["Black Alder", "Winterberry Holly"],
+    order: "Aquifoliales",
+    family: "Aquifoliaceae",
+    familyCommon: "Holly",
+    genus: "Ilex",
+    species: "Ilex verticillata",
+    type: "deciduous",
+    leafType: "simple",
+    leafAttachment: "alternate",
+    fallColor: ["yellow", "red"],
+    slug: "winterberry",
+    background: null,
+    backgroundSmall: null,
+    description: "<p>The Common Winterberry, Ilex verticillata, is a deciduous holly native to eastern North America, widely admired for its vibrant display of red berries in the winter months. Typically growing to 6-12 feet in height, this shrub is characterized by its dense, rounded form, making it a popular choice in both naturalized and formal landscape settings.</p><p>The leaves of the Common Winterberry are dark green, oval-shaped, and have a serrated edge. Unlike evergreen hollies, it sheds its leaves in the fall, leaving the bright red berries to stand out strikingly against the bare branches. These berries, which are produced on female plants, persist throughout the winter, providing a crucial food source for birds and a stunning visual interest during the colder months. The tree produces small white flowers in the spring, which are relatively inconspicuous compared to its showy winter fruits.</p><p>Adaptable to a variety of soil types, the Common Winterberry particularly thrives in wet, acidic soils, often found in wetlands and along streams. It's dioecious, requiring both male and female plants for pollination and fruit production. Its tolerance for wet conditions and the brilliant winter berries make the Common Winterberry a valuable plant for ecological restoration projects and an attractive feature in winter gardens.</p>",
+  },
+  {
+    nameCommon: "Devil's Walkingstick",
+    aka: [
+      "Hercules' Club",
+      "Angelica Tree",
+      "Prickly Ash"
+    ],
+    order: "Apiales",
+    family: "Araliaceae",
+    familyCommon: "Ginseng",
+    genus: "Aralia",
+    species: "Aralia spinosa",
+    type: "deciduous",
+    leafType: "compound",
+    compoundStructure: "twice pinnate",
+    leafAttachment: "alternate",
+    fallColor: [
+      "yellow",
+      "purple",
+      "red"
+    ],
+    slug: "devils-walkingstick",
+    background: null,
+    backgroundSmall: null,
+    description: "<p>The Devil's Walkingstick, Aralia spinosa, is a distinctive deciduous tree or large shrub, known for its imposing presence and unique features. Native to the southeastern United States, it typically grows to heights of 10 to 20 feet, with a single, straight stem and a canopy that forms a rounded crown. The tree's common name is derived from its stout, spiny stems and branches, which resemble a medieval weapon or a walking stick with a devilish twist.</p><p>The large, bipinnate leaves of the Devil's Walkingstick can reach up to 4 feet in length, contributing to a tropical-like appearance. In late summer, the tree dazzles with huge, creamy-white, umbrella-like flower clusters, which later produce dark purple berries enjoyed by birds. The foliage turns to a rich yellow in the fall, adding seasonal interest. While the spines discourage casual human contact, this tree is often used in landscaping for its dramatic visual impact and as a natural deterrent for foot traffic.</p>    <p>Though not commonly utilized for timber due to its smaller size and spiny nature, the Devil's Walkingstick is valued in native plant gardens and naturalistic landscapes. Its ability to tolerate a range of soil conditions and its unique characteristics make it a conversation piece in any setting where it is planted.</p>"
+  },  
+  {
+    nameCommon: "American Hazelnut",
+    aka: [
+      "American Filbert"
+    ],
+    order: "Fagales",
+    family: "Betulaceae",
+    familyCommon: "Birch",
+    genus: "Corylus",
+    species: "Corylus americana",
+    type: "deciduous",
+    leafType: "simple",
+    compoundStructure: null,
+    leafAttachment: "alternate",
+    fallColor: [
+      "yellow",
+      "red"
+    ],
+    slug: "american-hazelnut",
+    background: null,
+    backgroundSmall: null,
+    description: "<p>The American Hazelnut, Corylus americana, is a deciduous shrub native to the eastern and central United States. Growing to a modest height of 10 to 16 feet, it often forms a dense, clumping habit, making it a favored choice for naturalistic plantings and wildlife gardens. This shrub is recognized for its rounded leaves, which are broad, heart-shaped, and have double-serrated edges, turning vibrant shades of orange, yellow, and red in the fall.</p><p>In late winter to early spring, before the leaves emerge, the American Hazelnut displays inconspicuous male catkins and small red female flowers, which are wind-pollinated. By late summer or early fall, these flowers develop into edible nuts, encased in a husk with a leafy bract, which are sought after by both wildlife and humans. The nuts of the American Hazelnut are smaller than the commercially grown European varieties but are equally tasty and can be used in a variety of culinary dishes.</p><p>Aside from its edible nuts, the American Hazelnut is valued for its contribution to erosion control and as a source of food and habitat for wildlife. Its adaptability to a range of soil types and conditions, including partial shade, makes it a versatile addition to the landscape.</p>"
+  },
+  {
+    nameCommon: "Mountain Holly",
+    aka: [
+      "Appalachian Holly"
+    ],
+    order: "Aquifoliales",
+    family: "Aquifoliaceae",
+    familyCommon: "Holly",
+    genus: "Ilex",
+    species: "Ilex montana",
+    type: "deciduous",
+    leafType: "simple",
+    compoundStructure: null, 
+    leafAttachment: "alternate",
+    fallColor: [
+      "yellow",
+      "red"
+    ],
+    slug: "mountain-holly",
+    background: null,
+    backgroundSmall: null,
+    description: "<p>The Mountain Holly, Ilex montana, is a deciduous shrub or small tree native to the Appalachian Mountains in the eastern United States. Typically reaching up to 30 feet in height, it boasts a slender, upright form, with a moderate growth rate and a naturally occurring rounded to pyramidal shape. This holly is less well-known than its evergreen cousins but is equally deserving of admiration for its foliage and berries.</p><p>The leaves of the Mountain Holly are ovate, with finely toothed margins, a leathery texture, and a glossy surface, turning yellow-green to purple in the autumn. Unlike the prickly leaves of many holly species, Mountain Holly leaves are generally without spines. In late spring, small white flowers bloom, which, if pollinated, develop into bright red berries by fall. These berries are a significant food source for local birds and wildlife during the winter months.</p><p>Mountain Holly is valued for its understory tolerance, often thriving in the dappled shade of higher forest canopies. Its adaptability to cooler climates and acidic, moist soils makes it a unique and attractive choice for woodland gardens and naturalized areas.</p>"
+  },
+  {
+    nameCommon: "Princess Tree",
+    aka: [
+      "Empress Tree",
+      "Foxglove Tree"
+    ],
+    order: "Lamiales",
+    family: "Paulowniaceae",
+    genus: "Paulownia",
+    species: "Paulownia tomentosa",
+    type: "deciduous",
+    leafType: "simple",
+    leafAttachment: "opposite",
+    fallColor: [
+      "yellow"
+    ],
+    slug: "princess-tree",
+    background: null,
+    backgroundSmall: null,
+    description: "<p>The Princess Tree, Paulownia tomentosa, also known as the Empress Tree or Royal Paulownia, is a deciduous hardwood species native to China but now widespread across various regions. It's a fast-growing tree, reaching heights of 30 to 50 feet, and is particularly noted for its large, heart-shaped leaves and showy floral displays. The tree's canopy spreads wide, making it a prominent feature in any landscape.</p><p>In spring, the Princess Tree produces spectacular clusters of fragrant, trumpet-shaped lavender flowers, which are attractive to bees and other pollinators. These blooms are followed by the appearance of distinctive, woody seed capsules that persist through winter. The leaves are large and velvety, providing a dense shade in summer and turning to a golden yellow color in the fall.</p><p>While the Princess Tree is admired for its ornamental qualities and rapid growth, it is also considered an invasive species in some regions, capable of displacing native vegetation. Despite this, its timber is valued for its light weight and fine grain, used in woodworking and crafts.</p>"
+  },
+  {
+    nameCommon: "River Birch",
+    aka: [
+      "Black Birch",
+      "Water Birch"
+    ],
+    order: "Fagales",
+    family: "Betulaceae",
+    familyCommon: "Birch",
+    genus: "Betula",
+    species: "Betula nigra",
+    type: "deciduous",
+    leafType: "simple",
+    leafAttachment: "alternate",
+    fallColor: [
+      "yellow"
+    ],
+    slug: "river-birch",
+    background: null,
+    backgroundSmall: null,
+    description: "<p>The River Birch, Betula nigra, is a charming deciduous tree renowned for its distinctive peeling bark and graceful stature. Native to the eastern United States, it typically grows to 40-70 feet tall, with a canopy that spreads 40-60 feet when mature. Often found in moist, riverine environments, it is notably tolerant of both wet soils and dry summers, making it a versatile species for landscaping.</p><p>The tree's bark is a striking feature, exfoliating in papery sheets to reveal a patchwork of colors from salmon-pink to creamy white. The leaves of the River Birch are diamond-shaped to triangular, with a glossy green color that turns to shades of yellow in the autumn. It produces catkins in the spring, which mature to small nutlets that provide food for local wildlife.</p><p>The adaptability and ornamental appeal of the River Birch, along with its resistance to the bronze birch borer, make it a favored choice for residential properties, public spaces, and as a natural stabilizer along stream banks and in wetlands.</p>"
+  },
+  {
+    nameCommon: "Sweet Birch",
+    aka: [
+      "Black Birch",
+      "Cherry Birch"
+    ],
+    order: "Fagales",
+    family: "Betulaceae",
+    familyCommon: "Birch",
+    genus: "Betula",
+    species: "Betula lenta",
+    type: "deciduous",
+    leafType: "simple",
+    leafAttachment: "alternate",
+    fallColor: [
+      "yellow",
+      "golden"
+    ],
+    slug: "sweet-birch",
+    background: null,
+    backgroundSmall: null,
+    description: "<p>The Sweet Birch, Betula lenta, also known as Cherry Birch or Black Birch, is a deciduous hardwood tree native to the eastern United States. It typically attains heights of 40 to 70 feet and is distinguished by its shiny, dark cherry-like bark that becomes plated and almost black as the tree matures. This species prefers cooler climates and is often found in moist, well-drained soils in the mountainous regions it calls home.</p><p>Sweet Birch leaves are oval or heart-shaped with a finely serrated edge, turning a vibrant yellow in the fall. Springtime brings slender catkins, which later yield small winged seeds. The tree's twigs, when scraped, emit a wintergreen scent, and the sap can be tapped to make birch beer. The wood is strong and close-grained, historically used in furniture making and currently valued for various wood products.</p><p>With its striking bark, aromatic properties, and handsome foliage, Sweet Birch is a valuable tree for both woodland settings and ornamental landscapes. Its natural beauty and the pleasant scent of its twigs make it a delightful sensory addition to any suitable environment.</p>"
+  },
+  {
+    nameCommon: "Umbrella-Tree",
+    aka: [
+      "Umbrella Magnolia",
+      "Elkwood"
+    ],
+    order: "Magnoliales",
+    family: "Magnoliaceae",
+    familyCommon: "Magnolia",
+    genus: "Magnolia",
+    species: "Magnolia tripetala",
+    type: "deciduous",
+    leafType: "simple",
+    leafAttachment: "whorled",
+    fallColor: [
+      "yellow",
+      "brown"
+    ],
+    slug: "umbrella-tree",
+    background: null,
+    backgroundSmall: null,
+    description: "<p>The Umbrella-Tree, Magnolia tripetala, known for its large, showy leaves and distinctive flower structure, is a deciduous tree native to the southeastern United States. It commonly reaches heights of 15 to 30 feet, with a spread almost as wide, giving it a broad, open canopy. This tree gets its common name from the whorl of large leaves that fan out at the end of the branches, resembling an open umbrella.</p><p>The leaves themselves are elongated and can grow up to 24 inches long, providing a lush, tropical feel. In late spring, the tree produces large, creamy-white flowers with a lemony fragrance, which can be up to 10 inches in diameter. Following the flowers, the tree develops reddish, cone-like fruit that attracts birds and wildlife. The Umbrella-Tree's bark is smooth and gray, adding to its visual appeal.</p><p>Due to its unique leaf arrangement and striking flowers, the Umbrella-Tree is often used as a specimen plant in gardens and parks. It prefers moist, well-drained soils in partial shade to full sun and can add a dramatic presence to any landscape where it is planted.</p>"
+  },
+  {
+    nameCommon: "White Mulberry",
+    aka: [
+      "Silkworm Mulberry",
+      "Russian Mulberry"
+    ],
+    order: "Rosales",
+    family: "Moraceae",
+    familyCommon: "Mulberry",
+    genus: "Morus",
+    species: "Morus alba",
+    type: "deciduous",
+    leafType: "simple",
+    leafAttachment: "alternate",
+    fallColor: [
+      "yellow"
+    ],
+    slug: "white-mulberry",
+    background: null,
+    backgroundSmall: null,
+    description: "<p>The White Mulberry, Morus alba, is a fast-growing, deciduous tree that is native to China but has been widely cultivated and naturalized elsewhere. It reaches typical heights of 30 to 50 feet and can be recognized by its light green, deeply lobed leaves that provide a dense canopy of shade. The tree is often planted for its ornamental value and its ability to adapt to a range of urban conditions.</p><p>White Mulberry is renowned for its fruit, which starts out white or green and matures to a pink or deep purple. The berries are sweet and edible, enjoyed by both humans and wildlife, and can be used in jams, desserts, and wines. It flowers in late spring, with small, inconspicuous blooms that are followed by the prolific fruits in early summer. The bark is smooth and light gray when young, becoming more textured with age.</p><p>While the White Mulberry is appreciated for its fruit and shade, it is also known to be invasive in some regions, capable of spreading rapidly and outcompeting native plants. Nevertheless, its hardiness and productivity make it a tree of choice for many gardeners and landscapers.</p>"
+  },
+  {
+    nameCommon: "White Willow",
+    aka: [
+      "European Willow"
+    ],
+    order: "Malpighiales",
+    family: "Salicaceae",
+    familyCommon: "Willow",
+    genus: "Salix",
+    species: "Salix alba",
+    type: "deciduous",
+    leafType: "simple",
+    leafAttachment: "alternate",
+    fallColor: [
+      "yellow"
+    ],
+    slug: "white-willow",
+    background: null,
+    backgroundSmall: null,
+    description: "<p>The White Willow, Salix alba, is a large, fast-growing deciduous tree native to Europe and western and central Asia. Renowned for its elegant stature, it typically reaches heights of 50 to 80 feet. The tree features long, slender leaves that are light green above and silvery-white beneath, contributing to its common name and giving a shimmering effect in the breeze.</p><p>Spring brings modest yellow catkins, which are followed by the appearance of small capsules that release cotton-like seeds. One of the defining characteristics of the White Willow is its tough, fibrous bark, which has been historically valued for its medicinal properties, containing salicin, a compound similar to aspirin. Its branches are flexible and have been used in basket weaving and other crafts.</p><p>Commonly found along riverbanks and in moist areas, the White Willow is an excellent choice for erosion control. Its quick growth and ease of rooting from cuttings have made it popular in riparian restoration projects. Despite its beauty and utility, it requires careful placement in the landscape due to its extensive root system and susceptibility to diseases and pests.</p>"
+  },
+  {
+    nameCommon: "Willow Oak",
+    aka: [
+      "Pin Oak", "Swamp Willow Oak"
+    ],
+    order: "Fagales",
+    family: "Fagaceae",
+    familyCommon: "Beech",
+    genus: "Quercus",
+    species: "Quercus phellos",
+    type: "deciduous",
+    leafType: "simple",
+    leafAttachment: "alternate",
+    fallColor: [
+      "yellow",
+      "brown",
+      "russet"
+    ],
+    slug: "willow-oak",
+    background: null,
+    backgroundSmall: null,
+    description: "<p>The Willow Oak, Quercus phellos, is a distinguished deciduous tree, highly valued for its shade and ornamental qualities. Native to the eastern and southeastern United States, it typically grows to heights of 40 to 75 feet, sometimes reaching over 100 feet in ideal conditions. This oak is characterized by a straight trunk, a rounded to oval canopy, and a moderate to fast growth rate.</p><p>What sets the Willow Oak apart from other oaks is its foliage. The leaves are narrow, lance-shaped, and resemble those of willows, hence the name. They are a bright, fresh green, turning to shades of yellow and russet in the fall. In spring, the tree produces inconspicuous flowers, followed by small, round acorns that are a food source for various wildlife. The bark is smooth and light gray on young trees, becoming rough and furrowed with age.</p><p>The Willow Oak is popular in urban and suburban landscapes for its adaptability to various soil types, including compacted soils, and its tolerance of air pollution. Its unique leaves, stately form, and ecological benefits make it a preferred choice for streetscapes, parks, and large yards.</p>"
+  },
   {
     nameCommon: "Alternate-leaved Dogwood",
     aka: [
@@ -337,6 +665,51 @@ const initialTreesState = [
     photo6Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Ostrya_virginiana_range_map.jpg/256px-Ostrya_virginiana_range_map.jpg",
   },
   {
+    nameCommon: "American Hornbeam",
+    aka: [
+      "Blue Beech",
+      "Ironwood",
+      "Musclewood"      
+    ],
+    order: "Fagales",
+    family: "Betulaceae",
+    familyCommon: "Birch",
+    genus: "Carpinus",
+    species: "Carpinus caroliniana",
+    type: "deciduous",
+    leafType: "simple",
+    leafAttachment: "alternate",
+    fallColor: [
+      "orange",
+      "red",
+      "dark red"
+    ],
+    slug: "americanhornbeam",
+    background: "bg-large/bg-26.jpg",
+    backgroundSmall: "bg-small/bg-26.jpg",
+    description: "<p>The American Hornbeam, Carpinus caroliniana, also known as the Ironwood or Blue Beech, is a small to medium-sized deciduous tree native to eastern North America. It typically grows to a height of 20-30 feet, making it an ideal choice for smaller landscapes. The tree is notable for its smooth, gray, sinewy bark, which resembles the muscles of an arm, and a dense, rounded crown that provides a lush canopy.</p><p>The leaves of the American Hornbeam are simple, alternate, and ovate with a sharply serrated margin. They are a dark green color, turning to brilliant shades of orange, red, and yellow in the fall. In the spring, the tree produces small, inconspicuous flowers, followed by distinctive winged nutlets. The American Hornbeam is often found along streams and in moist woods, thriving in well-drained, fertile soils.</p><p>With its attractive bark, beautiful fall color, and manageable size, the American Hornbeam is a popular choice for ornamental use in residential gardens, public parks, and naturalized areas. Its wood is extremely hard and strong, historically used for tool handles and other implements requiring a tough, durable material.</p>",
+
+    photo1Credit: "<a href=\"https://commons.wikimedia.org/wiki/File:American_Hornbeam_Leaves_600.jpg\">Blue Beech foliage</a>, (c)2005 Derek Ramsey (<a href=\"https://en.wikipedia.org/wiki/User:Ram-Man\">Ram-Man</a>), <a href=\"https://creativecommons.org/licenses/by-sa/2.5/legalcode\" rel=\"license\">CC BY-SA 2.5</a>",
+    photo1Href: "https://en.wikipedia.org/wiki/Carpinus_caroliniana#/media/File:American_Hornbeam_Leaves_600.jpg",
+    photo1Alt: "Blue Beech foliage",
+    photo1Src: "https://upload.wikimedia.org/wikipedia/commons/e/e7/American_Hornbeam_Leaves_600.jpg",
+
+    photo2Credit: "Fruiting branch. Public domain, via Wikimedia Commons.",
+    photo2Href: "https://en.wikipedia.org/wiki/Carpinus_caroliniana#/media/File:Carpinus_caroliniana_3.JPG",
+    photo2Alt: "Fruiting branch",
+    photo2Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Carpinus_caroliniana_3.JPG/256px-Carpinus_caroliniana_3.JPG",
+
+    photo3Credit: "<a href=\"https://commons.wikimedia.org/wiki/File:Carpinus_caroliniana_bark.jpg\">Blue Beech bark</a>, <a href=\"https://commons.wikimedia.org/wiki/User:Rob_Duval\">Rob Duval</a>, <a href=\"https://creativecommons.org/licenses/by-sa/3.0/legalcode\" rel=\"license\">CC BY-SA 3.0</a>",
+    photo3Href: "https://en.wikipedia.org/wiki/Carpinus_caroliniana#/media/File:Carpinus_caroliniana_bark.jpg",
+    photo3Alt: "Blue Beech bark",
+    photo3Src: "https://upload.wikimedia.org/wikipedia/commons/5/55/Carpinus_caroliniana_bark.jpg",
+
+    photo4Credit: "Blue Beech range map. Public domain, via Wikimedia Commons.",
+    photo4Href: "https://en.wikipedia.org/wiki/Carpinus_caroliniana#/media/File:Carpinus_caroliniana_range_map_3.png",
+    photo4Alt: "Blue Beech range map",
+    photo4Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Carpinus_caroliniana_range_map_3.png/256px-Carpinus_caroliniana_range_map_3.png",
+  },
+  {
     nameCommon: "American Mountain-ash",
     aka: ["rowan"],
     order: "Rosales",
@@ -421,69 +794,6 @@ const initialTreesState = [
     photo8Href: "https://en.wikipedia.org/wiki/Asimina_triloba#/media/File:Asimina_triloba_range_map_1.png",
     photo8Alt: "American Pawpaw range map",
     photo8Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Asimina_triloba_range_map_1.png/256px-Asimina_triloba_range_map_1.png",
-  },
-  {
-    nameCommon: "American Persimmon",
-    aka: [
-      "Common Persimmon",
-      "Eastern Persimmon",
-      "Simmon",
-      "Possumwood"
-    ],
-    order: "Ericales",
-    family: "Ebenaceae",
-    familyCommon: "Ebony",
-    genus: "Diospyros",
-    species: "Diospyros virginiana",
-    type: "deciduous",
-    leafType: "simple",
-    leafAttachment: "alternate",
-    fallColor: [
-      "yellow"
-    ],
-    slug: "americanpersimmon",
-    background: "bg-large/bg-10.jpg",
-    backgroundSmall: "bg-small/bg-10.jpg",
-    description: "<p>The American Persimmon (Diospyros virginiana) is a native deciduous tree that graces the Eastern United States with its presence. Growing to a height of 35-60 feet, this species is renowned for its hardiness and adaptability, thriving in a variety of soils and conditions. The persimmon's bark is distinctive—dark, thick, and deeply furrowed, providing textural interest throughout the year. Its leaves are broad and glossy, offering a rich, green canopy in summer before turning to vivid shades of yellow, orange, and red in the autumn.</p><p>Springtime blooms are inconspicuous, but they give way to the tree's true bounty: the persimmon fruit. These round, orange berries are astringent when unripe but become sweet and custard-like after the first frost, making them a treat for wildlife and humans alike. The fruits have a long history of use in traditional Native American cuisine and are still valued today for their flavor and nutritional content. The American Persimmon is not just a food source but also a striking ornamental tree, particularly attractive to those interested in native planting and wildlife gardening.</p>",
-    photo1Credit: "<a href=\"https://commons.wikimedia.org/wiki/File:Persimmon.jpg\">American persimmon tree bearing fruit in the fall</a>, Gphoto, <a href=\"https://creativecommons.org/licenses/by-sa/3.0/legalcode\" rel=\"license\">CC BY-SA 3.0</a>",
-    photo1Href: "https://en.wikipedia.org/wiki/Diospyros_virginiana#/media/File:Persimmon.jpg",
-    photo1Alt: "Persimmon",
-    photo1Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Persimmon.jpg/256px-Persimmon.jpg",
-
-    photo2Credit: "<a href=\"https://commons.wikimedia.org/wiki/File:Diospyros_virginiana-fruit.jpg\">American persimmon fruit</a>, <a href=\"https://commons.wikimedia.org/wiki/User:Peterwchen\">Peterwchen</a>, <a href=\"https://creativecommons.org/licenses/by-sa/4.0/legalcode\" rel=\"license\">CC BY-SA 4.0\"</a>",
-    photo2Href: "https://en.wikipedia.org/wiki/Diospyros_virginiana#/media/File:Diospyros_virginiana-fruit.jpg",
-    photo2Alt: "Diospyros virginiana-fruit",
-    photo2Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Diospyros_virginiana-fruit.jpg/256px-Diospyros_virginiana-fruit.jpg",
-
-    photo6Credit: "American Persimmon range map. Public domain, via Wikimedia Commons",
-    photo6Href: "https://en.wikipedia.org/wiki/Diospyros_virginiana#/media/File:Diospyros_virginiana_map.png",
-    photo6Alt: "Diospyros virginiana range map",
-    photo6Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Diospyros_virginiana_map.png/256px-Diospyros_virginiana_map.png",
-
-    photo4Credit: "<a href=\"https://commons.wikimedia.org/wiki/File:Persimmon_0375.jpg\">American Persimmon flower</a>, <a href=\"https://creativecommons.org/licenses/by-sa/3.0/legalcode\" rel=\"license\">CC BY-SA 3.0</a>",
-    photo4Href: "https://en.wikipedia.org/wiki/Diospyros_virginiana#/media/File:Persimmon_0375.jpg",
-    photo4Alt: "American Persimmon flower",
-    photo4Src: "https://upload.wikimedia.org/wikipedia/commons/a/a6/Persimmon_0375.jpg",
-
-    photo3Credit: "<a href=\"https://commons.wikimedia.org/wiki/File:Common_Persimmon_Bark.jpg\">Distinctive heavily-scaled bark</a>, <a href=\"https://commons.wikimedia.org/wiki/User:Jryandoherty\">Jryandoherty</a>, <a href=\"https://creativecommons.org/licenses/by-sa/4.0/legalcode\" rel=\"license\">CC BY-SA 4.0</a>",
-    photo3Href: "https://en.wikipedia.org/wiki/Diospyros_virginiana#/media/File:Common_Persimmon_Bark.jpg",
-    photo3Alt: "Distinctive heavily-scaled bark",
-    photo3Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Common_Persimmon_Bark.jpg/256px-Common_Persimmon_Bark.jpg",
-
-    photo5Credit: "Botanical illustration. Public domain, via Wikimedia Commons.",
-    photo5Href: "https://en.wikipedia.org/wiki/Diospyros_virginiana#/media/File:Diospyros_virginiana_BB-1913.png",
-    photo5Alt: "Botanical illustration",
-    photo5Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Diospyros_virginiana_BB-1913.png/256px-Diospyros_virginiana_BB-1913.png",
-
-    photo7Credit: "",
-    photo7Href: "https://en.wikipedia.org/wiki/Diospyros_virginiana#/media/File:D._virginiana_giant.jpg",
-    photo7Alt: "A large American Persimmon tree in Indiana in 1935",
-    photo7Src: "",
-
-    photo8Credit: "A large American Persimmon tree in Indiana in 1935. Public domain, via Wikimedia Commons",
-    photo8Href: "https://en.wikipedia.org/wiki/Diospyros_virginiana#/media/File:D._virginiana_giant.jpg",
-    photo8Alt: "A large American Persimmon tree in Indiana in 1935",
-    photo8Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/D._virginiana_giant.jpg/256px-D._virginiana_giant.jpg",
   },
   {
     nameCommon: "American Plum",
@@ -1377,50 +1687,6 @@ backgroundSmall: "bg-small/bg-35.jpg",
     photo3Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Quercus_marilandica_range_map_1.png/256px-Quercus_marilandica_range_map_1.png",
   },
   {
-    nameCommon: "Blue Beech",
-    aka: [
-      "American Hornbeam",
-      "Musclewood"
-    ],
-    order: "Fagales",
-    family: "Betulaceae",
-    familyCommon: "Birch",
-    genus: "Carpinus",
-    species: "Carpinus caroliniana",
-    type: "deciduous",
-    leafType: "simple",
-    leafAttachment: "alternate",
-    fallColor: [
-      "orange",
-      "red",
-      "dark red"
-    ],
-    slug: "bluebeech",
-    background: "bg-large/bg-26.jpg",
-    backgroundSmall: "bg-small/bg-26.jpg",
-    description: "<p>The Blue Beech, also known as the American Hornbeam or Carpinus caroliniana, is a small, shade-tolerant deciduous tree native to the understory of eastern North American forests. It grows modestly to 20-30 feet high, featuring a short trunk and a rounded, spreading crown. The tree's bark is smooth, gray, and fluted, resembling the sinewy muscles of a human arm, which earns it another nickname, \"musclewood.\"</p><p>Its leaves are elliptical, with finely toothed edges and prominent veins, offering a vibrant green that transitions to a fiery mix of orange, red, and yellow in the fall. In spring, the Blue Beech displays modest yellow-green catkins, later developing small nutlets encased in papery bracts that provide food for wildlife.</p><p>Appreciated for its hard wood and ornamental appeal, the Blue Beech is often found along streams and rich bottomlands, thriving in moist, well-drained soils. Its tolerance for shade and unique bark texture make it a favorite for naturalistic landscaping and garden settings.</p>",
-
-    photo1Credit: "<a href=\"https://commons.wikimedia.org/wiki/File:American_Hornbeam_Leaves_600.jpg\">Blue Beech foliage</a>, (c)2005 Derek Ramsey (<a href=\"https://en.wikipedia.org/wiki/User:Ram-Man\">Ram-Man</a>), <a href=\"https://creativecommons.org/licenses/by-sa/2.5/legalcode\" rel=\"license\">CC BY-SA 2.5</a>",
-    photo1Href: "https://en.wikipedia.org/wiki/Carpinus_caroliniana#/media/File:American_Hornbeam_Leaves_600.jpg",
-    photo1Alt: "Blue Beech foliage",
-    photo1Src: "https://upload.wikimedia.org/wikipedia/commons/e/e7/American_Hornbeam_Leaves_600.jpg",
-
-    photo2Credit: "Fruiting branch. Public domain, via Wikimedia Commons.",
-    photo2Href: "https://en.wikipedia.org/wiki/Carpinus_caroliniana#/media/File:Carpinus_caroliniana_3.JPG",
-    photo2Alt: "Fruiting branch",
-    photo2Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Carpinus_caroliniana_3.JPG/256px-Carpinus_caroliniana_3.JPG",
-
-    photo3Credit: "<a href=\"https://commons.wikimedia.org/wiki/File:Carpinus_caroliniana_bark.jpg\">Blue Beech bark</a>, <a href=\"https://commons.wikimedia.org/wiki/User:Rob_Duval\">Rob Duval</a>, <a href=\"https://creativecommons.org/licenses/by-sa/3.0/legalcode\" rel=\"license\">CC BY-SA 3.0</a>",
-    photo3Href: "https://en.wikipedia.org/wiki/Carpinus_caroliniana#/media/File:Carpinus_caroliniana_bark.jpg",
-    photo3Alt: "Blue Beech bark",
-    photo3Src: "https://upload.wikimedia.org/wikipedia/commons/5/55/Carpinus_caroliniana_bark.jpg",
-
-    photo4Credit: "Blue Beech range map. Public domain, via Wikimedia Commons.",
-    photo4Href: "https://en.wikipedia.org/wiki/Carpinus_caroliniana#/media/File:Carpinus_caroliniana_range_map_3.png",
-    photo4Alt: "Blue Beech range map",
-    photo4Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Carpinus_caroliniana_range_map_3.png/256px-Carpinus_caroliniana_range_map_3.png",
-  },
-  {
     nameCommon: "Blue Spruce",
     aka: [
       "Colorado Spruce",
@@ -1916,6 +2182,69 @@ backgroundSmall: "bg-small/bg-35.jpg",
     photo4Href: "https://en.wikipedia.org/wiki/Ptelea_trifoliata#/media/File:Ptelea_trifoliata_range_map.jpg",
     photo4Alt: "Common Hoptree range map",
     photo4Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Ptelea_trifoliata_range_map.jpg/256px-Ptelea_trifoliata_range_map.jpg",
+  },
+  {
+    nameCommon: "Common Persimmon",
+    aka: [
+      "American Persimmon",
+      "Eastern Persimmon",
+      "Simmon",
+      "Possumwood"
+    ],
+    order: "Ericales",
+    family: "Ebenaceae",
+    familyCommon: "Ebony",
+    genus: "Diospyros",
+    species: "Diospyros virginiana",
+    type: "deciduous",
+    leafType: "simple",
+    leafAttachment: "alternate",
+    fallColor: [
+      "yellow"
+    ],
+    slug: "commonpersimmon",
+    background: "bg-large/bg-10.jpg",
+    backgroundSmall: "bg-small/bg-10.jpg",
+    description: "<p>The Common Persimmon, Diospyros virginiana, is a distinctive deciduous tree native to the eastern and southeastern United States. It typically grows to a height of 35 to 60 feet and is known for its interesting bark and edible fruit. The tree's bark is thick, dark gray to black, and deeply furrowed, forming a blocky pattern that adds significant textural interest to the landscape.</p><p>The leaves of the Common Persimmon are broad, oval-shaped, and glossy green, turning to stunning shades of yellow, orange, or reddish-purple in the fall. The tree is dioecious, meaning male and female flowers are on separate trees. The female trees produce large, round, orange-yellow fruits, which are astringent when unripe but become sweet and custard-like once they ripen after the first frost. These fruits are not only a treat for humans but also attract a variety of wildlife.</p><p>Common Persimmon is valued for its hard, dense wood, used in making golf club heads and other fine woodworking. The tree's fruit, unique bark, and beautiful fall color make it a desirable addition to naturalized landscapes, wildlife gardens, and orchards.</p>",
+    photo1Credit: "<a href=\"https://commons.wikimedia.org/wiki/File:Persimmon.jpg\">American persimmon tree bearing fruit in the fall</a>, Gphoto, <a href=\"https://creativecommons.org/licenses/by-sa/3.0/legalcode\" rel=\"license\">CC BY-SA 3.0</a>",
+    photo1Href: "https://en.wikipedia.org/wiki/Diospyros_virginiana#/media/File:Persimmon.jpg",
+    photo1Alt: "Persimmon",
+    photo1Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Persimmon.jpg/256px-Persimmon.jpg",
+
+    photo2Credit: "<a href=\"https://commons.wikimedia.org/wiki/File:Diospyros_virginiana-fruit.jpg\">American persimmon fruit</a>, <a href=\"https://commons.wikimedia.org/wiki/User:Peterwchen\">Peterwchen</a>, <a href=\"https://creativecommons.org/licenses/by-sa/4.0/legalcode\" rel=\"license\">CC BY-SA 4.0\"</a>",
+    photo2Href: "https://en.wikipedia.org/wiki/Diospyros_virginiana#/media/File:Diospyros_virginiana-fruit.jpg",
+    photo2Alt: "Diospyros virginiana-fruit",
+    photo2Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Diospyros_virginiana-fruit.jpg/256px-Diospyros_virginiana-fruit.jpg",
+
+    photo6Credit: "American Persimmon range map. Public domain, via Wikimedia Commons",
+    photo6Href: "https://en.wikipedia.org/wiki/Diospyros_virginiana#/media/File:Diospyros_virginiana_map.png",
+    photo6Alt: "Diospyros virginiana range map",
+    photo6Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Diospyros_virginiana_map.png/256px-Diospyros_virginiana_map.png",
+
+    photo4Credit: "<a href=\"https://commons.wikimedia.org/wiki/File:Persimmon_0375.jpg\">American Persimmon flower</a>, <a href=\"https://creativecommons.org/licenses/by-sa/3.0/legalcode\" rel=\"license\">CC BY-SA 3.0</a>",
+    photo4Href: "https://en.wikipedia.org/wiki/Diospyros_virginiana#/media/File:Persimmon_0375.jpg",
+    photo4Alt: "American Persimmon flower",
+    photo4Src: "https://upload.wikimedia.org/wikipedia/commons/a/a6/Persimmon_0375.jpg",
+
+    photo3Credit: "<a href=\"https://commons.wikimedia.org/wiki/File:Common_Persimmon_Bark.jpg\">Distinctive heavily-scaled bark</a>, <a href=\"https://commons.wikimedia.org/wiki/User:Jryandoherty\">Jryandoherty</a>, <a href=\"https://creativecommons.org/licenses/by-sa/4.0/legalcode\" rel=\"license\">CC BY-SA 4.0</a>",
+    photo3Href: "https://en.wikipedia.org/wiki/Diospyros_virginiana#/media/File:Common_Persimmon_Bark.jpg",
+    photo3Alt: "Distinctive heavily-scaled bark",
+    photo3Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Common_Persimmon_Bark.jpg/256px-Common_Persimmon_Bark.jpg",
+
+    photo5Credit: "Botanical illustration. Public domain, via Wikimedia Commons.",
+    photo5Href: "https://en.wikipedia.org/wiki/Diospyros_virginiana#/media/File:Diospyros_virginiana_BB-1913.png",
+    photo5Alt: "Botanical illustration",
+    photo5Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Diospyros_virginiana_BB-1913.png/256px-Diospyros_virginiana_BB-1913.png",
+
+    photo7Credit: "",
+    photo7Href: "https://en.wikipedia.org/wiki/Diospyros_virginiana#/media/File:D._virginiana_giant.jpg",
+    photo7Alt: "A large American Persimmon tree in Indiana in 1935",
+    photo7Src: "",
+
+    photo8Credit: "A large American Persimmon tree in Indiana in 1935. Public domain, via Wikimedia Commons",
+    photo8Href: "https://en.wikipedia.org/wiki/Diospyros_virginiana#/media/File:D._virginiana_giant.jpg",
+    photo8Alt: "A large American Persimmon tree in Indiana in 1935",
+    photo8Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/D._virginiana_giant.jpg/256px-D._virginiana_giant.jpg",
   },
   {
     nameCommon: "Common Prickly-ash",
@@ -4863,6 +5192,7 @@ backgroundSmall: "bg-small/bg-35.jpg",
     nameCommon: "Tupelo",
     aka: [
       "Black Tupelo",
+      "Blackgum",
       "Black Gum",
       "Sour Gum"
     ],
