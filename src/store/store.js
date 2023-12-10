@@ -44,13 +44,28 @@ const initialTreesState = [
       "orange"
     ],
     slug: "allegheny-serviceberry",
-    background: null,
-    backgroundSmall: null,
+    background: "bg-large/bg-250b.jpg",
+    backgroundSmall: "bg-small/bg-250b.jpg",
     description: "<p>The Allegheny Serviceberry, Amelanchier laevis, is a charming deciduous tree native to Eastern North America. It grows typically between 15 to 25 feet tall, forming a rounded, open crown. Renowned for its multi-season interest, it bears delicate white flowers in early spring, which give way to edible purplish-black berries in early summer, relished by both humans and wildlife.</p><p>The leaves are simple and elliptical, starting as a coppery color, turning to bright green in summer, and finally transforming into a mix of yellow, red, and orange hues in the fall. This tree's smooth gray bark adds winter interest to the landscape.</p><p>Commonly found in woodlands and along stream banks, the Allegheny Serviceberry is a popular choice for naturalized plantings and is used as an ornamental plant in residential landscapes for its compact size and minimal maintenance requirements. In addition to its visual appeal, it is also valued for its hardiness and adaptability to a variety of soil conditions.</p>",
+    photo1Credit: "<a href=\"https://commons.wikimedia.org/wiki/File:Amelanchier_laevis_5393665.jpg\">Fruits of the Allegheny Serviceberry</a>, Vanessa Richins, About.com, Bugwood.org, <a href=\"https://creativecommons.org/licenses/by/3.0/legalcode\" rel=\"license\">CC BY 3.0</a>",
+    photo1Href: "https://en.wikipedia.org/wiki/Amelanchier_laevis#/media/File:Amelanchier_laevis_5393665.jpg",
+    photo1Alt: "Fruits of the Allegheny Serviceberry",
+    photo1Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Amelanchier_laevis_5393665.jpg/256px-Amelanchier_laevis_5393665.jpg",
+
+    photo2Credit: "Bark and leaf. Public domain, via Wikimedia Commons",
+    photo2Href: "https://en.wikipedia.org/wiki/Amelanchier_laevis#/media/File:Amelanchier_laevis.jpg",
+    photo2Alt: "Bark and leaf",
+    photo2Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Amelanchier_laevis.jpg/256px-Amelanchier_laevis.jpg",
+
+
+    photo3Credit: "Flowers. Dan Keck from Ohio, CC0, via Wikimedia Commons",
+    photo3Href: "https://en.wikipedia.org/wiki/Amelanchier_laevis#/media/File:Allegheny_Serviceberry_(41909182552).jpg",
+    photo3Alt: "Flowers",
+    photo3Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Allegheny_Serviceberry_%2841909182552%29.jpg/256px-Allegheny_Serviceberry_%2841909182552%29.jpg",
   },
   {
     nameCommon: "Atlantic White Cedar",
-    aka: ["white cedar", "whitecedar", "southern white cedar"],
+    aka: ["white cedar", "whitecedar", "southern white cedar", "Atlantic white cypress"],
     order: "Cupressales",
     family: "Cupressaceae",
     familyCommon: "Cypress",
@@ -60,6 +75,35 @@ const initialTreesState = [
     needleStructure: "scaly needles",
     slug: "atlantic-white-cedar",
     description: "<p>The Atlantic White Cedar, Chamaecyparis thyoides, is a slender, evergreen conifer native to the coastal plains of the eastern United States. It typically reaches heights of 40 to 50 feet, characterized by its narrow, columnar form and dense, fine-textured foliage. This tree is an important species in wetland habitats, often found in freshwater bogs and along swamp margins.</p><p>The leaves of the Atlantic White Cedar are small, scale-like, and arranged in flattened sprays, giving the foliage a soft, feathery appearance. The color varies from a light green to a glaucous blue-green, adding a subtle yet attractive hue to the landscape. The tree produces small, round cones that mature from green to brown and are relatively inconspicuous.</p><p>The wood of the Atlantic White Cedar is highly valued for its resistance to decay and is traditionally used in boat building, shingles, and cooperage. Due to its affinity for wet conditions and its narrow, upright growth habit, the Atlantic White Cedar is a popular choice for wetland restoration projects and for use in landscape plantings where space is limited. Its ornamental appeal and ecological importance make it a cherished species within its native range.</p>",
+    photo1Credit: "<a href=\"https://commons.wikimedia.org/wiki/File:2013-05-10_13_29_55_Atlantic_White_Cedar_near_the_edge_of_a_bog_along_the_Mount_Misery_Trail_in_Brendan_T._Byrne_State_Forest,_New_Jersey.jpg\">Atlantic White Cedar trees</a>, <a href=\"https://commons.wikimedia.org/wiki/User:Famartin\">Famartin</a>, <a href=\"https://creativecommons.org/licenses/by-sa/3.0/legalcode\" rel=\"license\">CC BY-SA 3.0</a>",
+    photo1Href: "https://en.wikipedia.org/wiki/Chamaecyparis_thyoides#/media/File:2013-05-10_13_29_55_Atlantic_White_Cedar_near_the_edge_of_a_bog_along_the_Mount_Misery_Trail_in_Brendan_T._Byrne_State_Forest,_New_Jersey.jpg",
+    photo1Alt: "Atlantic White Cedar trees",
+    photo1Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/2013-05-10_13_29_55_Atlantic_White_Cedar_near_the_edge_of_a_bog_along_the_Mount_Misery_Trail_in_Brendan_T._Byrne_State_Forest%2C_New_Jersey.jpg/256px-2013-05-10_13_29_55_Atlantic_White_Cedar_near_the_edge_of_a_bog_along_the_Mount_Misery_Trail_in_Brendan_T._Byrne_State_Forest%2C_New_Jersey.jpg",
+
+    photo2Credit: "<a href=\"https://commons.wikimedia.org/wiki/File:Atlantic_White_Cypress_Chatsworth_NJ_1.jpg\">Foliage and seed cones</a>, <a href=\"https://www.flickr.com/people/33472394@N00\">John B.</a> <a href=\"https://creativecommons.org/licenses/by/2.0/legalcode\" rel=\"license\">CC BY 2.0</a>",
+    photo2Href: "https://en.wikipedia.org/wiki/Chamaecyparis_thyoides#/media/File:Atlantic_White_Cypress_Chatsworth_NJ_1.jpg",
+    photo2Alt: "Foliage and seed cones",
+    photo2Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Atlantic_White_Cypress_Chatsworth_NJ_1.jpg/256px-Atlantic_White_Cypress_Chatsworth_NJ_1.jpg",
+
+    photo3Credit: "<a href=\"https://commons.wikimedia.org/wiki/File:Atlantic_White_Cedar_Seedling.jpg\">Atlantic White Cedar Seedling</a>, <a href=\"https://commons.wikimedia.org/wiki/User:Kiearrrnnnnn\">Kieran Hunt</a>, <a href=\"https://creativecommons.org/licenses/by-sa/4.0/legalcode\" rel=\"license\">CC BY-SA 4.0</a>",
+    photo3Href: "https://en.wikipedia.org/wiki/Chamaecyparis_thyoides#/media/File:Atlantic_White_Cedar_Seedling.jpg",
+    photo3Alt: "Atlantic White Cedar Seedling",
+    photo3Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Atlantic_White_Cedar_Seedling.jpg/256px-Atlantic_White_Cedar_Seedling.jpg",
+
+    photo4Credit: "<a href=\"https://commons.wikimedia.org/wiki/File:Atlantic_White_Cypress_Chatsworth_NJ_6.jpg\">Atlantic White Cedar trunks</a>, <a href=\"https://www.flickr.com/people/33472394@N00\">John B.</a> <a href=\"https://creativecommons.org/licenses/by/2.0/legalcode\" rel=\"license\">CC BY 2.0</a>",
+    photo4Href: "https://en.wikipedia.org/wiki/Chamaecyparis_thyoides#/media/File:Atlantic_White_Cypress_Chatsworth_NJ_6.jpg",
+    photo4Alt: "Trunks",
+    photo4Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Atlantic_White_Cypress_Chatsworth_NJ_6.jpg/256px-Atlantic_White_Cypress_Chatsworth_NJ_6.jpg",
+
+    photo5Credit: "<a href=\"https://commons.wikimedia.org/wiki/File:Bark_of_Chamaecyparis_thyoides,_Blue_Hills_Reservation,_Boston.jpg\">Bark of the Atlantic White Cedar</a>, <a href=\"https://commons.wikimedia.org/wiki/User:Jryandoherty\">Jryandoherty</a>, <a href=\"https://creativecommons.org/licenses/by-sa/4.0/legalcode\" rel=\"license\">CC BY-SA 4.0</a>",
+    photo5Href: "https://en.wikipedia.org/wiki/Chamaecyparis_thyoides#/media/File:Bark_of_Chamaecyparis_thyoides,_Blue_Hills_Reservation,_Boston.jpg",
+    photo5Alt: "Bark of the Atlantic White Cedar",
+    photo5Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Bark_of_Chamaecyparis_thyoides%2C_Blue_Hills_Reservation%2C_Boston.jpg/256px-Bark_of_Chamaecyparis_thyoides%2C_Blue_Hills_Reservation%2C_Boston.jpg",
+
+    photo6Credit: "Atlantic White Cedar range map. Public domain, via Wikimedia Commons",
+    photo6Href: "https://en.wikipedia.org/wiki/Chamaecyparis_thyoides#/media/File:Chamaecyparis_thyoides_range_map_2.png",
+    photo6Alt: "Atlantic White Cedar range map",
+    photo6Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Chamaecyparis_thyoides_range_map_2.png/256px-Chamaecyparis_thyoides_range_map_2.png",
   },
   {
     nameCommon: "Bear Oak",
@@ -74,6 +118,15 @@ const initialTreesState = [
     leafAttachment: "alternate",
     slug: "bear-oak",
     description: "<p>The Bear Oak, Quercus ilicifolia, is a small and hardy deciduous tree or large shrub, native to the northeastern United States. Often growing to a modest height of 6 to 20 feet, it is characterized by its dense, rounded canopy and shrubby habit, making it an ideal choice for smaller landscapes or naturalized areas. The Bear Oak is particularly well-suited to dry, sandy, or rocky soils, often found in upland forests and barrens, where it contributes to the ecological diversity of these habitats.</p><p>The leaves of the Bear Oak are small and deeply lobed, with a bristle at each tip, resembling those of its larger oak relatives. They are dark green and slightly glossy, turning to shades of red and bronze in the fall. The tree produces small acorns, which are a food source for wildlife. The Bear Oak's bark is gray to dark brown, with a rough, ridged texture.</p><p>While not widely known for commercial lumber use, the Bear Oak is valued for its ecological role in supporting wildlife and stabilizing soils in challenging environments. Its ability to thrive in poor soils and its compact size make it a unique and versatile native species for conservation plantings and naturalistic landscaping.</p>",
+    photo1Credit: "<a href=\"https://commons.wikimedia.org/wiki/File:Quercus_ilicifolia_tree.jpg\">Bear Oak tree</a>, <a href=\"https://commons.wikimedia.org/wiki/User:Choess\">Choess</a>, <a href=\"https://creativecommons.org/licenses/by-sa/3.0/legalcode\" rel=\"license\">CC BY-SA 3.0</a>",
+    photo1Href: "https://en.wikipedia.org/wiki/Quercus_ilicifolia#/media/File:Quercus_ilicifolia_tree.jpg",
+    photo1Alt: "Bear Oak tree",
+    photo1Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Quercus_ilicifolia_tree.jpg/256px-Quercus_ilicifolia_tree.jpg",
+
+    photo2Credit: "Bear Oak range map. Public domain, via Wikimedia Commons",
+    photo2Href: "https://en.wikipedia.org/wiki/Quercus_ilicifolia#/media/File:Quercus_ilicifolia_range_map_1.png",
+    photo2Alt: "Bear Oak range map",
+    photo2Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Quercus_ilicifolia_range_map_1.png/256px-Quercus_ilicifolia_range_map_1.png",
   },
   {
     nameCommon: "Blackhaw",
@@ -88,6 +141,25 @@ const initialTreesState = [
     leafAttachment: "opposite",
     slug: "blackhaw",
     description: "<p>The Blackhaw, Viburnum prunifolium, is a versatile and hardy deciduous shrub or small tree, native to the woodlands and thickets of eastern North America. Typically reaching heights of 12 to 15 feet, it can stretch up to 30 feet under optimal conditions. Known for its adaptability, the Blackhaw flourishes in a variety of soil types, making it a favored choice for diverse landscape settings.</p><p>The leaves of the Blackhaw are simple, ovate, and finely toothed, exhibiting a rich green color that transitions to shades of red and purple in the fall. In spring, the tree produces clusters of creamy white flowers, offering a delicate, fragrant display. These blooms give way to blue-black berries in the fall, which are both ornamental and a valuable food source for birds and wildlife. The bark is rough and dark, adding winter interest with its textured appearance.</p><p>Valued for its ornamental appeal, the Blackhaw is often used in hedgerows, woodland gardens, and as a specimen plant. Its hard, strong wood has been historically used for various small-scale applications, including tool handles. The Blackhaw's combination of floral beauty, vibrant fall color, and winter interest make it a diverse and appealing addition to any landscape.</p>",
+    photo1Credit: "Blackhaw leaves, Public domain, via Wikimedia Commons",
+    photo1Href: "https://en.wikipedia.org/wiki/Viburnum_prunifolium#/media/File:Viburnum_prunifolium_USDA1.jpg",
+    photo1Alt: "Blackhaw leaves",
+    photo1Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Viburnum_prunifolium_USDA1.jpg/256px-Viburnum_prunifolium_USDA1.jpg",
+
+    photo2Credit: "Flowers. Public domain, via Wikimedia Commons",
+    photo2Href: "https://en.wikipedia.org/wiki/Viburnum_prunifolium#/media/File:Viburnum_prunifolium_USDA2.jpg",
+    photo2Alt: "Flowers",
+    photo2Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Viburnum_prunifolium_USDA2.jpg/256px-Viburnum_prunifolium_USDA2.jpg",
+
+    photo3Credit: "Blackhaw range map. Public domain, via Wikimedia Commons",
+    photo3Href: "https://en.wikipedia.org/wiki/Viburnum_prunifolium#/media/File:Viburnum_prunifolium_range_map_2.png",
+    photo3Alt: "Blackhaw range map",
+    photo3Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Viburnum_prunifolium_range_map_2.png/256px-Viburnum_prunifolium_range_map_2.png",
+
+    photo4Credit: "Botanical illustration, Public domain, via Wikimedia Commons",
+    photo4Href: "https://en.wikipedia.org/wiki/Viburnum_prunifolium#/media/File:Viburnum_prunifolium_illustration_001.jpg",
+    photo4Alt: "Botanical illustration",
+    photo4Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Viburnum_prunifolium_illustration_001.jpg/256px-Viburnum_prunifolium_illustration_001.jpg",
   },
   {
     nameCommon: "Common Pear",
@@ -105,6 +177,35 @@ const initialTreesState = [
     background: null,
     backgroundSmall: null,
     description: "<p>The Common Pear, Pyrus communis, is a widely cultivated deciduous tree known for its delicious fruit and ornamental value. Originating from Europe and parts of Asia, it typically grows to a height of 20 to 30 feet, making it suitable for a variety of landscape settings, including orchards, gardens, and parks. The Common Pear tree is characterized by its upright, pyramidal growth habit when young, which becomes more rounded and spreading with age.</p><p>In early spring, the tree is adorned with a profusion of white flowers, which not only add aesthetic value but also attract pollinators. These blossoms give way to the well-known pear fruit, which varies in size, shape, and flavor among different cultivars. The leaves of the Common Pear are glossy, dark green, and oval-shaped, providing a lush backdrop to the tree's seasonal cycles. In the fall, the foliage may turn varying shades of yellow, red, or purple, adding to the tree's ornamental appeal.</p><p>The Common Pear is valued not only for its fruit, which is widely consumed fresh and used in cooking and canning, but also for its wood, which is used in fine woodworking and musical instrument construction. With its delightful blossoms, edible fruit, and attractive form, the Common Pear tree is a cherished addition to both functional and decorative landscapes.</p>",
+    photo1Credit: "Common pear branch with fruit. Public domain, via Wikimedia Commons",
+    photo1Href: "https://en.wikipedia.org/wiki/Pyrus_communis#/media/File:Pears.jpg",
+    photo1Alt: "Common pear branch with fruit",
+    photo1Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Pears.jpg/256px-Pears.jpg",
+
+    photo2Credit: "<a href=\"https://commons.wikimedia.org/wiki/File:Päronträd_-_2013-Ystad.jpg\">Pear tree in bloom</a>, Jonn Leffmann, <a href=\"https://creativecommons.org/licenses/by/3.0/legalcode\" rel=\"license\">CC BY 3.0</a>",
+    photo2Href: "https://en.wikipedia.org/wiki/Pyrus_communis#/media/File:P%C3%A4rontr%C3%A4d_-_2013-Ystad.jpg",
+    photo2Alt: "Pear tree in bloom in a backyard",
+    photo2Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/P%C3%A4rontr%C3%A4d_-_2013-Ystad.jpg/256px-P%C3%A4rontr%C3%A4d_-_2013-Ystad.jpg",
+
+    photo3Credit: "<a href=\"https://commons.wikimedia.org/wiki/File:2015_Kwiatostan_gruszy_pospolitej.jpg\">Pear tree flowers</a>, <a href=\"https://commons.wikimedia.org/wiki/User:Jacek_Halicki\">Jacek Halicki</a>, <a href=\"https://creativecommons.org/licenses/by-sa/4.0/legalcode\" rel=\"license\">CC BY-SA 4.0</a>",
+    photo3Href: "https://en.wikipedia.org/wiki/Pyrus_communis#/media/File:2015_Kwiatostan_gruszy_pospolitej.jpg",
+    photo3Alt: "Pear tree flowers",
+    photo3Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/2015_Kwiatostan_gruszy_pospolitej.jpg/256px-2015_Kwiatostan_gruszy_pospolitej.jpg",
+
+    photo4Credit: "<a href=\"https://commons.wikimedia.org/wiki/File:Common_pear_tree_in_early_June.JPG\">Common pear tree in early June</a>, <a href=\"https://commons.wikimedia.org/wiki/User:Reawaken\">Betty Cai</a>, <a href=\"https://creativecommons.org/licenses/by-sa/4.0/legalcode\" rel=\"license\">CC BY-SA 4.0</a>",
+    photo4Href: "https://en.wikipedia.org/wiki/Pyrus_communis#/media/File:Common_pear_tree_in_early_June.JPG",
+    photo4Alt: "Common pear tree in early June",
+    photo4Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Common_pear_tree_in_early_June.JPG/256px-Common_pear_tree_in_early_June.JPG",
+
+    photo5Credit: "Illustration of Williams or Bartlett pears. Public domain, via Wikimedia Commons",
+    photo5Href: "https://en.wikipedia.org/wiki/Pyrus_communis#/media/File:Williams_Bon_Chr%C3%A9tien_1822.png",
+    photo5Alt: "Illustration of Williams or Bartlett pears",
+    photo5Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Williams_Bon_Chr%C3%A9tien_1822.png/256px-Williams_Bon_Chr%C3%A9tien_1822.png",
+
+    photo6Credit: "<a href=\"https://commons.wikimedia.org/wiki/File:Kruška_Rana_Moretini_-_mali_plodovi.JPG\">Tiny unripe pears</a>, <a href=\"https://commons.wikimedia.org/wiki/User:Silverije\">Silverije</a>, <a href=\"https://creativecommons.org/licenses/by-sa/4.0/legalcode\" rel=\"license\">CC BY-SA 4.0</a>",
+    photo6Href: "https://en.wikipedia.org/wiki/Pyrus_communis#/media/File:Kru%C5%A1ka_Rana_Moretini_-_mali_plodovi.JPG",
+    photo6Alt: "Tiny unripe pears",
+    photo6Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Kru%C5%A1ka_Rana_Moretini_-_mali_plodovi.JPG/256px-Kru%C5%A1ka_Rana_Moretini_-_mali_plodovi.JPG",
   },
   {
     nameCommon: "Common Winterberry",
@@ -122,6 +223,47 @@ const initialTreesState = [
     background: null,
     backgroundSmall: null,
     description: "<p>The Common Winterberry, Ilex verticillata, is a deciduous holly native to eastern North America, widely admired for its vibrant display of red berries in the winter months. Typically growing to 6-12 feet in height, this shrub is characterized by its dense, rounded form, making it a popular choice in both naturalized and formal landscape settings.</p><p>The leaves of the Common Winterberry are dark green, oval-shaped, and have a serrated edge. Unlike evergreen hollies, it sheds its leaves in the fall, leaving the bright red berries to stand out strikingly against the bare branches. These berries, which are produced on female plants, persist throughout the winter, providing a crucial food source for birds and a stunning visual interest during the colder months. The tree produces small white flowers in the spring, which are relatively inconspicuous compared to its showy winter fruits.</p><p>Adaptable to a variety of soil types, the Common Winterberry particularly thrives in wet, acidic soils, often found in wetlands and along streams. It's dioecious, requiring both male and female plants for pollination and fruit production. Its tolerance for wet conditions and the brilliant winter berries make the Common Winterberry a valuable plant for ecological restoration projects and an attractive feature in winter gardens.</p>",
+    photo1Credit: "<a href=\"https://commons.wikimedia.org/wiki/File:Ilex_verticillata_fruits_and_foliage_1.JPG\">Fruit and foliage</a>, <a href=\"https://commons.wikimedia.org/wiki/User:SB_Johnny\">SB_Johnny</a>, <a href=\"https://creativecommons.org/licenses/by-sa/3.0/legalcode\" rel=\"license\">CC BY-SA 3.0</a>",
+    photo1Href: "https://en.wikipedia.org/wiki/Ilex_verticillata#/media/File:Ilex_verticillata_fruits_and_foliage_1.JPG",
+    photo1Alt: "Fruit and foliage",
+    photo1Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Ilex_verticillata_fruits_and_foliage_1.JPG/256px-Ilex_verticillata_fruits_and_foliage_1.JPG",
+
+    photo2Credit: "<a href=\"https://commons.wikimedia.org/wiki/File:Ilex_verticillata_-_Winterberry,_female.jpg\">Female, flowers in early summer</a>, <a href=\"https://commons.wikimedia.org/wiki/User:Fritzflohrreynolds\">Fritzflohrreynolds</a>, <a href=\"https://creativecommons.org/licenses/by-sa/3.0/legalcode\" rel=\"license\">CC BY-SA 3.0</a>",
+    photo2Href: "https://en.wikipedia.org/wiki/Ilex_verticillata#/media/File:Ilex_verticillata_-_Winterberry,_female.jpg",
+    photo2Alt: "Female flowers in early summer",
+    photo2Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Ilex_verticillata_-_Winterberry%2C_female.jpg/256px-Ilex_verticillata_-_Winterberry%2C_female.jpg",
+
+    photo3Credit: "<a href=\"https://commons.wikimedia.org/wiki/File:Ilex-verticillata-Acadia.jpg\">Foliage and unripe fruit in summer</a>, <a href=\"https://commons.wikimedia.org/wiki/User:Stevenj\">Steven G. Johnson</a>, <a href=\"https://creativecommons.org/licenses/by-sa/3.0/legalcode\" rel=\"license\">CC BY-SA 3.0</a>",
+    photo3Href: "https://en.wikipedia.org/wiki/Ilex_verticillata#/media/File:Ilex-verticillata-Acadia.jpg",
+    photo3Alt: "Foliage and unripe fruit in summer",
+    photo3Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Ilex-verticillata-Acadia.jpg/256px-Ilex-verticillata-Acadia.jpg",
+
+    photo4Credit: "<a href=\"https://commons.wikimedia.org/wiki/File:Ilex_verticillata_5454177.jpg\">In the winter</a>, Rob Routledge, Sault College, Bugwood.org, <a href=\"https://creativecommons.org/licenses/by-sa/3.0/legalcode\" rel=\"license\">CC BY-SA 3.0</a>",
+    photo4Href: "https://en.wikipedia.org/wiki/Ilex_verticillata#/media/File:Ilex_verticillata_5454177.jpg",
+    photo4Alt: "In the winter",
+    photo4Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Ilex_verticillata_5454177.jpg/256px-Ilex_verticillata_5454177.jpg",
+
+    photo5Credit: "<a href=\"https://commons.wikimedia.org/wiki/File:Winterberry.WinterGold.jpg\">'Winter Gold' variety showing orange berries</a>, <a href=\"https://commons.wikimedia.org/wiki/User:Awinch1001\">Awinch1001</a>, <a href=\"https://creativecommons.org/licenses/by-sa/4.0/legalcode\" rel=\"license\">CC BY-SA 4.0</a>",
+    photo5Href: "https://en.wikipedia.org/wiki/Ilex_verticillata#/media/File:Winterberry.WinterGold.jpg",
+    photo5Alt: "'Winter Gold' variety showing orange berries",
+    photo5Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Winterberry.WinterGold.jpg/256px-Winterberry.WinterGold.jpg",
+
+    photo6Credit: "Common Winterberry range map. Public domain, via Wikimedia Commons",
+    photo6Href: "https://en.wikipedia.org/wiki/Ilex_verticillata#/media/File:Ilex_verticillata_range_map.jpg",
+    photo6Alt: "Common Winterberry range map",
+    photo6Src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Ilex_verticillata_range_map.jpg/256px-Ilex_verticillata_range_map.jpg",
+
+
+
+    photo7Credit: "",
+    photo7Href: "",
+    photo7Alt: "",
+    photo7Src: "",
+
+    photo8Credit: "",
+    photo8Href: "",
+    photo8Alt: "",
+    photo8Src: "",
   },
   {
     nameCommon: "Devil's Walkingstick",
@@ -147,7 +289,46 @@ const initialTreesState = [
     slug: "devils-walkingstick",
     background: null,
     backgroundSmall: null,
-    description: "<p>The Devil's Walkingstick, Aralia spinosa, is a distinctive deciduous tree or large shrub, known for its imposing presence and unique features. Native to the southeastern United States, it typically grows to heights of 10 to 20 feet, with a single, straight stem and a canopy that forms a rounded crown. The tree's common name is derived from its stout, spiny stems and branches, which resemble a medieval weapon or a walking stick with a devilish twist.</p><p>The large, bipinnate leaves of the Devil's Walkingstick can reach up to 4 feet in length, contributing to a tropical-like appearance. In late summer, the tree dazzles with huge, creamy-white, umbrella-like flower clusters, which later produce dark purple berries enjoyed by birds. The foliage turns to a rich yellow in the fall, adding seasonal interest. While the spines discourage casual human contact, this tree is often used in landscaping for its dramatic visual impact and as a natural deterrent for foot traffic.</p>    <p>Though not commonly utilized for timber due to its smaller size and spiny nature, the Devil's Walkingstick is valued in native plant gardens and naturalistic landscapes. Its ability to tolerate a range of soil conditions and its unique characteristics make it a conversation piece in any setting where it is planted.</p>"
+    description: "<p>The Devil's Walkingstick, Aralia spinosa, is a distinctive deciduous tree or large shrub, known for its imposing presence and unique features. Native to the southeastern United States, it typically grows to heights of 10 to 20 feet, with a single, straight stem and a canopy that forms a rounded crown. The tree's common name is derived from its stout, spiny stems and branches, which resemble a medieval weapon or a walking stick with a devilish twist.</p><p>The large, bipinnate leaves of the Devil's Walkingstick can reach up to 4 feet in length, contributing to a tropical-like appearance. In late summer, the tree dazzles with huge, creamy-white, umbrella-like flower clusters, which later produce dark purple berries enjoyed by birds. The foliage turns to a rich yellow in the fall, adding seasonal interest. While the spines discourage casual human contact, this tree is often used in landscaping for its dramatic visual impact and as a natural deterrent for foot traffic.</p>    <p>Though not commonly utilized for timber due to its smaller size and spiny nature, the Devil's Walkingstick is valued in native plant gardens and naturalistic landscapes. Its ability to tolerate a range of soil conditions and its unique characteristics make it a conversation piece in any setting where it is planted.</p>",
+    photo1Credit: "",
+    photo1Href: "",
+    photo1Alt: "",
+    photo1Src: "",
+
+    photo2Credit: "",
+    photo2Href: "",
+    photo2Alt: "",
+    photo2Src: "",
+
+    photo3Credit: "",
+    photo3Href: "",
+    photo3Alt: "",
+    photo3Src: "",
+
+    photo4Credit: "",
+    photo4Href: "",
+    photo4Alt: "",
+    photo4Src: "",
+
+    photo5Credit: "",
+    photo5Href: "",
+    photo5Alt: "",
+    photo5Src: "",
+
+    photo6Credit: "",
+    photo6Href: "",
+    photo6Alt: "",
+    photo6Src: "",
+
+    photo7Credit: "",
+    photo7Href: "",
+    photo7Alt: "",
+    photo7Src: "",
+
+    photo8Credit: "",
+    photo8Href: "",
+    photo8Alt: "",
+    photo8Src: "",
   },  
   {
     nameCommon: "American Hazelnut",
@@ -170,7 +351,46 @@ const initialTreesState = [
     slug: "american-hazelnut",
     background: null,
     backgroundSmall: null,
-    description: "<p>The American Hazelnut, Corylus americana, is a deciduous shrub native to the eastern and central United States. Growing to a modest height of 10 to 16 feet, it often forms a dense, clumping habit, making it a favored choice for naturalistic plantings and wildlife gardens. This shrub is recognized for its rounded leaves, which are broad, heart-shaped, and have double-serrated edges, turning vibrant shades of orange, yellow, and red in the fall.</p><p>In late winter to early spring, before the leaves emerge, the American Hazelnut displays inconspicuous male catkins and small red female flowers, which are wind-pollinated. By late summer or early fall, these flowers develop into edible nuts, encased in a husk with a leafy bract, which are sought after by both wildlife and humans. The nuts of the American Hazelnut are smaller than the commercially grown European varieties but are equally tasty and can be used in a variety of culinary dishes.</p><p>Aside from its edible nuts, the American Hazelnut is valued for its contribution to erosion control and as a source of food and habitat for wildlife. Its adaptability to a range of soil types and conditions, including partial shade, makes it a versatile addition to the landscape.</p>"
+    description: "<p>The American Hazelnut, Corylus americana, is a deciduous shrub native to the eastern and central United States. Growing to a modest height of 10 to 16 feet, it often forms a dense, clumping habit, making it a favored choice for naturalistic plantings and wildlife gardens. This shrub is recognized for its rounded leaves, which are broad, heart-shaped, and have double-serrated edges, turning vibrant shades of orange, yellow, and red in the fall.</p><p>In late winter to early spring, before the leaves emerge, the American Hazelnut displays inconspicuous male catkins and small red female flowers, which are wind-pollinated. By late summer or early fall, these flowers develop into edible nuts, encased in a husk with a leafy bract, which are sought after by both wildlife and humans. The nuts of the American Hazelnut are smaller than the commercially grown European varieties but are equally tasty and can be used in a variety of culinary dishes.</p><p>Aside from its edible nuts, the American Hazelnut is valued for its contribution to erosion control and as a source of food and habitat for wildlife. Its adaptability to a range of soil types and conditions, including partial shade, makes it a versatile addition to the landscape.</p>",
+    photo1Credit: "",
+    photo1Href: "",
+    photo1Alt: "",
+    photo1Src: "",
+
+    photo2Credit: "",
+    photo2Href: "",
+    photo2Alt: "",
+    photo2Src: "",
+
+    photo3Credit: "",
+    photo3Href: "",
+    photo3Alt: "",
+    photo3Src: "",
+
+    photo4Credit: "",
+    photo4Href: "",
+    photo4Alt: "",
+    photo4Src: "",
+
+    photo5Credit: "",
+    photo5Href: "",
+    photo5Alt: "",
+    photo5Src: "",
+
+    photo6Credit: "",
+    photo6Href: "",
+    photo6Alt: "",
+    photo6Src: "",
+
+    photo7Credit: "",
+    photo7Href: "",
+    photo7Alt: "",
+    photo7Src: "",
+
+    photo8Credit: "",
+    photo8Href: "",
+    photo8Alt: "",
+    photo8Src: "",
   },
   {
     nameCommon: "Mountain Holly",
@@ -193,7 +413,46 @@ const initialTreesState = [
     slug: "mountain-holly",
     background: null,
     backgroundSmall: null,
-    description: "<p>The Mountain Holly, Ilex montana, is a deciduous shrub or small tree native to the Appalachian Mountains in the eastern United States. Typically reaching up to 30 feet in height, it boasts a slender, upright form, with a moderate growth rate and a naturally occurring rounded to pyramidal shape. This holly is less well-known than its evergreen cousins but is equally deserving of admiration for its foliage and berries.</p><p>The leaves of the Mountain Holly are ovate, with finely toothed margins, a leathery texture, and a glossy surface, turning yellow-green to purple in the autumn. Unlike the prickly leaves of many holly species, Mountain Holly leaves are generally without spines. In late spring, small white flowers bloom, which, if pollinated, develop into bright red berries by fall. These berries are a significant food source for local birds and wildlife during the winter months.</p><p>Mountain Holly is valued for its understory tolerance, often thriving in the dappled shade of higher forest canopies. Its adaptability to cooler climates and acidic, moist soils makes it a unique and attractive choice for woodland gardens and naturalized areas.</p>"
+    description: "<p>The Mountain Holly, Ilex montana, is a deciduous shrub or small tree native to the Appalachian Mountains in the eastern United States. Typically reaching up to 30 feet in height, it boasts a slender, upright form, with a moderate growth rate and a naturally occurring rounded to pyramidal shape. This holly is less well-known than its evergreen cousins but is equally deserving of admiration for its foliage and berries.</p><p>The leaves of the Mountain Holly are ovate, with finely toothed margins, a leathery texture, and a glossy surface, turning yellow-green to purple in the autumn. Unlike the prickly leaves of many holly species, Mountain Holly leaves are generally without spines. In late spring, small white flowers bloom, which, if pollinated, develop into bright red berries by fall. These berries are a significant food source for local birds and wildlife during the winter months.</p><p>Mountain Holly is valued for its understory tolerance, often thriving in the dappled shade of higher forest canopies. Its adaptability to cooler climates and acidic, moist soils makes it a unique and attractive choice for woodland gardens and naturalized areas.</p>",
+    photo1Credit: "",
+    photo1Href: "",
+    photo1Alt: "",
+    photo1Src: "",
+
+    photo2Credit: "",
+    photo2Href: "",
+    photo2Alt: "",
+    photo2Src: "",
+
+    photo3Credit: "",
+    photo3Href: "",
+    photo3Alt: "",
+    photo3Src: "",
+
+    photo4Credit: "",
+    photo4Href: "",
+    photo4Alt: "",
+    photo4Src: "",
+
+    photo5Credit: "",
+    photo5Href: "",
+    photo5Alt: "",
+    photo5Src: "",
+
+    photo6Credit: "",
+    photo6Href: "",
+    photo6Alt: "",
+    photo6Src: "",
+
+    photo7Credit: "",
+    photo7Href: "",
+    photo7Alt: "",
+    photo7Src: "",
+
+    photo8Credit: "",
+    photo8Href: "",
+    photo8Alt: "",
+    photo8Src: "",
   },
   {
     nameCommon: "Princess Tree",
@@ -214,7 +473,46 @@ const initialTreesState = [
     slug: "princess-tree",
     background: null,
     backgroundSmall: null,
-    description: "<p>The Princess Tree, Paulownia tomentosa, also known as the Empress Tree or Royal Paulownia, is a deciduous hardwood species native to China but now widespread across various regions. It's a fast-growing tree, reaching heights of 30 to 50 feet, and is particularly noted for its large, heart-shaped leaves and showy floral displays. The tree's canopy spreads wide, making it a prominent feature in any landscape.</p><p>In spring, the Princess Tree produces spectacular clusters of fragrant, trumpet-shaped lavender flowers, which are attractive to bees and other pollinators. These blooms are followed by the appearance of distinctive, woody seed capsules that persist through winter. The leaves are large and velvety, providing a dense shade in summer and turning to a golden yellow color in the fall.</p><p>While the Princess Tree is admired for its ornamental qualities and rapid growth, it is also considered an invasive species in some regions, capable of displacing native vegetation. Despite this, its timber is valued for its light weight and fine grain, used in woodworking and crafts.</p>"
+    description: "<p>The Princess Tree, Paulownia tomentosa, also known as the Empress Tree or Royal Paulownia, is a deciduous hardwood species native to China but now widespread across various regions. It's a fast-growing tree, reaching heights of 30 to 50 feet, and is particularly noted for its large, heart-shaped leaves and showy floral displays. The tree's canopy spreads wide, making it a prominent feature in any landscape.</p><p>In spring, the Princess Tree produces spectacular clusters of fragrant, trumpet-shaped lavender flowers, which are attractive to bees and other pollinators. These blooms are followed by the appearance of distinctive, woody seed capsules that persist through winter. The leaves are large and velvety, providing a dense shade in summer and turning to a golden yellow color in the fall.</p><p>While the Princess Tree is admired for its ornamental qualities and rapid growth, it is also considered an invasive species in some regions, capable of displacing native vegetation. Despite this, its timber is valued for its light weight and fine grain, used in woodworking and crafts.</p>",
+    photo1Credit: "",
+    photo1Href: "",
+    photo1Alt: "",
+    photo1Src: "",
+
+    photo2Credit: "",
+    photo2Href: "",
+    photo2Alt: "",
+    photo2Src: "",
+
+    photo3Credit: "",
+    photo3Href: "",
+    photo3Alt: "",
+    photo3Src: "",
+
+    photo4Credit: "",
+    photo4Href: "",
+    photo4Alt: "",
+    photo4Src: "",
+
+    photo5Credit: "",
+    photo5Href: "",
+    photo5Alt: "",
+    photo5Src: "",
+
+    photo6Credit: "",
+    photo6Href: "",
+    photo6Alt: "",
+    photo6Src: "",
+
+    photo7Credit: "",
+    photo7Href: "",
+    photo7Alt: "",
+    photo7Src: "",
+
+    photo8Credit: "",
+    photo8Href: "",
+    photo8Alt: "",
+    photo8Src: "",
   },
   {
     nameCommon: "River Birch",
@@ -236,7 +534,46 @@ const initialTreesState = [
     slug: "river-birch",
     background: null,
     backgroundSmall: null,
-    description: "<p>The River Birch, Betula nigra, is a charming deciduous tree renowned for its distinctive peeling bark and graceful stature. Native to the eastern United States, it typically grows to 40-70 feet tall, with a canopy that spreads 40-60 feet when mature. Often found in moist, riverine environments, it is notably tolerant of both wet soils and dry summers, making it a versatile species for landscaping.</p><p>The tree's bark is a striking feature, exfoliating in papery sheets to reveal a patchwork of colors from salmon-pink to creamy white. The leaves of the River Birch are diamond-shaped to triangular, with a glossy green color that turns to shades of yellow in the autumn. It produces catkins in the spring, which mature to small nutlets that provide food for local wildlife.</p><p>The adaptability and ornamental appeal of the River Birch, along with its resistance to the bronze birch borer, make it a favored choice for residential properties, public spaces, and as a natural stabilizer along stream banks and in wetlands.</p>"
+    description: "<p>The River Birch, Betula nigra, is a charming deciduous tree renowned for its distinctive peeling bark and graceful stature. Native to the eastern United States, it typically grows to 40-70 feet tall, with a canopy that spreads 40-60 feet when mature. Often found in moist, riverine environments, it is notably tolerant of both wet soils and dry summers, making it a versatile species for landscaping.</p><p>The tree's bark is a striking feature, exfoliating in papery sheets to reveal a patchwork of colors from salmon-pink to creamy white. The leaves of the River Birch are diamond-shaped to triangular, with a glossy green color that turns to shades of yellow in the autumn. It produces catkins in the spring, which mature to small nutlets that provide food for local wildlife.</p><p>The adaptability and ornamental appeal of the River Birch, along with its resistance to the bronze birch borer, make it a favored choice for residential properties, public spaces, and as a natural stabilizer along stream banks and in wetlands.</p>",
+    photo1Credit: "",
+    photo1Href: "",
+    photo1Alt: "",
+    photo1Src: "",
+
+    photo2Credit: "",
+    photo2Href: "",
+    photo2Alt: "",
+    photo2Src: "",
+
+    photo3Credit: "",
+    photo3Href: "",
+    photo3Alt: "",
+    photo3Src: "",
+
+    photo4Credit: "",
+    photo4Href: "",
+    photo4Alt: "",
+    photo4Src: "",
+
+    photo5Credit: "",
+    photo5Href: "",
+    photo5Alt: "",
+    photo5Src: "",
+
+    photo6Credit: "",
+    photo6Href: "",
+    photo6Alt: "",
+    photo6Src: "",
+
+    photo7Credit: "",
+    photo7Href: "",
+    photo7Alt: "",
+    photo7Src: "",
+
+    photo8Credit: "",
+    photo8Href: "",
+    photo8Alt: "",
+    photo8Src: "",
   },
   {
     nameCommon: "Sweet Birch",
@@ -259,7 +596,46 @@ const initialTreesState = [
     slug: "sweet-birch",
     background: null,
     backgroundSmall: null,
-    description: "<p>The Sweet Birch, Betula lenta, also known as Cherry Birch or Black Birch, is a deciduous hardwood tree native to the eastern United States. It typically attains heights of 40 to 70 feet and is distinguished by its shiny, dark cherry-like bark that becomes plated and almost black as the tree matures. This species prefers cooler climates and is often found in moist, well-drained soils in the mountainous regions it calls home.</p><p>Sweet Birch leaves are oval or heart-shaped with a finely serrated edge, turning a vibrant yellow in the fall. Springtime brings slender catkins, which later yield small winged seeds. The tree's twigs, when scraped, emit a wintergreen scent, and the sap can be tapped to make birch beer. The wood is strong and close-grained, historically used in furniture making and currently valued for various wood products.</p><p>With its striking bark, aromatic properties, and handsome foliage, Sweet Birch is a valuable tree for both woodland settings and ornamental landscapes. Its natural beauty and the pleasant scent of its twigs make it a delightful sensory addition to any suitable environment.</p>"
+    description: "<p>The Sweet Birch, Betula lenta, also known as Cherry Birch or Black Birch, is a deciduous hardwood tree native to the eastern United States. It typically attains heights of 40 to 70 feet and is distinguished by its shiny, dark cherry-like bark that becomes plated and almost black as the tree matures. This species prefers cooler climates and is often found in moist, well-drained soils in the mountainous regions it calls home.</p><p>Sweet Birch leaves are oval or heart-shaped with a finely serrated edge, turning a vibrant yellow in the fall. Springtime brings slender catkins, which later yield small winged seeds. The tree's twigs, when scraped, emit a wintergreen scent, and the sap can be tapped to make birch beer. The wood is strong and close-grained, historically used in furniture making and currently valued for various wood products.</p><p>With its striking bark, aromatic properties, and handsome foliage, Sweet Birch is a valuable tree for both woodland settings and ornamental landscapes. Its natural beauty and the pleasant scent of its twigs make it a delightful sensory addition to any suitable environment.</p>",
+    photo1Credit: "",
+    photo1Href: "",
+    photo1Alt: "",
+    photo1Src: "",
+
+    photo2Credit: "",
+    photo2Href: "",
+    photo2Alt: "",
+    photo2Src: "",
+
+    photo3Credit: "",
+    photo3Href: "",
+    photo3Alt: "",
+    photo3Src: "",
+
+    photo4Credit: "",
+    photo4Href: "",
+    photo4Alt: "",
+    photo4Src: "",
+
+    photo5Credit: "",
+    photo5Href: "",
+    photo5Alt: "",
+    photo5Src: "",
+
+    photo6Credit: "",
+    photo6Href: "",
+    photo6Alt: "",
+    photo6Src: "",
+
+    photo7Credit: "",
+    photo7Href: "",
+    photo7Alt: "",
+    photo7Src: "",
+
+    photo8Credit: "",
+    photo8Href: "",
+    photo8Alt: "",
+    photo8Src: "",
   },
   {
     nameCommon: "Umbrella-Tree",
@@ -282,7 +658,46 @@ const initialTreesState = [
     slug: "umbrella-tree",
     background: null,
     backgroundSmall: null,
-    description: "<p>The Umbrella-Tree, Magnolia tripetala, known for its large, showy leaves and distinctive flower structure, is a deciduous tree native to the southeastern United States. It commonly reaches heights of 15 to 30 feet, with a spread almost as wide, giving it a broad, open canopy. This tree gets its common name from the whorl of large leaves that fan out at the end of the branches, resembling an open umbrella.</p><p>The leaves themselves are elongated and can grow up to 24 inches long, providing a lush, tropical feel. In late spring, the tree produces large, creamy-white flowers with a lemony fragrance, which can be up to 10 inches in diameter. Following the flowers, the tree develops reddish, cone-like fruit that attracts birds and wildlife. The Umbrella-Tree's bark is smooth and gray, adding to its visual appeal.</p><p>Due to its unique leaf arrangement and striking flowers, the Umbrella-Tree is often used as a specimen plant in gardens and parks. It prefers moist, well-drained soils in partial shade to full sun and can add a dramatic presence to any landscape where it is planted.</p>"
+    description: "<p>The Umbrella-Tree, Magnolia tripetala, known for its large, showy leaves and distinctive flower structure, is a deciduous tree native to the southeastern United States. It commonly reaches heights of 15 to 30 feet, with a spread almost as wide, giving it a broad, open canopy. This tree gets its common name from the whorl of large leaves that fan out at the end of the branches, resembling an open umbrella.</p><p>The leaves themselves are elongated and can grow up to 24 inches long, providing a lush, tropical feel. In late spring, the tree produces large, creamy-white flowers with a lemony fragrance, which can be up to 10 inches in diameter. Following the flowers, the tree develops reddish, cone-like fruit that attracts birds and wildlife. The Umbrella-Tree's bark is smooth and gray, adding to its visual appeal.</p><p>Due to its unique leaf arrangement and striking flowers, the Umbrella-Tree is often used as a specimen plant in gardens and parks. It prefers moist, well-drained soils in partial shade to full sun and can add a dramatic presence to any landscape where it is planted.</p>",
+    photo1Credit: "",
+    photo1Href: "",
+    photo1Alt: "",
+    photo1Src: "",
+
+    photo2Credit: "",
+    photo2Href: "",
+    photo2Alt: "",
+    photo2Src: "",
+
+    photo3Credit: "",
+    photo3Href: "",
+    photo3Alt: "",
+    photo3Src: "",
+
+    photo4Credit: "",
+    photo4Href: "",
+    photo4Alt: "",
+    photo4Src: "",
+
+    photo5Credit: "",
+    photo5Href: "",
+    photo5Alt: "",
+    photo5Src: "",
+
+    photo6Credit: "",
+    photo6Href: "",
+    photo6Alt: "",
+    photo6Src: "",
+
+    photo7Credit: "",
+    photo7Href: "",
+    photo7Alt: "",
+    photo7Src: "",
+
+    photo8Credit: "",
+    photo8Href: "",
+    photo8Alt: "",
+    photo8Src: "",
   },
   {
     nameCommon: "White Mulberry",
@@ -304,7 +719,46 @@ const initialTreesState = [
     slug: "white-mulberry",
     background: null,
     backgroundSmall: null,
-    description: "<p>The White Mulberry, Morus alba, is a fast-growing, deciduous tree that is native to China but has been widely cultivated and naturalized elsewhere. It reaches typical heights of 30 to 50 feet and can be recognized by its light green, deeply lobed leaves that provide a dense canopy of shade. The tree is often planted for its ornamental value and its ability to adapt to a range of urban conditions.</p><p>White Mulberry is renowned for its fruit, which starts out white or green and matures to a pink or deep purple. The berries are sweet and edible, enjoyed by both humans and wildlife, and can be used in jams, desserts, and wines. It flowers in late spring, with small, inconspicuous blooms that are followed by the prolific fruits in early summer. The bark is smooth and light gray when young, becoming more textured with age.</p><p>While the White Mulberry is appreciated for its fruit and shade, it is also known to be invasive in some regions, capable of spreading rapidly and outcompeting native plants. Nevertheless, its hardiness and productivity make it a tree of choice for many gardeners and landscapers.</p>"
+    description: "<p>The White Mulberry, Morus alba, is a fast-growing, deciduous tree that is native to China but has been widely cultivated and naturalized elsewhere. It reaches typical heights of 30 to 50 feet and can be recognized by its light green, deeply lobed leaves that provide a dense canopy of shade. The tree is often planted for its ornamental value and its ability to adapt to a range of urban conditions.</p><p>White Mulberry is renowned for its fruit, which starts out white or green and matures to a pink or deep purple. The berries are sweet and edible, enjoyed by both humans and wildlife, and can be used in jams, desserts, and wines. It flowers in late spring, with small, inconspicuous blooms that are followed by the prolific fruits in early summer. The bark is smooth and light gray when young, becoming more textured with age.</p><p>While the White Mulberry is appreciated for its fruit and shade, it is also known to be invasive in some regions, capable of spreading rapidly and outcompeting native plants. Nevertheless, its hardiness and productivity make it a tree of choice for many gardeners and landscapers.</p>",
+    photo1Credit: "",
+    photo1Href: "",
+    photo1Alt: "",
+    photo1Src: "",
+
+    photo2Credit: "",
+    photo2Href: "",
+    photo2Alt: "",
+    photo2Src: "",
+
+    photo3Credit: "",
+    photo3Href: "",
+    photo3Alt: "",
+    photo3Src: "",
+
+    photo4Credit: "",
+    photo4Href: "",
+    photo4Alt: "",
+    photo4Src: "",
+
+    photo5Credit: "",
+    photo5Href: "",
+    photo5Alt: "",
+    photo5Src: "",
+
+    photo6Credit: "",
+    photo6Href: "",
+    photo6Alt: "",
+    photo6Src: "",
+
+    photo7Credit: "",
+    photo7Href: "",
+    photo7Alt: "",
+    photo7Src: "",
+
+    photo8Credit: "",
+    photo8Href: "",
+    photo8Alt: "",
+    photo8Src: "",
   },
   {
     nameCommon: "White Willow",
@@ -325,7 +779,46 @@ const initialTreesState = [
     slug: "white-willow",
     background: null,
     backgroundSmall: null,
-    description: "<p>The White Willow, Salix alba, is a large, fast-growing deciduous tree native to Europe and western and central Asia. Renowned for its elegant stature, it typically reaches heights of 50 to 80 feet. The tree features long, slender leaves that are light green above and silvery-white beneath, contributing to its common name and giving a shimmering effect in the breeze.</p><p>Spring brings modest yellow catkins, which are followed by the appearance of small capsules that release cotton-like seeds. One of the defining characteristics of the White Willow is its tough, fibrous bark, which has been historically valued for its medicinal properties, containing salicin, a compound similar to aspirin. Its branches are flexible and have been used in basket weaving and other crafts.</p><p>Commonly found along riverbanks and in moist areas, the White Willow is an excellent choice for erosion control. Its quick growth and ease of rooting from cuttings have made it popular in riparian restoration projects. Despite its beauty and utility, it requires careful placement in the landscape due to its extensive root system and susceptibility to diseases and pests.</p>"
+    description: "<p>The White Willow, Salix alba, is a large, fast-growing deciduous tree native to Europe and western and central Asia. Renowned for its elegant stature, it typically reaches heights of 50 to 80 feet. The tree features long, slender leaves that are light green above and silvery-white beneath, contributing to its common name and giving a shimmering effect in the breeze.</p><p>Spring brings modest yellow catkins, which are followed by the appearance of small capsules that release cotton-like seeds. One of the defining characteristics of the White Willow is its tough, fibrous bark, which has been historically valued for its medicinal properties, containing salicin, a compound similar to aspirin. Its branches are flexible and have been used in basket weaving and other crafts.</p><p>Commonly found along riverbanks and in moist areas, the White Willow is an excellent choice for erosion control. Its quick growth and ease of rooting from cuttings have made it popular in riparian restoration projects. Despite its beauty and utility, it requires careful placement in the landscape due to its extensive root system and susceptibility to diseases and pests.</p>",
+    photo1Credit: "",
+    photo1Href: "",
+    photo1Alt: "",
+    photo1Src: "",
+
+    photo2Credit: "",
+    photo2Href: "",
+    photo2Alt: "",
+    photo2Src: "",
+
+    photo3Credit: "",
+    photo3Href: "",
+    photo3Alt: "",
+    photo3Src: "",
+
+    photo4Credit: "",
+    photo4Href: "",
+    photo4Alt: "",
+    photo4Src: "",
+
+    photo5Credit: "",
+    photo5Href: "",
+    photo5Alt: "",
+    photo5Src: "",
+
+    photo6Credit: "",
+    photo6Href: "",
+    photo6Alt: "",
+    photo6Src: "",
+
+    photo7Credit: "",
+    photo7Href: "",
+    photo7Alt: "",
+    photo7Src: "",
+
+    photo8Credit: "",
+    photo8Href: "",
+    photo8Alt: "",
+    photo8Src: "",
   },
   {
     nameCommon: "Willow Oak",
@@ -348,7 +841,46 @@ const initialTreesState = [
     slug: "willow-oak",
     background: null,
     backgroundSmall: null,
-    description: "<p>The Willow Oak, Quercus phellos, is a distinguished deciduous tree, highly valued for its shade and ornamental qualities. Native to the eastern and southeastern United States, it typically grows to heights of 40 to 75 feet, sometimes reaching over 100 feet in ideal conditions. This oak is characterized by a straight trunk, a rounded to oval canopy, and a moderate to fast growth rate.</p><p>What sets the Willow Oak apart from other oaks is its foliage. The leaves are narrow, lance-shaped, and resemble those of willows, hence the name. They are a bright, fresh green, turning to shades of yellow and russet in the fall. In spring, the tree produces inconspicuous flowers, followed by small, round acorns that are a food source for various wildlife. The bark is smooth and light gray on young trees, becoming rough and furrowed with age.</p><p>The Willow Oak is popular in urban and suburban landscapes for its adaptability to various soil types, including compacted soils, and its tolerance of air pollution. Its unique leaves, stately form, and ecological benefits make it a preferred choice for streetscapes, parks, and large yards.</p>"
+    description: "<p>The Willow Oak, Quercus phellos, is a distinguished deciduous tree, highly valued for its shade and ornamental qualities. Native to the eastern and southeastern United States, it typically grows to heights of 40 to 75 feet, sometimes reaching over 100 feet in ideal conditions. This oak is characterized by a straight trunk, a rounded to oval canopy, and a moderate to fast growth rate.</p><p>What sets the Willow Oak apart from other oaks is its foliage. The leaves are narrow, lance-shaped, and resemble those of willows, hence the name. They are a bright, fresh green, turning to shades of yellow and russet in the fall. In spring, the tree produces inconspicuous flowers, followed by small, round acorns that are a food source for various wildlife. The bark is smooth and light gray on young trees, becoming rough and furrowed with age.</p><p>The Willow Oak is popular in urban and suburban landscapes for its adaptability to various soil types, including compacted soils, and its tolerance of air pollution. Its unique leaves, stately form, and ecological benefits make it a preferred choice for streetscapes, parks, and large yards.</p>",
+    photo1Credit: "",
+    photo1Href: "",
+    photo1Alt: "",
+    photo1Src: "",
+
+    photo2Credit: "",
+    photo2Href: "",
+    photo2Alt: "",
+    photo2Src: "",
+
+    photo3Credit: "",
+    photo3Href: "",
+    photo3Alt: "",
+    photo3Src: "",
+
+    photo4Credit: "",
+    photo4Href: "",
+    photo4Alt: "",
+    photo4Src: "",
+
+    photo5Credit: "",
+    photo5Href: "",
+    photo5Alt: "",
+    photo5Src: "",
+
+    photo6Credit: "",
+    photo6Href: "",
+    photo6Alt: "",
+    photo6Src: "",
+
+    photo7Credit: "",
+    photo7Href: "",
+    photo7Alt: "",
+    photo7Src: "",
+
+    photo8Credit: "",
+    photo8Href: "",
+    photo8Alt: "",
+    photo8Src: "",
   },
   {
     nameCommon: "Alternate-leaved Dogwood",
