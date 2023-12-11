@@ -19,6 +19,7 @@
       isAnyFilterSelected() {
       return [
         this.selectedTypes, 
+        this.selectedFoliage,
         this.selectedNeedles, 
         this.selectedLeafTypes, 
         this.selectedLeafAttachments, 
@@ -30,6 +31,7 @@
     ...mapState([
             // If you have these as root state properties
             'selectedTypes',
+            'selectedFoliage',
             'selectedNeedles',
             'selectedClusters',
             'selectedLeafTypes',

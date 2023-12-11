@@ -5,6 +5,7 @@
             <div class="single-header">
                 <button @click="goBackOrHome" class="single-header-back-btn">← Back</button>
                 <h1> {{ tree.nameCommon }}</h1>
+
             </div>
 
             <div class="single-tree-details">
