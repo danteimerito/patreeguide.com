@@ -120,8 +120,8 @@ const initialTreesState = [
     leafAttachment: "alternate",
     fallColor: ["orange", "red", "purple"],
     slug: "bear-oak",
-    background: "bg-large/bg-263.jpg",
-    backgroundSmall: "bg-small/bg-263.jpg",
+    background: "bg-large/bg-261b.jpg",
+    backgroundSmall: "bg-small/bg-261b.jpg",
     description: "<p>The Bear Oak, Quercus ilicifolia, is a small and hardy deciduous tree or large shrub, native to the northeastern United States. Often growing to a modest height of 6 to 20 feet, it is characterized by its dense, rounded canopy and shrubby habit, making it an ideal choice for smaller landscapes or naturalized areas. The Bear Oak is particularly well-suited to dry, sandy, or rocky soils, often found in upland forests and barrens, where it contributes to the ecological diversity of these habitats.</p><p>The leaves of the Bear Oak are small and deeply lobed, with a bristle at each tip, resembling those of its larger oak relatives. They are dark green and slightly glossy, turning to shades of red and bronze in the fall. The tree produces small acorns, which are a food source for wildlife. The Bear Oak's bark is gray to dark brown, with a rough, ridged texture.</p><p>While not widely known for commercial lumber use, the Bear Oak is valued for its ecological role in supporting wildlife and stabilizing soils in challenging environments. Its ability to thrive in poor soils and its compact size make it a unique and versatile native species for conservation plantings and naturalistic landscaping.</p>",
     photo1Credit: "<a href=\"https://commons.wikimedia.org/wiki/File:Quercus_ilicifolia_tree.jpg\">Bear Oak tree</a>, <a href=\"https://commons.wikimedia.org/wiki/User:Choess\">Choess</a>, <a href=\"https://creativecommons.org/licenses/by-sa/3.0/legalcode\" rel=\"license\">CC BY-SA 3.0</a>",
     photo1Href: "https://en.wikipedia.org/wiki/Quercus_ilicifolia#/media/File:Quercus_ilicifolia_tree.jpg",
@@ -279,8 +279,8 @@ const initialTreesState = [
     leafAttachment: "alternate",
     fallColor: ["yellow"],
     slug: "devils-walkingstick",
-    background: "bg-large/bg-262.jpg",
-    backgroundSmall: "bg-small/bg-262.jpg",
+    background: "bg-large/bg-262b.jpg",
+    backgroundSmall: "bg-small/bg-262b.jpg",
     description: "<p>The Devil's Walkingstick, Aralia spinosa, is a distinctive deciduous tree or large shrub, known for its imposing presence and unique features. Native to the southeastern United States, it typically grows to heights of 10 to 20 feet, with a single, straight stem and a canopy that forms a rounded crown. The tree's common name is derived from its stout, spiny stems and branches, which resemble a medieval weapon or a walking stick with a devilish twist.</p><p>The large, bipinnate leaves of the Devil's Walkingstick can reach up to 4 feet in length, contributing to a tropical-like appearance. In late summer, the tree dazzles with huge, creamy-white, umbrella-like flower clusters, which later produce dark purple berries enjoyed by birds. The foliage turns to a rich yellow in the fall, adding seasonal interest. While the spines discourage casual human contact, this tree is often used in landscaping for its dramatic visual impact and as a natural deterrent for foot traffic.</p>    <p>Though not commonly utilized for timber due to its smaller size and spiny nature, the Devil's Walkingstick is valued in native plant gardens and naturalistic landscapes. Its ability to tolerate a range of soil conditions and its unique characteristics make it a conversation piece in any setting where it is planted.</p>",
     photo1Credit: "<a href=\"https://commons.wikimedia.org/wiki/File:Aralia_spinosa_Arkansas.jpg\">Devil's walkingstick</a>, <a href=\"https://commons.wikimedia.org/wiki/User:Eric_in_SF\">Eric Hunt</a>, <a href=\"https://creativecommons.org/licenses/by-sa/4.0/legalcode\" rel=\"license\">CC BY-SA 4.0</a>",
     photo1Href: "https://en.wikipedia.org/wiki/Aralia_spinosa#/media/File:Aralia_spinosa_Arkansas.jpg",
@@ -480,8 +480,8 @@ const initialTreesState = [
       "yellow"
     ],
     slug: "river-birch",
-    background: "bg-large/bg-274b.jpg",
-    backgroundSmall: "bg-small/bg-274b.jpg",
+    background: "bg-large/bg-278.jpg",
+    backgroundSmall: "bg-small/bg-278.jpg",
     description: "<p>The River Birch, Betula nigra, is a charming deciduous tree renowned for its distinctive peeling bark and graceful stature. Native to the eastern United States, it typically grows to 40-70 feet tall, with a canopy that spreads 40-60 feet when mature. Often found in moist, riverine environments, it is notably tolerant of both wet soils and dry summers, making it a versatile species for landscaping.</p><p>The tree's bark is a striking feature, exfoliating in papery sheets to reveal a patchwork of colors from salmon-pink to creamy white. The leaves of the River Birch are diamond-shaped to triangular, with a glossy green color that turns to shades of yellow in the autumn. It produces catkins in the spring, which mature to small nutlets that provide food for local wildlife.</p><p>The adaptability and ornamental appeal of the River Birch, along with its resistance to the bronze birch borer, make it a favored choice for residential properties, public spaces, and as a natural stabilizer along stream banks and in wetlands.</p>",
 
     photo1Credit: "<a href=\"https://commons.wikimedia.org/wiki/File:River_Birch_at_Skyfields_Arboretum,_Athol_MA.jpg\">River Birch tree</a>, <a href=\"https://commons.wikimedia.org/wiki/User:Faolin42\">John Phelan</a>, <a href=\"https://creativecommons.org/licenses/by/3.0/legalcode\" rel=\"license\">CC BY 3.0</a>",
@@ -528,8 +528,8 @@ const initialTreesState = [
       "golden"
     ],
     slug: "sweet-birch",
-    background: "bg-large/bg-278.jpg",
-    backgroundSmall: "bg-small/bg-278.jpg",
+    background: "bg-large/bg-272b.jpg",
+    backgroundSmall: "bg-small/bg-272b.jpg",
     description: "<p>The Sweet Birch, Betula lenta, also known as Cherry Birch or Black Birch, is a deciduous hardwood tree native to the eastern United States. It typically attains heights of 40 to 70 feet and is distinguished by its shiny, dark cherry-like bark that becomes plated and almost black as the tree matures. This species prefers cooler climates and is often found in moist, well-drained soils in the mountainous regions it calls home.</p><p>Sweet Birch leaves are oval or heart-shaped with a finely serrated edge, turning a vibrant yellow in the fall. Springtime brings slender catkins, which later yield small winged seeds. The tree's twigs, when scraped, emit a wintergreen scent, and the sap can be tapped to make birch beer. The wood is strong and close-grained, historically used in furniture making and currently valued for various wood products.</p><p>With its striking bark, aromatic properties, and handsome foliage, Sweet Birch is a valuable tree for both woodland settings and ornamental landscapes. Its natural beauty and the pleasant scent of its twigs make it a delightful sensory addition to any suitable environment.</p>",
 
     photo1Credit: "<a href=\"https://commons.wikimedia.org/wiki/File:Betula_lenta_subsps_lenta_01-10-2005_14.53.56.JPG\">Sweet Birch leaves</a>, <a href=\"https://commons.wikimedia.org/wiki/User:TeunSpaans\">TeunSpaans</a>, <a href=\"https://creativecommons.org/licenses/by-sa/3.0/legalcode\" rel=\"license\">CC BY-SA 3.0</a>",
@@ -710,8 +710,8 @@ const initialTreesState = [
       "brown"
     ],
     slug: "willow-oak",
-    background: "bg-large/bg-261.jpg",
-    backgroundSmall: "bg-small/bg-261.jpg",
+    background: "bg-large/bg-266.jpg",
+    backgroundSmall: "bg-small/bg-266.jpg",
     description: "<p>The Willow Oak, Quercus phellos, is a distinguished deciduous tree, highly valued for its shade and ornamental qualities. Native to the eastern and southeastern United States, it typically grows to heights of 40 to 75 feet, sometimes reaching over 100 feet in ideal conditions. This oak is characterized by a straight trunk, a rounded to oval canopy, and a moderate to fast growth rate.</p><p>What sets the Willow Oak apart from other oaks is its foliage. The leaves are narrow, lance-shaped, and resemble those of willows, hence the name. They are a bright, fresh green, turning to shades of yellow and russet in the fall. In spring, the tree produces inconspicuous flowers, followed by small, round acorns that are a food source for various wildlife. The bark is smooth and light gray on young trees, becoming rough and furrowed with age.</p><p>The Willow Oak is popular in urban and suburban landscapes for its adaptability to various soil types, including compacted soils, and its tolerance of air pollution. Its unique leaves, stately form, and ecological benefits make it a preferred choice for streetscapes, parks, and large yards.</p>",
 
     photo1Credit: "<a href=\"https://commons.wikimedia.org/wiki/File:Tree_in_Mississippi.jpg\">Willow Oak tree</a>, <a href=\"https://commons.wikimedia.org/wiki/User:Freekhou5\">Freekhou5</a>, <a href=\"https://creativecommons.org/licenses/by-sa/4.0/legalcode\" rel=\"license\">CC BY-SA 4.0</a>",
