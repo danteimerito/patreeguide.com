@@ -222,7 +222,8 @@ export default {
         },   
         isAnyFilterSelected() {
             return [
-                this.selectedTypes, 
+                this.selectedTypes,
+                this.selectedFoliage, 
                 this.selectedNeedles, 
                 this.selectedLeafTypes, 
                 this.selectedLeafAttachments, 
