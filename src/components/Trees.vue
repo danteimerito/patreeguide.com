@@ -25,6 +25,7 @@ export default {
     data() {
         return {
             treeTypes: ['conifer', 'deciduous'],
+            foliage: ['needles', 'leaves'],
             needleStructures: ['single needle', 'clustered needles', 'scaly needles'],
             needleClusters: [2,3,5,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30],
             leafTypes: ['simple', 'lobed', 'compound'],
@@ -42,6 +43,16 @@ export default {
         },
         set(value) {
           this.$store.dispatch('updateSelectedTypes', value);
+        },
+      },
+
+      ...mapState(['selectedFoliage']),
+      selectedFoliageComputed: {
+        get() {
+          return this.selectedFoliage;
+        },
+        set(value) {
+          this.$store.dispatch('updateSelectedFoliage', value);
         },
       },
 
@@ -113,6 +124,7 @@ export default {
       filteredTrees() {
           return this.$store.getters.getFilteredTrees(
               this.selectedTypes, 
+              this.selectedFoliage,
               this.selectedNeedles,
               this.selectedClusters,
               this.selectedLeafTypes,

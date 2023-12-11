@@ -26,25 +26,26 @@
                             <div>
                                 <div class="options-panel">
                                     
+                                    
                                     <transition name="fade-slide">
                                         <div class="options-set">
                                             <div class="options-set-header">
-                                                <h3>Tree Type</h3>
+                                                <h3>Foliage</h3>
                                             </div>
-                                            <label v-for="type in treeTypes" :key="type">
+                                            <label v-for="foliage in foliage" :key="foliage">
                                                 <input 
                                                 type="checkbox" 
-                                                :value="type" 
-                                                v-model="selectedTypesComputed" 
+                                                :value="foliage" 
+                                                v-model="selectedFoliageComputed" 
                                                 />
-                                                {{ type }}
-                                                <img :src="iconMappings[type]" alt="Icon" class="checkbox-icon" />
+                                                {{ foliage }}
+                                                <img :src="iconMappings[foliage]" alt="Icon" class="checkbox-icon" />
                                             </label>
                                         </div>
                                     </transition>
 
                                     <transition name="fade-slide">
-                                        <div v-if="this.selectedTypes.includes('conifer') || this.selectedNeedles.length > 0" class="options-set">
+                                        <div v-if="this.selectedFoliage.includes('needles') || this.selectedNeedles.length > 0" class="options-set">
                                             <div class="options-set-header">
                                                 <h3>Needle Structure</h3>
                                                 <!-- <span class="icon-conifer">
@@ -83,7 +84,7 @@
                                     </transition>
 
                                     <transition name="fade-slide">
-                                    <div v-if="this.selectedTypes.includes('deciduous') || this.selectedLeafTypes.length > 0" class="options-set">
+                                    <div v-if="this.selectedFoliage.includes('leaves') || this.selectedLeafTypes.length > 0" class="options-set">
                                         <div class="options-set-header">
                                             <h3>Leaf Type</h3>
                                             <!-- <span class="icon-deciduous">
@@ -123,7 +124,7 @@
                                     </transition>
 
                                     <transition name="fade-slide">
-                                    <div v-if="this.selectedTypes.includes('deciduous') || this.selectedLeafAttachments.length > 0" class="options-set">
+                                    <div v-if="this.selectedFoliage.includes('leaves') || this.selectedLeafAttachments.length > 0" class="options-set">
                                         <div class="options-set-header">
                                             <h3>Leaf Attachment</h3>
                                             <!-- <span class="icon-deciduous">
@@ -144,7 +145,7 @@
 
                                     
                                     <transition name="fade-slide">
-                                    <div v-if="this.selectedTypes.includes('deciduous') || this.selectedFallColors.length > 0" class="options-set">
+                                    <div v-if="this.selectedFoliage.includes('leaves') || this.selectedFallColors.length > 0" class="options-set">
                                         <div class="options-set-header">
                                             <h3>Fall Colors</h3>
                                             <!-- <span class="icon-deciduous">
@@ -178,6 +179,7 @@ export default {
     data() {
         return {
             treeTypes: ['conifer', 'deciduous'],
+            foliage: ['needles', 'leaves'],
             needleStructures: ['single needle', 'clustered needles', 'scaly needles'],
             needleClusters: [2,3,5,"10-30"],
             leafTypes: ['simple', 'lobed', 'compound'],
@@ -187,6 +189,8 @@ export default {
             iconMappings: {
                 'conifer': '/img/icons/icon-conifer.svg',
                 'deciduous': '/img/icons/icon-deciduous.svg',
+                'needles': '/img/icons/icon-conifer.svg',
+                'leaves': '/img/icons/icon-deciduous.svg',
                 'single needle': '/img/icons/icon-single-needle.svg',
                 'clustered needles': '/img/icons/icon-clustered-needles.svg',
                 'scaly needles': '/img/icons/icon-scaly-needles.svg',
@@ -249,6 +253,15 @@ export default {
             },
             set(value) {
             this.$store.dispatch('updateSelectedTypes', value);
+            },
+        },
+        ...mapState(['selectedFoliage']),
+        selectedFoliageComputed: {
+            get() {
+            return this.selectedFoliage;
+            },
+            set(value) {
+            this.$store.dispatch('updateSelectedFoliage', value);
             },
         },
         ...mapState(['selectedNeedles']),

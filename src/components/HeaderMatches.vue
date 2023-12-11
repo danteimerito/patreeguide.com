@@ -54,6 +54,7 @@ export default {
     isAnyFilterSelected() {
       return [
         this.selectedTypes, 
+        this.selectedFoliage,
         this.selectedNeedles, 
         this.selectedLeafTypes, 
         this.selectedLeafAttachments, 
@@ -65,6 +66,7 @@ export default {
     areFiltersSelected() {
       return [
         this.selectedTypes, 
+        this.selectedFoliage,
         this.selectedNeedles, 
         this.selectedLeafTypes, 
         this.selectedLeafAttachments, 
@@ -84,6 +86,7 @@ export default {
         ...mapState([
             // If you have these as root state properties
             'selectedTypes',
+            'selectedFoliage',
             'selectedNeedles',
             'selectedClusters',
             'selectedLeafTypes',
@@ -96,6 +99,7 @@ export default {
         filteredTreeCount() {
             return this.$store.getters.getFilteredTreeCount(
             this.selectedTypes,
+            this.selectedFoliage,
             this.selectedNeedles,
             this.selectedClusters,
             this.selectedLeafTypes,

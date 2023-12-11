@@ -53,7 +53,8 @@ export default {
     },
     isAnyFilterSelected() {
       return [
-        this.selectedTypes, 
+        // this.selectedTypes, 
+        this.selectedFoliage,
         this.selectedNeedles, 
         this.selectedLeafTypes, 
         this.selectedLeafAttachments, 
@@ -64,7 +65,8 @@ export default {
     },  
     ...mapState([
         // If you have these as root state properties
-        'selectedTypes',
+        // 'selectedTypes',
+        'selectedFoliage',
         'selectedNeedles',
         'selectedClusters',
         'selectedLeafTypes',
