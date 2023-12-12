@@ -276,6 +276,13 @@ export default {
             handler() {
                 this.updateBodyBackground();
             }
+        },
+        tree(newTree, oldTree) {
+            if (newTree) {
+                document.title = newTree.nameCommon;
+            } else {
+                document.title = 'Default Title'; // Fallback title
+            }
         }
     },
     methods: {
@@ -288,8 +295,6 @@ export default {
         },
         updateBodyBackground() {
             // First set the blurred image
-            
-            // document.body.style.backgroundImage = `url(${this.blurredBackground})`;
             document.getElementById("background").style.backgroundImage = `url(${this.blurredBackground})`;
 
             // Then load the full image
@@ -299,20 +304,23 @@ export default {
             const img = new Image();
             img.src = this.fullBackground;
             img.onload = () => {
-                // On image load, set the full background image
-                // document.body.style.backgroundImage = `url(${img.src})`;
-                // document.body.classList.add('background-fade-in');
                 document.getElementById("background").style.backgroundImage = `url(${img.src})`;
                 document.getElementById("background").classList.add('background-fade-in');
             };
         }
     },
-    beforeDestroy() {
+    beforeUnmount() {
         document.getElementById("background").style.backgroundImage = '';
-        // document.getElementById("background").classList.remove('background-fade-in');
+    }, 
+    mounted() {
+        // Also set the title when the component is first mounted
+        if (this.tree) {
+        document.title = this.tree.nameCommon;
+        }
     }
 }
 </script>
+
 
 
 
