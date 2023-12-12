@@ -1,5 +1,4 @@
 import {createRouter, createWebHistory} from 'vue-router'
-// import About from '../views/About'
 import Home from '../views/Home'
 import TreeDetails from '../components/TreeDetails'
 import NotFound from '../views/NotFound'
@@ -10,11 +9,6 @@ const routes = [
         name: 'Home',
         component: Home
     },
-    // {
-    //     path: '/about', 
-    //     name: 'About',
-    //     component: About
-    // },
     {
         path: '/trees/:slug',
         name: 'TreeDetails',
