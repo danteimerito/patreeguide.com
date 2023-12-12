@@ -2,7 +2,6 @@ import {createRouter, createWebHistory} from 'vue-router'
 import Home from '../views/Home'
 import TreeDetails from '../components/TreeDetails'
 import NotFound from '../views/NotFound'
-import store from '../store/store.js' // Adjust the path to your store
 
 const routes = [
     {
@@ -19,10 +18,7 @@ const routes = [
         name: 'TreeDetails',
         component: TreeDetails,
         props: true,
-        beforeEnter: (to, from, next) => {
-          document.title = 'PA Tree Guide';
-          next();
-        }
+        // page titles set in component
     },
     {
       path: '/:catchAll(.*)*', // This will match all routes
