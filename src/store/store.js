@@ -5737,39 +5737,63 @@ export const store = createStore({
         localStorage.removeItem('selectedCompoundStructures');
         localStorage.removeItem('selectedLeafAttachments');
         localStorage.removeItem('selectedFallColors');
+
+        console.log("filters have been reset")
       },
       toggleMenu(state) {
           state.isMenuOpen = !state.isMenuOpen;
+
+          console.log("menu has been toggled")
       },
       closeMenu(state) {
         state.isMenuOpen = false;
+
+        console.log("menu has been closed")
       },
       addItem(state, newItem) {
           state.items.push(newItem);
+
+          console.log("new item has been added to state")
       },
       setSelectedTypes(state, types) {
         state.selectedTypes = types;
+
+        console.log("selected types have been set")
       },
       setSelectedFoliage(state, foliage) {
         state.selectedFoliage = foliage;
+
+        console.log("selected foliage has been set")
       },
       setSelectedNeedles(state, needles) {
         state.selectedNeedles = needles;
+
+        console.log("selected needles has been set")
       },
       setSelectedClusters(state, clusters) {
         state.selectedClusters = clusters;
+
+        console.log("selected clusters has been set")
       },
       setSelectedLeafTypes(state, leafTypes) {
         state.selectedLeafTypes = leafTypes;
+
+        console.log("selected leaftypes has been set")
       },
       setSelectedCompoundStructures(state, compoundStructures) {
         state.selectedCompoundStructures = compoundStructures;
+
+        console.log("selected compound structure has been set")
       },
       setSelectedLeafAttachments(state, leafAttachments) {
         state.selectedLeafAttachments = leafAttachments;
+
+        console.log("selected leaf attachments has been set")
       },
       setSelectedFallColors(state, fallColors) {
         state.selectedFallColors = fallColors;
+
+        console.log("selected fallcolors has been set")
       },
         // ... other mutations
     },
