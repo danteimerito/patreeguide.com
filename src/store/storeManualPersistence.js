@@ -1,4 +1,3 @@
-// import { NULL } from 'sass';
 import { createStore } from 'vuex';
 
 const savedSelectedTypes = localStorage.getItem('selectedTypes');
