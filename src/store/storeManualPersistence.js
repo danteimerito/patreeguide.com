@@ -1,6 +1,29 @@
 // import { NULL } from 'sass';
 import { createStore } from 'vuex';
-import createPersistedState from 'vuex-persistedstate';
+
+const savedSelectedTypes = localStorage.getItem('selectedTypes');
+const initialSelectedTypes = savedSelectedTypes ? JSON.parse(savedSelectedTypes) : [];
+
+const savedSelectedFoliage = localStorage.getItem('selectedFoliage');
+const initialSelectedFoliage = savedSelectedFoliage ? JSON.parse(savedSelectedFoliage) : [];
+
+const savedSelectedNeedles = localStorage.getItem('selectedNeedles');
+const initialSelectedNeedles = savedSelectedNeedles ? JSON.parse(savedSelectedNeedles) : [];
+
+const savedSelectedClusters = localStorage.getItem('selectedClusters');
+const initialSelectedClusters = savedSelectedClusters ? JSON.parse(savedSelectedClusters) : [];
+
+const savedSelectedLeafTypes = localStorage.getItem('selectedLeafTypes');
+const initialSelectedLeafTypes = savedSelectedLeafTypes ? JSON.parse(savedSelectedLeafTypes) : [];
+
+const savedSelectedCompoundStructures = localStorage.getItem('selectedCompoundStructures');
+const initialSelectedCompoundStructures = savedSelectedCompoundStructures ? JSON.parse(savedSelectedCompoundStructures) : [];
+
+const savedSelectedLeafAttachments = localStorage.getItem('selectedLeafAttachments');
+const initialSelectedLeafAttachments = savedSelectedLeafAttachments ? JSON.parse(savedSelectedLeafAttachments) : [];
+
+const savedSelectedFallColors = localStorage.getItem('selectedFallColors');
+const initialSelectedFallColors = savedSelectedFallColors ? JSON.parse(savedSelectedFallColors) : [];
 
 const initialTreesState = [
   {
@@ -5640,14 +5663,14 @@ export const store = createStore({
         return {
           trees: [...initialTreesState], 
           isMenuOpen: false,
-          selectedTypes: [],
-          selectedFoliage: [],
-          selectedNeedles: [],
-          selectedClusters: [],
-          selectedLeafTypes: [],
-          selectedCompoundStructures: [],
-          selectedLeafAttachments: [],
-          selectedFallColors: [],
+          selectedTypes: initialSelectedTypes,
+          selectedFoliage: initialSelectedFoliage,
+          selectedNeedles: initialSelectedNeedles,
+          selectedClusters: initialSelectedClusters,
+          selectedLeafTypes: initialSelectedLeafTypes,
+          selectedCompoundStructures: initialSelectedCompoundStructures,
+          selectedLeafAttachments: initialSelectedLeafAttachments,
+          selectedFallColors: initialSelectedFallColors,
         };
     },
     getters: {
@@ -5705,6 +5728,15 @@ export const store = createStore({
         state.selectedCompoundStructures = [];
         state.selectedLeafAttachments = [];
         state.selectedFallColors = [];
+        // Clear local storage:
+        localStorage.removeItem('selectedTypes');
+        localStorage.removeItem('selectedFoliage');
+        localStorage.removeItem('selectedNeedles');
+        localStorage.removeItem('selectedClusters');
+        localStorage.removeItem('selectedLeafTypes');
+        localStorage.removeItem('selectedCompoundStructures');
+        localStorage.removeItem('selectedLeafAttachments');
+        localStorage.removeItem('selectedFallColors');
 
         console.log("filters have been reset")
       },
@@ -5798,18 +5830,37 @@ export const store = createStore({
         },
     },
     plugins: [
-        createPersistedState({
-            paths: [
-                'selectedTypes', 
-                'selectedFoliage', 
-                'selectedNeedles', 
-                'selectedClusters', 
-                'selectedLeafTypes', 
-                'selectedCompoundStructures', 
-                'selectedLeafAttachments', 
-                'selectedFallColors'
-            ]
-        })
+      (store) => {
+        // Called when the store is initialized
+        store.subscribe((mutation, state) => {
+          // Check if the mutation is about the selectedTypes
+          if (mutation.type === 'setSelectedTypes') {
+            // Persist the new state to localStorage
+            localStorage.setItem('selectedTypes', JSON.stringify(state.selectedTypes));
+          } 
+          if (mutation.type === 'setSelectedFoliage') {
+            localStorage.setItem('selectedFoliage', JSON.stringify(state.selectedFoliage));
+          } 
+          if (mutation.type === 'setSelectedNeedles') {
+            localStorage.setItem('selectedNeedles', JSON.stringify(state.selectedNeedles));
+          }
+          if (mutation.type === 'setSelectedClusters') {
+            localStorage.setItem('selectedClusters', JSON.stringify(state.selectedClusters));
+          }
+          if (mutation.type === 'setSelectedLeafTypes') {
+            localStorage.setItem('selectedLeafTypes', JSON.stringify(state.selectedLeafTypes));
+          }
+          if (mutation.type === 'setSelectedCompoundStructures') {
+            localStorage.setItem('selectedCompoundStructures', JSON.stringify(state.selectedCompoundStructures));
+          }
+          if (mutation.type === 'setSelectedLeafAttachments') {
+            localStorage.setItem('selectedLeafAttachments', JSON.stringify(state.selectedLeafAttachments));
+          }
+          if (mutation.type === 'setSelectedFallColors') {
+            localStorage.setItem('selectedFallColors', JSON.stringify(state.selectedFallColors));
+          }
+        });
+      },
     ],
 })
 
