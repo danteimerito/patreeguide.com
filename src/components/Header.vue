@@ -331,6 +331,11 @@ export default {
             this.$store.commit('resetFilters');
         },
         logoClick() {
+            this.$gtag.event('click_logo_header', {
+                event_category: 'Link',
+                event_label: 'Header logo clicked',
+                // value: 'some_value' // Optional: any value you want to pass
+        });
             this.$store.commit('resetFilters');
             this.$store.commit('closeMenu');
         },
