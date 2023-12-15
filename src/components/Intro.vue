@@ -19,7 +19,7 @@ export default {
   methods: {
     toggleMenu() {
       // Accessing the global gtag instance
-      this.$gtag.event('click', {
+      this.$gtag.event('click_begin_journey', {
         event_category: 'Button',
         event_label: 'Begin the Journey Button',
         value: 'some_value' // Optional: any value you want to pass
