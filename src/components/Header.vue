@@ -247,15 +247,17 @@ export default {
             const changedFoliage = value.find(f => !this.selectedFoliage.includes(f)) 
                 || this.selectedFoliage.find(f => !value.includes(f));
             const isSelected = value.includes(changedFoliage);
-            // Track the event
+
+            // Track the event with a more descriptive label
             this.$gtag.event('foliage_selection_change', {
                 event_category: 'Checkbox Interaction',
-                event_label: changedFoliage,
-                event_action: isSelected ? 'selected' : 'deselected'
+                event_label: `${changedFoliage}: ${isSelected ? 'Selected' : 'Deselected'}`,
+                event_action: 'change'
             });
+
             // Update Vuex state
             this.$store.dispatch('updateSelectedFoliage', value);
-            },
+            }
         },
         ...mapState(['selectedNeedles']),
         selectedNeedlesComputed: {
