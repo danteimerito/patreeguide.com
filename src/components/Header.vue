@@ -25,8 +25,7 @@
                         <div>
                             <div>
                                 <div class="options-panel">
-                                    
-                                    
+    
                                     <transition name="fade-slide">
                                         <div class="options-set">
                                             <div class="options-set-header">
@@ -244,6 +243,17 @@ export default {
             return this.selectedFoliage;
             },
             set(value) {
+            // Determine the changed item and its new state (selected or deselected)
+            const changedFoliage = value.find(f => !this.selectedFoliage.includes(f)) 
+                || this.selectedFoliage.find(f => !value.includes(f));
+            const isSelected = value.includes(changedFoliage);
+            // Track the event
+            this.$gtag.event('foliage_selection_change', {
+                event_category: 'Checkbox Interaction',
+                event_label: changedFoliage,
+                event_action: isSelected ? 'selected' : 'deselected'
+            });
+            // Update Vuex state
             this.$store.dispatch('updateSelectedFoliage', value);
             },
         },
