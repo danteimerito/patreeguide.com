@@ -48,9 +48,6 @@
                                         <div v-if="this.selectedFoliage.includes('needles') || this.selectedNeedles.length > 0" class="options-set">
                                             <div class="options-set-header">
                                                 <h3>Needle Structure</h3>
-                                                <!-- <span class="icon-conifer">
-                                                    <img src="/img/icons/icon-conifer-300px.png" alt="">
-                                                </span> -->
                                             </div>
                                             <label v-for="needle in needleStructures" :key="needle">
                                                 <input 
@@ -68,9 +65,6 @@
                                     <div v-if="this.selectedNeedles.includes('clustered needles') || this.selectedClusters.length > 0" class="options-set">
                                         <div class="options-set-header">
                                             <h3>Needles per Cluster</h3>
-                                            <!-- <span class="icon-conifer">
-                                                <img src="/img/icons/icon-conifer-300px.png" alt="">
-                                            </span> -->
                                         </div>
                                         <label v-for="cluster in needleClusters" :key="cluster">
                                             <input 
@@ -87,9 +81,6 @@
                                     <div v-if="this.selectedFoliage.includes('leaves') || this.selectedLeafTypes.length > 0" class="options-set">
                                         <div class="options-set-header">
                                             <h3>Leaf Type</h3>
-                                            <!-- <span class="icon-deciduous">
-                                                <img src="/img/icons/icon-deciduous_400px.png" alt="">
-                                            </span> -->
                                         </div>
                                         <label v-for="leaf in leafTypes" :key="leaf">
                                             <input 
@@ -107,9 +98,6 @@
                                     <div v-if="selectedLeafTypes.includes('compound') || selectedCompoundStructures.length > 0" class="options-set">
                                         <div class="options-set-header">
                                             <h3>Compound Structure</h3>
-                                            <!-- <span class="icon-deciduous">
-                                                <img src="/img/icons/icon-deciduous_400px.png" alt="">
-                                            </span> -->
                                         </div>
                                         <label v-for="structure in compoundStructures" :key="structure">
                                             <input 
@@ -127,9 +115,6 @@
                                     <div v-if="this.selectedFoliage.includes('leaves') || this.selectedLeafAttachments.length > 0" class="options-set">
                                         <div class="options-set-header">
                                             <h3>Leaf Attachment</h3>
-                                            <!-- <span class="icon-deciduous">
-                                                <img src="/img/icons/icon-deciduous_400px.png" alt="">
-                                            </span> -->
                                         </div>
                                         <label v-for="attachment in leafAttachments" :key="attachment">
                                             <input 
@@ -148,9 +133,6 @@
                                     <div v-if="this.selectedFoliage.includes('leaves') || this.selectedFallColors.length > 0" class="options-set">
                                         <div class="options-set-header">
                                             <h3>Fall Colors</h3>
-                                            <!-- <span class="icon-deciduous">
-                                                <img src="/img/icons/icon-deciduous_400px.png" alt="">
-                                            </span> -->
                                         </div>
                                         <label v-for="color in fallColors" :key="color">
                                             <input type="checkbox" :value="color" v-model="selectedFallColorsComputed" />
