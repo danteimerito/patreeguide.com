@@ -265,6 +265,17 @@ export default {
             return this.selectedNeedles;
             },
             set(value) {
+            // Determine the changed item and its new state (selected or deselected)
+            const changedNeedles = value.find(n => !this.selectedNeedles.includes(n)) 
+                || this.selectedNeedles.find(n => !value.includes(n));
+            const isSelected = value.includes(changedNeedles);
+            // Track the event with a more descriptive label
+            this.$gtag.event('needles_selection_change', {
+                event_category: 'Checkbox Interaction',
+                event_label: `${changedNeedles}: ${isSelected ? 'Selected' : 'Deselected'}`,
+                event_action: 'change'
+            });
+            // Update Vuex state
             this.$store.dispatch('updateSelectedNeedles', value);
             },
         },
@@ -274,6 +285,17 @@ export default {
             return this.selectedClusters;
             },
             set(value) {
+            // Determine the changed item and its new state (selected or deselected)
+            const changedClusters = value.find(c => !this.selectedClusters.includes(c)) 
+                || this.selectedClusters.find(c => !value.includes(c));
+            const isSelected = value.includes(changedClusters);
+            // Track the event with a more descriptive label
+            this.$gtag.event('clusters_selection_change', {
+                event_category: 'Checkbox Interaction',
+                event_label: `${changedClusters}: ${isSelected ? 'Selected' : 'Deselected'}`,
+                event_action: 'change'
+            });
+            // Update Vuex state
             this.$store.dispatch('updateSelectedClusters', value);
             },
         },
@@ -283,6 +305,17 @@ export default {
             return this.selectedLeafTypes;
             },
             set(value) {
+            // Determine the changed item and its new state (selected or deselected)
+            const changedLeafTypes = value.find(lt => !this.selectedLeafTypes.includes(lt)) 
+                || this.selectedLeafTypes.find(lt => !value.includes(lt));
+            const isSelected = value.includes(changedLeafTypes);
+            // Track the event with a more descriptive label
+            this.$gtag.event('leaf-types_selection_change', {
+                event_category: 'Checkbox Interaction',
+                event_label: `${changedLeafTypes}: ${isSelected ? 'Selected' : 'Deselected'}`,
+                event_action: 'change'
+            });
+            // Update Vuex state
             this.$store.dispatch('updateSelectedLeafTypes', value);
             },
         },
@@ -292,6 +325,17 @@ export default {
             return this.selectedCompoundStructures;
             },
             set(value) {
+            // Determine the changed item and its new state (selected or deselected)
+            const changedCompoundStructures = value.find(cs => !this.selectedCompoundStructures.includes(cs)) 
+                || this.selectedCompoundStructures.find(cs => !value.includes(cs));
+            const isSelected = value.includes(changedCompoundStructures);
+            // Track the event with a more descriptive label
+            this.$gtag.event('compound-structure_selection_change', {
+                event_category: 'Checkbox Interaction',
+                event_label: `${changedCompoundStructures}: ${isSelected ? 'Selected' : 'Deselected'}`,
+                event_action: 'change'
+            });
+            // Update Vuex state
             this.$store.dispatch('updateSelectedCompoundStructures', value);
             },
         },
@@ -301,6 +345,17 @@ export default {
             return this.selectedLeafAttachments;
             },
             set(value) {
+            // Determine the changed item and its new state (selected or deselected)
+            const changedLeafAttachments = value.find(la => !this.selectedLeafAttachments.includes(la)) 
+                || this.selectedLeafAttachments.find(la => !value.includes(la));
+            const isSelected = value.includes(changedLeafAttachments);
+            // Track the event with a more descriptive label
+            this.$gtag.event('leaf-attachments_selection_change', {
+                event_category: 'Checkbox Interaction',
+                event_label: `${changedLeafAttachments}: ${isSelected ? 'Selected' : 'Deselected'}`,
+                event_action: 'change'
+            });
+            // Update Vuex state
             this.$store.dispatch('updateSelectedLeafAttachments', value);
             },
         },
@@ -310,6 +365,17 @@ export default {
             return this.selectedFallColors;
             },
             set(value) {
+            // Determine the changed item and its new state (selected or deselected)
+            const changedFallColors = value.find(fc => !this.selectedFallColors.includes(fc)) 
+                || this.selectedFallColors.find(fc => !value.includes(fc));
+            const isSelected = value.includes(changedFallColors);
+            // Track the event with a more descriptive label
+            this.$gtag.event('fall-colors_selection_change', {
+                event_category: 'Checkbox Interaction',
+                event_label: `${changedFallColors}: ${isSelected ? 'Selected' : 'Deselected'}`,
+                event_action: 'change'
+            });
+            // Update Vuex state
             this.$store.dispatch('updateSelectedFallColors', value);
             },
         },
