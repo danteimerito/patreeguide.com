@@ -5774,6 +5774,7 @@ export const store = createStore({
     },
     plugins: [
         createPersistedState({
+          storage: window.localStorage, // for debugging
             paths: [
                 'selectedTypes', 
                 'selectedFoliage', 

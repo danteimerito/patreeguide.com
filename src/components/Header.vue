@@ -191,6 +191,18 @@ export default {
     props: {
         // title: String, 
     },
+
+
+
+    mounted() {
+    this.checkAndCorrectCheckboxState();
+    },
+    updated() {
+        this.checkAndCorrectCheckboxState();
+    },
+    ///the rest is in methods
+
+
     components: {
         HeaderMatches
     }, 
@@ -399,6 +411,46 @@ export default {
             this.$store.commit('resetFilters');
             this.$store.commit('closeMenu');
         },
+
+
+
+        checkAndCorrectCheckboxState() {
+        // Check and correct the state for 'selectedTypes'
+        this.correctCheckboxState(this.selectedTypes, this.selectedTypesComputed, 'updateSelectedTypes');
+
+        // Check and correct the state for 'selectedFoliage'
+        this.correctCheckboxState(this.selectedFoliage, this.selectedFoliageComputed, 'updateSelectedFoliage');
+
+        // Check and correct the state for 'selectedNeedles'
+        this.correctCheckboxState(this.selectedNeedles, this.selectedNeedlesComputed, 'updateSelectedNeedles');
+
+        // Check and correct the state for 'selectedLeafTypes'
+        this.correctCheckboxState(this.selectedLeafTypes, this.selectedLeafTypesComputed, 'updateSelectedLeafTypes');
+
+        // Check and correct the state for 'selectedLeafAttachments'
+        this.correctCheckboxState(this.selectedLeafAttachments, this.selectedLeafAttachmentsComputed, 'updateSelectedLeafAttachments');
+
+        // Check and correct the state for 'selectedFallColors'
+        this.correctCheckboxState(this.selectedFallColors, this.selectedFallColorsComputed, 'updateSelectedFallColors');
+
+        // Check and correct the state for 'selectedCompoundStructures'
+        this.correctCheckboxState(this.selectedCompoundStructures, this.selectedCompoundStructuresComputed, 'updateSelectedCompoundStructures');
+
+        // Check and correct the state for 'selectedClusters'
+        this.correctCheckboxState(this.selectedClusters, this.selectedClustersComputed, 'updateSelectedClusters');
+    },
+
+    correctCheckboxState(actualState, computedState, updateAction) {
+      // Determine if there's a discrepancy
+      const discrepancyExists = actualState.some((item, index) => computedState[index] !== item);
+
+      // If there's a discrepancy, update the Vuex state to reflect the correct state
+      if (discrepancyExists) {
+        this.$store.dispatch(updateAction, computedState);
+        // Optionally, log or handle the discrepancy here
+        console.log(`Discrepancy corrected for ${updateAction}`);
+      }
+    }
     },
 }
 </script>
