@@ -76,9 +76,8 @@
                                     </div>
                                     </transition>
 
-                                    <!-- v-if="this.selectedFoliage.includes('leaves') || this.selectedLeafTypes.length > 0" -->
-                                    <!-- <transition name="fade-slide"> -->
-                                    <div class="options-set">
+                                    <transition name="fade-slide">
+                                    <div v-if="this.selectedFoliage.includes('leaves') || this.selectedLeafTypes.length > 0" class="options-set">
                                         <div class="options-set-header">
                                             <h3>Leaf Type</h3>
                                         </div>
@@ -92,7 +91,7 @@
                                             <img :src="iconMappings[leaf]" alt="Icon" class="checkbox-icon">
                                         </label>
                                     </div>
-                                    <!-- </transition> -->
+                                    </transition>
 
                                     <transition name="fade-slide">
                                     <div v-if="selectedLeafTypes.includes('compound') || selectedCompoundStructures.length > 0" class="options-set">
