@@ -5783,7 +5783,8 @@ export const store = createStore({
                 'selectedLeafTypes', 
                 'selectedCompoundStructures', 
                 'selectedLeafAttachments', 
-                'selectedFallColors'
+                'selectedFallColors',
+                'isMenuOpen'
             ]
         })
     ],
