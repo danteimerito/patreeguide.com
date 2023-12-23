@@ -189,8 +189,6 @@ export default {
         // title: String, 
     },
 
-
-
     mounted() {
     this.checkAndCorrectCheckboxState();
     },
@@ -409,45 +407,35 @@ export default {
             this.$store.commit('closeMenu');
         },
 
-
-
         checkAndCorrectCheckboxState() {
-        // Check and correct the state for 'selectedTypes'
-        this.correctCheckboxState(this.selectedTypes, this.selectedTypesComputed, 'updateSelectedTypes');
+            const statePairs = [
+                { actual: this.selectedTypes, computed: this.selectedTypesComputed, action: 'updateSelectedTypes' },
+                { actual: this.selectedFoliage, computed: this.selectedFoliageComputed, action: 'updateSelectedFoliage' },
+                { actual: this.selectedNeedles, computed: this.selectedNeedlesComputed, action: 'updateSelectedNeedles' },
+                { actual: this.selectedLeafTypes, computed: this.selectedLeafTypes, action: 'updateSelectedLeafTypes' },
+                { actual: this.selectedLeafAttachments, computed: this.selectedLeafAttachments, action: 'updateSelectedLeafAttachments' },
+                { actual: this.selectedFallColors, computed: this.selectedFallColors, action: 'updateSelectedFallColors' },
+                { actual: this.selectedCompoundStructures, computed: this.selectedCompoundStructures, action: 'updateSelectedCompoundStructures' },
+                { actual: this.selectedClusters, computed: this.selectedClusters, action: 'updateSelectedClusters' },
+            ];
 
-        // Check and correct the state for 'selectedFoliage'
-        this.correctCheckboxState(this.selectedFoliage, this.selectedFoliageComputed, 'updateSelectedFoliage');
+            statePairs.forEach(({ actual, computed, action }) => {
+                this.correctCheckboxState(actual, computed, action);
+            });
+   
+        },
 
-        // Check and correct the state for 'selectedNeedles'
-        this.correctCheckboxState(this.selectedNeedles, this.selectedNeedlesComputed, 'updateSelectedNeedles');
+        correctCheckboxState(actualState, computedState, updateAction) {
+            // Determine if there's a discrepancy
+            const discrepancyExists = actualState.some((item, index) => computedState[index] !== item);
 
-        // Check and correct the state for 'selectedLeafTypes'
-        this.correctCheckboxState(this.selectedLeafTypes, this.selectedLeafTypesComputed, 'updateSelectedLeafTypes');
-
-        // Check and correct the state for 'selectedLeafAttachments'
-        this.correctCheckboxState(this.selectedLeafAttachments, this.selectedLeafAttachmentsComputed, 'updateSelectedLeafAttachments');
-
-        // Check and correct the state for 'selectedFallColors'
-        this.correctCheckboxState(this.selectedFallColors, this.selectedFallColorsComputed, 'updateSelectedFallColors');
-
-        // Check and correct the state for 'selectedCompoundStructures'
-        this.correctCheckboxState(this.selectedCompoundStructures, this.selectedCompoundStructuresComputed, 'updateSelectedCompoundStructures');
-
-        // Check and correct the state for 'selectedClusters'
-        this.correctCheckboxState(this.selectedClusters, this.selectedClustersComputed, 'updateSelectedClusters');
-    },
-
-    correctCheckboxState(actualState, computedState, updateAction) {
-      // Determine if there's a discrepancy
-      const discrepancyExists = actualState.some((item, index) => computedState[index] !== item);
-
-      // If there's a discrepancy, update the Vuex state to reflect the correct state
-      if (discrepancyExists) {
-        this.$store.dispatch(updateAction, computedState);
-        // Optionally, log or handle the discrepancy here
-        console.log(`Discrepancy corrected for ${updateAction}`);
-      }
-    }
+        // If there's a discrepancy, update the Vuex state to reflect the correct state
+        if (discrepancyExists) {
+            this.$store.dispatch(updateAction, computedState);
+            // Optionally, log or handle the discrepancy here
+            console.log(`Discrepancy corrected for ${updateAction}`);
+        }
+        }
     },
 }
 </script>
@@ -461,7 +449,7 @@ export default {
 /* Enter from and leave to (initial state) */
 .fade-slide-enter-from, .fade-slide-leave-to {
   opacity: 0;
-  transform: translateY(10px); /* Adjust as needed */
+  transform: translateY(-10px); /* Adjust as needed */
 }
 
 /* Enter to and leave from (final state) */
