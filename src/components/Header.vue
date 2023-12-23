@@ -449,7 +449,7 @@ export default {
 /* Enter from and leave to (initial state) */
 .fade-slide-enter-from, .fade-slide-leave-to {
   opacity: 0;
-  transform: translateY(-10px); /* Adjust as needed */
+  transform: translateY(-50px); /* Adjust as needed */
 }
 
 /* Enter to and leave from (final state) */
