@@ -1,8 +1,5 @@
 <template>
     <header>
-        <!-- <div @click="toggleMenu" class="mobile-menu-toggle">
-            <div>~</div>
-        </div> -->
 
             <div class="topbars">
                 <div class="menu-wrap">
