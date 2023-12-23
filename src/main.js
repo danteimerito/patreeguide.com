@@ -8,7 +8,7 @@ import VueGtag from 'vue-gtag';
 createApp(App)
   .use(VueGtag, {
     config: { id: "G-8XHB2YVL29" }
-  }, router)
+  })
   .use(router)
   .use(store)
   .mount('#app')

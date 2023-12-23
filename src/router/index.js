@@ -2,8 +2,7 @@ import {createRouter, createWebHistory} from 'vue-router'
 import Home from '../views/Home'
 import TreeDetails from '../components/TreeDetails'
 import NotFound from '../views/NotFound'
-// import VueGtag from "vue-gtag"
-import { nextTick } from 'vue';
+import { useGtag } from 'vue-gtag'
 
 const routes = [
     {
@@ -20,10 +19,7 @@ const routes = [
         name: 'TreeDetails',
         component: TreeDetails,
         props: true,
-        beforeEnter: (to, from, next) => {
-          document.title = `${to.params.slug} | patreeguide.com`; // Set a dynamic title
-          next();
-        }
+        // page titles set in component
     },
     {
       path: '/:catchAll(.*)*', // This will match all routes
@@ -55,40 +51,14 @@ const router = createRouter({
 });
 
 // Google Analytics tracking
-// router.afterEach((to, from) => {
-//   const gtag = useGtag();
-  
-//   gtag.pageview({
-//     page_path: to.fullPath,
-//     page_title: document.title
-//   });
-// });
-
 router.afterEach((to, from) => {
-  nextTick(() => {
-    if (window.gtag) {
-      window.gtag('config', 'G-8XHB2YVL29', {
-        page_path: to.fullPath,
-        page_title: document.title
-      });
-    }
+  // Use vue-gtag's useGtag function
+  const gtag = useGtag();
+  
+  gtag.pageview({
+    page_path: to.fullPath,
+    page_title: document.title
   });
 });
-
-
-
-// router.afterEach((to, from) => {
-//   // Next tick ensures the title has been updated
-//   Vue.nextTick(() => {
-//     if (window.gtag) { // Check if gtag is available
-//       window.gtag('config', 'G-8XHB2YVL29', {
-//         page_path: to.fullPath,
-//         page_title: document.title
-//       });
-//     }
-//   });
-// });
-
-
 
 export default router

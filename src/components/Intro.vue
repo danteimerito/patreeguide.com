@@ -9,7 +9,7 @@
 
 <script>
 import { mapState } from 'vuex';
-import { gtag } from 'vue-gtag';
+// import { gtag } from 'vue-gtag';
 
 export default {
   name: 'Intro',
@@ -24,7 +24,6 @@ export default {
         event_label: 'Begin the Journey Button',
         value: 'some_value' // Optional: any value you want to pass
       });
-
       this.$store.commit('toggleMenu');
     },
     updateBodyBackground() {
@@ -80,7 +79,8 @@ export default {
         'selectedLeafTypes',
         'selectedCompoundStructures',
         'selectedLeafAttachments',
-        'selectedFallColors'
+        'selectedFallColors',
+        'isMenuOpen'
     ]),
   },
  
