@@ -8,6 +8,7 @@
                     </div>
 
                     <input 
+                        name="toggler"
                         type="checkbox" 
                         class="toggler"
                         v-model="isMenuOpen"
@@ -30,9 +31,10 @@
                                             </div>
                                             <label v-for="foliage in foliage" :key="foliage">
                                                 <input 
-                                                type="checkbox" 
-                                                :value="foliage" 
-                                                v-model="selectedFoliageComputed" 
+                                                    type="checkbox" 
+                                                    :name="foliage"
+                                                    :value="foliage" 
+                                                    v-model="selectedFoliageComputed" 
                                                 />
                                                 {{ foliage }}
                                                 <img :src="iconMappings[foliage]" alt="Icon" class="checkbox-icon" />
@@ -48,6 +50,7 @@
                                             <label v-for="needle in needleStructures" :key="needle">
                                                 <input 
                                                 type="checkbox" 
+                                                :name="needle"
                                                 :value="needle" 
                                                 v-model="selectedNeedlesComputed" 
                                                 />
@@ -65,6 +68,7 @@
                                         <label v-for="cluster in needleClusters" :key="cluster">
                                             <input 
                                             type="checkbox" 
+                                            :name="cluster"
                                             :value="cluster" 
                                             v-model="selectedClustersComputed" 
                                             />
@@ -80,7 +84,8 @@
                                         </div>
                                         <label v-for="leaf in leafTypes" :key="leaf">
                                             <input 
-                                            type="checkbox" 
+                                            type="checkbox"
+                                            :name="leaf" 
                                             :value="leaf" 
                                             v-model="selectedLeafTypesComputed" 
                                             />
@@ -98,6 +103,7 @@
                                         <label v-for="structure in compoundStructures" :key="structure">
                                             <input 
                                             type="checkbox" 
+                                            :name="structure"
                                             :value="structure" 
                                             v-model="selectedCompoundStructuresComputed" 
                                             />
@@ -115,6 +121,7 @@
                                         <label v-for="attachment in leafAttachments" :key="attachment">
                                             <input 
                                             type="checkbox" 
+                                            :name="attachment"
                                             :value="attachment" 
                                             v-model="selectedLeafAttachmentsComputed" 
                                             />
@@ -131,7 +138,12 @@
                                             <h3>Fall Colors</h3>
                                         </div>
                                         <label v-for="color in fallColors" :key="color">
-                                            <input type="checkbox" :value="color" v-model="selectedFallColorsComputed" />
+                                            <input 
+                                                type="checkbox" 
+                                                name="color"
+                                                :value="color" 
+                                                v-model="selectedFallColorsComputed" 
+                                            />
                                             {{ color }}
                                         </label>
                                     </div>
