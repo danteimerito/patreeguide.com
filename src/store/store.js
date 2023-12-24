@@ -1,5 +1,5 @@
 import { createStore } from 'vuex';
-import createPersistedState from 'vuex-persistedstate';
+// import createPersistedState from 'vuex-persistedstate';
 
 const initialTreesState = [
   {
@@ -5772,9 +5772,9 @@ export const store = createStore({
           commit('setSelectedFallColors', fallColors);
         },
     },
-    plugins: [
-        createPersistedState({
-          storage: window.localStorage, // for debugging
+    // plugins: [
+        // createPersistedState({
+          // storage: window.localStorage, // for debugging
             // paths: [
             //     'selectedTypes', 
             //     'selectedFoliage', 
@@ -5786,8 +5786,8 @@ export const store = createStore({
             //     'selectedFallColors',
             //     'isMenuOpen'
             // ]
-        })
-    ],
+        // })
+    // ],
 })
 
 
