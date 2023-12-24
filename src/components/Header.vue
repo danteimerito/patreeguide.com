@@ -1,18 +1,28 @@
 <template>
     <header>
-
+      
             <div class="topbars">
                 <div class="menu-wrap">
                     <div class="menu-topbar" ref="">
                         <div class="logo"><router-link to="/" @click="logoClick">PA TREE GUIDE </router-link></div>
                     </div>
 
-                    <input 
+                    <!-- <input 
                         name="toggler"
                         type="checkbox" 
                         class="toggler"
                         v-model="isMenuOpen"
+                    /> --> 
+
+                    <input 
+                        type="checkbox" 
+                        name="toggler"
+                        class="toggler"
+                        :checked="isMenuOpen" 
+                        @change="toggleMenu($event)" 
                     />
+    
+  
                     <HeaderMatches v-if="isMenuOpen"/>
                     <HeaderMatches v-else-if="homePage && isAnyFilterSelected"/>
 
@@ -232,14 +242,14 @@ export default {
                 this.selectedClusters
             ].some(array => array && array.length > 0);
         },
-        isMenuOpen: {
-            get() {
-                return this.$store.state.isMenuOpen;
-            },
-            set(value) {
-                this.$store.commit('toggleMenu');
-            }
-        },
+        // isMenuOpen: {
+        //     get() {
+        //         return this.$store.state.isMenuOpen;
+        //     },
+        //     set(value) {
+        //         this.$store.commit('toggleMenu');
+        //     }
+        // },
         homePage() {
             if(this.$route.path === "/") {
                 return true
@@ -247,6 +257,7 @@ export default {
                 return false
             }
         },
+        ...mapState(['isMenuOpen']),
         ...mapState(['selectedTypes']),
         selectedTypesComputed: {
             get() {
@@ -400,8 +411,8 @@ export default {
         },
     }, 
     methods: {
-        toggleMenu() {
-            this.$store.commit('toggleMenu');
+        toggleMenu(event) {
+            this.$store.commit('toggleMenu', event.target.checked);
         },
         closeMenu() {
             this.$store.commit('closeMenu');
@@ -434,7 +445,6 @@ export default {
             statePairs.forEach(({ actual, computed, action }) => {
                 this.correctCheckboxState(actual, computed, action);
             });
-   
         },
 
         correctCheckboxState(actualState, computedState, updateAction) {
@@ -461,7 +471,7 @@ export default {
 /* Enter from and leave to (initial state) */
 .fade-slide-enter-from, .fade-slide-leave-to {
   opacity: 0;
-  transform: translateY(-50px); /* Adjust as needed */
+  transform: translateY(20px); /* Adjust as needed */
 }
 
 /* Enter to and leave from (final state) */
