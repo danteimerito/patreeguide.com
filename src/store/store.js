@@ -1,5 +1,11 @@
 import { createStore } from 'vuex';
 // import createPersistedState from 'vuex-persistedstate';
+import VuexPersistence from 'vuex-persist';
+
+// initialize vuex-persist
+const vuexLocal = new VuexPersistence({
+  storage: window.localStorage,
+});
 
 const initialTreesState = [
   {
@@ -5634,6 +5640,7 @@ const initialTreesState = [
   }
 ];
 
+// create Vuex store
 export const store = createStore({
     state() {
         return {
@@ -5772,6 +5779,9 @@ export const store = createStore({
           commit('setSelectedFallColors', fallColors);
         },
     },
+    plugins: [vuexLocal.plugin],
+
+    // plugin for vuex-persistedstate pkg
     // plugins: [
         // createPersistedState({
           // storage: window.localStorage, // for debugging
@@ -5788,6 +5798,6 @@ export const store = createStore({
             // ]
         // })
     // ],
-})
+});
 
 

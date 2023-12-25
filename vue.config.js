@@ -5,6 +5,7 @@ module.exports = defineConfig({
 })
 
 module.exports = {
+  transpileDependencies: ['vuex-persist'],
   devServer: {
     proxy: {
       '^/api': {
