@@ -212,7 +212,8 @@ export default {
     },
 
     mounted() {
-    // this.checkAndCorrectCheckboxState();
+        // this.checkAndCorrectCheckboxState();
+        this.ensureCheckboxesReflectState();
     },
     updated() {
         // this.checkAndCorrectCheckboxState();
@@ -401,7 +402,31 @@ export default {
             },
         },
     }, 
+
+    created() {
+            document.addEventListener('visibilitychange', this.handleVisibilityChange);
+    },
+    destroyed() {
+        document.removeEventListener('visibilitychange', this.handleVisibilityChange);
+    },
+    
     methods: {
+        handleVisibilityChange() {
+            if (document.visibilityState === 'visible') {
+            this.ensureCheckboxesReflectState();
+            }
+        },
+        ensureCheckboxesReflectState() {
+            // Logic to ensure checkboxes reflect the Vuex state
+            this.selectedFoliageComputed = [...this.selectedFoliage];
+            this.selectedNeedlesComputed = [...this.selectedNeedles];
+            this.selectedLeafTypesComputed = [...this.selectedLeafTypes];
+            this.selectedLeafAttachmentsComputed = [...this.selectedLeafAttachments];
+            this.selectedFallColorsComputed = [...this.selectedFallColors];
+            this.selectedCompoundStructuresComputed = [...this.selectedCompoundStructures];
+            this.selectedClustersComputed = [...this.selectedClusters];
+            // ... do this for each piece of state that has a corresponding checkbox
+        },
         toggleMenu(event) {
             this.$store.commit('toggleMenu', event.target.checked);
         },
@@ -420,6 +445,8 @@ export default {
             this.$store.commit('resetFilters');
             this.$store.commit('closeMenu');
         },
+
+
 
         // checkAndCorrectCheckboxState() {
         //     const statePairs = [
@@ -450,6 +477,18 @@ export default {
         // }
         // }
     },
+    // watch: {
+        // selectedFoliage(newVal) {
+            // this.selectedFoliageComputed = [...newVal];
+        // },
+        // selectedNeedles(newVal) {
+            // this.selectedNeedlesComputed = [...newVal];
+        // },
+        // ... add watchers for other relevant pieces of state ...
+    // },
+
+
+
 }
 </script>
 
