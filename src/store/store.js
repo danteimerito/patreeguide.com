@@ -1,10 +1,25 @@
 import { createStore } from 'vuex';
 // import createPersistedState from 'vuex-persistedstate';
 import VuexPersistence from 'vuex-persist';
+import Cookies from 'js-cookie';
 
-// initialize vuex-persist
+// initialize vuex-persist (local storage)
+// const vuexLocal = new VuexPersistence({
+//   storage: window.localStorage,
+// });
+
+// Define custom storage handler for cookies
+const cookieStorage = {
+  getItem: (key) => Cookies.get(key),
+  setItem: (key, value) => Cookies.set(key, value, { expires: 3, secure: true }), // Customize options as needed
+  removeItem: (key) => Cookies.remove(key)
+};
+
+// Initialize vuex-persist with cookie storage
 const vuexLocal = new VuexPersistence({
-  storage: window.localStorage,
+  key: 'my-app-state',
+  storage: cookieStorage,
+  // Specify other options as needed
 });
 
 const initialTreesState = [
@@ -5654,7 +5669,7 @@ export const store = createStore({
           selectedCompoundStructures: [],
           selectedLeafAttachments: [],
           selectedFallColors: [],
-        };
+        }
     },
     getters: {
         getTreeBySlug: (state) => (slug) => {
@@ -5702,6 +5717,9 @@ export const store = createStore({
     },
     mutations: {
       resetFilters(state) {
+
+        console.log("store:mutation:resetFilters");
+
         // Reset filters to initial state or empty arrays
         state.selectedTypes = [];
         state.selectedFoliage = [];
@@ -5713,37 +5731,48 @@ export const store = createStore({
         state.selectedFallColors = [];
       },
       toggleMenu(state) {
-          state.isMenuOpen = !state.isMenuOpen;
+        console.log("store:mutation:toggleMenu");
+        state.isMenuOpen = !state.isMenuOpen;
       },
       closeMenu(state) {
+        console.log("store:mutation:closeMenu");
         state.isMenuOpen = false;
       },
       addItem(state, newItem) {
-          state.items.push(newItem);
+        console.log("store:mutation:addItem");
+        state.items.push(newItem);
       },
       setSelectedTypes(state, types) {
+        console.log("store:mutation:setSelectedTypes");
         state.selectedTypes = types;
       },
       setSelectedFoliage(state, foliage) {
+        console.log("store:mutation:setSelectedFoliage");
         state.selectedFoliage = foliage;
       },
       setSelectedNeedles(state, needles) {
+        console.log("store:mutation:setSelectedNeedles");
         state.selectedNeedles = needles;
       },
       setSelectedClusters(state, clusters) {
+        console.log("store:mutation:setSelectedClusters");
         state.selectedClusters = clusters;
       },
       setSelectedLeafTypes(state, leafTypes) {
         state.selectedLeafTypes = leafTypes;
+        console.log("store:mutation:setSelectedLeafTypes");
       },
       setSelectedCompoundStructures(state, compoundStructures) {
         state.selectedCompoundStructures = compoundStructures;
+        console.log("store:mutation:setSelectedCompoundStructures");
       },
       setSelectedLeafAttachments(state, leafAttachments) {
         state.selectedLeafAttachments = leafAttachments;
+        console.log("store:mutation:setSelectedLeafAttachments");
       },
       setSelectedFallColors(state, fallColors) {
         state.selectedFallColors = fallColors;
+        console.log("store:mutation:setSelectedFallColors");
       },
         // ... other mutations
     },
@@ -5755,31 +5784,44 @@ export const store = createStore({
         //     }, 1000);
         // },
         updateSelectedTypes({ commit }, types) {
+          console.log("store:action:updateSelectedTypes");
           commit('setSelectedTypes', types);
         },
         updateSelectedFoliage({ commit }, foliage) {
           commit('setSelectedFoliage', foliage);
+          console.log("store:action:updateSelectedFoliage");
         },
         updateSelectedNeedles({ commit }, needles) {
           commit('setSelectedNeedles', needles);
+          console.log("store:action:updateSelectedNeedles");
         },
         updateSelectedClusters({ commit }, clusters) {
           commit('setSelectedClusters', clusters);
+          console.log("store:action:updateSelectedClusters");
         },
         updateSelectedLeafTypes({ commit }, leafTypes) {
           commit('setSelectedLeafTypes', leafTypes);
+          console.log("store:action:updateSelectedLeafTypes");
+
         },
         updateSelectedCompoundStructures({ commit }, compoundStructures) {
           commit('setSelectedCompoundStructures', compoundStructures);
+          console.log("store:action:updateSelectedCompoundStructures");
+
         },
         updateSelectedLeafAttachments({ commit }, leafAttachments) {
           commit('setSelectedLeafAttachments', leafAttachments);
+          console.log("store:action:updateSelectedLeafAttachments");
+
         },
         updateSelectedFallColors({ commit }, fallColors) {
           commit('setSelectedFallColors', fallColors);
+          console.log("store:action:updateSelectedFallColors");
+
         },
     },
     plugins: [vuexLocal.plugin],
+    
 
     // plugin for vuex-persistedstate pkg
     // plugins: [

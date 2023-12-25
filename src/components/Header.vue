@@ -212,10 +212,10 @@ export default {
     },
 
     mounted() {
-    this.checkAndCorrectCheckboxState();
+    // this.checkAndCorrectCheckboxState();
     },
     updated() {
-        this.checkAndCorrectCheckboxState();
+        // this.checkAndCorrectCheckboxState();
     },
     ///the rest is in methods
 
@@ -430,34 +430,34 @@ export default {
             this.$store.commit('closeMenu');
         },
 
-        checkAndCorrectCheckboxState() {
-            const statePairs = [
-                { actual: this.selectedTypes, computed: this.selectedTypesComputed, action: 'updateSelectedTypes' },
-                { actual: this.selectedFoliage, computed: this.selectedFoliageComputed, action: 'updateSelectedFoliage' },
-                { actual: this.selectedNeedles, computed: this.selectedNeedlesComputed, action: 'updateSelectedNeedles' },
-                { actual: this.selectedLeafTypes, computed: this.selectedLeafTypes, action: 'updateSelectedLeafTypes' },
-                { actual: this.selectedLeafAttachments, computed: this.selectedLeafAttachments, action: 'updateSelectedLeafAttachments' },
-                { actual: this.selectedFallColors, computed: this.selectedFallColors, action: 'updateSelectedFallColors' },
-                { actual: this.selectedCompoundStructures, computed: this.selectedCompoundStructures, action: 'updateSelectedCompoundStructures' },
-                { actual: this.selectedClusters, computed: this.selectedClusters, action: 'updateSelectedClusters' },
-            ];
+        // checkAndCorrectCheckboxState() {
+        //     const statePairs = [
+        //         { actual: this.selectedTypes, computed: this.selectedTypesComputed, action: 'updateSelectedTypes' },
+        //         { actual: this.selectedFoliage, computed: this.selectedFoliageComputed, action: 'updateSelectedFoliage' },
+        //         { actual: this.selectedNeedles, computed: this.selectedNeedlesComputed, action: 'updateSelectedNeedles' },
+        //         { actual: this.selectedLeafTypes, computed: this.selectedLeafTypes, action: 'updateSelectedLeafTypes' },
+        //         { actual: this.selectedLeafAttachments, computed: this.selectedLeafAttachments, action: 'updateSelectedLeafAttachments' },
+        //         { actual: this.selectedFallColors, computed: this.selectedFallColors, action: 'updateSelectedFallColors' },
+        //         { actual: this.selectedCompoundStructures, computed: this.selectedCompoundStructures, action: 'updateSelectedCompoundStructures' },
+        //         { actual: this.selectedClusters, computed: this.selectedClusters, action: 'updateSelectedClusters' },
+        //     ];
 
-            statePairs.forEach(({ actual, computed, action }) => {
-                this.correctCheckboxState(actual, computed, action);
-            });
-        },
+            // statePairs.forEach(({ actual, computed, action }) => {
+            //     this.correctCheckboxState(actual, computed, action);
+            // });
+        // },
 
-        correctCheckboxState(actualState, computedState, updateAction) {
-            // Determine if there's a discrepancy
-            const discrepancyExists = actualState.some((item, index) => computedState[index] !== item);
+        // correctCheckboxState(actualState, computedState, updateAction) {
+        //     // Determine if there's a discrepancy
+        //     const discrepancyExists = actualState.some((item, index) => computedState[index] !== item);
 
-        // If there's a discrepancy, update the Vuex state to reflect the correct state
-        if (discrepancyExists) {
-            this.$store.dispatch(updateAction, computedState);
-            // Optionally, log or handle the discrepancy here
-            console.log(`Discrepancy corrected for ${updateAction}`);
-        }
-        }
+        // // If there's a discrepancy, update the Vuex state to reflect the correct state
+        // if (discrepancyExists) {
+        //     this.$store.dispatch(updateAction, computedState);
+        //     // Optionally, log or handle the discrepancy here
+        //     console.log(`Discrepancy corrected for ${updateAction}`);
+        // }
+        // }
     },
 }
 </script>
