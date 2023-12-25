@@ -232,7 +232,6 @@ export default {
         },   
         isAnyFilterSelected() {
             return [
-                this.selectedTypes,
                 this.selectedFoliage, 
                 this.selectedNeedles, 
                 this.selectedLeafTypes, 
@@ -258,15 +257,7 @@ export default {
             }
         },
         ...mapState(['isMenuOpen']),
-        ...mapState(['selectedTypes']),
-        selectedTypesComputed: {
-            get() {
-            return this.selectedTypes;
-            },
-            set(value) {
-            this.$store.dispatch('updateSelectedTypes', value);
-            },
-        },
+        
         ...mapState(['selectedFoliage']),
         selectedFoliageComputed: {
             get() {

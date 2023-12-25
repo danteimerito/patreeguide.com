@@ -51,14 +51,13 @@ const router = createRouter({
 });
 
 // Google Analytics tracking
-router.afterEach((to, from) => {
-  // Use vue-gtag's useGtag function
-  const gtag = useGtag();
+// router.afterEach((to, from) => {
+//   const gtag = useGtag();
   
-  gtag.pageview({
-    page_path: to.fullPath,
-    page_title: document.title
-  });
-});
+//   gtag.pageview({
+//     page_path: to.fullPath,
+//     page_title: document.title
+//   });
+// });
 
 export default router

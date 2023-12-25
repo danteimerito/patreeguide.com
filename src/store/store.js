@@ -1,25 +1,20 @@
 import { createStore } from 'vuex';
 // import createPersistedState from 'vuex-persistedstate';
 import VuexPersistence from 'vuex-persist';
-import Cookies from 'js-cookie';
 
 // initialize vuex-persist (local storage)
-// const vuexLocal = new VuexPersistence({
-//   storage: window.localStorage,
-// });
-
-// Define custom storage handler for cookies
-const cookieStorage = {
-  getItem: (key) => Cookies.get(key),
-  setItem: (key, value) => Cookies.set(key, value, { expires: 3, secure: true }), // Customize options as needed
-  removeItem: (key) => Cookies.remove(key)
-};
-
-// Initialize vuex-persist with cookie storage
 const vuexLocal = new VuexPersistence({
-  key: 'my-app-state',
-  storage: cookieStorage,
-  // Specify other options as needed
+  storage: window.localStorage,
+  reducer: (state) => ({
+      selectedFoliage: state.selectedFoliage,
+      selectedNeedles: state.selectedNeedles,  
+      selectedClusters: state.selectedClusters,
+      selectedLeafTypes: state.selectedLeafTypes,       
+      selectedCompoundStructures: state.selectedCompoundStructures, 
+      selectedLeafAttachments: state.selectedLeafAttachments,    
+      selectedFallColors: state.selectedFallColors,     
+      isMenuOpen: state.isMenuOpen     
+  })
 });
 
 const initialTreesState = [
@@ -5661,7 +5656,6 @@ export const store = createStore({
         return {
           trees: [...initialTreesState], 
           isMenuOpen: false,
-          selectedTypes: [],
           selectedFoliage: [],
           selectedNeedles: [],
           selectedClusters: [],
@@ -5681,9 +5675,8 @@ export const store = createStore({
             let coniferTrees = state.trees.filter(tree => tree.type == 'conifer')
             return coniferTrees
         }, 
-        getFilteredTrees: (state) => (selectedTypes, selectedFoliage, selectedNeedles, selectedClusters, selectedLeafTypes, selectedCompoundStructures, selectedLeafAttachments, selectedFallColors) => {
+        getFilteredTrees: (state) => (selectedFoliage, selectedNeedles, selectedClusters, selectedLeafTypes, selectedCompoundStructures, selectedLeafAttachments, selectedFallColors) => {
             return state.trees.filter(tree => {
-            const typeMatch = !selectedTypes.length || selectedTypes.includes(tree.type);
             const foliageMatch = !selectedFoliage.length || selectedFoliage.includes(tree.foliage);
             const needleMatch = !selectedNeedles.length || selectedNeedles.includes(tree.needleStructure);
 
@@ -5695,12 +5688,11 @@ export const store = createStore({
 
             const fallColorMatch = !selectedFallColors.length || (tree.fallColor && tree.fallColor.some(color => selectedFallColors.includes(color)));
 
-            return typeMatch && foliageMatch && needleMatch && leafTypeMatch && compoundStructureMatch && leafAttachmentMatch && clusterMatch && fallColorMatch;
+            return foliageMatch && needleMatch && leafTypeMatch && compoundStructureMatch && leafAttachmentMatch && clusterMatch && fallColorMatch;
           });
         },
-        getFilteredTreeCount: (state) => (selectedTypes, selectedFoliage, selectedNeedles, selectedClusters, selectedLeafTypes, selectedCompoundStructures, selectedLeafAttachments, selectedFallColors) => {
+        getFilteredTreeCount: (state) => (selectedFoliage, selectedNeedles, selectedClusters, selectedLeafTypes, selectedCompoundStructures, selectedLeafAttachments, selectedFallColors) => {
           const filteredTrees = state.trees.filter(tree => {
-            const typeMatch = !selectedTypes.length || selectedTypes.includes(tree.type);
             const foliageMatch = !selectedFoliage.length || selectedFoliage.includes(tree.foliage);
             const needleMatch = !selectedNeedles.length || selectedNeedles.includes(tree.needleStructure);
             const clusterMatch = !selectedClusters.length || (tree.needleCluster && tree.needleCluster.some(cluster => selectedClusters.includes(cluster)));
@@ -5709,7 +5701,7 @@ export const store = createStore({
             const leafAttachmentMatch = !selectedLeafAttachments.length || selectedLeafAttachments.includes(tree.leafAttachment);
             const fallColorMatch = !selectedFallColors.length || (tree.fallColor && tree.fallColor.some(color => selectedFallColors.includes(color)));
         
-            return typeMatch && foliageMatch && needleMatch && leafTypeMatch && compoundStructureMatch && leafAttachmentMatch && clusterMatch && fallColorMatch;
+            return foliageMatch && needleMatch && leafTypeMatch && compoundStructureMatch && leafAttachmentMatch && clusterMatch && fallColorMatch;
           });
         
           return filteredTrees.length; // Return the count instead of the array
@@ -5721,7 +5713,6 @@ export const store = createStore({
         console.log("store:mutation:resetFilters");
 
         // Reset filters to initial state or empty arrays
-        state.selectedTypes = [];
         state.selectedFoliage = [];
         state.selectedNeedles = [];
         state.selectedClusters = [];
@@ -5741,10 +5732,6 @@ export const store = createStore({
       addItem(state, newItem) {
         console.log("store:mutation:addItem");
         state.items.push(newItem);
-      },
-      setSelectedTypes(state, types) {
-        console.log("store:mutation:setSelectedTypes");
-        state.selectedTypes = types;
       },
       setSelectedFoliage(state, foliage) {
         console.log("store:mutation:setSelectedFoliage");
@@ -5783,10 +5770,6 @@ export const store = createStore({
         //         commit('addItem', newItem);
         //     }, 1000);
         // },
-        updateSelectedTypes({ commit }, types) {
-          console.log("store:action:updateSelectedTypes");
-          commit('setSelectedTypes', types);
-        },
         updateSelectedFoliage({ commit }, foliage) {
           commit('setSelectedFoliage', foliage);
           console.log("store:action:updateSelectedFoliage");
@@ -5828,7 +5811,6 @@ export const store = createStore({
         // createPersistedState({
           // storage: window.localStorage, // for debugging
             // paths: [
-            //     'selectedTypes', 
             //     'selectedFoliage', 
             //     'selectedNeedles', 
             //     'selectedClusters', 

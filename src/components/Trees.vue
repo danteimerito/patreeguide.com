@@ -36,16 +36,6 @@ export default {
     },
     name: 'Trees', 
     computed: {
-      ...mapState(['selectedTypes']),
-      selectedTypesComputed: {
-        get() {
-          return this.selectedTypes;
-        },
-        set(value) {
-          this.$store.dispatch('updateSelectedTypes', value);
-        },
-      },
-
       ...mapState(['selectedFoliage']),
       selectedFoliageComputed: {
         get() {
@@ -123,7 +113,6 @@ export default {
 
       filteredTrees() {
           return this.$store.getters.getFilteredTrees(
-              this.selectedTypes, 
               this.selectedFoliage,
               this.selectedNeedles,
               this.selectedClusters,
