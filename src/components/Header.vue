@@ -442,6 +442,7 @@ export default {
         },
         toggleMenu(event) {
             this.$store.commit('toggleMenu', event.target.checked);
+            //test
         },
         closeMenu() {
             this.$store.commit('closeMenu');
