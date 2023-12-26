@@ -211,26 +211,77 @@ export default {
         // title: String, 
     },
 
+    watch: {
+        selectedFoliage(newVal, oldVal) {
+            if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
+                this.selectedFoliageComputed = [...newVal];
+            }
+        },
+        selectedNeedles(newVal, oldVal) {
+            if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
+                this.selectedNeedlesComputed = [...newVal];
+            }
+        },
+        selectedLeafTypes(newVal, oldVal) {
+            if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
+                this.selectedLeafTypesComputed = [...newVal];
+            }
+        },
+        selectedLeafAttachments(newVal, oldVal) {
+            if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
+                this.selectedLeafAttachmentsComputed = [...newVal];
+            }
+        },
+        selectedFallColors(newVal, oldVal) {
+            if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
+                this.selectedFallColorsComputed = [...newVal];
+            }
+        },
+        selectedCompoundStructures(newVal, oldVal) {
+            if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
+                this.selectedCompoundStructuresComputed = [...newVal];
+            }
+        },
+        selectedClusters(newVal, oldVal) {
+            if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
+                this.selectedClustersComputed = [...newVal];
+            }
+        },
+        isMenuOpen(newVal, oldVal) {
+            if (newVal !== oldVal) {
+                this.isMenuOpenComputed = newVal;
+            }
+        }
+    },
+
     mounted() {
         // this.checkAndCorrectCheckboxState();
+        document.addEventListener('visibilitychange', this.handleVisibilityChange);
         this.ensureCheckboxesReflectState();
     },
-    updated() {
-        // this.checkAndCorrectCheckboxState();
+    beforeUnmount() { // or 'beforeDestroy()' in Vue 2
+        // document.removeEventListener('visibilitychange', this.handleVisibilityChange);
     },
-    ///the rest is in methods
-
-
+    updated() {
+        // this.ensureCheckboxesReflectState();
+    },
+    created() {
+            document.addEventListener('visibilitychange', this.handleVisibilityChange);
+            this.ensureCheckboxesReflectState();
+    },
     components: {
         HeaderMatches
     }, 
-    computed: {  
+    computed: {
+
         enterAnimationDuration() {
             return 500; // Duration in milliseconds for entering animation
         },
+
         leaveAnimationDuration() {
             return 300; // Duration in milliseconds for leaving animation
-        },   
+        },
+
         isAnyFilterSelected() {
             return [
                 this.selectedFoliage, 
@@ -242,14 +293,7 @@ export default {
                 this.selectedClusters
             ].some(array => array && array.length > 0);
         },
-        // isMenuOpen: {
-        //     get() {
-        //         return this.$store.state.isMenuOpen;
-        //     },
-        //     set(value) {
-        //         this.$store.commit('toggleMenu');
-        //     }
-        // },
+
         homePage() {
             if(this.$route.path === "/") {
                 return true
@@ -257,6 +301,7 @@ export default {
                 return false
             }
         },
+
         ...mapState(['isMenuOpen']),
         isMenuOpenComputed: {
             get() {
@@ -409,15 +454,7 @@ export default {
             this.$store.dispatch('updateSelectedFallColors', value);
             },
         },
-    }, 
-
-    created() {
-            document.addEventListener('visibilitychange', this.handleVisibilityChange);
-    },
-    destroyed() {
-        document.removeEventListener('visibilitychange', this.handleVisibilityChange);
-    },
-    
+    },     
     methods: {
         handleVisibilityChange() {
             if (document.visibilityState === 'visible') {
@@ -500,6 +537,14 @@ export default {
         // },
         // ... add watchers for other relevant pieces of state ...
     // },
+    watch: {
+    selectedFoliage(newVal, oldVal) {
+        if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
+            this.selectedFoliageComputed = [...newVal];
+        }
+    },
+    // Repeat for other watchers
+},
 
 
 
