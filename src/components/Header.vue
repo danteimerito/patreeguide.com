@@ -258,6 +258,14 @@ export default {
             }
         },
         ...mapState(['isMenuOpen']),
+        isMenuOpenComputed: {
+            get() {
+                return this.$store.state.menuIsOpen;
+            },
+            set(value) {
+                this.$store.commit('setMenuOpen', value);
+            }
+        },
         
         ...mapState(['selectedFoliage']),
         selectedFoliageComputed: {
@@ -426,6 +434,11 @@ export default {
             this.selectedCompoundStructuresComputed = [...this.selectedCompoundStructures];
             this.selectedClustersComputed = [...this.selectedClusters];
             // ... do this for each piece of state that has a corresponding checkbox
+
+            // Check and update the menuIsOpen state
+            if (this.isMenuOpenComputed !== this.isMenuOpen) {
+            this.isMenuOpenComputed = this.isMenuOpen;
+            }
         },
         toggleMenu(event) {
             this.$store.commit('toggleMenu', event.target.checked);

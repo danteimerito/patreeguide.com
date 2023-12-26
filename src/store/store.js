@@ -5725,6 +5725,10 @@ export const store = createStore({
         console.log("store:mutation:toggleMenu");
         state.isMenuOpen = !state.isMenuOpen;
       },
+      setMenuOpen(state, isOpen) {
+        // sync menu state
+        state.menuIsOpen = isOpen;
+      },
       closeMenu(state) {
         console.log("store:mutation:closeMenu");
         state.isMenuOpen = false;
