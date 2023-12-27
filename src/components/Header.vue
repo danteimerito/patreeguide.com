@@ -35,7 +35,7 @@
                             <div>
                                 <div class="options-panel">
     
-                                    <transition name="fade-slide">
+                                    <transition name="fade-slide" v-cloak>
                                         <div class="options-set">
                                             <div class="options-set-header">
                                                 <h3>Foliage</h3>
@@ -53,7 +53,7 @@
                                         </div>
                                     </transition>
                                     
-                                    <transition name="fade-slide">
+                                    <transition name="fade-slide" v-cloak>
                                         <div v-if="this.selectedFoliage.includes('needles') || this.selectedNeedles.length > 0" class="options-set">
                                             <div class="options-set-header">
                                                 <h3>Needle Structure</h3>
@@ -64,6 +64,10 @@
                                                 :name="needle"
                                                 :value="needle" 
                                                 v-model="selectedNeedlesComputed" 
+
+                                                :checked="isChecked(needle)"
+                                                @change="selectedNeedlesComputed"
+
                                                 />
                                                 {{ needle }}
                                                 <img :src="iconMappings[needle]" alt="Icon" class="checkbox-icon" />
@@ -71,7 +75,7 @@
                                         </div>
                                     </transition>
 
-                                    <transition name="fade-slide">
+                                    <transition name="fade-slide" v-cloak>
                                     <div v-if="this.selectedNeedles.includes('clustered needles') || this.selectedClusters.length > 0" class="options-set">
                                         <div class="options-set-header">
                                             <h3>Needles per Cluster</h3>
@@ -88,7 +92,7 @@
                                     </div>
                                     </transition>
 
-                                    <transition name="fade-slide">
+                                    <transition name="fade-slide" v-cloak>
                                     <div v-if="this.selectedFoliage.includes('leaves') || this.selectedLeafTypes.length > 0" class="options-set">
                                         <div class="options-set-header">
                                             <h3>Leaf Type</h3>
@@ -106,7 +110,7 @@
                                     </div>
                                     </transition>
 
-                                    <transition name="fade-slide">
+                                    <transition name="fade-slide" v-cloak>
                                     <div v-if="selectedLeafTypes.includes('compound') || selectedCompoundStructures.length > 0" class="options-set">
                                         <div class="options-set-header">
                                             <h3>Compound Structure</h3>
@@ -124,7 +128,7 @@
                                     </div>
                                     </transition>
 
-                                    <transition name="fade-slide">
+                                    <transition name="fade-slide" v-cloak>
                                     <div v-if="this.selectedFoliage.includes('leaves') || this.selectedLeafAttachments.length > 0" class="options-set">
                                         <div class="options-set-header">
                                             <h3>Leaf Attachment</h3>
@@ -143,7 +147,7 @@
                                     </transition>
 
                                     
-                                    <transition name="fade-slide">
+                                    <transition name="fade-slide" v-cloak>
                                     <div v-if="this.selectedFoliage.includes('leaves') || this.selectedFallColors.length > 0" class="options-set">
                                         <div class="options-set-header">
                                             <h3>Fall Colors</h3>
@@ -520,6 +524,9 @@ export default {
         },
     },     
     methods: {
+        isChecked(needle) {
+            return this.selectedNeedles.includes(needle);
+        },      
         handleVisibilityChange() {
             if (document.visibilityState === 'visible') {
             this.ensureCheckboxesReflectState();
