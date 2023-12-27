@@ -229,8 +229,9 @@ export default {
     console.log("timeDifference = " + timeDifference);
         const oneHour = 60 * 60 * 1000; // one hour in milliseconds
         const fifteenMins = 15 * 60 * 1000; // fifteen minutes
+        const thirtySeconds = 30 * 1000; // thirty seconds
 
-        if (timeDifference >= fifteenMins) {
+        if (timeDifference >= thirtySeconds) {
           // If the tab has been inactive for an hour or more, reset the state
         store.commit('resetFilters'); // Reset filters
         store.commit('closeMenu'); // Close the menu
