@@ -62,8 +62,8 @@
 
 
 
-                                    
-                                    <transition name="fade-slide" v-cloak>
+                                    <!-- fade-slide removed from transition -->
+                                    <transition name="" v-cloak>
                                         <div v-if="this.selectedFoliage.includes('needles') || this.selectedNeedles.length > 0" class="options-set">
                                             <div class="options-set-header">
                                                 <h3>Needle Structure</h3>
