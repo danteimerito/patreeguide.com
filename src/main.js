@@ -4,6 +4,7 @@ import router from './router'
 import { store } from './store/store'
 import './styles/sass.scss';
 import VueGtag from 'vue-gtag';
+import 'hacktimer'
 
 
 createApp(App)
