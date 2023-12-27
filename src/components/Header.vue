@@ -52,6 +52,16 @@
                                             </label>
                                         </div>
                                     </transition>
+
+
+
+
+
+                     
+
+
+
+
                                     
                                     <transition name="fade-slide" v-cloak>
                                         <div v-if="this.selectedFoliage.includes('needles') || this.selectedNeedles.length > 0" class="options-set">
@@ -66,7 +76,7 @@
                                                 v-model="selectedNeedlesComputed" 
 
                                                 :checked="isChecked(needle)"
-                                                @change="selectedNeedlesComputed"
+                                                
 
                                                 />
                                                 {{ needle }}
@@ -313,6 +323,10 @@ export default {
     },
 
     mounted() {
+        window.addEventListener('focus', this.syncStateWithUI);
+
+
+
         // this.checkAndCorrectCheckboxState();
         document.addEventListener('visibilitychange', this.handleVisibilityChange);
         this.ensureCheckboxesReflectState();
@@ -327,7 +341,11 @@ export default {
             document.addEventListener('visibilitychange', this.handleVisibilityChangeTwo);
   
     },
-    beforeUnmount() { // or 'beforeDestroy()' in Vue 2
+    beforeUnmount() { 
+        window.addEventListener('focus', this.syncStateWithUI);
+        
+        
+        // or 'beforeDestroy()' in Vue 2
         // document.removeEventListener('visibilitychange', this.handleVisibilityChange);
     },
     updated() {
@@ -524,6 +542,14 @@ export default {
         },
     },     
     methods: {
+        syncStateWithUI() {
+            // Force Vue to re-render the component
+            this.$forceUpdate();
+
+            // Optionally, if there are specific components you need to refresh, you might
+            // want to emit an event or call a method directly on those components.
+        },
+
         isChecked(needle) {
             return this.selectedNeedles.includes(needle);
         },      

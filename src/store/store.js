@@ -5665,6 +5665,7 @@ export const store = createStore({
           selectedFallColors: [],
         }
     },
+
     getters: {
         getTreeBySlug: (state) => (slug) => {
           return state.trees.find(tree => tree.slug === slug);
@@ -5691,6 +5692,7 @@ export const store = createStore({
             return foliageMatch && needleMatch && leafTypeMatch && compoundStructureMatch && leafAttachmentMatch && clusterMatch && fallColorMatch;
           });
         },
+
         getFilteredTreeCount: (state) => (selectedFoliage, selectedNeedles, selectedClusters, selectedLeafTypes, selectedCompoundStructures, selectedLeafAttachments, selectedFallColors) => {
           const filteredTrees = state.trees.filter(tree => {
             const foliageMatch = !selectedFoliage.length || selectedFoliage.includes(tree.foliage);
@@ -5726,7 +5728,6 @@ export const store = createStore({
         state.isMenuOpen = !state.isMenuOpen;
       },
       setMenuOpen(state, isOpen) {
-        // sync menu state
         state.menuIsOpen = isOpen;
       },
       closeMenu(state) {
@@ -5765,15 +5766,8 @@ export const store = createStore({
         state.selectedFallColors = fallColors;
         console.log("store:mutation:setSelectedFallColors");
       },
-        // ... other mutations
     },
     actions: {      
-        // asyncAddItem({ commit }, newItem) {
-        //     // For example, simulating an async action with a timeout
-        //     setTimeout(() => {
-        //         commit('addItem', newItem);
-        //     }, 1000);
-        // },
         updateSelectedFoliage({ commit }, foliage) {
           commit('setSelectedFoliage', foliage);
           console.log("store:action:updateSelectedFoliage");
@@ -5808,24 +5802,6 @@ export const store = createStore({
         },
     },
     plugins: [vuexLocal.plugin],
-    
-
-    // plugin for vuex-persistedstate pkg
-    // plugins: [
-        // createPersistedState({
-          // storage: window.localStorage, // for debugging
-            // paths: [
-            //     'selectedFoliage', 
-            //     'selectedNeedles', 
-            //     'selectedClusters', 
-            //     'selectedLeafTypes', 
-            //     'selectedCompoundStructures', 
-            //     'selectedLeafAttachments', 
-            //     'selectedFallColors',
-            //     'isMenuOpen'
-            // ]
-        // })
-    // ],
 });
 
 
