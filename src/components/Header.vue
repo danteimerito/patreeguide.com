@@ -29,6 +29,7 @@
                     <div class="hamburger">
                         <div></div>
                     </div>
+
                     <div class="menu">
                         <div>
                             <div>
@@ -166,18 +167,22 @@
                 </div>
             </div>
 
-
     </header>
 </template>
 
 <script>
 
-import { mapState } from 'vuex';
+import { mapState, useStore } from 'vuex';
 import HeaderMatches from './HeaderMatches'
+
+
+import { ref, onMounted, onBeforeUnmount } from 'vue';
+
 
 export default {
     data() {
         return {
+            lastActivityTime: new Date(),
             treeTypes: ['conifer', 'deciduous'],
             foliage: ['needles', 'leaves'],
             needleStructures: ['single needle', 'clustered needles', 'scaly needles'],
@@ -207,9 +212,57 @@ export default {
         };
     },
     name: 'Header',
-    props: {
-        // title: String, 
-    },
+
+
+    setup() {
+    const store = useStore();
+    const lastActivityTime = ref(new Date());
+
+    const updateActivityTime = () => {
+      lastActivityTime.value = new Date();
+    };
+
+    const handleVisibilityChangeTwo = () => {
+      if (document.visibilityState === 'visible') {
+        const currentTime = new Date();
+        const timeDifference = currentTime - lastActivityTime.value; // difference in milliseconds
+    console.log("timeDifference = " + timeDifference);
+        const oneHour = 60 * 60 * 1000; // one hour in milliseconds
+        const fifteenMins = 15 * 60 * 1000; // fifteen minutes
+
+        if (timeDifference >= fifteenMins) {
+          // If the tab has been inactive for an hour or more, reset the state
+        store.commit('resetFilters'); // Reset filters
+        store.commit('closeMenu'); // Close the menu
+        localStorage.clear(); // Clears everything
+        console.log("Filters Reset")
+        }
+      }
+    };
+
+    onMounted(() => {
+      window.addEventListener('mousemove', updateActivityTime);
+      window.addEventListener('keydown', updateActivityTime);
+      window.addEventListener('touchstart', updateActivityTime);
+      window.addEventListener('touchmove', updateActivityTime);
+      document.addEventListener('visibilitychange', handleVisibilityChangeTwo);
+      console.log("event listeners added")
+    });
+
+    onBeforeUnmount(() => {
+      window.removeEventListener('mousemove', updateActivityTime);
+      window.removeEventListener('keydown', updateActivityTime);
+      window.removeEventListener('touchstart', updateActivityTime);
+      window.removeEventListener('touchmove', updateActivityTime);
+      document.removeEventListener('visibilitychange', handleVisibilityChangeTwo);
+      console.log("event listeners removed")
+    });
+
+    return {
+      lastActivityTime,
+    };
+  },
+
 
     watch: {
         selectedFoliage(newVal, oldVal) {
@@ -258,6 +311,16 @@ export default {
         // this.checkAndCorrectCheckboxState();
         document.addEventListener('visibilitychange', this.handleVisibilityChange);
         this.ensureCheckboxesReflectState();
+
+
+            // Listen for user activity events
+            window.addEventListener('mousemove', this.updateActivityTime);
+            window.addEventListener('keydown', this.updateActivityTime);
+            window.addEventListener('touchstart', this.updateActivityTime);
+            window.addEventListener('touchmove', this.updateActivityTime);
+            // Listen for visibility change events
+            document.addEventListener('visibilitychange', this.handleVisibilityChangeTwo);
+  
     },
     beforeUnmount() { // or 'beforeDestroy()' in Vue 2
         // document.removeEventListener('visibilitychange', this.handleVisibilityChange);
@@ -498,52 +561,15 @@ export default {
         },
 
 
-
-        // checkAndCorrectCheckboxState() {
-        //     const statePairs = [
-        //         { actual: this.selectedTypes, computed: this.selectedTypesComputed, action: 'updateSelectedTypes' },
-        //         { actual: this.selectedFoliage, computed: this.selectedFoliageComputed, action: 'updateSelectedFoliage' },
-        //         { actual: this.selectedNeedles, computed: this.selectedNeedlesComputed, action: 'updateSelectedNeedles' },
-        //         { actual: this.selectedLeafTypes, computed: this.selectedLeafTypes, action: 'updateSelectedLeafTypes' },
-        //         { actual: this.selectedLeafAttachments, computed: this.selectedLeafAttachments, action: 'updateSelectedLeafAttachments' },
-        //         { actual: this.selectedFallColors, computed: this.selectedFallColors, action: 'updateSelectedFallColors' },
-        //         { actual: this.selectedCompoundStructures, computed: this.selectedCompoundStructures, action: 'updateSelectedCompoundStructures' },
-        //         { actual: this.selectedClusters, computed: this.selectedClusters, action: 'updateSelectedClusters' },
-        //     ];
-
-            // statePairs.forEach(({ actual, computed, action }) => {
-            //     this.correctCheckboxState(actual, computed, action);
-            // });
-        // },
-
-        // correctCheckboxState(actualState, computedState, updateAction) {
-        //     // Determine if there's a discrepancy
-        //     const discrepancyExists = actualState.some((item, index) => computedState[index] !== item);
-
-        // // If there's a discrepancy, update the Vuex state to reflect the correct state
-        // if (discrepancyExists) {
-        //     this.$store.dispatch(updateAction, computedState);
-        //     // Optionally, log or handle the discrepancy here
-        //     console.log(`Discrepancy corrected for ${updateAction}`);
-        // }
-        // }
     },
-    // watch: {
-        // selectedFoliage(newVal) {
-            // this.selectedFoliageComputed = [...newVal];
-        // },
-        // selectedNeedles(newVal) {
-            // this.selectedNeedlesComputed = [...newVal];
-        // },
-        // ... add watchers for other relevant pieces of state ...
-    // },
+
     watch: {
     selectedFoliage(newVal, oldVal) {
         if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
             this.selectedFoliageComputed = [...newVal];
         }
     },
-    // Repeat for other watchers
+
 },
 
 
