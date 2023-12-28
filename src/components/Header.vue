@@ -261,7 +261,7 @@ export default {
       window.addEventListener('touchstart', updateActivityTime);
       window.addEventListener('touchmove', updateActivityTime);
       document.addEventListener('visibilitychange', handleVisibilityChangeTwo);
-      console.log("event listeners added")
+      console.log("event listeners added");
     });
 
     onBeforeUnmount(() => {
@@ -283,41 +283,73 @@ export default {
         selectedFoliage(newVal, oldVal) {
             if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
                 this.selectedFoliageComputed = [...newVal];
+
+                // added 12-28-23
+                this.ensureCheckboxesReflectState();
+                console.log('ensure checkboxes reflect state')
             }
         },
         selectedNeedles(newVal, oldVal) {
             if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
                 this.selectedNeedlesComputed = [...newVal];
+
+                // added 12-28-23
+                this.ensureCheckboxesReflectState();
+                console.log('ensure checkboxes reflect state')
             }
         },
         selectedLeafTypes(newVal, oldVal) {
             if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
                 this.selectedLeafTypesComputed = [...newVal];
+
+                // added 12-28-23
+                this.ensureCheckboxesReflectState();
+                console.log('ensure checkboxes reflect state')
             }
         },
         selectedLeafAttachments(newVal, oldVal) {
             if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
                 this.selectedLeafAttachmentsComputed = [...newVal];
+
+                // added 12-28-23
+                this.ensureCheckboxesReflectState();
+                console.log('ensure checkboxes reflect state')
             }
         },
         selectedFallColors(newVal, oldVal) {
             if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
                 this.selectedFallColorsComputed = [...newVal];
+
+                // added 12-28-23
+                this.ensureCheckboxesReflectState();
+                console.log('ensure checkboxes reflect state')
             }
         },
         selectedCompoundStructures(newVal, oldVal) {
             if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
                 this.selectedCompoundStructuresComputed = [...newVal];
+
+                // added 12-28-23
+                this.ensureCheckboxesReflectState();
+                console.log('ensure checkboxes reflect state')
             }
         },
         selectedClusters(newVal, oldVal) {
             if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
                 this.selectedClustersComputed = [...newVal];
+
+                // added 12-28-23
+                this.ensureCheckboxesReflectState();
+                console.log('ensure checkboxes reflect state')
             }
         },
         isMenuOpen(newVal, oldVal) {
             if (newVal !== oldVal) {
                 this.isMenuOpenComputed = newVal;
+
+                // added 12-28-23
+                this.ensureCheckboxesReflectState();
+                console.log('ensure checkboxes reflect state')
             }
         }
     },
@@ -568,6 +600,8 @@ export default {
             this.selectedFallColorsComputed = [...this.selectedFallColors];
             this.selectedCompoundStructuresComputed = [...this.selectedCompoundStructures];
             this.selectedClustersComputed = [...this.selectedClusters];
+
+            console.log("ENSURE CHECKBOXES REFLECT STATE")
             // ... do this for each piece of state that has a corresponding checkbox
 
             //changed this to first line
@@ -599,48 +633,48 @@ export default {
 
     },
 
-    watch: {
-        selectedFoliage(newVal, oldVal) {
-            if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
-                this.selectedFoliageComputed = [...newVal];
-            }
-        },
-        selectedNeedles(newVal, oldVal) {
-            if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
-                this.selectedNeedlesComputed = [...newVal];
-            }
-        },
-        selectedLeafTypes(newVal, oldVal) {
-            if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
-                this.selectedLeafTypesComputed = [...newVal];
-            }
-        },
-        selectedLeafAttachments(newVal, oldVal) {
-            if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
-                this.selectedLeafAttachmentsComputed = [...newVal];
-            }
-        },
-        selectedFallColors(newVal, oldVal) {
-            if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
-                this.selectedFallColorsComputed = [...newVal];
-            }
-        },
-        selectedCompoundStructures(newVal, oldVal) {
-            if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
-                this.selectedCompoundStructuresComputed = [...newVal];
-            }
-        },
-        selectedClusters(newVal, oldVal) {
-            if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
-                this.selectedClustersComputed = [...newVal];
-            }
-        },
-        isMenuOpen(newVal, oldVal) {
-            if (newVal !== oldVal) {
-                this.isMenuOpenComputed = newVal;
-            }
-        }
-    },
+    // watch: {
+    //     selectedFoliage(newVal, oldVal) {
+    //         if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
+    //             this.selectedFoliageComputed = [...newVal];
+    //         }
+    //     },
+    //     selectedNeedles(newVal, oldVal) {
+    //         if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
+    //             this.selectedNeedlesComputed = [...newVal];
+    //         }
+    //     },
+    //     selectedLeafTypes(newVal, oldVal) {
+    //         if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
+    //             this.selectedLeafTypesComputed = [...newVal];
+    //         }
+    //     },
+    //     selectedLeafAttachments(newVal, oldVal) {
+    //         if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
+    //             this.selectedLeafAttachmentsComputed = [...newVal];
+    //         }
+    //     },
+    //     selectedFallColors(newVal, oldVal) {
+    //         if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
+    //             this.selectedFallColorsComputed = [...newVal];
+    //         }
+    //     },
+    //     selectedCompoundStructures(newVal, oldVal) {
+    //         if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
+    //             this.selectedCompoundStructuresComputed = [...newVal];
+    //         }
+    //     },
+    //     selectedClusters(newVal, oldVal) {
+    //         if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
+    //             this.selectedClustersComputed = [...newVal];
+    //         }
+    //     },
+    //     isMenuOpen(newVal, oldVal) {
+    //         if (newVal !== oldVal) {
+    //             this.isMenuOpenComputed = newVal;
+    //         }
+    //     }
+    // },
 
 
 
