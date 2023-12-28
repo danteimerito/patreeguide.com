@@ -279,6 +279,49 @@ export default {
   },
 
 
+    watch: {
+        selectedFoliage(newVal, oldVal) {
+            if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
+                this.selectedFoliageComputed = [...newVal];
+            }
+        },
+        selectedNeedles(newVal, oldVal) {
+            if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
+                this.selectedNeedlesComputed = [...newVal];
+            }
+        },
+        selectedLeafTypes(newVal, oldVal) {
+            if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
+                this.selectedLeafTypesComputed = [...newVal];
+            }
+        },
+        selectedLeafAttachments(newVal, oldVal) {
+            if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
+                this.selectedLeafAttachmentsComputed = [...newVal];
+            }
+        },
+        selectedFallColors(newVal, oldVal) {
+            if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
+                this.selectedFallColorsComputed = [...newVal];
+            }
+        },
+        selectedCompoundStructures(newVal, oldVal) {
+            if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
+                this.selectedCompoundStructuresComputed = [...newVal];
+            }
+        },
+        selectedClusters(newVal, oldVal) {
+            if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
+                this.selectedClustersComputed = [...newVal];
+            }
+        },
+        isMenuOpen(newVal, oldVal) {
+            if (newVal !== oldVal) {
+                this.isMenuOpenComputed = newVal;
+            }
+        }
+    },
+
     mounted() {
         window.addEventListener('focus', this.syncStateWithUI);
 
@@ -598,11 +641,10 @@ export default {
             }
         }
     },
+
+
+
 }
-
-
-
-
 </script>
 
 <style scoped>
