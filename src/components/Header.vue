@@ -279,49 +279,6 @@ export default {
   },
 
 
-    watch: {
-        selectedFoliage(newVal, oldVal) {
-            if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
-                this.selectedFoliageComputed = [...newVal];
-            }
-        },
-        selectedNeedles(newVal, oldVal) {
-            if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
-                this.selectedNeedlesComputed = [...newVal];
-            }
-        },
-        selectedLeafTypes(newVal, oldVal) {
-            if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
-                this.selectedLeafTypesComputed = [...newVal];
-            }
-        },
-        selectedLeafAttachments(newVal, oldVal) {
-            if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
-                this.selectedLeafAttachmentsComputed = [...newVal];
-            }
-        },
-        selectedFallColors(newVal, oldVal) {
-            if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
-                this.selectedFallColorsComputed = [...newVal];
-            }
-        },
-        selectedCompoundStructures(newVal, oldVal) {
-            if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
-                this.selectedCompoundStructuresComputed = [...newVal];
-            }
-        },
-        selectedClusters(newVal, oldVal) {
-            if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
-                this.selectedClustersComputed = [...newVal];
-            }
-        },
-        isMenuOpen(newVal, oldVal) {
-            if (newVal !== oldVal) {
-                this.isMenuOpenComputed = newVal;
-            }
-        }
-    },
-
     mounted() {
         window.addEventListener('focus', this.syncStateWithUI);
 
@@ -560,6 +517,7 @@ export default {
         },
         ensureCheckboxesReflectState() {
             // Logic to ensure checkboxes reflect the Vuex state
+            this.isMenuOpenComputed = this.isMenuOpen;
             this.selectedFoliageComputed = [...this.selectedFoliage];
             this.selectedNeedlesComputed = [...this.selectedNeedles];
             this.selectedLeafTypesComputed = [...this.selectedLeafTypes];
@@ -569,10 +527,11 @@ export default {
             this.selectedClustersComputed = [...this.selectedClusters];
             // ... do this for each piece of state that has a corresponding checkbox
 
+            //changed this to first line
             // Check and update the menuIsOpen state
-            if (this.isMenuOpenComputed !== this.isMenuOpen) {
-            this.isMenuOpenComputed = this.isMenuOpen;
-            }
+            // if (this.isMenuOpenComputed !== this.isMenuOpen) {
+            // this.isMenuOpenComputed = this.isMenuOpen;
+            // }
         },
         toggleMenu(event) {
             this.$store.commit('toggleMenu', event.target.checked);
@@ -598,17 +557,52 @@ export default {
     },
 
     watch: {
-    selectedFoliage(newVal, oldVal) {
-        if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
-            this.selectedFoliageComputed = [...newVal];
+        selectedFoliage(newVal, oldVal) {
+            if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
+                this.selectedFoliageComputed = [...newVal];
+            }
+        },
+        selectedNeedles(newVal, oldVal) {
+            if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
+                this.selectedNeedlesComputed = [...newVal];
+            }
+        },
+        selectedLeafTypes(newVal, oldVal) {
+            if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
+                this.selectedLeafTypesComputed = [...newVal];
+            }
+        },
+        selectedLeafAttachments(newVal, oldVal) {
+            if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
+                this.selectedLeafAttachmentsComputed = [...newVal];
+            }
+        },
+        selectedFallColors(newVal, oldVal) {
+            if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
+                this.selectedFallColorsComputed = [...newVal];
+            }
+        },
+        selectedCompoundStructures(newVal, oldVal) {
+            if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
+                this.selectedCompoundStructuresComputed = [...newVal];
+            }
+        },
+        selectedClusters(newVal, oldVal) {
+            if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
+                this.selectedClustersComputed = [...newVal];
+            }
+        },
+        isMenuOpen(newVal, oldVal) {
+            if (newVal !== oldVal) {
+                this.isMenuOpenComputed = newVal;
+            }
         }
     },
-
-},
-
-
-
 }
+
+
+
+
 </script>
 
 <style scoped>
