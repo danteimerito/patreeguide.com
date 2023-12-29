@@ -170,7 +170,7 @@
 
 import { mapState, useStore } from 'vuex';
 import HeaderMatches from './HeaderMatches'
-import { ref, onMounted, onBeforeUnmount } from 'vue';
+import { ref } from 'vue';
 
 
 export default {
