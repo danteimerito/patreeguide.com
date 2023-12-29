@@ -7,13 +7,6 @@
                         <div class="logo"><router-link to="/" @click="logoClick">PA TREE GUIDE </router-link></div>
                     </div>
 
-                    <!-- <input 
-                        name="toggler"
-                        type="checkbox" 
-                        class="toggler"
-                        v-model="isMenuOpen"
-                    /> --> 
-
                     <input 
                         type="checkbox" 
                         name="toggler"
@@ -22,7 +15,6 @@
                         @change="toggleMenu($event)" 
                     />
     
-  
                     <HeaderMatches v-if="isMenuOpen"/>
                     <HeaderMatches v-else-if="homePage && isAnyFilterSelected"/>
 
@@ -52,34 +44,25 @@
                                             </label>
                                         </div>
                                     </transition>
-
-
-
-
-
-                     
-
-
-
-
-                                    <!-- fade-slide removed from transition -->
-                                    <transition name="" v-cloak>
+            
+                                    <transition name="fade-slide" v-cloak>
                                         <div v-if="this.selectedFoliage.includes('needles') || this.selectedNeedles.length > 0" class="options-set">
                                             <div class="options-set-header">
                                                 <h3>Needle Structure</h3>
                                             </div>
                                             <label v-for="needle in needleStructures" :key="needle">
                                                 <input 
-                                                type="checkbox" 
-                                                :name="needle"
-                                                :value="needle" 
-                                                v-model="selectedNeedlesComputed" 
-
-                                                :checked="isChecked(needle)"
-                                                
-
+                                                    type="checkbox" 
+                                                    :name="needle"
+                                                    :value="needle" 
+                                                    v-model="selectedNeedlesComputed" 
                                                 />
+                                                
+                                                <!-- removed from input -->
+                                                <!-- :checked="isChecked(needle)" -->
+
                                                 {{ needle }}
+
                                                 <img :src="iconMappings[needle]" alt="Icon" class="checkbox-icon" />
                                             </label>
                                         </div>
@@ -156,7 +139,6 @@
                                     </div>
                                     </transition>
 
-                                    
                                     <transition name="fade-slide" v-cloak>
                                     <div v-if="this.selectedFoliage.includes('leaves') || this.selectedFallColors.length > 0" class="options-set">
                                         <div class="options-set-header">
@@ -188,8 +170,6 @@
 
 import { mapState, useStore } from 'vuex';
 import HeaderMatches from './HeaderMatches'
-
-
 import { ref, onMounted, onBeforeUnmount } from 'vue';
 
 
@@ -229,62 +209,59 @@ export default {
 
 
     setup() {
-    const store = useStore();
-    const lastActivityTime = ref(new Date());
+        const store = useStore();
+        const lastActivityTime = ref(new Date());
 
-    const updateActivityTime = () => {
-      lastActivityTime.value = new Date();
-    };
+        const updateActivityTime = () => {
+            lastActivityTime.value = new Date();
+        };
 
-    const handleVisibilityChangeTwo = () => {
-      if (document.visibilityState === 'visible') {
-        const currentTime = new Date();
-        const timeDifference = currentTime - lastActivityTime.value; // difference in milliseconds
-    console.log("timeDifference = " + timeDifference);
-        const oneHour = 60 * 60 * 1000; // one hour in milliseconds
-        const tenMins = 10 * 60 * 1000; // fifteen minutes
-        const thirtySeconds = 30 * 1000; // thirty seconds
+        const handleVisibilityChangeTwo = () => {
+            if (document.visibilityState === 'visible') {
+                const currentTime = new Date();
+                const timeDifference = currentTime - lastActivityTime.value; // difference in milliseconds
+            console.log("timeDifference = " + timeDifference);
 
-        if (timeDifference >= tenMins) {
-          // If the tab has been inactive for an hour or more, reset the state
-        store.commit('resetFilters'); // Reset filters
-        store.commit('closeMenu'); // Close the menu
-        localStorage.clear(); // Clears everything
-        console.log("Filters Reset")
-        }
-      }
-    };
+                const thirtyMins = 30 * 60 * 1000; // thirty seconds
 
-    onMounted(() => {
-      window.addEventListener('mousemove', updateActivityTime);
-      window.addEventListener('keydown', updateActivityTime);
-      window.addEventListener('touchstart', updateActivityTime);
-      window.addEventListener('touchmove', updateActivityTime);
-      document.addEventListener('visibilitychange', handleVisibilityChangeTwo);
-      console.log("event listeners added");
-    });
+                if (timeDifference >= thirtyMins) {
+                // If the tab has been inactive for an hour or more, reset the state
+                store.commit('resetFilters'); // Reset filters
+                store.commit('closeMenu'); // Close the menu
+                localStorage.clear(); // Clears everything
+                console.log("Filters Reset")
+                }
+            }
+        };
 
-    onBeforeUnmount(() => {
-      window.removeEventListener('mousemove', updateActivityTime);
-      window.removeEventListener('keydown', updateActivityTime);
-      window.removeEventListener('touchstart', updateActivityTime);
-      window.removeEventListener('touchmove', updateActivityTime);
-      document.removeEventListener('visibilitychange', handleVisibilityChangeTwo);
-      console.log("event listeners removed")
-    });
+        // onMounted(() => {
+        // window.addEventListener('mousemove', updateActivityTime);
+        // window.addEventListener('keydown', updateActivityTime);
+        // window.addEventListener('touchstart', updateActivityTime);
+        // window.addEventListener('touchmove', updateActivityTime);
+        // document.addEventListener('visibilitychange', handleVisibilityChangeTwo);
+        // console.log("event listeners added");
+        // });
 
-    return {
-      lastActivityTime,
-    };
-  },
+        // onBeforeUnmount(() => {
+        // window.removeEventListener('mousemove', updateActivityTime);
+        // window.removeEventListener('keydown', updateActivityTime);
+        // window.removeEventListener('touchstart', updateActivityTime);
+        // window.removeEventListener('touchmove', updateActivityTime);
+        // document.removeEventListener('visibilitychange', handleVisibilityChangeTwo);
+        // console.log("event listeners removed")
+        // });
+
+        // return {
+        //     lastActivityTime,
+        // };
+    },
 
 
     watch: {
         selectedFoliage(newVal, oldVal) {
             if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
                 this.selectedFoliageComputed = [...newVal];
-
-                // added 12-28-23
                 this.ensureCheckboxesReflectState();
                 console.log('ensure checkboxes reflect state')
             }
@@ -292,8 +269,6 @@ export default {
         selectedNeedles(newVal, oldVal) {
             if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
                 this.selectedNeedlesComputed = [...newVal];
-
-                // added 12-28-23
                 this.ensureCheckboxesReflectState();
                 console.log('ensure checkboxes reflect state')
             }
@@ -301,8 +276,6 @@ export default {
         selectedLeafTypes(newVal, oldVal) {
             if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
                 this.selectedLeafTypesComputed = [...newVal];
-
-                // added 12-28-23
                 this.ensureCheckboxesReflectState();
                 console.log('ensure checkboxes reflect state')
             }
@@ -310,8 +283,6 @@ export default {
         selectedLeafAttachments(newVal, oldVal) {
             if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
                 this.selectedLeafAttachmentsComputed = [...newVal];
-
-                // added 12-28-23
                 this.ensureCheckboxesReflectState();
                 console.log('ensure checkboxes reflect state')
             }
@@ -319,8 +290,6 @@ export default {
         selectedFallColors(newVal, oldVal) {
             if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
                 this.selectedFallColorsComputed = [...newVal];
-
-                // added 12-28-23
                 this.ensureCheckboxesReflectState();
                 console.log('ensure checkboxes reflect state')
             }
@@ -328,8 +297,6 @@ export default {
         selectedCompoundStructures(newVal, oldVal) {
             if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
                 this.selectedCompoundStructuresComputed = [...newVal];
-
-                // added 12-28-23
                 this.ensureCheckboxesReflectState();
                 console.log('ensure checkboxes reflect state')
             }
@@ -338,7 +305,6 @@ export default {
             if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
                 this.selectedClustersComputed = [...newVal];
 
-                // added 12-28-23
                 this.ensureCheckboxesReflectState();
                 console.log('ensure checkboxes reflect state')
             }
@@ -347,7 +313,6 @@ export default {
             if (newVal !== oldVal) {
                 this.isMenuOpenComputed = newVal;
 
-                // added 12-28-23
                 this.ensureCheckboxesReflectState();
                 console.log('ensure checkboxes reflect state')
             }
@@ -355,36 +320,32 @@ export default {
     },
 
     mounted() {
-        window.addEventListener('focus', this.syncStateWithUI);
-
-
-
-        // this.checkAndCorrectCheckboxState();
-        document.addEventListener('visibilitychange', this.handleVisibilityChange);
         this.ensureCheckboxesReflectState();
 
 
+        // window.addEventListener('focus', this.syncStateWithUI);
+
+        // document.addEventListener('visibilitychange', this.handleVisibilityChange);
+        
             // Listen for user activity events
-            window.addEventListener('mousemove', this.updateActivityTime);
-            window.addEventListener('keydown', this.updateActivityTime);
-            window.addEventListener('touchstart', this.updateActivityTime);
-            window.addEventListener('touchmove', this.updateActivityTime);
+            // window.addEventListener('mousemove', this.updateActivityTime);
+            // window.addEventListener('keydown', this.updateActivityTime);
+            // window.addEventListener('touchstart', this.updateActivityTime);
+            // window.addEventListener('touchmove', this.updateActivityTime);
+            
             // Listen for visibility change events
-            document.addEventListener('visibilitychange', this.handleVisibilityChangeTwo);
+            // document.addEventListener('visibilitychange', this.handleVisibilityChangeTwo);
   
     },
     beforeUnmount() { 
-        window.addEventListener('focus', this.syncStateWithUI);
+        // window.addEventListener('focus', this.syncStateWithUI);
         
         
         // or 'beforeDestroy()' in Vue 2
         // document.removeEventListener('visibilitychange', this.handleVisibilityChange);
     },
-    updated() {
-        // this.ensureCheckboxesReflectState();
-    },
     created() {
-            document.addEventListener('visibilitychange', this.handleVisibilityChange);
+            // document.addEventListener('visibilitychange', this.handleVisibilityChange);
             this.ensureCheckboxesReflectState();
     },
     components: {
@@ -574,17 +535,18 @@ export default {
         },
     },     
     methods: {
-        syncStateWithUI() {
-            // Force Vue to re-render the component
-            this.$forceUpdate();
+        // syncStateWithUI() {
+        //     // Force Vue to re-render the component
+        //     this.$forceUpdate();
 
-            // Optionally, if there are specific components you need to refresh, you might
-            // want to emit an event or call a method directly on those components.
-        },
+        //     // Optionally, if there are specific components you need to refresh, you might
+        //     // want to emit an event or call a method directly on those components.
+        // },
 
-        isChecked(needle) {
-            return this.selectedNeedles.includes(needle);
-        },      
+        // isChecked(needle) {
+        //     return this.selectedNeedles.includes(needle);
+        // },      
+        
         handleVisibilityChange() {
             if (document.visibilityState === 'visible') {
             this.ensureCheckboxesReflectState();
@@ -601,14 +563,7 @@ export default {
             this.selectedCompoundStructuresComputed = [...this.selectedCompoundStructures];
             this.selectedClustersComputed = [...this.selectedClusters];
 
-            console.log("ENSURE CHECKBOXES REFLECT STATE")
-            // ... do this for each piece of state that has a corresponding checkbox
-
-            //changed this to first line
-            // Check and update the menuIsOpen state
-            // if (this.isMenuOpenComputed !== this.isMenuOpen) {
-            // this.isMenuOpenComputed = this.isMenuOpen;
-            // }
+            console.log("Ensure checkboxes reflect state")
         },
         toggleMenu(event) {
             this.$store.commit('toggleMenu', event.target.checked);
@@ -632,53 +587,8 @@ export default {
 
 
     },
-
-    // watch: {
-    //     selectedFoliage(newVal, oldVal) {
-    //         if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
-    //             this.selectedFoliageComputed = [...newVal];
-    //         }
-    //     },
-    //     selectedNeedles(newVal, oldVal) {
-    //         if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
-    //             this.selectedNeedlesComputed = [...newVal];
-    //         }
-    //     },
-    //     selectedLeafTypes(newVal, oldVal) {
-    //         if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
-    //             this.selectedLeafTypesComputed = [...newVal];
-    //         }
-    //     },
-    //     selectedLeafAttachments(newVal, oldVal) {
-    //         if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
-    //             this.selectedLeafAttachmentsComputed = [...newVal];
-    //         }
-    //     },
-    //     selectedFallColors(newVal, oldVal) {
-    //         if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
-    //             this.selectedFallColorsComputed = [...newVal];
-    //         }
-    //     },
-    //     selectedCompoundStructures(newVal, oldVal) {
-    //         if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
-    //             this.selectedCompoundStructuresComputed = [...newVal];
-    //         }
-    //     },
-    //     selectedClusters(newVal, oldVal) {
-    //         if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
-    //             this.selectedClustersComputed = [...newVal];
-    //         }
-    //     },
-    //     isMenuOpen(newVal, oldVal) {
-    //         if (newVal !== oldVal) {
-    //             this.isMenuOpenComputed = newVal;
-    //         }
-    //     }
-    // },
-
-
-
 }
+
 </script>
 
 <style scoped>
