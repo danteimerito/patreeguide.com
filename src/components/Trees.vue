@@ -207,9 +207,7 @@ export default {
       },
 
       conifers() {
-      //     let coniferTrees = this.$store.state.trees.filter(tree => tree.type == 'conifer')
-      //     return coniferTrees
-      return this.$store.getters.conifers
+        return this.$store.getters.conifers
       },
     },
     watch: {
@@ -231,16 +229,13 @@ export default {
         // Define a default background image path
         const defaultImageUrl = '/img/bg_forest3_reverse.jpg';
         // Construct the background image URL
-        // If treeData is defined and has a background, use that, otherwise use the default
         const imageUrl = this.tree && this.tree.background ? `/img/${this.tree.background}` : defaultImageUrl;
-        // Set the background image style on the body tag
-        // document.body.style.backgroundImage = `url(${imageUrl})`;
+
         document.getElementById("background").style.backgroundImage = `url(${imageUrl})`;       
       }       
     },
     beforeDestroy() {
         // When the component is destroyed, reset the body background if needed
-        // document.body.style.backgroundImage = '';
         document.getElementById("background").style.backgroundImage = '';
     } 
 }
