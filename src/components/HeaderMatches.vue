@@ -28,7 +28,7 @@
                                 Edit Filters
                             </button>
                             <button v-else-if="menuIsOpen & !isAnyFilterSelected" @click="toggleMenu" class="button-edit-filters">
-                                Home
+                                Close
                             </button>
                         </router-link>
                     </div>
@@ -44,11 +44,13 @@ import { mapGetters, mapState } from 'vuex';
 export default {
     methods: {
         resetAllFilters() {
-            this.$gtag.event('click_clear_filters', {
-                event_category: 'Button',
-                event_label: 'Clear Filters Button',
-                // value: 'some_value' // Optional: any value you want to pass
-            });
+
+            // this.$gtag.event('click_clear_filters', {
+            //     event_category: 'Button',
+            //     event_label: 'Clear Filters Button',
+            //     // value: 'some_value' // Optional: any value you want to pass
+            // });
+
             this.$store.commit('resetFilters');
         },
         toggleMenu() {

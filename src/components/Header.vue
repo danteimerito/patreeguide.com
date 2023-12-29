@@ -27,7 +27,7 @@
                             <div>
                                 <div class="options-panel">
     
-                                    <transition name="fade-slide" v-cloak>
+                                    <!-- <transition name="fade-slide"> -->
                                         <div class="options-set">
                                             <div class="options-set-header">
                                                 <h3>Foliage</h3>
@@ -43,10 +43,13 @@
                                                 <img :src="iconMappings[foliage]" alt="Icon" class="checkbox-icon" />
                                             </label>
                                         </div>
-                                    </transition>
+                                    <!-- </transition> -->
             
-                                    <transition name="fade-slide" v-cloak>
-                                        <div v-if="this.selectedFoliage.includes('needles') || this.selectedNeedles.length > 0" class="options-set">
+                                    <!-- <transition name="fade-slide"> -->
+
+                                        <!-- <div v-if="this.selectedFoliage.includes('needles') || this.selectedNeedles.length > 0" class="options-set"> -->
+                                        <div class="options-set">
+
                                             <div class="options-set-header">
                                                 <h3>Needle Structure</h3>
                                             </div>
@@ -66,10 +69,11 @@
                                                 <img :src="iconMappings[needle]" alt="Icon" class="checkbox-icon" />
                                             </label>
                                         </div>
-                                    </transition>
+                                    <!-- </transition> -->
 
-                                    <transition name="fade-slide" v-cloak>
-                                    <div v-if="this.selectedNeedles.includes('clustered needles') || this.selectedClusters.length > 0" class="options-set">
+                                    <!-- <transition name="fade-slide"> -->
+                                    <!-- <div v-if="this.selectedNeedles.includes('clustered needles') || this.selectedClusters.length > 0" class="options-set"> -->
+                                    <div class="options-set">
                                         <div class="options-set-header">
                                             <h3>Needles per Cluster</h3>
                                         </div>
@@ -83,10 +87,11 @@
                                             {{ cluster }}
                                         </label>
                                     </div>
-                                    </transition>
+                                    <!-- </transition> -->
 
-                                    <transition name="fade-slide" v-cloak>
-                                    <div v-if="this.selectedFoliage.includes('leaves') || this.selectedLeafTypes.length > 0" class="options-set">
+                                    <!-- <transition name="fade-slide"> -->
+                                    <!-- <div v-if="this.selectedFoliage.includes('leaves') || this.selectedLeafTypes.length > 0" class="options-set"> -->
+                                    <div class="options-set">
                                         <div class="options-set-header">
                                             <h3>Leaf Type</h3>
                                         </div>
@@ -101,10 +106,11 @@
                                             <img :src="iconMappings[leaf]" alt="Icon" class="checkbox-icon">
                                         </label>
                                     </div>
-                                    </transition>
+                                    <!-- </transition> -->
 
-                                    <transition name="fade-slide" v-cloak>
-                                    <div v-if="selectedLeafTypes.includes('compound') || selectedCompoundStructures.length > 0" class="options-set">
+                                    <!-- <transition name="fade-slide"> -->
+                                    <!-- <div v-if="selectedLeafTypes.includes('compound') || selectedCompoundStructures.length > 0" class="options-set"> -->
+                                    <div class="options-set">          
                                         <div class="options-set-header">
                                             <h3>Compound Structure</h3>
                                         </div>
@@ -119,10 +125,11 @@
                                             <img :src="iconMappings[structure]" alt="Icon" class="checkbox-icon">
                                         </label>
                                     </div>
-                                    </transition>
+                                    <!-- </transition> -->
 
-                                    <transition name="fade-slide" v-cloak>
-                                    <div v-if="this.selectedFoliage.includes('leaves') || this.selectedLeafAttachments.length > 0" class="options-set">
+                                    <!-- <transition name="fade-slide"> -->
+                                    <!-- <div v-if="this.selectedFoliage.includes('leaves') || this.selectedLeafAttachments.length > 0" class="options-set"> -->
+                                    <div class="options-set">          
                                         <div class="options-set-header">
                                             <h3>Leaf Attachment</h3>
                                         </div>
@@ -137,10 +144,11 @@
                                             <img :src="iconMappings[attachment]" alt="Icon" class="checkbox-icon">
                                         </label>
                                     </div>
-                                    </transition>
+                                    <!-- </transition> -->
 
-                                    <transition name="fade-slide" v-cloak>
-                                    <div v-if="this.selectedFoliage.includes('leaves') || this.selectedFallColors.length > 0" class="options-set">
+                                    <!-- <transition name="fade-slide"> -->
+                                    <!-- <div v-if="this.selectedFoliage.includes('leaves') || this.selectedFallColors.length > 0" class="options-set"> -->
+                                    <div class="options-set">
                                         <div class="options-set-header">
                                             <h3>Fall Colors</h3>
                                         </div>
@@ -154,7 +162,7 @@
                                             {{ color }}
                                         </label>
                                     </div>
-                                </transition>
+                                <!-- </transition> -->
 
                                 </div>
                             </div>
@@ -170,7 +178,7 @@
 
 import { mapState, useStore } from 'vuex';
 import HeaderMatches from './HeaderMatches'
-import { ref } from 'vue';
+// import { ref } from 'vue';
 
 
 export default {
@@ -208,119 +216,141 @@ export default {
     name: 'Header',
 
 
-    setup() {
-        const store = useStore();
-        const lastActivityTime = ref(new Date());
+    // setup() {
+    //     const store = useStore();
+    //     const lastActivityTime = ref(new Date());
 
-        const updateActivityTime = () => {
-            lastActivityTime.value = new Date();
-        };
+    //     const updateActivityTime = () => {
+    //         lastActivityTime.value = new Date();
+    //     };
 
-        const handleVisibilityChangeTwo = () => {
-            if (document.visibilityState === 'visible') {
-                const currentTime = new Date();
-                const timeDifference = currentTime - lastActivityTime.value; // difference in milliseconds
-            console.log("timeDifference = " + timeDifference);
+    //     const handleVisibilityChangeTwo = () => {
+    //         if (document.visibilityState === 'visible') {
+    //             const currentTime = new Date();
+    //             const timeDifference = currentTime - lastActivityTime.value; // difference in milliseconds
+    //         console.log("timeDifference = " + timeDifference);
 
-                const thirtyMins = 30 * 60 * 1000; // thirty seconds
+    //             const thirtyMins = 30 * 60 * 1000; // thirty seconds
 
-                if (timeDifference >= thirtyMins) {
-                // If the tab has been inactive for an hour or more, reset the state
-                store.commit('resetFilters'); // Reset filters
-                store.commit('closeMenu'); // Close the menu
-                localStorage.clear(); // Clears everything
-                console.log("Filters Reset")
-                }
-            }
-        };
+    //             if (timeDifference >= thirtyMins) {
+    //             // If the tab has been inactive for an hour or more, reset the state
+    //             store.commit('resetFilters'); // Reset filters
+    //             store.commit('closeMenu'); // Close the menu
+    //             localStorage.clear(); // Clears everything
+    //             console.log("Filters Reset")
+    //             }
+    //         }
+    //     };
 
-        // onMounted(() => {
-        // window.addEventListener('mousemove', updateActivityTime);
-        // window.addEventListener('keydown', updateActivityTime);
-        // window.addEventListener('touchstart', updateActivityTime);
-        // window.addEventListener('touchmove', updateActivityTime);
-        // document.addEventListener('visibilitychange', handleVisibilityChangeTwo);
-        // console.log("event listeners added");
-        // });
+    //     // onMounted(() => {
+    //     // window.addEventListener('mousemove', updateActivityTime);
+    //     // window.addEventListener('keydown', updateActivityTime);
+    //     // window.addEventListener('touchstart', updateActivityTime);
+    //     // window.addEventListener('touchmove', updateActivityTime);
+    //     // document.addEventListener('visibilitychange', handleVisibilityChangeTwo);
+    //     // console.log("event listeners added");
+    //     // });
 
-        // onBeforeUnmount(() => {
-        // window.removeEventListener('mousemove', updateActivityTime);
-        // window.removeEventListener('keydown', updateActivityTime);
-        // window.removeEventListener('touchstart', updateActivityTime);
-        // window.removeEventListener('touchmove', updateActivityTime);
-        // document.removeEventListener('visibilitychange', handleVisibilityChangeTwo);
-        // console.log("event listeners removed")
-        // });
+    //     // onBeforeUnmount(() => {
+    //     // window.removeEventListener('mousemove', updateActivityTime);
+    //     // window.removeEventListener('keydown', updateActivityTime);
+    //     // window.removeEventListener('touchstart', updateActivityTime);
+    //     // window.removeEventListener('touchmove', updateActivityTime);
+    //     // document.removeEventListener('visibilitychange', handleVisibilityChangeTwo);
+    //     // console.log("event listeners removed")
+    //     // });
 
-        // return {
-        //     lastActivityTime,
-        // };
-    },
+    //     // return {
+    //     //     lastActivityTime,
+    //     // };
+    // },
 
 
-    watch: {
-        selectedFoliage(newVal, oldVal) {
-            if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
-                this.selectedFoliageComputed = [...newVal];
-                this.ensureCheckboxesReflectState();
-                console.log('ensure checkboxes reflect state')
-            }
-        },
-        selectedNeedles(newVal, oldVal) {
-            if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
-                this.selectedNeedlesComputed = [...newVal];
-                this.ensureCheckboxesReflectState();
-                console.log('ensure checkboxes reflect state')
-            }
-        },
-        selectedLeafTypes(newVal, oldVal) {
-            if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
-                this.selectedLeafTypesComputed = [...newVal];
-                this.ensureCheckboxesReflectState();
-                console.log('ensure checkboxes reflect state')
-            }
-        },
-        selectedLeafAttachments(newVal, oldVal) {
-            if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
-                this.selectedLeafAttachmentsComputed = [...newVal];
-                this.ensureCheckboxesReflectState();
-                console.log('ensure checkboxes reflect state')
-            }
-        },
-        selectedFallColors(newVal, oldVal) {
-            if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
-                this.selectedFallColorsComputed = [...newVal];
-                this.ensureCheckboxesReflectState();
-                console.log('ensure checkboxes reflect state')
-            }
-        },
-        selectedCompoundStructures(newVal, oldVal) {
-            if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
-                this.selectedCompoundStructuresComputed = [...newVal];
-                this.ensureCheckboxesReflectState();
-                console.log('ensure checkboxes reflect state')
-            }
-        },
-        selectedClusters(newVal, oldVal) {
-            if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
-                this.selectedClustersComputed = [...newVal];
+    // watch: {
+    //     selectedFoliage(newVal, oldVal) {
+    //         if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
 
-                this.ensureCheckboxesReflectState();
-                console.log('ensure checkboxes reflect state')
-            }
-        },
-        isMenuOpen(newVal, oldVal) {
-            if (newVal !== oldVal) {
-                this.isMenuOpenComputed = newVal;
+    //             // this.selectedFoliageComputed = [...newVal];
 
-                this.ensureCheckboxesReflectState();
-                console.log('ensure checkboxes reflect state')
-            }
-        }
-    },
+    //             this.ensureCheckboxesReflectState();
+
+    //             // console.log('ensure checkboxes reflect state')
+    //         }
+    //     },
+    //     selectedNeedles(newVal, oldVal) {
+    //         if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
+
+    //             // this.selectedNeedlesComputed = [...newVal];
+
+    //             this.ensureCheckboxesReflectState();
+
+    //             // console.log('ensure checkboxes reflect state')
+    //         }
+    //     },
+    //     selectedLeafTypes(newVal, oldVal) {
+    //         if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
+
+    //             // this.selectedLeafTypesComputed = [...newVal];
+
+    //             this.ensureCheckboxesReflectState();
+
+    //             // console.log('ensure checkboxes reflect state')
+    //         }
+    //     },
+    //     selectedLeafAttachments(newVal, oldVal) {
+    //         if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
+
+    //             // this.selectedLeafAttachmentsComputed = [...newVal];
+
+    //             this.ensureCheckboxesReflectState();
+
+    //             // console.log('ensure checkboxes reflect state')
+    //         }
+    //     },
+    //     selectedFallColors(newVal, oldVal) {
+    //         if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
+
+    //             // this.selectedFallColorsComputed = [...newVal];
+
+    //             this.ensureCheckboxesReflectState();
+
+    //             // console.log('ensure checkboxes reflect state')
+    //         }
+    //     },
+    //     selectedCompoundStructures(newVal, oldVal) {
+    //         if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
+
+    //             // this.selectedCompoundStructuresComputed = [...newVal];
+
+    //             this.ensureCheckboxesReflectState();
+
+    //             // console.log('ensure checkboxes reflect state')
+    //         }
+    //     },
+    //     selectedClusters(newVal, oldVal) {
+    //         if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
+
+    //             // this.selectedClustersComputed = [...newVal];
+
+    //             this.ensureCheckboxesReflectState();
+
+    //             // console.log('ensure checkboxes reflect state')
+    //         }
+    //     },
+    //     isMenuOpen(newVal, oldVal) {
+    //         if (newVal !== oldVal) {
+
+    //             // this.isMenuOpenComputed = newVal;
+
+    //             this.ensureCheckboxesReflectState();
+
+    //             // console.log('ensure checkboxes reflect state')
+    //         }
+    //     }
+    // },
 
     mounted() {
-        this.ensureCheckboxesReflectState();
+        // this.ensureCheckboxesReflectState();
 
 
         // window.addEventListener('focus', this.syncStateWithUI);
@@ -346,7 +376,7 @@ export default {
     },
     created() {
             // document.addEventListener('visibilitychange', this.handleVisibilityChange);
-            this.ensureCheckboxesReflectState();
+            // this.ensureCheckboxesReflectState();
     },
     components: {
         HeaderMatches
@@ -443,12 +473,14 @@ export default {
             const changedClusters = value.find(c => !this.selectedClusters.includes(c)) 
                 || this.selectedClusters.find(c => !value.includes(c));
             const isSelected = value.includes(changedClusters);
+
             // Track the event with a more descriptive label
-            this.$gtag.event('clusters_selection_change', {
-                event_category: 'Checkbox Interaction',
-                event_label: `${changedClusters}: ${isSelected ? 'Selected' : 'Deselected'}`,
-                event_action: 'change'
-            });
+            // this.$gtag.event('clusters_selection_change', {
+            //     event_category: 'Checkbox Interaction',
+            //     event_label: `${changedClusters}: ${isSelected ? 'Selected' : 'Deselected'}`,
+            //     event_action: 'change'
+            // });
+
             // Update Vuex state
             this.$store.dispatch('updateSelectedClusters', value);
             },
@@ -459,16 +491,19 @@ export default {
             return this.selectedLeafTypes;
             },
             set(value) {
+
             // Determine the changed item and its new state (selected or deselected)
             const changedLeafTypes = value.find(lt => !this.selectedLeafTypes.includes(lt)) 
                 || this.selectedLeafTypes.find(lt => !value.includes(lt));
             const isSelected = value.includes(changedLeafTypes);
+
             // Track the event with a more descriptive label
-            this.$gtag.event('leaf-types_selection_change', {
-                event_category: 'Checkbox Interaction',
-                event_label: `${changedLeafTypes}: ${isSelected ? 'Selected' : 'Deselected'}`,
-                event_action: 'change'
-            });
+            // this.$gtag.event('leaf-types_selection_change', {
+            //     event_category: 'Checkbox Interaction',
+            //     event_label: `${changedLeafTypes}: ${isSelected ? 'Selected' : 'Deselected'}`,
+            //     event_action: 'change'
+            // });
+
             // Update Vuex state
             this.$store.dispatch('updateSelectedLeafTypes', value);
             },
@@ -484,11 +519,11 @@ export default {
                 || this.selectedCompoundStructures.find(cs => !value.includes(cs));
             const isSelected = value.includes(changedCompoundStructures);
             // Track the event with a more descriptive label
-            this.$gtag.event('compound-structure_selection_change', {
-                event_category: 'Checkbox Interaction',
-                event_label: `${changedCompoundStructures}: ${isSelected ? 'Selected' : 'Deselected'}`,
-                event_action: 'change'
-            });
+            // this.$gtag.event('compound-structure_selection_change', {
+            //     event_category: 'Checkbox Interaction',
+            //     event_label: `${changedCompoundStructures}: ${isSelected ? 'Selected' : 'Deselected'}`,
+            //     event_action: 'change'
+            // });
             // Update Vuex state
             this.$store.dispatch('updateSelectedCompoundStructures', value);
             },
@@ -504,11 +539,11 @@ export default {
                 || this.selectedLeafAttachments.find(la => !value.includes(la));
             const isSelected = value.includes(changedLeafAttachments);
             // Track the event with a more descriptive label
-            this.$gtag.event('leaf-attachments_selection_change', {
-                event_category: 'Checkbox Interaction',
-                event_label: `${changedLeafAttachments}: ${isSelected ? 'Selected' : 'Deselected'}`,
-                event_action: 'change'
-            });
+            // this.$gtag.event('leaf-attachments_selection_change', {
+            //     event_category: 'Checkbox Interaction',
+            //     event_label: `${changedLeafAttachments}: ${isSelected ? 'Selected' : 'Deselected'}`,
+            //     event_action: 'change'
+            // });
             // Update Vuex state
             this.$store.dispatch('updateSelectedLeafAttachments', value);
             },
@@ -524,11 +559,11 @@ export default {
                 || this.selectedFallColors.find(fc => !value.includes(fc));
             const isSelected = value.includes(changedFallColors);
             // Track the event with a more descriptive label
-            this.$gtag.event('fall-colors_selection_change', {
-                event_category: 'Checkbox Interaction',
-                event_label: `${changedFallColors}: ${isSelected ? 'Selected' : 'Deselected'}`,
-                event_action: 'change'
-            });
+            // this.$gtag.event('fall-colors_selection_change', {
+            //     event_category: 'Checkbox Interaction',
+            //     event_label: `${changedFallColors}: ${isSelected ? 'Selected' : 'Deselected'}`,
+            //     event_action: 'change'
+            // });
             // Update Vuex state
             this.$store.dispatch('updateSelectedFallColors', value);
             },
@@ -576,11 +611,11 @@ export default {
             this.$store.commit('resetFilters');
         },
         logoClick() {
-            this.$gtag.event('click_logo_header', {
-                event_category: 'Link',
-                event_label: 'Header logo clicked',
-                // value: 'some_value' // Optional: any value you want to pass
-        });
+        //     this.$gtag.event('click_logo_header', {
+        //         event_category: 'Link',
+        //         event_label: 'Header logo clicked',
+        //         // value: 'some_value' // Optional: any value you want to pass
+        // });
             this.$store.commit('resetFilters');
             this.$store.commit('closeMenu');
         },
