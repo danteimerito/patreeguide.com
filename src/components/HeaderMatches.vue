@@ -14,23 +14,26 @@
                         <div v-if="isAnyFilterSelected" class="matches-num">
                             {{ filteredTreeCount }}
                         </div>
-                        <div v-else="" class="matches-num">
+                        <div v-else class="matches-num">
                             0
                         </div>
                     </div>
 
                     <div class="right">
                         <router-link to="/">     
-                            <button v-if="menuIsOpen & isAnyFilterSelected" @click="toggleMenu" class="button-view-results" >
+                            <button v-if="menuIsOpen && isAnyFilterSelected" @click="toggleMenu" class="button-view-results" >
                                 View Results
                             </button>
+
                             <button v-else-if="!menuIsOpen" @click="toggleMenu" class="button-edit-filters">
                                 Edit Filters
                             </button>
-                            <button v-else-if="menuIsOpen & !isAnyFilterSelected" @click="toggleMenu" class="button-edit-filters">
+
+                            <button v-else-if="menuIsOpen && !isAnyFilterSelected" @click="toggleMenu" class="button-edit-filters">
                                 Close
                             </button>
                         </router-link>
+
                     </div>
                 </div>
             </div>
@@ -51,45 +54,37 @@ export default {
             //     // value: 'some_value' // Optional: any value you want to pass
             // });
 
-            this.$store.commit('resetFilters');
+            this.$store.dispatch('resetFilters');
         },
         toggleMenu() {
-            this.$store.commit('toggleMenu');
+            this.$store.dispatch('toggleMenu');
         },
     },
     computed: {
-    isAnyFilterSelected() {
-      return [
-        this.selectedFoliage,
-        this.selectedNeedles, 
-        this.selectedLeafTypes, 
-        this.selectedLeafAttachments, 
-        this.selectedFallColors, 
-        this.selectedCompoundStructures, 
-        this.selectedClusters
-      ].some(array => array && array.length > 0);
-    },  
-    areFiltersSelected() {
-      return [
-        this.selectedFoliage,
-        this.selectedNeedles, 
-        this.selectedLeafTypes, 
-        this.selectedLeafAttachments, 
-        this.selectedFallColors, 
-        this.selectedCompoundStructures, 
-        this.selectedClusters
-      ].every(array => array && array.length > 0);
-    },
-    // Using mapState
+        isAnyFilterSelected() {
+        return [
+            this.selectedFoliage,
+            this.selectedNeedles, 
+            this.selectedLeafTypes, 
+            this.selectedLeafAttachments, 
+            this.selectedFallColors, 
+            this.selectedCompoundStructures, 
+            this.selectedClusters
+        ].some(array => array && array.length > 0);
+        },  
+        // Using mapState
         ...mapState({
             trees: state => state.trees,
         }),
+
         // Using mapGetters
         ...mapGetters([
             'getFilteredTrees', // Assuming 'getFilteredTrees' is a getter in your store
         ]),
+
         ...mapState([
             // If you have these as root state properties
+            'isMenuOpen',
             'selectedFoliage',
             'selectedNeedles',
             'selectedClusters',
@@ -97,9 +92,8 @@ export default {
             'selectedCompoundStructures',
             'selectedLeafAttachments',
             'selectedFallColors'
-
-            // ... other filter states
         ]),
+
         filteredTreeCount() {
             return this.$store.getters.getFilteredTreeCount(
             this.selectedFoliage,
@@ -111,17 +105,12 @@ export default {
             this.selectedFallColors
             );
         },
-        // isMenuOpen: {
-        //     get() {
-        //         return this.$store.state.isMenuOpen;
-        //     },
-        // },
         menuIsOpen: {
             get() {
                 return this.$store.state.isMenuOpen;
             },
             set(value) {
-                this.$store.commit('toggleMenu');
+                this.$store.dispatch('toggleMenu', value);
             }
         },
   },

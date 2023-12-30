@@ -5723,12 +5723,16 @@ export const store = createStore({
         state.selectedLeafAttachments = [];
         state.selectedFallColors = [];
       },
-      toggleMenu(state) {
-        console.log("store:mutation:toggleMenu");
-        state.isMenuOpen = !state.isMenuOpen;
+      setMenuState(state, isOpen) {
+        state.isMenuOpen = isOpen;
+        console.log("store:mutation:setMenuState", isOpen);
       },
-      setMenuOpen(state, isOpen) {
-        state.menuIsOpen = isOpen;
+      toggleMenu(state) {
+        state.isMenuOpen = !state.isMenuOpen;
+        console.log("store:mutation:toggleMenu");
+      },
+      openMenu(state) {
+        state.menuIsOpen = true;
       },
       closeMenu(state) {
         console.log("store:mutation:closeMenu");
@@ -5767,39 +5771,65 @@ export const store = createStore({
         console.log("store:mutation:setSelectedFallColors");
       },
     },
-    actions: {      
-        updateSelectedFoliage({ commit }, foliage) {
-          commit('setSelectedFoliage', foliage);
-          console.log("store:action:updateSelectedFoliage");
-        },
-        updateSelectedNeedles({ commit }, needles) {
-          commit('setSelectedNeedles', needles);
-          console.log("store:action:updateSelectedNeedles");
-        },
-        updateSelectedClusters({ commit }, clusters) {
-          commit('setSelectedClusters', clusters);
-          console.log("store:action:updateSelectedClusters");
-        },
-        updateSelectedLeafTypes({ commit }, leafTypes) {
-          commit('setSelectedLeafTypes', leafTypes);
-          console.log("store:action:updateSelectedLeafTypes");
+    actions: {
 
-        },
-        updateSelectedCompoundStructures({ commit }, compoundStructures) {
-          commit('setSelectedCompoundStructures', compoundStructures);
-          console.log("store:action:updateSelectedCompoundStructures");
+      resetFilters({ commit }) {
+        commit('resetFilters')
+      },
 
-        },
-        updateSelectedLeafAttachments({ commit }, leafAttachments) {
-          commit('setSelectedLeafAttachments', leafAttachments);
-          console.log("store:action:updateSelectedLeafAttachments");
+      logoClick({ commit }) {
+        commit('resetFilters');
+        commit('closeMenu');
+      },
 
-        },
-        updateSelectedFallColors({ commit }, fallColors) {
-          commit('setSelectedFallColors', fallColors);
-          console.log("store:action:updateSelectedFallColors");
+      toggleMenu({ commit, state }) {
+        commit('toggleMenu')
+      },
 
-        },
+      // toggleMenuButton({ commit, state }) {
+      //   commit
+      // },
+
+      updateToggleMenu({ commit }, toggle) {
+        commit('toggleMenu', toggle)
+      },
+
+      toggleMenuOpen({ commit }, isOpen) {
+        commit('openMenu', isOpen)
+      },
+
+      updateSelectedFoliage({ commit }, foliage) {
+        commit('setSelectedFoliage', foliage);
+        console.log("store:action:updateSelectedFoliage");
+      },
+      updateSelectedNeedles({ commit }, needles) {
+        commit('setSelectedNeedles', needles);
+        console.log("store:action:updateSelectedNeedles");
+      },
+      updateSelectedClusters({ commit }, clusters) {
+        commit('setSelectedClusters', clusters);
+        console.log("store:action:updateSelectedClusters");
+      },
+      updateSelectedLeafTypes({ commit }, leafTypes) {
+        commit('setSelectedLeafTypes', leafTypes);
+        console.log("store:action:updateSelectedLeafTypes");
+
+      },
+      updateSelectedCompoundStructures({ commit }, compoundStructures) {
+        commit('setSelectedCompoundStructures', compoundStructures);
+        console.log("store:action:updateSelectedCompoundStructures");
+
+      },
+      updateSelectedLeafAttachments({ commit }, leafAttachments) {
+        commit('setSelectedLeafAttachments', leafAttachments);
+        console.log("store:action:updateSelectedLeafAttachments");
+
+      },
+      updateSelectedFallColors({ commit }, fallColors) {
+        commit('setSelectedFallColors', fallColors);
+        console.log("store:action:updateSelectedFallColors");
+
+      },
     },
     plugins: [vuexLocal.plugin],
 });

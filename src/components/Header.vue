@@ -3,7 +3,7 @@
       
             <div class="topbars">
                 <div class="menu-wrap">
-                    <div class="menu-topbar" ref="">
+                    <div class="menu-topbar">
                         <div class="logo"><router-link to="/" @click="logoClick">PA TREE GUIDE </router-link></div>
                     </div>
 
@@ -12,7 +12,7 @@
                         name="toggler"
                         class="toggler"
                         :checked="isMenuOpen" 
-                        @change="toggleMenu($event)" 
+                        @change="toggleMenu($event.target.checked)" 
                     />
     
                     <HeaderMatches v-if="isMenuOpen"/>
@@ -40,7 +40,7 @@
                                                     v-model="selectedFoliageComputed" 
                                                 />
                                                 {{ foliage }}
-                                                <img :src="iconMappings[foliage]" alt="Icon" class="checkbox-icon" />
+                                                <img :src="getIcon(foliage)" alt="Icon" class="checkbox-icon" />
                                             </label>
                                         </div>
                                     <!-- </transition> -->
@@ -61,12 +61,9 @@
                                                     v-model="selectedNeedlesComputed" 
                                                 />
                                                 
-                                                <!-- removed from input -->
-                                                <!-- :checked="isChecked(needle)" -->
-
                                                 {{ needle }}
 
-                                                <img :src="iconMappings[needle]" alt="Icon" class="checkbox-icon" />
+                                                <img :src="getIcon(needle)" alt="Icon" class="checkbox-icon" />
                                             </label>
                                         </div>
                                     <!-- </transition> -->
@@ -103,7 +100,7 @@
                                             v-model="selectedLeafTypesComputed" 
                                             />
                                             {{ leaf }}
-                                            <img :src="iconMappings[leaf]" alt="Icon" class="checkbox-icon">
+                                            <img :src="getIcon(leaf)" alt="Icon" class="checkbox-icon">
                                         </label>
                                     </div>
                                     <!-- </transition> -->
@@ -122,7 +119,7 @@
                                             v-model="selectedCompoundStructuresComputed" 
                                             />
                                             {{ structure }}
-                                            <img :src="iconMappings[structure]" alt="Icon" class="checkbox-icon">
+                                            <img :src="getIcon(structure)" alt="Icon" class="checkbox-icon">
                                         </label>
                                     </div>
                                     <!-- </transition> -->
@@ -141,7 +138,7 @@
                                             v-model="selectedLeafAttachmentsComputed" 
                                             />
                                             {{ attachment }}
-                                            <img :src="iconMappings[attachment]" alt="Icon" class="checkbox-icon">
+                                            <img :src="getIcon(attachment)" alt="Icon" class="checkbox-icon">
                                         </label>
                                     </div>
                                     <!-- </transition> -->
@@ -178,22 +175,8 @@
 
 import { mapState, useStore } from 'vuex';
 import HeaderMatches from './HeaderMatches'
-// import { ref } from 'vue';
 
-
-export default {
-    data() {
-        return {
-            lastActivityTime: new Date(),
-            treeTypes: ['conifer', 'deciduous'],
-            foliage: ['needles', 'leaves'],
-            needleStructures: ['single needle', 'clustered needles', 'scaly needles'],
-            needleClusters: [2,3,5,"10-30"],
-            leafTypes: ['simple', 'lobed', 'compound'],
-            compoundStructures: ['pinnate', 'twice pinnate', 'palmate'],
-            leafAttachments: ['opposite', 'alternate'],
-            fallColors: ['red','orange','brown','yellow','green','purple'],
-            iconMappings: {
+const iconMappings = {
                 'conifer': '/img/icons/icon-conifer.svg',
                 'deciduous': '/img/icons/icon-deciduous.svg',
                 'needles': '/img/icons/icon-conifer.svg',
@@ -209,178 +192,33 @@ export default {
                 'palmate': '/img/icons/icon-compound-palmate.svg',
                 'opposite': '/img/icons/icon-attachment-opposite.svg',
                 'alternate': '/img/icons/icon-attachment-alternate.svg',
-            },
+            }
 
+export default {
+    data() {
+        return {
+            lastActivityTime: new Date(),
+            treeTypes: ['conifer', 'deciduous'],
+            foliage: ['needles', 'leaves'],
+            needleStructures: ['single needle', 'clustered needles', 'scaly needles'],
+            needleClusters: [2,3,5,"10-30"],
+            leafTypes: ['simple', 'lobed', 'compound'],
+            compoundStructures: ['pinnate', 'twice pinnate', 'palmate'],
+            leafAttachments: ['opposite', 'alternate'],
+            fallColors: ['red','orange','brown','yellow','green','purple'],
         };
     },
+
     name: 'Header',
 
-
-    // setup() {
-    //     const store = useStore();
-    //     const lastActivityTime = ref(new Date());
-
-    //     const updateActivityTime = () => {
-    //         lastActivityTime.value = new Date();
-    //     };
-
-    //     const handleVisibilityChangeTwo = () => {
-    //         if (document.visibilityState === 'visible') {
-    //             const currentTime = new Date();
-    //             const timeDifference = currentTime - lastActivityTime.value; // difference in milliseconds
-    //         console.log("timeDifference = " + timeDifference);
-
-    //             const thirtyMins = 30 * 60 * 1000; // thirty seconds
-
-    //             if (timeDifference >= thirtyMins) {
-    //             // If the tab has been inactive for an hour or more, reset the state
-    //             store.commit('resetFilters'); // Reset filters
-    //             store.commit('closeMenu'); // Close the menu
-    //             localStorage.clear(); // Clears everything
-    //             console.log("Filters Reset")
-    //             }
-    //         }
-    //     };
-
-    //     // onMounted(() => {
-    //     // window.addEventListener('mousemove', updateActivityTime);
-    //     // window.addEventListener('keydown', updateActivityTime);
-    //     // window.addEventListener('touchstart', updateActivityTime);
-    //     // window.addEventListener('touchmove', updateActivityTime);
-    //     // document.addEventListener('visibilitychange', handleVisibilityChangeTwo);
-    //     // console.log("event listeners added");
-    //     // });
-
-    //     // onBeforeUnmount(() => {
-    //     // window.removeEventListener('mousemove', updateActivityTime);
-    //     // window.removeEventListener('keydown', updateActivityTime);
-    //     // window.removeEventListener('touchstart', updateActivityTime);
-    //     // window.removeEventListener('touchmove', updateActivityTime);
-    //     // document.removeEventListener('visibilitychange', handleVisibilityChangeTwo);
-    //     // console.log("event listeners removed")
-    //     // });
-
-    //     // return {
-    //     //     lastActivityTime,
-    //     // };
-    // },
-
-
-    // watch: {
-    //     selectedFoliage(newVal, oldVal) {
-    //         if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
-
-    //             // this.selectedFoliageComputed = [...newVal];
-
-    //             this.ensureCheckboxesReflectState();
-
-    //             // console.log('ensure checkboxes reflect state')
-    //         }
-    //     },
-    //     selectedNeedles(newVal, oldVal) {
-    //         if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
-
-    //             // this.selectedNeedlesComputed = [...newVal];
-
-    //             this.ensureCheckboxesReflectState();
-
-    //             // console.log('ensure checkboxes reflect state')
-    //         }
-    //     },
-    //     selectedLeafTypes(newVal, oldVal) {
-    //         if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
-
-    //             // this.selectedLeafTypesComputed = [...newVal];
-
-    //             this.ensureCheckboxesReflectState();
-
-    //             // console.log('ensure checkboxes reflect state')
-    //         }
-    //     },
-    //     selectedLeafAttachments(newVal, oldVal) {
-    //         if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
-
-    //             // this.selectedLeafAttachmentsComputed = [...newVal];
-
-    //             this.ensureCheckboxesReflectState();
-
-    //             // console.log('ensure checkboxes reflect state')
-    //         }
-    //     },
-    //     selectedFallColors(newVal, oldVal) {
-    //         if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
-
-    //             // this.selectedFallColorsComputed = [...newVal];
-
-    //             this.ensureCheckboxesReflectState();
-
-    //             // console.log('ensure checkboxes reflect state')
-    //         }
-    //     },
-    //     selectedCompoundStructures(newVal, oldVal) {
-    //         if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
-
-    //             // this.selectedCompoundStructuresComputed = [...newVal];
-
-    //             this.ensureCheckboxesReflectState();
-
-    //             // console.log('ensure checkboxes reflect state')
-    //         }
-    //     },
-    //     selectedClusters(newVal, oldVal) {
-    //         if (JSON.stringify(newVal) !== JSON.stringify(oldVal)) {
-
-    //             // this.selectedClustersComputed = [...newVal];
-
-    //             this.ensureCheckboxesReflectState();
-
-    //             // console.log('ensure checkboxes reflect state')
-    //         }
-    //     },
-    //     isMenuOpen(newVal, oldVal) {
-    //         if (newVal !== oldVal) {
-
-    //             // this.isMenuOpenComputed = newVal;
-
-    //             this.ensureCheckboxesReflectState();
-
-    //             // console.log('ensure checkboxes reflect state')
-    //         }
-    //     }
-    // },
-
     mounted() {
-        // this.ensureCheckboxesReflectState();
-
-
-        // window.addEventListener('focus', this.syncStateWithUI);
-
-        // document.addEventListener('visibilitychange', this.handleVisibilityChange);
-        
-            // Listen for user activity events
-            // window.addEventListener('mousemove', this.updateActivityTime);
-            // window.addEventListener('keydown', this.updateActivityTime);
-            // window.addEventListener('touchstart', this.updateActivityTime);
-            // window.addEventListener('touchmove', this.updateActivityTime);
-            
-            // Listen for visibility change events
-            // document.addEventListener('visibilitychange', this.handleVisibilityChangeTwo);
-  
+        console.log("COMPONENT MOUNTED")
     },
-    beforeUnmount() { 
-        // window.addEventListener('focus', this.syncStateWithUI);
-        
-        
-        // or 'beforeDestroy()' in Vue 2
-        // document.removeEventListener('visibilitychange', this.handleVisibilityChange);
-    },
-    created() {
-            // document.addEventListener('visibilitychange', this.handleVisibilityChange);
-            // this.ensureCheckboxesReflectState();
-    },
+
     components: {
         HeaderMatches
     }, 
+
     computed: {
 
         enterAnimationDuration() {
@@ -411,176 +249,179 @@ export default {
             }
         },
 
-        ...mapState(['isMenuOpen']),
+        ...mapState([
+            'isMenuOpen',
+            'selectedFoliage',
+            'selectedNeedles',
+            'selectedClusters',
+            'selectedLeafTypes',
+            'selectedLeafAttachments', 
+            'selectedCompoundStructures', 
+            'selectedFallColors',
+        ]),
+        
         isMenuOpenComputed: {
             get() {
                 return this.$store.state.menuIsOpen;
             },
             set(value) {
-                this.$store.commit('setMenuOpen', value);
+                this.$store.dispatch('toggleMenu', value);
             }
         },
         
-        ...mapState(['selectedFoliage']),
         selectedFoliageComputed: {
             get() {
-            return this.selectedFoliage;
+                return this.selectedFoliage;
             },
             set(value) {
-            // Determine the changed item and its new state (selected or deselected)
-            const changedFoliage = value.find(f => !this.selectedFoliage.includes(f)) 
-                || this.selectedFoliage.find(f => !value.includes(f));
-            const isSelected = value.includes(changedFoliage);
 
-            // Track the event with a more descriptive label
-            this.$gtag.event('foliage_selection_change', {
-                event_category: 'Checkbox Interaction',
-                event_label: `${changedFoliage}: ${isSelected ? 'Selected' : 'Deselected'}`,
-                event_action: 'change'
-            });
+                // // Determine the changed item and its new state (selected or deselected)
+                // const changedFoliage = value.find(f => !this.selectedFoliage.includes(f)) 
+                //     || this.selectedFoliage.find(f => !value.includes(f));
+                // const isSelected = value.includes(changedFoliage);
+                // // Track the event with a more descriptive label
+                // this.$gtag.event('foliage_selection_change', {
+                //     event_category: 'Checkbox Interaction',
+                //     event_label: `${changedFoliage}: ${isSelected ? 'Selected' : 'Deselected'}`,
+                //     event_action: 'change'
+                // });
 
-            // Update Vuex state
-            this.$store.dispatch('updateSelectedFoliage', value);
+                // Update Vuex state
+                this.$store.dispatch('updateSelectedFoliage', value);
             }
         },
-        ...mapState(['selectedNeedles']),
+
         selectedNeedlesComputed: {
             get() {
-            return this.selectedNeedles;
+                return this.selectedNeedles;
             },
             set(value) {
-            // Determine the changed item and its new state (selected or deselected)
-            const changedNeedles = value.find(n => !this.selectedNeedles.includes(n)) 
-                || this.selectedNeedles.find(n => !value.includes(n));
-            const isSelected = value.includes(changedNeedles);
-            // Track the event with a more descriptive label
-            this.$gtag.event('needles_selection_change', {
-                event_category: 'Checkbox Interaction',
-                event_label: `${changedNeedles}: ${isSelected ? 'Selected' : 'Deselected'}`,
-                event_action: 'change'
-            });
-            // Update Vuex state
-            this.$store.dispatch('updateSelectedNeedles', value);
+                // Determine the changed item and its new state (selected or deselected)
+                // const changedNeedles = value.find(n => !this.selectedNeedles.includes(n)) 
+                //     || this.selectedNeedles.find(n => !value.includes(n));
+                // const isSelected = value.includes(changedNeedles);
+                // Track the event with a more descriptive label
+                // this.$gtag.event('needles_selection_change', {
+                //     event_category: 'Checkbox Interaction',
+                //     event_label: `${changedNeedles}: ${isSelected ? 'Selected' : 'Deselected'}`,
+                //     event_action: 'change'
+                // });
+                // Update Vuex state
+                this.$store.dispatch('updateSelectedNeedles', value);
             },
         },
-        ...mapState(['selectedClusters']),
+
         selectedClustersComputed: {
             get() {
             return this.selectedClusters;
             },
             set(value) {
-            // Determine the changed item and its new state (selected or deselected)
-            const changedClusters = value.find(c => !this.selectedClusters.includes(c)) 
-                || this.selectedClusters.find(c => !value.includes(c));
-            const isSelected = value.includes(changedClusters);
 
-            // Track the event with a more descriptive label
-            // this.$gtag.event('clusters_selection_change', {
-            //     event_category: 'Checkbox Interaction',
-            //     event_label: `${changedClusters}: ${isSelected ? 'Selected' : 'Deselected'}`,
-            //     event_action: 'change'
-            // });
+                // Determine the changed item and its new state (selected or deselected)
+                // const changedClusters = value.find(c => !this.selectedClusters.includes(c)) 
+                //     || this.selectedClusters.find(c => !value.includes(c));
+                // const isSelected = value.includes(changedClusters);
+                // Track the event with a more descriptive label
+                // this.$gtag.event('clusters_selection_change', {
+                //     event_category: 'Checkbox Interaction',
+                //     event_label: `${changedClusters}: ${isSelected ? 'Selected' : 'Deselected'}`,
+                //     event_action: 'change'
+                // });
 
-            // Update Vuex state
-            this.$store.dispatch('updateSelectedClusters', value);
+                // Update Vuex state
+                this.$store.dispatch('updateSelectedClusters', value);
             },
         },
-        ...mapState(['selectedLeafTypes']),
+
         selectedLeafTypesComputed: {
             get() {
             return this.selectedLeafTypes;
             },
             set(value) {
 
-            // Determine the changed item and its new state (selected or deselected)
-            const changedLeafTypes = value.find(lt => !this.selectedLeafTypes.includes(lt)) 
-                || this.selectedLeafTypes.find(lt => !value.includes(lt));
-            const isSelected = value.includes(changedLeafTypes);
+                // Determine the changed item and its new state (selected or deselected)
+                // const changedLeafTypes = value.find(lt => !this.selectedLeafTypes.includes(lt)) 
+                //     || this.selectedLeafTypes.find(lt => !value.includes(lt));
+                // const isSelected = value.includes(changedLeafTypes);
 
-            // Track the event with a more descriptive label
-            // this.$gtag.event('leaf-types_selection_change', {
-            //     event_category: 'Checkbox Interaction',
-            //     event_label: `${changedLeafTypes}: ${isSelected ? 'Selected' : 'Deselected'}`,
-            //     event_action: 'change'
-            // });
+                // Track the event with a more descriptive label
+                // this.$gtag.event('leaf-types_selection_change', {
+                //     event_category: 'Checkbox Interaction',
+                //     event_label: `${changedLeafTypes}: ${isSelected ? 'Selected' : 'Deselected'}`,
+                //     event_action: 'change'
+                // });
 
-            // Update Vuex state
-            this.$store.dispatch('updateSelectedLeafTypes', value);
+                // Update Vuex state
+                this.$store.dispatch('updateSelectedLeafTypes', value);
             },
         },
-        ...mapState(['selectedCompoundStructures']),
+
         selectedCompoundStructuresComputed: {
             get() {
             return this.selectedCompoundStructures;
             },
             set(value) {
-            // Determine the changed item and its new state (selected or deselected)
-            const changedCompoundStructures = value.find(cs => !this.selectedCompoundStructures.includes(cs)) 
-                || this.selectedCompoundStructures.find(cs => !value.includes(cs));
-            const isSelected = value.includes(changedCompoundStructures);
-            // Track the event with a more descriptive label
-            // this.$gtag.event('compound-structure_selection_change', {
-            //     event_category: 'Checkbox Interaction',
-            //     event_label: `${changedCompoundStructures}: ${isSelected ? 'Selected' : 'Deselected'}`,
-            //     event_action: 'change'
-            // });
-            // Update Vuex state
-            this.$store.dispatch('updateSelectedCompoundStructures', value);
+                // Determine the changed item and its new state (selected or deselected)
+                // const changedCompoundStructures = value.find(cs => !this.selectedCompoundStructures.includes(cs)) 
+                //     || this.selectedCompoundStructures.find(cs => !value.includes(cs));
+                // const isSelected = value.includes(changedCompoundStructures);
+                // Track the event with a more descriptive label
+                // this.$gtag.event('compound-structure_selection_change', {
+                //     event_category: 'Checkbox Interaction',
+                //     event_label: `${changedCompoundStructures}: ${isSelected ? 'Selected' : 'Deselected'}`,
+                //     event_action: 'change'
+                // });
+                // Update Vuex state
+                this.$store.dispatch('updateSelectedCompoundStructures', value);
             },
         },
-        ...mapState(['selectedLeafAttachments']),
+
         selectedLeafAttachmentsComputed: {
             get() {
             return this.selectedLeafAttachments;
             },
             set(value) {
-            // Determine the changed item and its new state (selected or deselected)
-            const changedLeafAttachments = value.find(la => !this.selectedLeafAttachments.includes(la)) 
-                || this.selectedLeafAttachments.find(la => !value.includes(la));
-            const isSelected = value.includes(changedLeafAttachments);
-            // Track the event with a more descriptive label
-            // this.$gtag.event('leaf-attachments_selection_change', {
-            //     event_category: 'Checkbox Interaction',
-            //     event_label: `${changedLeafAttachments}: ${isSelected ? 'Selected' : 'Deselected'}`,
-            //     event_action: 'change'
-            // });
-            // Update Vuex state
-            this.$store.dispatch('updateSelectedLeafAttachments', value);
+                // Determine the changed item and its new state (selected or deselected)
+                // const changedLeafAttachments = value.find(la => !this.selectedLeafAttachments.includes(la)) 
+                //     || this.selectedLeafAttachments.find(la => !value.includes(la));
+                // const isSelected = value.includes(changedLeafAttachments);
+                // Track the event with a more descriptive label
+                // this.$gtag.event('leaf-attachments_selection_change', {
+                //     event_category: 'Checkbox Interaction',
+                //     event_label: `${changedLeafAttachments}: ${isSelected ? 'Selected' : 'Deselected'}`,
+                //     event_action: 'change'
+                // });
+                // Update Vuex state
+                this.$store.dispatch('updateSelectedLeafAttachments', value);
             },
         },
-        ...mapState(['selectedFallColors']),
+  
         selectedFallColorsComputed: {
             get() {
             return this.selectedFallColors;
             },
             set(value) {
-            // Determine the changed item and its new state (selected or deselected)
-            const changedFallColors = value.find(fc => !this.selectedFallColors.includes(fc)) 
-                || this.selectedFallColors.find(fc => !value.includes(fc));
-            const isSelected = value.includes(changedFallColors);
-            // Track the event with a more descriptive label
-            // this.$gtag.event('fall-colors_selection_change', {
-            //     event_category: 'Checkbox Interaction',
-            //     event_label: `${changedFallColors}: ${isSelected ? 'Selected' : 'Deselected'}`,
-            //     event_action: 'change'
-            // });
-            // Update Vuex state
-            this.$store.dispatch('updateSelectedFallColors', value);
+                // Determine the changed item and its new state (selected or deselected)
+                // const changedFallColors = value.find(fc => !this.selectedFallColors.includes(fc)) 
+                //     || this.selectedFallColors.find(fc => !value.includes(fc));
+                // const isSelected = value.includes(changedFallColors);
+                // Track the event with a more descriptive label
+                // this.$gtag.event('fall-colors_selection_change', {
+                //     event_category: 'Checkbox Interaction',
+                //     event_label: `${changedFallColors}: ${isSelected ? 'Selected' : 'Deselected'}`,
+                //     event_action: 'change'
+                // });
+                // Update Vuex state
+                this.$store.dispatch('updateSelectedFallColors', value);
             },
         },
     },     
     methods: {
-        // syncStateWithUI() {
-        //     // Force Vue to re-render the component
-        //     this.$forceUpdate();
 
-        //     // Optionally, if there are specific components you need to refresh, you might
-        //     // want to emit an event or call a method directly on those components.
-        // },
-
-        // isChecked(needle) {
-        //     return this.selectedNeedles.includes(needle);
-        // },      
+        // Icon mappings are non-reactive (outide the export default)
+        getIcon(type) {
+            return iconMappings[type] || '';
+        },  
         
         handleVisibilityChange() {
             if (document.visibilityState === 'visible') {
@@ -600,15 +441,14 @@ export default {
 
             console.log("Ensure checkboxes reflect state")
         },
-        toggleMenu(event) {
-            this.$store.commit('toggleMenu', event.target.checked);
-            //test
+        toggleMenu(isOpen) {
+            this.$store.dispatch('toggleMenu', isOpen);
         },
         closeMenu() {
-            this.$store.commit('closeMenu');
+            this.$store.dispatch('closeMenu');
         },
         resetAllFilters() {
-            this.$store.commit('resetFilters');
+            this.$store.dispatch('resetFilters');
         },
         logoClick() {
         //     this.$gtag.event('click_logo_header', {
@@ -616,8 +456,7 @@ export default {
         //         event_label: 'Header logo clicked',
         //         // value: 'some_value' // Optional: any value you want to pass
         // });
-            this.$store.commit('resetFilters');
-            this.$store.commit('closeMenu');
+            this.$store.dispatch('logoClick');
         },
 
 
