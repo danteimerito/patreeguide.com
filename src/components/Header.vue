@@ -27,7 +27,7 @@
                             <div>
                                 <div class="options-panel">
     
-                                    <!-- <transition name="fade-slide"> -->
+                                    <transition name="fade-slide">
                                         <div class="options-set">
                                             <div class="options-set-header">
                                                 <h3>Foliage</h3>
@@ -43,9 +43,9 @@
                                                 <img :src="getIcon(foliage)" alt="Icon" class="checkbox-icon" />
                                             </label>
                                         </div>
-                                    <!-- </transition> -->
+                                    </transition>
             
-                                    <!-- <transition name="fade-slide"> -->
+                                    <transition name="fade-slide">
 
                                         <div v-if="this.selectedFoliage.includes('needles') || this.selectedNeedles.length > 0" class="options-set">
                                             <div class="options-set-header">
@@ -62,9 +62,9 @@
                                                     <img :src="getIcon(needle)" alt="Icon" class="checkbox-icon" />
                                             </label>                                        
                                         </div>
-                                    <!-- </transition> -->
+                                    </transition>
 
-                                    <!-- <transition name="fade-slide"> -->
+                                    <transition name="fade-slide">
                                     <div v-if="this.selectedNeedles.includes('clustered needles') || this.selectedClusters.length > 0" class="options-set">
                                         <div class="options-set-header">
                                             <h3>Needles per Cluster</h3>
@@ -79,9 +79,9 @@
                                             {{ cluster }}
                                         </label>
                                     </div>
-                                    <!-- </transition> -->
+                                    </transition>
 
-                                    <!-- <transition name="fade-slide"> -->
+                                    <transition name="fade-slide">
                                     <div v-if="this.selectedFoliage.includes('leaves') || this.selectedLeafTypes.length > 0" class="options-set">
                                         <div class="options-set-header">
                                             <h3>Leaf Type</h3>
@@ -97,9 +97,9 @@
                                             <img :src="getIcon(leaf)" alt="Icon" class="checkbox-icon">
                                         </label>
                                     </div>
-                                    <!-- </transition> -->
+                                    </transition>
 
-                                    <!-- <transition name="fade-slide"> -->
+                                    <transition name="fade-slide">
                                     <div v-if="selectedLeafTypes.includes('compound') || selectedCompoundStructures.length > 0" class="options-set">
                                         <div class="options-set-header">
                                             <h3>Compound Structure</h3>
@@ -115,9 +115,9 @@
                                             <img :src="getIcon(structure)" alt="Icon" class="checkbox-icon">
                                         </label>
                                     </div>
-                                    <!-- </transition> -->
+                                    </transition>
 
-                                    <!-- <transition name="fade-slide"> -->
+                                    <transition name="fade-slide">
                                     <div v-if="this.selectedFoliage.includes('leaves') || this.selectedLeafAttachments.length > 0" class="options-set">
                                         <div class="options-set-header">
                                             <h3>Leaf Attachment</h3>
@@ -133,9 +133,9 @@
                                             <img :src="getIcon(attachment)" alt="Icon" class="checkbox-icon">
                                         </label>
                                     </div>
-                                    <!-- </transition> -->
+                                    </transition>
 
-                                    <!-- <transition name="fade-slide"> -->
+                                    <transition name="fade-slide">
                                     <div v-if="this.selectedFoliage.includes('leaves') || this.selectedFallColors.length > 0" class="options-set">
                                         <div class="options-set-header">
                                             <h3>Fall Colors</h3>
@@ -150,7 +150,7 @@
                                             {{ color }}
                                         </label>
                                     </div>
-                                    <!-- </transition> -->
+                                    </transition>
 
                                 </div>
                             </div>
@@ -406,9 +406,9 @@ export default {
                 this.$store.dispatch('updateSelectedFallColors', value);
             },
         },
-    },     
+    },    
+     
     methods: {
-
         // Icon mappings are non-reactive (outide the export default)
         getIcon(type) {
             return iconMappings[type] || '';
@@ -449,28 +449,25 @@ export default {
         // });
             this.$store.dispatch('logoClick');
         },
-
-
     },
 }
-
 </script>
 
 <style scoped>
 /* Enter and leave active */
-/* .fade-slide-enter-active, .fade-slide-leave-active {
+.fade-slide-enter-active, .fade-slide-leave-active {
   transition: opacity 0.5s, transform 0.5s;
-} */
+}
 
 /* Enter from and leave to (initial state) */
-/* .fade-slide-enter-from, .fade-slide-leave-to {
+.fade-slide-enter-from, .fade-slide-leave-to {
   opacity: 0;
   transform: translateY(20px); 
-} */
+}
 
 /* Enter to and leave from (final state) */
-/* .fade-slide-enter-to, .fade-slide-leave-from {
+.fade-slide-enter-to, .fade-slide-leave-from {
   opacity: 1;
   transform: translateY(0);
-} */
+}
 </style>
