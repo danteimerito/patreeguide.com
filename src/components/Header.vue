@@ -25,9 +25,11 @@
                     <div class="menu">
                         <div>
                             <div>
-                                <div class="options-panel">
-    
-                                    <transition name="fade-slide">
+                                
+                                    
+                                    <!-- the 'appear' prop fires the transition on component/page load -->
+                                    <transition-group tag="div" class="options-panel" name="fade-slide" appear>
+
                                         <div class="options-set">
                                             <div class="options-set-header">
                                                 <h3>Foliage</h3>
@@ -43,9 +45,9 @@
                                                 <img :src="getIcon(foliage)" alt="Icon" class="checkbox-icon" />
                                             </label>
                                         </div>
-                                    </transition>
+                                    
             
-                                    <transition name="fade-slide">
+                                    
 
                                         <div v-if="this.selectedFoliage.includes('needles') || this.selectedNeedles.length > 0" class="options-set">
                                             <div class="options-set-header">
@@ -62,9 +64,9 @@
                                                     <img :src="getIcon(needle)" alt="Icon" class="checkbox-icon" />
                                             </label>                                        
                                         </div>
-                                    </transition>
+                                    
 
-                                    <transition name="fade-slide">
+                                    
                                     <div v-if="this.selectedNeedles.includes('clustered needles') || this.selectedClusters.length > 0" class="options-set">
                                         <div class="options-set-header">
                                             <h3>Needles per Cluster</h3>
@@ -79,9 +81,9 @@
                                             {{ cluster }}
                                         </label>
                                     </div>
-                                    </transition>
+                                    
 
-                                    <transition name="fade-slide">
+                                   
                                     <div v-if="this.selectedFoliage.includes('leaves') || this.selectedLeafTypes.length > 0" class="options-set">
                                         <div class="options-set-header">
                                             <h3>Leaf Type</h3>
@@ -97,9 +99,9 @@
                                             <img :src="getIcon(leaf)" alt="Icon" class="checkbox-icon">
                                         </label>
                                     </div>
-                                    </transition>
+                                   
 
-                                    <transition name="fade-slide">
+                               
                                     <div v-if="selectedLeafTypes.includes('compound') || selectedCompoundStructures.length > 0" class="options-set">
                                         <div class="options-set-header">
                                             <h3>Compound Structure</h3>
@@ -115,9 +117,9 @@
                                             <img :src="getIcon(structure)" alt="Icon" class="checkbox-icon">
                                         </label>
                                     </div>
-                                    </transition>
+                                  
 
-                                    <transition name="fade-slide">
+                             
                                     <div v-if="this.selectedFoliage.includes('leaves') || this.selectedLeafAttachments.length > 0" class="options-set">
                                         <div class="options-set-header">
                                             <h3>Leaf Attachment</h3>
@@ -133,9 +135,9 @@
                                             <img :src="getIcon(attachment)" alt="Icon" class="checkbox-icon">
                                         </label>
                                     </div>
-                                    </transition>
+                               
 
-                                    <transition name="fade-slide">
+                               
                                     <div v-if="this.selectedFoliage.includes('leaves') || this.selectedFallColors.length > 0" class="options-set">
                                         <div class="options-set-header">
                                             <h3>Fall Colors</h3>
@@ -150,9 +152,9 @@
                                             {{ color }}
                                         </label>
                                     </div>
-                                    </transition>
+                                </transition-group>
 
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -454,20 +456,39 @@ export default {
 </script>
 
 <style scoped>
-/* Enter and leave active */
-.fade-slide-enter-active, .fade-slide-leave-active {
-  transition: opacity 0.5s, transform 0.5s;
-}
 
-/* Enter from and leave to (initial state) */
-.fade-slide-enter-from, .fade-slide-leave-to {
+/* Enter transitions */
+.fade-slide-enter-from {
   opacity: 0;
-  transform: translateY(20px); 
+  /* transform: translateY(20px);  */
+  transform: scale(0.6);
+}
+.fade-slide-enter-to {
+  opacity: 1;
+  /* transform: translateY(0); */
+}
+.fade-slide-enter-active {
+  /* transition: opacity 0.5s, transform 0.5s; */
+  transition: all 0.4s ease;
 }
 
-/* Enter to and leave from (final state) */
-.fade-slide-enter-to, .fade-slide-leave-from {
+/* Leave transitions */
+.fade-slide-leave-from {
   opacity: 1;
-  transform: translateY(0);
+  /* transform: translateY(0); */
+}
+.fade-slide-leave-to {
+  opacity: 0;
+  /* transform: translateY(20px);  */
+  transform: scale(0.6);
+}
+.fade-slide-leave-active {
+  /* transition: opacity 0.5s, transform 0.5s; */
+  transition: all 0.4s ease;
+  position:absolute;
+}
+/* the -move suffix can be used with transition-group. It allows existing elements to be transitioned to their new location as a result other content changes. */
+.fade-slide-move {
+    transition: all 0.3s ease;
 }
 </style>
