@@ -30,7 +30,7 @@
                                     <!-- the 'appear' prop fires the transition on component/page load -->
                                     <transition-group tag="div" class="options-panel" name="fade-slide" appear>
 
-                                        <div class="options-set">
+                                        <div class="options-set" key="1">
                                             <div class="options-set-header">
                                                 <h3>Foliage</h3>
                                             </div>
@@ -49,7 +49,7 @@
             
                                     
 
-                                        <div v-if="this.selectedFoliage.includes('needles') || this.selectedNeedles.length > 0" class="options-set">
+                                        <div v-if="this.selectedFoliage.includes('needles') || this.selectedNeedles.length > 0" class="options-set" key="2">
                                             <div class="options-set-header">
                                                 <h3>Needle Structure</h3>
                                             </div>
@@ -67,7 +67,7 @@
                                     
 
                                     
-                                    <div v-if="this.selectedNeedles.includes('clustered needles') || this.selectedClusters.length > 0" class="options-set">
+                                    <div v-if="this.selectedNeedles.includes('clustered needles') || this.selectedClusters.length > 0" class="options-set" key="3">
                                         <div class="options-set-header">
                                             <h3>Needles per Cluster</h3>
                                         </div>
@@ -85,7 +85,7 @@
 
                                    
                                     <div v-if="this.selectedFoliage.includes('leaves') || this.selectedLeafTypes.length > 0" class="options-set">
-                                        <div class="options-set-header">
+                                        <div class="options-set-header" key="4">
                                             <h3>Leaf Type</h3>
                                         </div>
                                         <label v-for="leaf in leafTypes" :key="leaf">
@@ -102,7 +102,7 @@
                                    
 
                                
-                                    <div v-if="selectedLeafTypes.includes('compound') || selectedCompoundStructures.length > 0" class="options-set">
+                                    <div v-if="selectedLeafTypes.includes('compound') || selectedCompoundStructures.length > 0" class="options-set" key="5">
                                         <div class="options-set-header">
                                             <h3>Compound Structure</h3>
                                         </div>
@@ -120,7 +120,7 @@
                                   
 
                              
-                                    <div v-if="this.selectedFoliage.includes('leaves') || this.selectedLeafAttachments.length > 0" class="options-set">
+                                    <div v-if="this.selectedFoliage.includes('leaves') || this.selectedLeafAttachments.length > 0" class="options-set" key="6">
                                         <div class="options-set-header">
                                             <h3>Leaf Attachment</h3>
                                         </div>
@@ -139,7 +139,7 @@
 
                                
                                     <div v-if="this.selectedFoliage.includes('leaves') || this.selectedFallColors.length > 0" class="options-set">
-                                        <div class="options-set-header">
+                                        <div class="options-set-header" key="7">
                                             <h3>Fall Colors</h3>
                                         </div>
                                         <label v-for="color in fallColors" :key="color">

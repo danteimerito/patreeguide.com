@@ -1,14 +1,14 @@
 <template>
       <div class="results">
-        <ul>
-          <li v-for="tree in filteredTrees" :key="tree.slug">
-              <router-link :to="{ name: 'TreeDetails', params: { 
-              slug: tree.slug,
-              }}" class="result-title">
-                  <h1>{{ tree.nameCommon }}</h1>
-              </router-link>
-          </li>
-        </ul>
+        <transition-group  tag="ul" name="results-transition" class="ul-transition" appear>
+            <li v-for="tree in filteredTrees" :key="tree.slug">
+                <router-link :to="{ name: 'TreeDetails', params: { 
+                slug: tree.slug,
+                }}" class="result-title">
+                    <h1>{{ tree.nameCommon }}</h1>
+                </router-link>
+            </li>
+        </transition-group>
 
         <div v-if="filteredTrees.length < 1" class="feature-card">
           <h1>We couldn't find any trees that match those criteria. </h1>
@@ -240,3 +240,45 @@ export default {
     } 
 }
 </script>
+
+<style>
+
+.results-transition-enter-from {
+    opacity: 0;
+
+    transform: scale(0), translateY(20px); 
+
+    
+    
+}
+.results-transition-enter-to {
+    opacity: 1;
+
+    transform: scale(1), translateY(0);
+
+    
+}
+.results-transition-enter-active {
+    transition: all 0.4s ease;
+}
+
+.results-transition-leave-from {
+    opacity: 1;
+    transform: scale(1);
+}
+.results-transition-leave-to {
+    opacity: 0;
+    transform: scale(0.6);
+}
+.results-transition-leave-active {
+    transition: all 0.4s ease;
+    position: absolute; /* must be added so existing content can transition to new page locations */
+}
+    .ul-transition { position: relative }
+
+.results-transition-move {
+    transition: all 0.3s ease;
+}
+
+
+</style>
