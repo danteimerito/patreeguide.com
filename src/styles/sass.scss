@@ -663,6 +663,11 @@ footer {
   }
 }
 .feature-card-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   background-color: var(--green-1);
   padding: 2rem;
   margin-top: 1rem;

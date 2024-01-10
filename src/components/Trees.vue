@@ -1,7 +1,7 @@
 <template>
     <div class="results">
 
-        <transition name="results-or-no-results">    
+        <transition name="results-or-no-results" mode="out-in">    
             <div v-if="filteredTrees.length">
                 <transition-group  tag="ul" name="results-transition" class="ul-transition" appear>
                     <li v-for="tree in filteredTrees" :key="tree.slug">
@@ -292,17 +292,14 @@ export default {
     opacity: 0;
     transform: translateY(20px);
 }
-.results-or-no-results-enter-to,
+/* .results-or-no-results-enter-to,
 .results-or-no-results-leave-from {
     opacity: 1;
     transform: translateY(0);
-}
-.results-or-no-results-enter-active {
-    transition: all 0.5s ease;
-}
+} */
+.results-or-no-results-enter-active,
 .results-or-no-results-leave-active {
     transition: all 0.5s ease;
-    position: absolute;
 }
 
 </style>
