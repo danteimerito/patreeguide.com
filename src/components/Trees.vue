@@ -1,23 +1,25 @@
 <template>
     <div class="results">
 
-        <div v-if="filteredTrees.length">
-            <transition-group  tag="ul" name="results-transition" class="ul-transition" appear>
-                <li v-for="tree in filteredTrees" :key="tree.slug">
-                    <router-link :to="{ name: 'TreeDetails', params: { 
-                    slug: tree.slug,
-                    }}" class="result-title">
-                        <h1>{{ tree.nameCommon }}</h1>
-                    </router-link>
-                </li>
-            </transition-group>
-        </div>
-        <div v-else class="feature-card">
-          <h1>We couldn't find any trees that match those criteria. </h1>
-          <button @click="tryAgain">Try Again</button>
-        </div>
+        <transition name="results-or-no-results">    
+            <div v-if="filteredTrees.length">
+                <transition-group  tag="ul" name="results-transition" class="ul-transition" appear>
+                    <li v-for="tree in filteredTrees" :key="tree.slug">
+                        <router-link :to="{ name: 'TreeDetails', params: { 
+                        slug: tree.slug,
+                        }}" class="result-title">
+                            <h1>{{ tree.nameCommon }}</h1>
+                        </router-link>
+                    </li>
+                </transition-group>
+            </div>
+            <div v-else class="feature-card-top">
+                <h1>We couldn't find any trees that match those criteria. </h1>
+                <button @click="tryAgain">Try Again</button>
+            </div>
+        </transition>    
 
-      </div>
+    </div>
 </template>
 
 <script>
@@ -282,5 +284,25 @@ export default {
     transition: all 0.3s ease;
 }
 
+
+/* Transitions between tree results or no results found */
+
+.results-or-no-results-enter-from,
+.results-or-no-results-leave-to {
+    opacity: 0;
+    transform: translateY(20px);
+}
+.results-or-no-results-enter-to,
+.results-or-no-results-leave-from {
+    opacity: 1;
+    transform: translateY(0);
+}
+.results-or-no-results-enter-active {
+    transition: all 0.5s ease;
+}
+.results-or-no-results-leave-active {
+    transition: all 0.5s ease;
+    position: absolute;
+}
 
 </style>

@@ -662,6 +662,19 @@ footer {
     margin-bottom: 0;
   }
 }
+.feature-card-top {
+  background-color: var(--green-1);
+  padding: 2rem;
+  margin-top: 1rem;
+  color: white;
+  border-radius: 6px;
+  button {
+    margin: 2rem;
+  }
+  h1 {
+    margin-bottom: 0;
+  }
+}
 .logo{
   padding-right: 1rem;
   margin-left: 75px;
