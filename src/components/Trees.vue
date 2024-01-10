@@ -1,16 +1,18 @@
 <template>
-      <div class="results">
-        <transition-group  tag="ul" name="results-transition" class="ul-transition" appear>
-            <li v-for="tree in filteredTrees" :key="tree.slug">
-                <router-link :to="{ name: 'TreeDetails', params: { 
-                slug: tree.slug,
-                }}" class="result-title">
-                    <h1>{{ tree.nameCommon }}</h1>
-                </router-link>
-            </li>
-        </transition-group>
+    <div class="results">
 
-        <div v-if="filteredTrees.length < 1" class="feature-card">
+        <div v-if="filteredTrees.length">
+            <transition-group  tag="ul" name="results-transition" class="ul-transition" appear>
+                <li v-for="tree in filteredTrees" :key="tree.slug">
+                    <router-link :to="{ name: 'TreeDetails', params: { 
+                    slug: tree.slug,
+                    }}" class="result-title">
+                        <h1>{{ tree.nameCommon }}</h1>
+                    </router-link>
+                </li>
+            </transition-group>
+        </div>
+        <div v-else class="feature-card">
           <h1>We couldn't find any trees that match those criteria. </h1>
           <button @click="tryAgain">Try Again</button>
         </div>
