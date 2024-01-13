@@ -2,6 +2,7 @@ import {createRouter, createWebHistory} from 'vue-router'
 import Home from '../views/Home'
 import TreeDetails from '../components/TreeDetails'
 import NotFound from '../views/NotFound'
+import Sound from '../views/Sound'
 // import { useGtag } from 'vue-gtag'
 
 const routes = [
@@ -29,7 +30,16 @@ const routes = [
         document.title = '404 Not found';
         next();
       }
-    }
+    },
+    {
+      path: '/sound', 
+      name: 'Sound',
+      component: Sound,
+      beforeEnter: (to, from, next) => {
+        document.title = 'Sound | PA Tree Guide';
+        next();
+      }
+  },
 ]
 
 const router = createRouter({

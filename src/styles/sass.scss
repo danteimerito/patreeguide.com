@@ -162,13 +162,15 @@ footer {
   user-select: none;
 }
 .menu-topbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 60px;
   width: 100%;
-  display: flex;
   background-color: var(--green-1);
   color: white;
   overflow: hidden;
-  position: fixed;
   z-index: 1;
   // transition: 0.5s all ease;
   > div {

@@ -5,6 +5,10 @@
                 <div class="menu-wrap">
                     <div class="menu-topbar">
                         <div class="logo"><router-link to="/" @click="logoClick">PA TREE GUIDE </router-link></div>
+                        <div class="sound">
+                            <Sound />
+                        </div>
+                        
                     </div>
 
                     <input 
@@ -168,6 +172,7 @@
 
 import { mapState, useStore } from 'vuex';
 import HeaderMatches from './HeaderMatches'
+import Sound from './Sound'
 
 const iconMappings = {
                 'conifer': '/img/icons/icon-conifer.svg',
@@ -209,7 +214,8 @@ export default {
     },
 
     components: {
-        HeaderMatches
+        HeaderMatches,
+        Sound
     }, 
 
     computed: {

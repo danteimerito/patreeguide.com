@@ -1,7 +1,11 @@
+# testing files
+test.js
+/backup
+/licensing
+
 .DS_Store
 node_modules
 /dist
-/backup
 
 # local env files
 .env.local
@@ -22,5 +26,3 @@ pnpm-debug.log*
 *.sln
 *.sw?
 
-# testing files
-test.js
