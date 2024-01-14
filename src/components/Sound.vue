@@ -5,14 +5,18 @@
         <!-- <button v-if="!isPlaying" @click="playAudio">Play</button>
         <button v-else @click="pauseAudio">Pause</button> -->
 
-        <div class="sound-contain">
-            <div v-if="!isPlaying" @click="playAudio" cursor="pointer" class="sound-wrap">
-                <v-icon  name="gi-round-knob" scale="1.75" fill="chartreuse" flip="horizontal" cursor="pointer" alt="Sound On"/>
-                <div cursor="pointer">Sound</div>
+        <div>
+            <div v-if="!isPlaying" @click="playAudio" class="sound-wrap">
+              <div class="audio-icon">
+                <v-icon  name="gi-round-knob" scale="1.75" fill="chartreuse" flip="horizontal" alt="Sound On"/>
+              </div>
+              <div>Sound</div>
             </div>
-            <div v-else @click="pauseAudio" cursor="pointer" class="sound-wrap">
-                <v-icon  name="gi-round-knob" scale="1.75" fill="white" cursor="pointer" alt="Sound Off"/>
-                <div cursor="pointer">Sound</div>
+            <div v-else @click="pauseAudio" class="sound-wrap">
+              <div class="audio-icon">
+                <v-icon  name="gi-round-knob" scale="1.75" fill="white" alt="Sound Off"/>
+              </div>
+              <div>Sound</div>
             </div>
         </div>
     </div>
@@ -61,25 +65,26 @@ import OhVueIcon from "oh-vue-icons";
 </script>
   
 <style>
-    .sound-contain {
-        cursor: pointer;
-    }
-    .sound-wrap {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items:center;
-        margin-right: 1rem;
-        margin-bottom: 0.5rem;
-        color: chartreuse;
-    }
-    .sound-wrap > div {
-        /* background-color: navy; */
-        /* line-height: 100%; */
-        line-height: 0.25rem;
-        /* line-height: 0.8rem; */
-        font-size: 0.8rem;
-    }
+  .sound-icon {
+    /* margin-right: 1rem; */
+    padding-right: 1rem;
+    cursor: pointer;
+  }
+  .sound-wrap {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items:center;
+      margin-bottom: 0.5rem;
+      color: chartreuse;
+  }
+  .sound-wrap > div {
+      font-size: 0.8rem;
+  }
+  .audio-icon {
+    margin-bottom: -5px;
+    margin-top: 5px;
+  }
 </style>
 
 

@@ -5,9 +5,9 @@
                 <div class="menu-wrap">
                     <div class="menu-topbar">
                         <div class="logo"><router-link to="/" @click="logoClick">PA TREE GUIDE </router-link></div>
-                        <div class="sound">
+                        <!-- <div class="sound"> -->
                             <Sound />
-                        </div>
+                        <!-- </div> -->
                         
                     </div>
 
