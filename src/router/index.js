@@ -2,7 +2,6 @@ import {createRouter, createWebHistory} from 'vue-router'
 import Home from '../views/Home'
 import TreeDetails from '../components/TreeDetails'
 import NotFound from '../views/NotFound'
-import Sound from '../views/Sound'
 // import { useGtag } from 'vue-gtag'
 
 const routes = [
