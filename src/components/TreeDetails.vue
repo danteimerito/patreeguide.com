@@ -310,10 +310,10 @@ export default {
         }
     },
     beforeUnmount() {
-        document.getElementById("background").style.backgroundImage = '';
+        // document.getElementById("background").style.backgroundImage = '';
     }, 
     mounted() {
-        // Also set the title when the component is first mounted
+        // Set the title when the component is first mounted
         if (this.tree) {
         document.title = this.tree.nameCommon;
         }
