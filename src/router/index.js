@@ -31,15 +31,6 @@ const routes = [
         next();
       }
     },
-    {
-      path: '/sound', 
-      name: 'Sound',
-      component: Sound,
-      beforeEnter: (to, from, next) => {
-        document.title = 'Sound | PA Tree Guide';
-        next();
-      }
-  },
 ]
 
 const router = createRouter({
