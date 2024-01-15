@@ -1,6 +1,7 @@
 
 <template>
-  <div id="background"></div>
+  <!-- <div id="background"></div> -->
+  <img src="" alt="" id="background" fetchPriority="high"/>
     <Header />
       <div class="container">
         

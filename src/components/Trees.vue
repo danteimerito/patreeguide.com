@@ -229,18 +229,18 @@ export default {
       },
       updateBodyBackground() {
         // Retrieve the tree data using a Vuex getter
-        const treeData = this.$store.getters.getTreeBySlug(this.$route.params.slug);
+        // const treeData = this.$store.getters.getTreeBySlug(this.$route.params.slug);
         // Define a default background image path
         const defaultImageUrl = '/img/bg_forest3_reverse.jpg';
         // Construct the background image URL
         const imageUrl = this.tree && this.tree.background ? `/img/${this.tree.background}` : defaultImageUrl;
 
-        document.getElementById("background").style.backgroundImage = `url(${imageUrl})`;       
+        document.getElementById("background").src = imageUrl;       
       }       
     },
     beforeDestroy() {
         // When the component is destroyed, reset the body background if needed
-        document.getElementById("background").style.backgroundImage = '';
+        document.getElementById("background").src = '';
     } 
 }
 </script>
