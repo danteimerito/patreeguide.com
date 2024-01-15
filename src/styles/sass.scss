@@ -597,6 +597,21 @@ footer {
   margin-left: 75px;
   min-width: 120px;
 }
+.privacy-policy {
+  background-color: var(--green-1);
+  padding: 2rem;
+  color: white;
+  border-radius: 6px;
+  button {
+    margin: 2rem;
+  }
+  h1 {
+    margin-bottom: 0;
+  }
+}
+.center {
+  text-align: center;
+}
 
 .individual-tree {
   color: white;

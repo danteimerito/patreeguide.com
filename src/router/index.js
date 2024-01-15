@@ -2,6 +2,7 @@ import {createRouter, createWebHistory} from 'vue-router'
 import Home from '../views/Home'
 import TreeDetails from '../components/TreeDetails'
 import NotFound from '../views/NotFound'
+import PrivacyPolicy from '../views/PrivacyPolicy'
 // import { useGtag } from 'vue-gtag'
 
 const routes = [
@@ -26,10 +27,19 @@ const routes = [
       name: 'NotFound',
       component: NotFound,
       beforeEnter: (to, from, next) => {
-        document.title = '404 Not found';
+        document.title = '404 Not found | PA Tree Guide';
         next();
       }
     },
+    {
+      path: '/privacypolicy', 
+      name: 'Privacy Policy',
+      component: PrivacyPolicy,
+      beforeEnter: (to, from, next) => {
+        document.title = 'Privacy Policy | PA Tree Guide';
+        next();
+      }
+  },
 ]
 
 const router = createRouter({

@@ -1,7 +1,18 @@
 <template>
     <footer class="bg-green-trans">
         <div>
-            copyright &copy; 2023 patreeguide.com
+            Copyright &copy; 2023 - {{ year }} patreeguide.com <a href="/privacypolicy" rel="noopener noreferrer">Privacy Policy</a>
         </div>
     </footer>
-</template>  
+</template>
+
+<script setup>
+    const d = new Date();
+    const year = d.getFullYear();
+</script>
+
+<style scoped>
+    footer a:hover {
+        color: chartreuse;
+    }
+</style>
