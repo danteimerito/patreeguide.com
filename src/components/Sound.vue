@@ -7,20 +7,20 @@
               <div class="audio-icon">
                 <v-icon  name="gi-round-knob" scale="1.75" fill="chartreuse" flip="horizontal" alt="Sound On"/>
               </div>
-              <div>Sound</div>
+              <div>Listen</div>
             </div>
             <div v-else @click="pauseAudio" class="sound-wrap">
               <div class="audio-icon">
                 <v-icon  name="gi-round-knob" scale="1.75" fill="white" alt="Sound Off"/>
               </div>
-              <div>Sound</div>
+              <div>Listen</div>
             </div>
         </div>
     </div>
 </template>
   
 <script>
-import OhVueIcon from "oh-vue-icons";
+import { OhVueIcon } from "oh-vue-icons";
 
   export default {
     name: 'Sound',
