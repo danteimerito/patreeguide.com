@@ -2,9 +2,6 @@
 <template>
     <div class="sound-icon">
         <audio ref="audioPlayer" :src="audioSrc" loop></audio>
-        <!-- <button v-if="!isPlaying" @click="playAudio">Play</button>
-        <button v-else @click="pauseAudio">Pause</button> -->
-
         <div>
             <div v-if="!isPlaying" @click="playAudio" class="sound-wrap">
               <div class="audio-icon">
@@ -66,7 +63,6 @@ import OhVueIcon from "oh-vue-icons";
   
 <style>
   .sound-icon {
-    /* margin-right: 1rem; */
     padding-right: 1rem;
     cursor: pointer;
   }

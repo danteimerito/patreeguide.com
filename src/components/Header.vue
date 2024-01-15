@@ -466,34 +466,28 @@ export default {
 /* Enter transitions */
 .fade-slide-enter-from {
   opacity: 0;
-  /* transform: translateY(20px);  */
   transform: scale(0.6);
 }
 .fade-slide-enter-to {
   opacity: 1;
-  /* transform: translateY(0); */
 }
 .fade-slide-enter-active {
-  /* transition: opacity 0.5s, transform 0.5s; */
   transition: all 0.4s ease;
 }
 
 /* Leave transitions */
 .fade-slide-leave-from {
   opacity: 1;
-  /* transform: translateY(0); */
 }
 .fade-slide-leave-to {
   opacity: 0;
-  /* transform: translateY(20px);  */
   transform: scale(0.6);
 }
 .fade-slide-leave-active {
-  /* transition: opacity 0.5s, transform 0.5s; */
   transition: all 0.4s ease;
   position:absolute;
 }
-/* the -move suffix can be used with transition-group. It allows existing elements to be transitioned to their new location as a result other content changes. */
+/* the -move suffix can be used with transition-group. It allows existing elements to be transitioned to their new location as a result of neighboring content changes. */
 .fade-slide-move {
     transition: all 0.3s ease;
 }

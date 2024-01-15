@@ -72,18 +72,14 @@ export default {
             this.selectedClusters
         ].some(array => array && array.length > 0);
         },  
-        // Using mapState
         ...mapState({
             trees: state => state.trees,
         }),
-
-        // Using mapGetters
         ...mapGetters([
-            'getFilteredTrees', // Assuming 'getFilteredTrees' is a getter in your store
+            'getFilteredTrees', 
         ]),
 
         ...mapState([
-            // If you have these as root state properties
             'isMenuOpen',
             'selectedFoliage',
             'selectedNeedles',

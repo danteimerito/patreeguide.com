@@ -223,43 +223,27 @@ export default {
             }
         },
     methods: {
-      tryAgain() {
-          this.$store.commit('toggleMenu');
-          this.$store.commit('resetFilters');
-      },
-    //   updateBodyBackground() {
-    //     // Retrieve the tree data using a Vuex getter
-    //     const treeData = this.$store.getters.getTreeBySlug(this.$route.params.slug);
-    //     // Define a default background image path
-    //     const defaultImageUrl = '/img/bg_forest3_reverse.jpg';
-    //     // Construct the background image URL
-    //     const imageUrl = this.tree && this.tree.background ? `/img/${this.tree.background}` : defaultImageUrl;
-
-    //     document.getElementById("background").style.backgroundImage = `url(${imageUrl})`;       
-    //   },
-    updateBodyBackground() {
-
-      const defaultImageUrl = '/img/bg_forest3_reverse.jpg';
-      const newImageUrl = this.tree && this.tree.background ? `/img/${this.tree.background}` : defaultImageUrl;
-
-      const bg1 = document.getElementById('background');
-      const bg2 = document.getElementById('background-2');
-
-      // Decide which div is currently visible
-      const currentBg = bg1.style.opacity === '1' ? bg1 : bg2;
-      const newBg = currentBg === bg1 ? bg2 : bg1;
-
-      // Set the background image of the new div
-      newBg.style.backgroundImage = `url(${newImageUrl})`;
-        console.log('set background image of new div')
-
-      // Fade in the new background
-      newBg.style.opacity = '1';
-        console.log('fade in new background') 
-
-      // Fade out the current background
-      setTimeout(() => currentBg.style.opacity = '0', 100);
-    },       
+        tryAgain() {
+            this.$store.commit('toggleMenu');
+            this.$store.commit('resetFilters');
+        },
+        updateBodyBackground() {
+            // assign image variables
+            const defaultImageUrl = '/img/bg_forest3_reverse.jpg';
+            const newImageUrl = this.tree && this.tree.background ? `/img/${this.tree.background}` : defaultImageUrl;
+            // assign html element variables
+            const bg1 = document.getElementById('background');
+            const bg2 = document.getElementById('background-2');
+            // Decide which div is currently visible
+            const currentBg = bg1.style.opacity === '1' ? bg1 : bg2;
+            const newBg = currentBg === bg1 ? bg2 : bg1;
+            // Set the background image of the new div
+            newBg.style.backgroundImage = `url(${newImageUrl})`;
+            // Fade in the new background
+            newBg.style.opacity = '1';
+            // Fade out the current background
+            setTimeout(() => currentBg.style.opacity = '0', 100);
+        },       
     },
     beforeDestroy() {
         // When the component is destroyed, reset the body background if needed
@@ -269,26 +253,17 @@ export default {
 </script>
 
 <style>
-
 .results-transition-enter-from {
     opacity: 0;
-
-    transform: scale(0), translateY(20px); 
-
-    
-    
+    transform: scale(0), translateY(20px);  
 }
 .results-transition-enter-to {
     opacity: 1;
-
-    transform: scale(1), translateY(0);
-
-    
+    transform: scale(1), translateY(0);   
 }
 .results-transition-enter-active {
     transition: all 0.4s ease;
 }
-
 .results-transition-leave-from {
     opacity: 1;
     transform: scale(1);
@@ -306,7 +281,6 @@ export default {
 .results-transition-move {
     transition: all 0.3s ease;
 }
-
 
 /* Transitions between tree results or no results found */
 

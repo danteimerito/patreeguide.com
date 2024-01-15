@@ -1,4 +1,3 @@
-<!-- src/components/NotFound.vue -->
 <template>
     <div class="contain-flex">
         <div class="feature-card">
@@ -17,7 +16,6 @@ export default {
   },
   methods: {
     updateBodyBackground() {
-      // Assuming the background element exists
       const backgroundElement = document.getElementById("background");
       if (backgroundElement) {
         backgroundElement.style.backgroundImage = 'url(/img/bg_forest3_reverse.jpg)';

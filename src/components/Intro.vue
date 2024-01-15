@@ -28,7 +28,6 @@ export default {
       this.$store.commit('toggleMenu');
     },
     updateBodyBackground() {
-      // Assuming the background element exists
       const backgroundElement = document.getElementById("background");
       if (backgroundElement) {
         backgroundElement.style.backgroundImage = 'url(/img/bg_forest3_small_reverse.jpg)';
@@ -49,13 +48,13 @@ export default {
   },
   computed: {
     blurredBackground() {
-        // Assuming you have a low-res version of the default background
+        // low-res version of the default background
         const defaultBlurredImageUrl = '/img/bg_forest3_small_reverse.jpg';
         
         return this.tree && this.tree.backgroundSmall ? `/img/${this.tree.backgroundSmall}` : defaultBlurredImageUrl;
     },
     fullBackground() {
-        // Your existing logic to determine the URL of the full background
+        // determine the URL of the full background
         const defaultImageUrl = '/img/bg_forest3_reverse.jpg';
         return this.tree && this.tree.background ? `/img/${this.tree.background}` : defaultImageUrl;
     },
@@ -72,7 +71,6 @@ export default {
       ].some(array => array && array.length > 0);
     },  
     ...mapState([
-        // If you have these as root state properties
         'selectedTypes',
         'selectedFoliage',
         'selectedNeedles',
