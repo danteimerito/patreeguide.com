@@ -304,11 +304,8 @@ export default {
             const img = new Image();
             img.src = this.fullBackground;
             img.onload = () => {
-                // document.getElementById("background").classList.add('background-fade-in');
-                // document.getElementById("background").style.backgroundImage = `url(${img.src})`;
-
                 document.getElementById("background").classList.add('background-fade-in');
-                document.getElementById("background").src = img.src;
+                document.getElementById("background").style.backgroundImage = `url(${img.src})`;
             };
         }
     },
