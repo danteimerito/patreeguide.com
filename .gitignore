@@ -2,6 +2,7 @@
 test.js
 /backup
 /licensing
+/working-files
 
 .DS_Store
 node_modules
