@@ -38,7 +38,8 @@ import { OhVueIcon } from "oh-vue-icons";
     },
     data() {
       return {
-        audioSrc: '/audio/Forest-wind-in-the-trees(chosic.com).mp3',
+        // audioSrc: '/audio/Forest-wind-in-the-trees(chosic.com).mp3',
+        audioSrc: '/audio/tree-audio-256.mp3',
         isPlaying: false,
       }
     },
