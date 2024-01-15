@@ -227,16 +227,39 @@ export default {
           this.$store.commit('toggleMenu');
           this.$store.commit('resetFilters');
       },
-      updateBodyBackground() {
-        // Retrieve the tree data using a Vuex getter
-        const treeData = this.$store.getters.getTreeBySlug(this.$route.params.slug);
-        // Define a default background image path
-        const defaultImageUrl = '/img/bg_forest3_reverse.jpg';
-        // Construct the background image URL
-        const imageUrl = this.tree && this.tree.background ? `/img/${this.tree.background}` : defaultImageUrl;
+    //   updateBodyBackground() {
+    //     // Retrieve the tree data using a Vuex getter
+    //     const treeData = this.$store.getters.getTreeBySlug(this.$route.params.slug);
+    //     // Define a default background image path
+    //     const defaultImageUrl = '/img/bg_forest3_reverse.jpg';
+    //     // Construct the background image URL
+    //     const imageUrl = this.tree && this.tree.background ? `/img/${this.tree.background}` : defaultImageUrl;
 
-        document.getElementById("background").style.backgroundImage = `url(${imageUrl})`;       
-      }       
+    //     document.getElementById("background").style.backgroundImage = `url(${imageUrl})`;       
+    //   },
+    updateBodyBackground() {
+
+      const defaultImageUrl = '/img/bg_forest3_reverse.jpg';
+      const newImageUrl = this.tree && this.tree.background ? `/img/${this.tree.background}` : defaultImageUrl;
+
+      const bg1 = document.getElementById('background');
+      const bg2 = document.getElementById('background-2');
+
+      // Decide which div is currently visible
+      const currentBg = bg1.style.opacity === '1' ? bg1 : bg2;
+      const newBg = currentBg === bg1 ? bg2 : bg1;
+
+      // Set the background image of the new div
+      newBg.style.backgroundImage = `url(${newImageUrl})`;
+        console.log('set background image of new div')
+
+      // Fade in the new background
+      newBg.style.opacity = '1';
+        console.log('fade in new background') 
+
+      // Fade out the current background
+      setTimeout(() => currentBg.style.opacity = '0', 100);
+    },       
     },
     beforeDestroy() {
         // When the component is destroyed, reset the body background if needed

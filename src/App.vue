@@ -1,6 +1,7 @@
 
 <template>
   <div id="background"></div>
+  <div id="background-2"></div>
     <Header />
       <div class="container">
         

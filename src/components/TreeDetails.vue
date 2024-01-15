@@ -293,21 +293,98 @@ export default {
                 this.$router.push({ name: 'Home' });
             }
         },
-        updateBodyBackground() {
+        // updateBodyBackground() {
             // First set the blurred image
-            document.getElementById("background").style.backgroundImage = `url(${this.blurredBackground})`;
-
+            // document.getElementById("background").style.backgroundImage = `url(${this.blurredBackground})`;
             // Then load the full image
-            this.loadFullImage();
-        },
-        loadFullImage() {
+            // this.loadFullImage();
+
+
+
+            // const defaultImageUrl = '/img/bg_forest3_reverse.jpg';
+            // const newImageUrl = this.tree && this.tree.background ? `/img/${this.tree.background}` : defaultImageUrl;
+
+            // const bg1 = document.getElementById('background');
+            // const bg2 = document.getElementById('background-2');
+
+            // // Decide which div is currently visible
+            // const currentBg = bg1.style.opacity === '1' ? bg1 : bg2;
+            // const newBg = currentBg === bg1 ? bg2 : bg1;
+
+            // // Set the background image of the new div
+            // newBg.style.backgroundImage = `url(${newImageUrl})`;
+            //     console.log('set background image of new div')
+
+            // // Fade in the new background
+            // newBg.style.opacity = '1';
+            //     console.log('fade in new background') 
+
+            // // Fade out the current background
+            // setTimeout(() => currentBg.style.opacity = '0', 100);
+
+
+
+        // updateBodyBackground(newImageUrl) {
+        //     const bg1 = document.getElementById('background');
+        //     const bg2 = document.getElementById('background-2');
+
+        //     // Decide which div is currently visible
+        //     const currentBg = bg1.style.opacity === '1' ? bg1 : bg2;
+        //     const newBg = currentBg === bg1 ? bg2 : bg1;
+
+        //     // Create a new Image object to preload the new background
+        //     const img = new Image();
+        //     img.onload = () => {
+        //         // Set the background image of the new div once the image is loaded
+        //         newBg.style.backgroundImage = `url(${newImageUrl})`;
+
+        //         // Fade in the new background
+        //         newBg.style.opacity = '1';
+
+        //         // Fade out the current background
+        //         setTimeout(() => currentBg.style.opacity = '0', 100);
+        //     }
+        //     img.src = newImageUrl
+        // },
+        // loadFullImage() {
+        //     const img = new Image();
+        //     img.src = this.fullBackground;
+        //     img.onload = () => {
+        //         document.getElementById("background").classList.add('background-fade-in');
+        //         document.getElementById("background").style.backgroundImage = `url(${img.src})`;
+        //     };
+        // }
+        updateBodyBackground() {
+
+            const defaultImageUrl = '/img/bg_forest3_reverse.jpg';
+            const newImageUrl = this.tree && this.tree.background ? `/img/${this.tree.background}` : defaultImageUrl;
+
+            console.log("Updating background with:", newImageUrl);
+
+            const bg1 = document.getElementById('background');
+            const bg2 = document.getElementById('background-2');
+
+            if (!bg1 || !bg2) {
+                console.error("Background elements not found.");
+                return;
+            }
+
+            const currentBg = bg1.style.opacity === '1' ? bg1 : bg2;
+            const newBg = currentBg === bg1 ? bg2 : bg1;
+
             const img = new Image();
-            img.src = this.fullBackground;
             img.onload = () => {
-                document.getElementById("background").classList.add('background-fade-in');
-                document.getElementById("background").style.backgroundImage = `url(${img.src})`;
+                console.log("New image loaded, updating background.");
+                newBg.style.backgroundImage = `url(${newImageUrl})`;
+                newBg.style.opacity = '1';
+                setTimeout(() => currentBg.style.opacity = '0', 100);
             };
-        }
+            img.onerror = () => {
+                console.error("Failed to load image:", newImageUrl);
+            };
+            img.src = newImageUrl;
+            }
+
     },
     beforeUnmount() {
         // document.getElementById("background").style.backgroundImage = '';
@@ -315,7 +392,7 @@ export default {
     mounted() {
         // Set the title when the component is first mounted
         if (this.tree) {
-        document.title = this.tree.nameCommon;
+            document.title = this.tree.nameCommon;
         }
     }
 }
