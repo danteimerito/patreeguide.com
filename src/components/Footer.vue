@@ -1,7 +1,7 @@
 <template>
     <footer class="bg-green-trans">
         <div>
-            Copyright &copy; 2023 - {{ year }} patreeguide.com <a href="/privacypolicy" rel="noopener noreferrer">Privacy Policy</a>
+            Copyright &copy; 2023 - {{ year }} patreeguide.com <router-link to="/privacypolicy" rel="noopener noreferrer">Privacy Policy</router-link>
         </div>
     </footer>
 </template>
