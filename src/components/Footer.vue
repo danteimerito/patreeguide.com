@@ -1,7 +1,11 @@
 <template>
     <footer class="bg-green-trans">
         <div>
-            Copyright &copy; 2023 - {{ year }} patreeguide.com <router-link to="/privacypolicy" rel="noopener noreferrer">Privacy Policy</router-link>
+            <div>Copyright &copy; 2023 - {{ year }} patreeguide.com</div>
+            <div class="below-copyright">
+                <router-link to="/privacypolicy" rel="noopener noreferrer">Privacy Policy</router-link>
+                <a href="mailto:patreeguide@gmail.com">Contact</a>
+            </div>
         </div>
     </footer>
 </template>
@@ -14,5 +18,12 @@
 <style scoped>
     footer a:hover {
         color: chartreuse;
+    }
+    .below-copyright {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+
+
     }
 </style>
