@@ -1,167 +1,148 @@
 <template>
     <header>
-      
-            <div class="topbars">
-                <div class="menu-wrap">
-                    <div class="menu-topbar">
-                        <div class="logo"><router-link to="/" @click="logoClick">PA TREE GUIDE </router-link></div>
-                            <Sound />
-                    </div>
+        <div class="topbars">
+            <div class="menu-wrap">
+                <div class="menu-topbar">
+                    <div class="logo"><router-link to="/" @click="logoClick">PA TREE GUIDE </router-link></div>
+                    <Sound />
+                </div>
 
-                    <input 
-                        type="checkbox" 
-                        name="toggler"
-                        class="toggler"
-                        :checked="isMenuOpen" 
-                        @change="toggleMenu($event.target.checked)" 
-                    />
-                    
-                    <HeaderMatches v-if="isMenuOpen"/>
-                    <HeaderMatches v-else-if="homePage && isAnyFilterSelected"/>
+                <input 
+                    type="checkbox" 
+                    name="toggler"
+                    class="toggler"
+                    :checked="isMenuOpen" 
+                    @change="toggleMenu($event.target.checked)" 
+                />
+                
+                <HeaderMatches v-if="isMenuOpen"/>
+                <HeaderMatches v-else-if="homePage && isAnyFilterSelected"/>
 
-                    <div class="hamburger">
-                        <div></div>
-                    </div>
+                <div class="hamburger">
+                    <div></div>
+                </div>
 
-                    <div class="menu">
+                <div class="menu">
+                    <div>
                         <div>
-                            <div>
-                                
-                                    
-                                    <!-- the 'appear' prop fires the transition on component/page load -->
-                                    <transition-group tag="div" class="options-panel" name="fade-slide" appear>
-
-                                        <div class="options-set" key="1">
-                                            <div class="options-set-header">
-                                                <h3>Foliage</h3>
-                                            </div>
-                                            <label v-for="foliage in foliage" :key="foliage">
-                                                <input 
-                                                    type="checkbox" 
-                                                    :name="foliage"
-                                                    :value="foliage" 
-                                                    v-model="selectedFoliageComputed" 
-                                                />
-                                                {{ foliage }}
-                                                <img :src="getIcon(foliage)" alt="Icon" class="checkbox-icon" />
-                                            </label>
-                                        </div>
-                                    
-            
-                                    
-
-                                        <div v-if="this.selectedFoliage.includes('needles') || this.selectedNeedles.length > 0" class="options-set" key="2">
-                                            <div class="options-set-header">
-                                                <h3>Needle Structure</h3>
-                                            </div>
-                                            <label v-for="needle in needleStructures" :key="needle">
-                                                <input 
-                                                    type="checkbox" 
-                                                    :name="needle"
-                                                    :value="needle" 
-                                                    v-model="selectedNeedlesComputed" 
-                                                />
-                                                {{ needle }}
-                                                    <img :src="getIcon(needle)" alt="Icon" class="checkbox-icon" />
-                                            </label>                                        
-                                        </div>
-                                    
-
-                                    
-                                    <div v-if="this.selectedNeedles.includes('clustered needles') || this.selectedClusters.length > 0" class="options-set" key="3">
-                                        <div class="options-set-header">
-                                            <h3>Needles per Cluster</h3>
-                                        </div>
-                                        <label v-for="cluster in needleClusters" :key="cluster">
-                                            <input 
+                            <!-- the 'appear' prop fires the transition on component/page load -->
+                            <transition-group tag="div" class="options-panel" name="fade-slide" appear>
+                                <div class="options-set" key="1">
+                                    <div class="options-set-header">
+                                        <h3>Foliage</h3>
+                                    </div>
+                                    <label v-for="foliage in foliage" :key="foliage">
+                                        <input 
                                             type="checkbox" 
-                                            :name="cluster"
-                                            :value="cluster" 
-                                            v-model="selectedClustersComputed" 
-                                            />
-                                            {{ cluster }}
-                                        </label>
+                                            :name="foliage"
+                                            :value="foliage" 
+                                            v-model="selectedFoliageComputed" 
+                                        />
+                                        {{ foliage }}
+                                        <img :src="getIcon(foliage)" alt="Icon" class="checkbox-icon" />
+                                    </label>
+                                </div>
+                            
+                                <div v-if="this.selectedFoliage.includes('needles') || this.selectedNeedles.length > 0" class="options-set" key="2">
+                                    <div class="options-set-header">
+                                        <h3>Needle Structure</h3>
                                     </div>
-                                    
-
-                                   
-                                    <div v-if="this.selectedFoliage.includes('leaves') || this.selectedLeafTypes.length > 0" class="options-set">
-                                        <div class="options-set-header" key="4">
-                                            <h3>Leaf Type</h3>
-                                        </div>
-                                        <label v-for="leaf in leafTypes" :key="leaf">
-                                            <input 
-                                            type="checkbox"
-                                            :name="leaf" 
-                                            :value="leaf" 
-                                            v-model="selectedLeafTypesComputed" 
-                                            />
-                                            {{ leaf }}
-                                            <img :src="getIcon(leaf)" alt="Icon" class="checkbox-icon">
-                                        </label>
-                                    </div>
-                                   
-
-                               
-                                    <div v-if="selectedLeafTypes.includes('compound') || selectedCompoundStructures.length > 0" class="options-set" key="5">
-                                        <div class="options-set-header">
-                                            <h3>Compound Structure</h3>
-                                        </div>
-                                        <label v-for="structure in compoundStructures" :key="structure">
-                                            <input 
+                                    <label v-for="needle in needleStructures" :key="needle">
+                                        <input 
                                             type="checkbox" 
-                                            :name="structure"
-                                            :value="structure" 
-                                            v-model="selectedCompoundStructuresComputed" 
-                                            />
-                                            {{ structure }}
-                                            <img :src="getIcon(structure)" alt="Icon" class="checkbox-icon">
-                                        </label>
-                                    </div>
-                                  
+                                            :name="needle"
+                                            :value="needle" 
+                                            v-model="selectedNeedlesComputed" 
+                                        />
+                                        {{ needle }}
+                                            <img :src="getIcon(needle)" alt="Icon" class="checkbox-icon" />
+                                    </label>                                        
+                                </div>
 
-                             
-                                    <div v-if="this.selectedFoliage.includes('leaves') || this.selectedLeafAttachments.length > 0" class="options-set" key="6">
-                                        <div class="options-set-header">
-                                            <h3>Leaf Attachment</h3>
-                                        </div>
-                                        <label v-for="attachment in leafAttachments" :key="attachment">
-                                            <input 
+                                <div v-if="this.selectedNeedles.includes('clustered needles') || this.selectedClusters.length > 0" class="options-set" key="3">
+                                    <div class="options-set-header">
+                                        <h3>Needles per Cluster</h3>
+                                    </div>
+                                    <label v-for="cluster in needleClusters" :key="cluster">
+                                        <input 
+                                        type="checkbox" 
+                                        :name="cluster"
+                                        :value="cluster" 
+                                        v-model="selectedClustersComputed" 
+                                        />
+                                        {{ cluster }}
+                                    </label>
+                                </div>
+                            
+                                <div v-if="this.selectedFoliage.includes('leaves') || this.selectedLeafTypes.length > 0" class="options-set">
+                                    <div class="options-set-header" key="4">
+                                        <h3>Leaf Type</h3>
+                                    </div>
+                                    <label v-for="leaf in leafTypes" :key="leaf">
+                                        <input 
+                                        type="checkbox"
+                                        :name="leaf" 
+                                        :value="leaf" 
+                                        v-model="selectedLeafTypesComputed" 
+                                        />
+                                        {{ leaf }}
+                                        <img :src="getIcon(leaf)" alt="Icon" class="checkbox-icon">
+                                    </label>
+                                </div>
+                        
+                                <div v-if="selectedLeafTypes.includes('compound') || selectedCompoundStructures.length > 0" class="options-set" key="5">
+                                    <div class="options-set-header">
+                                        <h3>Compound Structure</h3>
+                                    </div>
+                                    <label v-for="structure in compoundStructures" :key="structure">
+                                        <input 
+                                        type="checkbox" 
+                                        :name="structure"
+                                        :value="structure" 
+                                        v-model="selectedCompoundStructuresComputed" 
+                                        />
+                                        {{ structure }}
+                                        <img :src="getIcon(structure)" alt="Icon" class="checkbox-icon">
+                                    </label>
+                                </div>
+                
+                                <div v-if="this.selectedFoliage.includes('leaves') || this.selectedLeafAttachments.length > 0" class="options-set" key="6">
+                                    <div class="options-set-header">
+                                        <h3>Leaf Attachment</h3>
+                                    </div>
+                                    <label v-for="attachment in leafAttachments" :key="attachment">
+                                        <input 
+                                        type="checkbox" 
+                                        :name="attachment"
+                                        :value="attachment" 
+                                        v-model="selectedLeafAttachmentsComputed" 
+                                        />
+                                        {{ attachment }}
+                                        <img :src="getIcon(attachment)" alt="Icon" class="checkbox-icon">
+                                    </label>
+                                </div>
+                        
+                                <div v-if="this.selectedFoliage.includes('leaves') || this.selectedFallColors.length > 0" class="options-set">
+                                    <div class="options-set-header" key="7">
+                                        <h3>Fall Colors</h3>
+                                    </div>
+                                    <label v-for="color in fallColors" :key="color">
+                                        <input 
                                             type="checkbox" 
-                                            :name="attachment"
-                                            :value="attachment" 
-                                            v-model="selectedLeafAttachmentsComputed" 
-                                            />
-                                            {{ attachment }}
-                                            <img :src="getIcon(attachment)" alt="Icon" class="checkbox-icon">
-                                        </label>
-                                    </div>
-                               
+                                            name="color"
+                                            :value="color" 
+                                            v-model="selectedFallColorsComputed" 
+                                        />
+                                        {{ color }}
+                                    </label>
+                                </div>
 
-                               
-                                    <div v-if="this.selectedFoliage.includes('leaves') || this.selectedFallColors.length > 0" class="options-set">
-                                        <div class="options-set-header" key="7">
-                                            <h3>Fall Colors</h3>
-                                        </div>
-                                        <label v-for="color in fallColors" :key="color">
-                                            <input 
-                                                type="checkbox" 
-                                                name="color"
-                                                :value="color" 
-                                                v-model="selectedFallColorsComputed" 
-                                            />
-                                            {{ color }}
-                                        </label>
-                                    </div>
-                                </transition-group>
-
-                                
-                            </div>
+                            </transition-group>
                         </div>
                     </div>
                 </div>
             </div>
-
+        </div>
     </header>
 </template>
 
@@ -270,18 +251,6 @@ export default {
                 return this.selectedFoliage;
             },
             set(value) {
-
-                // // Determine the changed item and its new state (selected or deselected)
-                // const changedFoliage = value.find(f => !this.selectedFoliage.includes(f)) 
-                //     || this.selectedFoliage.find(f => !value.includes(f));
-                // const isSelected = value.includes(changedFoliage);
-                // // Track the event with a more descriptive label
-                // this.$gtag.event('foliage_selection_change', {
-                //     event_category: 'Checkbox Interaction',
-                //     event_label: `${changedFoliage}: ${isSelected ? 'Selected' : 'Deselected'}`,
-                //     event_action: 'change'
-                // });
-
                 // Update Vuex state
                 this.$store.dispatch('updateSelectedFoliage', value);
             }
@@ -292,16 +261,6 @@ export default {
                 return this.selectedNeedles;
             },
             set(value) {
-                // Determine the changed item and its new state (selected or deselected)
-                // const changedNeedles = value.find(n => !this.selectedNeedles.includes(n)) 
-                //     || this.selectedNeedles.find(n => !value.includes(n));
-                // const isSelected = value.includes(changedNeedles);
-                // Track the event with a more descriptive label
-                // this.$gtag.event('needles_selection_change', {
-                //     event_category: 'Checkbox Interaction',
-                //     event_label: `${changedNeedles}: ${isSelected ? 'Selected' : 'Deselected'}`,
-                //     event_action: 'change'
-                // });
                 // Update Vuex state
                 this.$store.dispatch('updateSelectedNeedles', value);
             },
@@ -312,18 +271,6 @@ export default {
             return this.selectedClusters;
             },
             set(value) {
-
-                // Determine the changed item and its new state (selected or deselected)
-                // const changedClusters = value.find(c => !this.selectedClusters.includes(c)) 
-                //     || this.selectedClusters.find(c => !value.includes(c));
-                // const isSelected = value.includes(changedClusters);
-                // Track the event with a more descriptive label
-                // this.$gtag.event('clusters_selection_change', {
-                //     event_category: 'Checkbox Interaction',
-                //     event_label: `${changedClusters}: ${isSelected ? 'Selected' : 'Deselected'}`,
-                //     event_action: 'change'
-                // });
-
                 // Update Vuex state
                 this.$store.dispatch('updateSelectedClusters', value);
             },
@@ -334,19 +281,6 @@ export default {
             return this.selectedLeafTypes;
             },
             set(value) {
-
-                // Determine the changed item and its new state (selected or deselected)
-                // const changedLeafTypes = value.find(lt => !this.selectedLeafTypes.includes(lt)) 
-                //     || this.selectedLeafTypes.find(lt => !value.includes(lt));
-                // const isSelected = value.includes(changedLeafTypes);
-
-                // Track the event with a more descriptive label
-                // this.$gtag.event('leaf-types_selection_change', {
-                //     event_category: 'Checkbox Interaction',
-                //     event_label: `${changedLeafTypes}: ${isSelected ? 'Selected' : 'Deselected'}`,
-                //     event_action: 'change'
-                // });
-
                 // Update Vuex state
                 this.$store.dispatch('updateSelectedLeafTypes', value);
             },
@@ -357,16 +291,6 @@ export default {
             return this.selectedCompoundStructures;
             },
             set(value) {
-                // Determine the changed item and its new state (selected or deselected)
-                // const changedCompoundStructures = value.find(cs => !this.selectedCompoundStructures.includes(cs)) 
-                //     || this.selectedCompoundStructures.find(cs => !value.includes(cs));
-                // const isSelected = value.includes(changedCompoundStructures);
-                // Track the event with a more descriptive label
-                // this.$gtag.event('compound-structure_selection_change', {
-                //     event_category: 'Checkbox Interaction',
-                //     event_label: `${changedCompoundStructures}: ${isSelected ? 'Selected' : 'Deselected'}`,
-                //     event_action: 'change'
-                // });
                 // Update Vuex state
                 this.$store.dispatch('updateSelectedCompoundStructures', value);
             },
@@ -377,16 +301,6 @@ export default {
             return this.selectedLeafAttachments;
             },
             set(value) {
-                // Determine the changed item and its new state (selected or deselected)
-                // const changedLeafAttachments = value.find(la => !this.selectedLeafAttachments.includes(la)) 
-                //     || this.selectedLeafAttachments.find(la => !value.includes(la));
-                // const isSelected = value.includes(changedLeafAttachments);
-                // Track the event with a more descriptive label
-                // this.$gtag.event('leaf-attachments_selection_change', {
-                //     event_category: 'Checkbox Interaction',
-                //     event_label: `${changedLeafAttachments}: ${isSelected ? 'Selected' : 'Deselected'}`,
-                //     event_action: 'change'
-                // });
                 // Update Vuex state
                 this.$store.dispatch('updateSelectedLeafAttachments', value);
             },
@@ -397,16 +311,6 @@ export default {
             return this.selectedFallColors;
             },
             set(value) {
-                // Determine the changed item and its new state (selected or deselected)
-                // const changedFallColors = value.find(fc => !this.selectedFallColors.includes(fc)) 
-                //     || this.selectedFallColors.find(fc => !value.includes(fc));
-                // const isSelected = value.includes(changedFallColors);
-                // Track the event with a more descriptive label
-                // this.$gtag.event('fall-colors_selection_change', {
-                //     event_category: 'Checkbox Interaction',
-                //     event_label: `${changedFallColors}: ${isSelected ? 'Selected' : 'Deselected'}`,
-                //     event_action: 'change'
-                // });
                 // Update Vuex state
                 this.$store.dispatch('updateSelectedFallColors', value);
             },
@@ -447,11 +351,6 @@ export default {
             this.$store.dispatch('resetFilters');
         },
         logoClick() {
-        //     this.$gtag.event('click_logo_header', {
-        //         event_category: 'Link',
-        //         event_label: 'Header logo clicked',
-        //         // value: 'some_value' // Optional: any value you want to pass
-        // });
             this.$store.dispatch('logoClick');
         },
     },
