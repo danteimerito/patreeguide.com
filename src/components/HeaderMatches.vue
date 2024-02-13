@@ -1,42 +1,38 @@
 <template>
     <div class="options-panel-topbar">
-            <div class="contain-widgets">
-                <div class="options-panel-widgets">
-
-                    <div class="left">
-                        <button v-if="isAnyFilterSelected && menuIsOpen" @click="resetAllFilters" class="menu-reset">
-                            Clear Filters
-                        </button>
+        <div class="contain-widgets">
+            <div class="options-panel-widgets">
+                <div class="left">
+                    <button v-if="isAnyFilterSelected && menuIsOpen" @click="resetAllFilters" class="menu-reset">
+                        Clear Filters
+                    </button>
+                </div>
+                <div class="matches center">
+                    <div class="matches-text"> Trees </div>
+                    <div v-if="isAnyFilterSelected" class="matches-num">
+                        {{ filteredTreeCount }}
                     </div>
-
-                    <div class="matches center">
-                        <div class="matches-text"> Trees </div>
-                        <div v-if="isAnyFilterSelected" class="matches-num">
-                            {{ filteredTreeCount }}
-                        </div>
-                        <div v-else class="matches-num">
-                            0
-                        </div>
-                    </div>
-
-                    <div class="right">
-                        <router-link to="/">     
-                            <button v-if="menuIsOpen && isAnyFilterSelected" @click="toggleMenu" class="button-view-results" >
-                                View Results
-                            </button>
-
-                            <button v-else-if="!menuIsOpen" @click="toggleMenu" class="button-edit-filters">
-                                Edit Filters
-                            </button>
-
-                            <button v-else-if="menuIsOpen && !isAnyFilterSelected" @click="toggleMenu" class="button-edit-filters">
-                                Close
-                            </button>
-                        </router-link>
-
+                    <div v-else class="matches-num">
+                        0
                     </div>
                 </div>
+                <div class="right">
+                    <router-link to="/">     
+                        <button v-if="menuIsOpen && isAnyFilterSelected" @click="toggleMenu" class="button-view-results" >
+                            View Results
+                        </button>
+
+                        <button v-else-if="!menuIsOpen" @click="toggleMenu" class="button-edit-filters">
+                            Edit Filters
+                        </button>
+
+                        <button v-else-if="menuIsOpen && !isAnyFilterSelected" @click="toggleMenu" class="button-edit-filters">
+                            Close
+                        </button>
+                    </router-link>
+                </div>
             </div>
+        </div>
     </div>
 </template>
 
@@ -47,13 +43,6 @@ import { mapGetters, mapState } from 'vuex';
 export default {
     methods: {
         resetAllFilters() {
-
-            // this.$gtag.event('click_clear_filters', {
-            //     event_category: 'Button',
-            //     event_label: 'Clear Filters Button',
-            //     // value: 'some_value' // Optional: any value you want to pass
-            // });
-
             this.$store.dispatch('resetFilters');
         },
         toggleMenu() {

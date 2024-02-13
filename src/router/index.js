@@ -3,7 +3,6 @@ import Home from '../views/Home'
 import TreeDetails from '../components/TreeDetails'
 import NotFound from '../views/NotFound'
 import PrivacyPolicy from '../views/PrivacyPolicy'
-// import { useGtag } from 'vue-gtag'
 
 const routes = [
     {
@@ -59,15 +58,5 @@ const router = createRouter({
         return { top: 0 };
       },
 });
-
-// Google Analytics tracking
-// router.afterEach((to, from) => {
-//   const gtag = useGtag();
-  
-//   gtag.pageview({
-//     page_path: to.fullPath,
-//     page_title: document.title
-//   });
-// });
 
 export default router
