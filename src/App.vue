@@ -10,9 +10,9 @@
 </template>
 
 <script>
-import Header from './components/Header'
+import Header from './components/Header';
 import HeaderMatches from './components/HeaderMatches';
-import Footer from './components/Footer'
+import Footer from './components/Footer';
 
 export default {
   name: 'App',
