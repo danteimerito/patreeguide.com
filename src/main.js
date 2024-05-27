@@ -18,7 +18,7 @@ createApp(App)
   .component("v-icon", OhVueIcon)
   .use(VueGtag, {
     config: {
-      id: process.env.GOOGLE_ANALYTICS_PROPERTY_ID
+      id: "G-8XHB2YVL29"
     }
   })
   .mount('#app')
