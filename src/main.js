@@ -18,7 +18,7 @@ createApp(App)
   .component("v-icon", OhVueIcon)
   .use(VueGtag, {
     config: {
-      id: "G-8XHB2YVL29"
+      id: process.env.VUE_APP_GA_MEASUREMENT_ID
     }
   })
   .mount('#app')
