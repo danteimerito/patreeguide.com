@@ -12,13 +12,17 @@ addIcons(GiRoundKnob);
 
 import VueGtag from 'vue-gtag';
 
-createApp(App)
+const app = createApp(App)
   .use(router)
   .use(store)
-  .component("v-icon", OhVueIcon)
-  .use(VueGtag, {
+  .component("v-icon", OhVueIcon);
+// Send analytics only in production, not development
+if (process.env.NODE_ENV === 'production') {
+  app.use(VueGtag, {
     config: {
       id: process.env.VUE_APP_GA_MEASUREMENT_ID
     }
-  })
-  .mount('#app')
+  });
+}
+
+app.mount('#app');
