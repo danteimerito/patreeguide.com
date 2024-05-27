@@ -10,8 +10,15 @@ import { OhVueIcon, addIcons } from "oh-vue-icons";
 import { GiRoundKnob } from "oh-vue-icons/icons";
 addIcons(GiRoundKnob);
 
+import VueGtag from 'vue-gtag';
+
 createApp(App)
   .use(router)
   .use(store)
   .component("v-icon", OhVueIcon)
+  .use(VueGtag, {
+    config: {
+      id: process.env.GOOGLE_ANALYTICS_PROPERTY_ID
+    }
+  })
   .mount('#app')
