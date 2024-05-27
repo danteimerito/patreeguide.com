@@ -15,132 +15,60 @@
                     <h2 v-else="!tree.description">Description</h2>
 
                     <div class="tree-image">
-                        
+
                         <div v-if="tree.photo1Src" class="contain-thumb">
-                            <a  target="_blank"
-                                rel="noopener noreferrer"
-                                
-                                :href="tree.photo1Href"
-                            >
-                                <img 
-                                    fetchPriority="low"
-                                    width="256" 
-                                    :alt="tree.photo1Alt" 
-                                    :src="tree.photo1Src"
-                                >
+                            <a target="_blank" rel="noopener noreferrer" :href="tree.photo1Href">
+                                <img fetchPriority="low" width="256" :alt="tree.photo1Alt" :src="tree.photo1Src">
                             </a>
                             <div v-html="tree.photo1Credit" class="contain-thumb"></div>
                         </div>
 
 
                         <div v-if="tree.photo2Src" class="contain-thumb">
-                            <a  target="_blank"
-                                rel="noopener noreferrer"
-                                
-                                :href="tree.photo2Href"
-                            >
-                                <img 
-                                    fetchPriority="low"
-                                    width="256" 
-                                    :alt="tree.photo2Alt" 
-                                    :src="tree.photo2Src"
-                                >
+                            <a target="_blank" rel="noopener noreferrer" :href="tree.photo2Href">
+                                <img fetchPriority="low" width="256" :alt="tree.photo2Alt" :src="tree.photo2Src">
                             </a>
                             <div v-html="tree.photo2Credit" class="contain-thumb"></div>
                         </div>
 
                         <div v-if="tree.photo3Src" class="contain-thumb">
-                            <a  target="_blank"
-                                rel="noopener noreferrer"
-                                
-                                :href="tree.photo3Href"
-                            >
-                                <img 
-                                    fetchPriority="low"
-                                    width="256" 
-                                    :alt="tree.photo3Alt" 
-                                    :src="tree.photo3Src"
-                                >
+                            <a target="_blank" rel="noopener noreferrer" :href="tree.photo3Href">
+                                <img fetchPriority="low" width="256" :alt="tree.photo3Alt" :src="tree.photo3Src">
                             </a>
                             <div v-html="tree.photo3Credit" class="contain-thumb"></div>
                         </div>
-                        
+
                         <div v-if="tree.photo4Src" class="contain-thumb">
-                            <a  target="_blank"
-                                rel="noopener noreferrer"
-                                
-                                :href="tree.photo4Href"
-                            >
-                                <img 
-                                    fetchPriority="low"
-                                    width="256" 
-                                    :alt="tree.photo4Alt" 
-                                    :src="tree.photo4Src"
-                                >
+                            <a target="_blank" rel="noopener noreferrer" :href="tree.photo4Href">
+                                <img fetchPriority="low" width="256" :alt="tree.photo4Alt" :src="tree.photo4Src">
                             </a>
                             <div v-html="tree.photo4Credit" class="contain-thumb"></div>
                         </div>
 
                         <div v-if="tree.photo5Src" class="contain-thumb">
-                            <a  target="_blank"
-                                rel="noopener noreferrer"
-                                
-                                :href="tree.photo5Href"
-                            >
-                                <img 
-                                    fetchPriority="low"
-                                    width="256" 
-                                    :alt="tree.photo5Alt" 
-                                    :src="tree.photo5Src"
-                                >
+                            <a target="_blank" rel="noopener noreferrer" :href="tree.photo5Href">
+                                <img fetchPriority="low" width="256" :alt="tree.photo5Alt" :src="tree.photo5Src">
                             </a>
                             <div v-html="tree.photo5Credit" class="contain-thumb"></div>
                         </div>
 
                         <div v-if="tree.photo6Src" class="contain-thumb">
-                            <a  target="_blank"
-                                rel="noopener noreferrer"
-                                
-                                :href="tree.photo6Href"
-                            >
-                                <img 
-                                    fetchPriority="low"
-                                    width="256" 
-                                    :alt="tree.photo6Alt" 
-                                    :src="tree.photo6Src"
-                                >
+                            <a target="_blank" rel="noopener noreferrer" :href="tree.photo6Href">
+                                <img fetchPriority="low" width="256" :alt="tree.photo6Alt" :src="tree.photo6Src">
                             </a>
                             <div v-html="tree.photo6Credit" class="contain-thumb"></div>
                         </div>
 
                         <div v-if="tree.photo7Src" class="contain-thumb">
-                            <a  target="_blank"
-                                rel="noopener noreferrer"
-                                
-                                :href="tree.photo7Href"
-                            >
-                                <img 
-                                    fetchPriority="low"
-                                    width="256" 
-                                    :alt="tree.photo7Alt" 
-                                    :src="tree.photo7Src"
-                                >
+                            <a target="_blank" rel="noopener noreferrer" :href="tree.photo7Href">
+                                <img fetchPriority="low" width="256" :alt="tree.photo7Alt" :src="tree.photo7Src">
                             </a>
                             <div v-html="tree.photo7Credit" class="contain-thumb"></div>
                         </div>
 
                         <div v-if="tree.photo8Src" class="contain-thumb">
-                            <a  target="_blank"
-                                rel="noopener noreferrer"
-                                
-                                :href="tree.photo8Href"
-                            >
-                                <img 
-                                    fetchPriority="low"
-                                    width="256" 
-                                    :alt="tree.photo8Alt" 
-                                    :src="tree.photo8Src"
-                                >
+                            <a target="_blank" rel="noopener noreferrer" :href="tree.photo8Href">
+                                <img fetchPriority="low" width="256" :alt="tree.photo8Alt" :src="tree.photo8Src">
                             </a>
                             <div v-html="tree.photo8Credit" class="contain-thumb"></div>
                         </div>
@@ -148,7 +76,7 @@
                     </div>
 
 
-                    
+
                 </div>
 
                 <div class="right-thirty">
@@ -158,7 +86,7 @@
                         <!-- <div class="result-icon">{{ tree.aka.join(', ') }}</div> -->
                         <div class="multi-wrap">
                             <div v-for="name in tree.aka">
-                                <div class="result-icon">{{name}}</div>
+                                <div class="result-icon">{{ name }}</div>
                             </div>
                         </div>
                     </div>
@@ -208,7 +136,7 @@
 
                                 <div class="multi-wrap">
                                     <div v-for="color in tree.fallColor">
-                                        <div class="result-icon">{{color}}</div>
+                                        <div class="result-icon">{{ color }}</div>
                                     </div>
                                 </div>
 
@@ -239,14 +167,14 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div>
                         <h2 v-if="tree.conservationStatus">Conservation Status</h2>
                     </div>
 
                 </div>
             </div>
-   
+
         </div>
     </div>
 </template>
@@ -261,7 +189,7 @@ export default {
         blurredBackground() {
             // Assuming you have a low-res version of the default background
             const defaultBlurredImageUrl = '/img/bg_forest3_small.jpg';
-            
+
             return this.tree && this.tree.backgroundSmall ? `/img/${this.tree.backgroundSmall}` : defaultBlurredImageUrl;
         },
         fullBackground() {
@@ -323,12 +251,8 @@ export default {
     mounted() {
         // Set the title when the component is first mounted
         if (this.tree) {
-            document.title = this.tree.nameCommon;
+            document.title = this.tree.nameCommon + " | PA Tree Guide";
         }
     }
 }
 </script>
-
-
-
-
