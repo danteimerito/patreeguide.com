@@ -6,14 +6,14 @@ import VuexPersistence from 'vuex-persist';
 const vuexLocal = new VuexPersistence({
   storage: window.localStorage,
   reducer: (state) => ({
-      selectedFoliage: state.selectedFoliage,
-      selectedNeedles: state.selectedNeedles,  
-      selectedClusters: state.selectedClusters,
-      selectedLeafTypes: state.selectedLeafTypes,       
-      selectedCompoundStructures: state.selectedCompoundStructures, 
-      selectedLeafAttachments: state.selectedLeafAttachments,    
-      selectedFallColors: state.selectedFallColors,     
-      isMenuOpen: state.isMenuOpen     
+    selectedFoliage: state.selectedFoliage,
+    selectedNeedles: state.selectedNeedles,
+    selectedClusters: state.selectedClusters,
+    selectedLeafTypes: state.selectedLeafTypes,
+    selectedCompoundStructures: state.selectedCompoundStructures,
+    selectedLeafAttachments: state.selectedLeafAttachments,
+    selectedFallColors: state.selectedFallColors,
+    isMenuOpen: state.isMenuOpen
   })
 });
 
@@ -5652,186 +5652,186 @@ const initialTreesState = [
 
 // create Vuex store
 export const store = createStore({
-    state() {
-        return {
-          trees: [...initialTreesState], 
-          isMenuOpen: false,
-          selectedFoliage: [],
-          selectedNeedles: [],
-          selectedClusters: [],
-          selectedLeafTypes: [],
-          selectedCompoundStructures: [],
-          selectedLeafAttachments: [],
-          selectedFallColors: [],
-        }
+  state() {
+    return {
+      trees: [...initialTreesState],
+      isMenuOpen: false,
+      selectedFoliage: [],
+      selectedNeedles: [],
+      selectedClusters: [],
+      selectedLeafTypes: [],
+      selectedCompoundStructures: [],
+      selectedLeafAttachments: [],
+      selectedFallColors: [],
+    }
+  },
+
+  getters: {
+    getTreeBySlug: (state) => (slug) => {
+      return state.trees.find(tree => tree.slug === slug);
     },
 
-    getters: {
-        getTreeBySlug: (state) => (slug) => {
-          return state.trees.find(tree => tree.slug === slug);
-        },
-
-        allItems: (state) => state.items,
-        conifers: state => {
-            let coniferTrees = state.trees.filter(tree => tree.type == 'conifer')
-            return coniferTrees
-        }, 
-        getFilteredTrees: (state) => (selectedFoliage, selectedNeedles, selectedClusters, selectedLeafTypes, selectedCompoundStructures, selectedLeafAttachments, selectedFallColors) => {
-            return state.trees.filter(tree => {
-            const foliageMatch = !selectedFoliage.length || selectedFoliage.includes(tree.foliage);
-            const needleMatch = !selectedNeedles.length || selectedNeedles.includes(tree.needleStructure);
-
-            const clusterMatch = !selectedClusters.length || (tree.needleCluster && tree.needleCluster.some(cluster => selectedClusters.includes(cluster)));
-
-            const leafTypeMatch = !selectedLeafTypes.length || selectedLeafTypes.includes(tree.leafType);
-            const compoundStructureMatch = !selectedCompoundStructures.length || selectedCompoundStructures.includes(tree.compoundStructure);
-            const leafAttachmentMatch = !selectedLeafAttachments.length || selectedLeafAttachments.includes(tree.leafAttachment);
-
-            const fallColorMatch = !selectedFallColors.length || (tree.fallColor && tree.fallColor.some(color => selectedFallColors.includes(color)));
-
-            return foliageMatch && needleMatch && leafTypeMatch && compoundStructureMatch && leafAttachmentMatch && clusterMatch && fallColorMatch;
-          });
-        },
-
-        getFilteredTreeCount: (state) => (selectedFoliage, selectedNeedles, selectedClusters, selectedLeafTypes, selectedCompoundStructures, selectedLeafAttachments, selectedFallColors) => {
-          const filteredTrees = state.trees.filter(tree => {
-            const foliageMatch = !selectedFoliage.length || selectedFoliage.includes(tree.foliage);
-            const needleMatch = !selectedNeedles.length || selectedNeedles.includes(tree.needleStructure);
-            const clusterMatch = !selectedClusters.length || (tree.needleCluster && tree.needleCluster.some(cluster => selectedClusters.includes(cluster)));
-            const leafTypeMatch = !selectedLeafTypes.length || selectedLeafTypes.includes(tree.leafType);
-            const compoundStructureMatch = !selectedCompoundStructures.length || selectedCompoundStructures.includes(tree.compoundStructure);
-            const leafAttachmentMatch = !selectedLeafAttachments.length || selectedLeafAttachments.includes(tree.leafAttachment);
-            const fallColorMatch = !selectedFallColors.length || (tree.fallColor && tree.fallColor.some(color => selectedFallColors.includes(color)));
-        
-            return foliageMatch && needleMatch && leafTypeMatch && compoundStructureMatch && leafAttachmentMatch && clusterMatch && fallColorMatch;
-          });
-        
-          return filteredTrees.length; // Return the count instead of the array
-        }
+    allItems: (state) => state.items,
+    conifers: state => {
+      let coniferTrees = state.trees.filter(tree => tree.type == 'conifer')
+      return coniferTrees
     },
-    mutations: {
-      resetFilters(state) {
+    getFilteredTrees: (state) => (selectedFoliage, selectedNeedles, selectedClusters, selectedLeafTypes, selectedCompoundStructures, selectedLeafAttachments, selectedFallColors) => {
+      return state.trees.filter(tree => {
+        const foliageMatch = !selectedFoliage.length || selectedFoliage.includes(tree.foliage);
+        const needleMatch = !selectedNeedles.length || selectedNeedles.includes(tree.needleStructure);
 
-        console.log("store:mutation:resetFilters");
+        const clusterMatch = !selectedClusters.length || (tree.needleCluster && tree.needleCluster.some(cluster => selectedClusters.includes(cluster)));
 
-        // Reset filters to initial state or empty arrays
-        state.selectedFoliage = [];
-        state.selectedNeedles = [];
-        state.selectedClusters = [];
-        state.selectedLeafTypes = [];
-        state.selectedCompoundStructures = [];
-        state.selectedLeafAttachments = [];
-        state.selectedFallColors = [];
-      },
-      setMenuState(state, isOpen) {
-        state.isMenuOpen = isOpen;
-        console.log("store:mutation:setMenuState", isOpen);
-      },
-      toggleMenu(state) {
-        state.isMenuOpen = !state.isMenuOpen;
-        console.log("store:mutation:toggleMenu");
-      },
-      openMenu(state) {
-        state.menuIsOpen = true;
-      },
-      closeMenu(state) {
-        console.log("store:mutation:closeMenu");
-        state.isMenuOpen = false;
-      },
-      addItem(state, newItem) {
-        console.log("store:mutation:addItem");
-        state.items.push(newItem);
-      },
-      setSelectedFoliage(state, foliage) {
-        console.log("store:mutation:setSelectedFoliage");
-        state.selectedFoliage = foliage;
-      },
-      setSelectedNeedles(state, needles) {
-        console.log("store:mutation:setSelectedNeedles");
-        state.selectedNeedles = needles;
-      },
-      setSelectedClusters(state, clusters) {
-        console.log("store:mutation:setSelectedClusters");
-        state.selectedClusters = clusters;
-      },
-      setSelectedLeafTypes(state, leafTypes) {
-        state.selectedLeafTypes = leafTypes;
-        console.log("store:mutation:setSelectedLeafTypes");
-      },
-      setSelectedCompoundStructures(state, compoundStructures) {
-        state.selectedCompoundStructures = compoundStructures;
-        console.log("store:mutation:setSelectedCompoundStructures");
-      },
-      setSelectedLeafAttachments(state, leafAttachments) {
-        state.selectedLeafAttachments = leafAttachments;
-        console.log("store:mutation:setSelectedLeafAttachments");
-      },
-      setSelectedFallColors(state, fallColors) {
-        state.selectedFallColors = fallColors;
-        console.log("store:mutation:setSelectedFallColors");
-      },
+        const leafTypeMatch = !selectedLeafTypes.length || selectedLeafTypes.includes(tree.leafType);
+        const compoundStructureMatch = !selectedCompoundStructures.length || selectedCompoundStructures.includes(tree.compoundStructure);
+        const leafAttachmentMatch = !selectedLeafAttachments.length || selectedLeafAttachments.includes(tree.leafAttachment);
+
+        const fallColorMatch = !selectedFallColors.length || (tree.fallColor && tree.fallColor.some(color => selectedFallColors.includes(color)));
+
+        return foliageMatch && needleMatch && leafTypeMatch && compoundStructureMatch && leafAttachmentMatch && clusterMatch && fallColorMatch;
+      });
     },
-    actions: {
 
-      resetFilters({ commit }) {
-        commit('resetFilters')
-      },
+    getFilteredTreeCount: (state) => (selectedFoliage, selectedNeedles, selectedClusters, selectedLeafTypes, selectedCompoundStructures, selectedLeafAttachments, selectedFallColors) => {
+      const filteredTrees = state.trees.filter(tree => {
+        const foliageMatch = !selectedFoliage.length || selectedFoliage.includes(tree.foliage);
+        const needleMatch = !selectedNeedles.length || selectedNeedles.includes(tree.needleStructure);
+        const clusterMatch = !selectedClusters.length || (tree.needleCluster && tree.needleCluster.some(cluster => selectedClusters.includes(cluster)));
+        const leafTypeMatch = !selectedLeafTypes.length || selectedLeafTypes.includes(tree.leafType);
+        const compoundStructureMatch = !selectedCompoundStructures.length || selectedCompoundStructures.includes(tree.compoundStructure);
+        const leafAttachmentMatch = !selectedLeafAttachments.length || selectedLeafAttachments.includes(tree.leafAttachment);
+        const fallColorMatch = !selectedFallColors.length || (tree.fallColor && tree.fallColor.some(color => selectedFallColors.includes(color)));
 
-      logoClick({ commit }) {
-        commit('resetFilters');
-        commit('closeMenu');
-      },
+        return foliageMatch && needleMatch && leafTypeMatch && compoundStructureMatch && leafAttachmentMatch && clusterMatch && fallColorMatch;
+      });
 
-      toggleMenu({ commit, state }) {
-        commit('toggleMenu')
-      },
+      return filteredTrees.length; // Return the count instead of the array
+    }
+  },
+  mutations: {
+    resetFilters(state) {
 
-      // toggleMenuButton({ commit, state }) {
-      //   commit
-      // },
+      // console.log("store:mutation:resetFilters");
 
-      updateToggleMenu({ commit }, toggle) {
-        commit('toggleMenu', toggle)
-      },
-
-      toggleMenuOpen({ commit }, isOpen) {
-        commit('openMenu', isOpen)
-      },
-
-      updateSelectedFoliage({ commit }, foliage) {
-        commit('setSelectedFoliage', foliage);
-        console.log("store:action:updateSelectedFoliage");
-      },
-      updateSelectedNeedles({ commit }, needles) {
-        commit('setSelectedNeedles', needles);
-        console.log("store:action:updateSelectedNeedles");
-      },
-      updateSelectedClusters({ commit }, clusters) {
-        commit('setSelectedClusters', clusters);
-        console.log("store:action:updateSelectedClusters");
-      },
-      updateSelectedLeafTypes({ commit }, leafTypes) {
-        commit('setSelectedLeafTypes', leafTypes);
-        console.log("store:action:updateSelectedLeafTypes");
-
-      },
-      updateSelectedCompoundStructures({ commit }, compoundStructures) {
-        commit('setSelectedCompoundStructures', compoundStructures);
-        console.log("store:action:updateSelectedCompoundStructures");
-
-      },
-      updateSelectedLeafAttachments({ commit }, leafAttachments) {
-        commit('setSelectedLeafAttachments', leafAttachments);
-        console.log("store:action:updateSelectedLeafAttachments");
-
-      },
-      updateSelectedFallColors({ commit }, fallColors) {
-        commit('setSelectedFallColors', fallColors);
-        console.log("store:action:updateSelectedFallColors");
-
-      },
+      // Reset filters to initial state or empty arrays
+      state.selectedFoliage = [];
+      state.selectedNeedles = [];
+      state.selectedClusters = [];
+      state.selectedLeafTypes = [];
+      state.selectedCompoundStructures = [];
+      state.selectedLeafAttachments = [];
+      state.selectedFallColors = [];
     },
-    plugins: [vuexLocal.plugin],
+    setMenuState(state, isOpen) {
+      state.isMenuOpen = isOpen;
+      // console.log("store:mutation:setMenuState", isOpen);
+    },
+    toggleMenu(state) {
+      state.isMenuOpen = !state.isMenuOpen;
+      // console.log("store:mutation:toggleMenu");
+    },
+    openMenu(state) {
+      state.menuIsOpen = true;
+    },
+    closeMenu(state) {
+      // console.log("store:mutation:closeMenu");
+      state.isMenuOpen = false;
+    },
+    addItem(state, newItem) {
+      // console.log("store:mutation:addItem");
+      state.items.push(newItem);
+    },
+    setSelectedFoliage(state, foliage) {
+      // console.log("store:mutation:setSelectedFoliage");
+      state.selectedFoliage = foliage;
+    },
+    setSelectedNeedles(state, needles) {
+      // console.log("store:mutation:setSelectedNeedles");
+      state.selectedNeedles = needles;
+    },
+    setSelectedClusters(state, clusters) {
+      // console.log("store:mutation:setSelectedClusters");
+      state.selectedClusters = clusters;
+    },
+    setSelectedLeafTypes(state, leafTypes) {
+      state.selectedLeafTypes = leafTypes;
+      // console.log("store:mutation:setSelectedLeafTypes");
+    },
+    setSelectedCompoundStructures(state, compoundStructures) {
+      state.selectedCompoundStructures = compoundStructures;
+      // console.log("store:mutation:setSelectedCompoundStructures");
+    },
+    setSelectedLeafAttachments(state, leafAttachments) {
+      state.selectedLeafAttachments = leafAttachments;
+      // console.log("store:mutation:setSelectedLeafAttachments");
+    },
+    setSelectedFallColors(state, fallColors) {
+      state.selectedFallColors = fallColors;
+      // console.log("store:mutation:setSelectedFallColors");
+    },
+  },
+  actions: {
+
+    resetFilters({ commit }) {
+      commit('resetFilters')
+    },
+
+    logoClick({ commit }) {
+      commit('resetFilters');
+      commit('closeMenu');
+    },
+
+    toggleMenu({ commit, state }) {
+      commit('toggleMenu')
+    },
+
+    // toggleMenuButton({ commit, state }) {
+    //   commit
+    // },
+
+    updateToggleMenu({ commit }, toggle) {
+      commit('toggleMenu', toggle)
+    },
+
+    toggleMenuOpen({ commit }, isOpen) {
+      commit('openMenu', isOpen)
+    },
+
+    updateSelectedFoliage({ commit }, foliage) {
+      commit('setSelectedFoliage', foliage);
+      // console.log("store:action:updateSelectedFoliage");
+    },
+    updateSelectedNeedles({ commit }, needles) {
+      commit('setSelectedNeedles', needles);
+      // console.log("store:action:updateSelectedNeedles");
+    },
+    updateSelectedClusters({ commit }, clusters) {
+      commit('setSelectedClusters', clusters);
+      // console.log("store:action:updateSelectedClusters");
+    },
+    updateSelectedLeafTypes({ commit }, leafTypes) {
+      commit('setSelectedLeafTypes', leafTypes);
+      // console.log("store:action:updateSelectedLeafTypes");
+
+    },
+    updateSelectedCompoundStructures({ commit }, compoundStructures) {
+      commit('setSelectedCompoundStructures', compoundStructures);
+      // console.log("store:action:updateSelectedCompoundStructures");
+
+    },
+    updateSelectedLeafAttachments({ commit }, leafAttachments) {
+      commit('setSelectedLeafAttachments', leafAttachments);
+      // console.log("store:action:updateSelectedLeafAttachments");
+
+    },
+    updateSelectedFallColors({ commit }, fallColors) {
+      commit('setSelectedFallColors', fallColors);
+      // console.log("store:action:updateSelectedFallColors");
+
+    },
+  },
+  plugins: [vuexLocal.plugin],
 });
 
 
