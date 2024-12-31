@@ -11,7 +11,6 @@
   --menu-speed: 0.5s;
   --font-stack-serif: 'Times New Roman', Times, serif;
   --font-stack-sans-serif: Arial, Roboto, 'Segoe UI', 'Open Sans', sans-serif;
-
 }
 
 * {
@@ -152,6 +151,11 @@ footer {
     display: flex;
     flex-direction: column;
     margin: auto;
+  }
+
+  .site-credit {
+    display: flex;
+    flex-direction: row;
   }
 }
 

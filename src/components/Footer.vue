@@ -6,8 +6,8 @@
                 <router-link to="/privacypolicy" rel="noopener noreferrer">Privacy Policy</router-link>
                 <a href="mailto:patreeguide@gmail.com">Contact</a>
             </div>
-            <div>
-                Website by
+            <div class="site-credit">
+                <div>Website by &nbsp;</div>
                 <a href="https://www.flobytedigital.com" target="_blank">FloByte Digital</a>
             </div>
         </div>
