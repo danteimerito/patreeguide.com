@@ -7,7 +7,8 @@
                 <a href="mailto:patreeguide@gmail.com">Contact</a>
             </div>
             <div>
-                <a href="https://www.flobytedigital.com" target="_blank">Website by FloByte Digital</a>
+                Website by
+                <a href="https://www.flobytedigital.com" target="_blank">FloByte Digital</a>
             </div>
         </div>
     </footer>
