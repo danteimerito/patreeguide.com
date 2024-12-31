@@ -7,7 +7,7 @@
                 <a href="mailto:patreeguide@gmail.com">Contact</a>
             </div>
             <div>
-                <a href="https://www.danteimerito.com" target="_blank">Site by Dante</a>
+                <a href="https://www.flobytedigital.com" target="_blank">Website by FloByte Digital</a>
             </div>
         </div>
     </footer>
