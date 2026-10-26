@@ -652,7 +652,7 @@ const initialTreesState = [
     "genus": "Platanus",
     "species": "Platanus occidentalis",
     "type": "deciduous",
-    "leafType": "simple",
+    "leafType": "lobed",
     "leafAttachment": "alternate",
     "fallColor": [
       "brown"
